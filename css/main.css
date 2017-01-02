@@ -66,4 +66,12 @@ h1 {
   display: flex;
   background-color: #000000; }
 
+#scene {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column; }
+
 /*# sourceMappingURL=main.css.map */

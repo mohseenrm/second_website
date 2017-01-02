@@ -18,3 +18,8 @@ h1{
     @include flexbox;
     background-color: #000000;
 }
+
+#scene{
+    @include flexbox;
+    flex-direction: column;
+}
