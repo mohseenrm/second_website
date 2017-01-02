@@ -2,11 +2,22 @@
     <head>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
         <div id="main-wrapper">
+            <section id="screen-1">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
             <ul id="scene"
                 data-calibrate-x="true"
                 data-calibrate-y="true"
@@ -28,7 +39,9 @@
                 <li class="layer" data-depth="0.80"><img src="graphics/layer5.png"></li>
                 <li class="layer" data-depth="1.00"><img src="graphics/layer6.png"></li>-->
             </ul>
+            
         </div>
+        <section id="screen-2"></section>
         <script src="dist/parallax.min.js"></script>
         <script src="dist/main.js"></script>
     </body>

@@ -1,25 +1,26 @@
 @import 'reset';
 @import 'flex';
-
-$fonts: 'Helvetica', sans-serif;
-
+$fonts: 'Helvetica',
+sans-serif;
 html,
 body {
     font-family: $fonts;
     font-size: 62.5%;
 }
-h1{
+
+h1 {
     font-size: 5rem;
     color: #ffffff;
 }
-#main-wrapper{
+
+#main-wrapper {
     height: 100%;
     width: 100%;
     @include flexbox;
     background-color: #000000;
 }
 
-#scene{
+#scene {
     @include flexbox;
     flex-direction: column;
     height: 100%;
@@ -29,21 +30,79 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
 }
-#main-image{
+
+#main-image {
     height: 100%;
     width: 50%;
-
     background-clip: border-box;
     background-origin: border-box;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
-#goku{
-    max-width:100%;
-    max-height:100%;
+
+#goku {
+    max-width: 100%;
+    max-height: 100%;
     // background-clip: border-box;
     // background-origin: border-box;
     // background-size: cover;
     // background-repeat: no-repeat;
+}
+
+//menu css
+a {
+    text-decoration: none;
+}
+
+
+/* This class is added on scroll */
+
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+
+body {
+    color: #fff;
+    font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* Navigation Settings */
+
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px 10px;
+}
+
+nav li a {
+    color: #757575;
+    text-transform: uppercase;
+}
+
+section {
+    height: 100vh;
+}
+
+
+/* Screens Settings */
+
+#screen-1 {
+    background: #43b29d;
+}
+
+#screen-2 {
+	background: #e1793d;
 }
