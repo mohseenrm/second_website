@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel --presets es2015,stage-0 js/ -d dist/"
+    "build": "babel js/ -d dist/ -s",
+    "build:watch" : "babel -w js/ -d dist/ -s"
   },
   "repository": {
     "type": "git",

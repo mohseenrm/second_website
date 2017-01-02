@@ -1,0 +1,1 @@
+{"version":3,"sources":["../js/main.js"],"names":["me","console","log"],"mappings":"AAAA;;AAEA,IAAMA,KAAK,SAAX;;AAEAC,QAAQC,GAAR,YAAqBF,EAArB","file":"main.js","sourcesContent":["'use strict';\n\nconst me = \"Mohseen\";\n\nconsole.log(`hello ${me}!`);"]}
