@@ -9,14 +9,25 @@
     var parallax = new Parallax(scene);
 })();
 
-$(document).ready(function () {
-    $(window).bind('scroll', function () {
-        var navHeight = $(window).height() - 70;
-        if ($(window).scrollTop() > navHeight) {
-            $('nav').addClass('fixed');
-        } else {
-            $('nav').removeClass('fixed');
-        }
-    });
-});
+// $(document).ready(function(){
+//     $(window).bind('scroll', function() {
+//     var navHeight = $( window ).height() - 70;
+//             if ($(window).scrollTop() > navHeight) {
+//                 $('nav').addClass('fixed');
+//             }
+//             else {
+//                 $('nav').removeClass('fixed');
+//             }
+//     });
+// });
+(function () {
+    window.onscroll = function () {
+        var navHeight = window.innerHeight - 70;
+        var nav = document.getElementById("nav-bar");
+        if (window.scrollY > navHeight) {
+            console.log("In");
+            if (nav.className.includes("fixed")) console.log("booho");else nav.className += " fixed";
+        } else nav.className = "";
+    };
+})();
 //# sourceMappingURL=main.js.map
