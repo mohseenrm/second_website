@@ -72,6 +72,18 @@ h1 {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#main-image {
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=main.css.map */
