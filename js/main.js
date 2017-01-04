@@ -25,7 +25,6 @@
         let navHeight = window.innerHeight - 70;
         let nav = document.getElementById("nav-bar");
         if( window.scrollY > navHeight ){
-            console.log("In");
             if( nav.className.includes("fixed") ){}
             else
                 nav.className += " fixed";

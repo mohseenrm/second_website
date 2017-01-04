@@ -25,8 +25,7 @@
         var navHeight = window.innerHeight - 70;
         var nav = document.getElementById("nav-bar");
         if (window.scrollY > navHeight) {
-            console.log("In");
-            if (nav.className.includes("fixed")) console.log("booho");else nav.className += " fixed";
+            if (nav.className.includes("fixed")) {} else nav.className += " fixed";
         } else nav.className = "";
     };
 })();

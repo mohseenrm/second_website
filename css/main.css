@@ -4,6 +4,7 @@
    License: none (public domain)
    This is a Sass partial
    */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,7 +50,7 @@ table {
 
 html,
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Raleway", "Helvetica", sans-serif;
   font-size: 62.5%; }
 
 h1 {
