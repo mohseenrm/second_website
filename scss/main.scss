@@ -13,11 +13,27 @@ h1 {
     color: #ffffff;
 }
 
-#main-wrapper {
+#base-wrapper {
     height: 100%;
     width: 100%;
     @include flexbox;
+    
+}
+
+#main-wrapper{
+    @extend #base-wrapper;
     background-color: #000000;
+}
+
+#second-page-wrapper{
+    @extend #base-wrapper;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.large-header{
+    font-size: 6rem;
+    color: #fff;
 }
 
 #scene {

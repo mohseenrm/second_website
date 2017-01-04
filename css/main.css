@@ -57,15 +57,25 @@ h1 {
   font-size: 5rem;
   color: #ffffff; }
 
-#main-wrapper {
+#base-wrapper, #main-wrapper, #second-page-wrapper {
   height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; }
+
+#main-wrapper {
   background-color: #000000; }
+
+#second-page-wrapper {
+  flex-direction: column;
+  justify-content: center; }
+
+.large-header {
+  font-size: 6rem;
+  color: #fff; }
 
 #scene {
   display: -webkit-box;
