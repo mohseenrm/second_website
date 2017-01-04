@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'flex';
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 $fonts: 'Raleway', 'Helvetica', sans-serif;
 html,
 body {
@@ -32,7 +33,14 @@ h1 {
 }
 
 .large-header{
+    // font-family: 'Libre Baskerville', serif;
     font-size: 6rem;
+    color: #fff;
+}
+
+.body-text{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4rem;
     color: #fff;
 }
 

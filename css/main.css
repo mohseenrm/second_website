@@ -5,6 +5,7 @@
    This is a Sass partial
    */
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -75,6 +76,11 @@ h1 {
 
 .large-header {
   font-size: 6rem;
+  color: #fff; }
+
+.body-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 4rem;
   color: #fff; }
 
 #scene {
