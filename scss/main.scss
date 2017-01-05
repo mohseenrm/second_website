@@ -29,9 +29,9 @@ h1 {
 }
 
 #second-page-wrapper {
-    @extend #base-wrapper;
+    @include flexbox;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .large-header {
@@ -154,7 +154,8 @@ section {
 //title effects
 .title-container {
     margin-top: 0;
-    padding-left: 110px;
+    padding-left: 1.2vw;
+    padding-top: 2px;
     text-align: left;
     list-style: none;
     -webkit-animation-name: change;
@@ -171,6 +172,10 @@ section {
 }
 
 .visible{
+    @include flexbox;
+    flex-direction: row;
+    justify-content: center;
+
     overflow: hidden;
     height:40px;
 }
