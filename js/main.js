@@ -42,9 +42,11 @@
     };
 
     window.onscroll = ()=>{
-        let navHeight = window.innerHeight - 70;
+        const win = window;
+
+        let navHeight = win.innerHeight - 70;
         let nav = document.getElementById("nav-bar");
-        if( window.scrollY > navHeight ){
+        if( win.scrollY > navHeight ){
             if( nav.className.includes("fixed") ){}
             else
                 nav.className += " fixed";
@@ -52,11 +54,21 @@
         else
             nav.className = "";
         
-        if( window.scrollY > 400 )
+        //titles reveal
+        if( win.scrollY > 400 )
             // document.querySelector('.visible').className += " animated slideInUp";
             addClass( document.querySelector( '.visible' ), 'animated slideInUp' );
         else
             removeClass( document.querySelector( '.visible' ), 'animated slideInUp' );
+
+        if( win.scrollY > ( 0.12 * win.innerHeight ) ){
+            document.getElementById( 'first-header' ).style.visibility = 'visible';
+            addClass( document.getElementById( 'first-header' ), 'animated zoomInDown' );
+        }
+            
+        else
+            removeClass( document.getElementById( 'first-header' ), 'animated zoomInDown' );
+
     };
 })();
 

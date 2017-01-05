@@ -336,5 +336,7 @@ section {
   85%,
     97% {
     transform: translateY(-25%); } }
+#first-header {
+  padding-top: 8vh; }
 
 /*# sourceMappingURL=main.css.map */
