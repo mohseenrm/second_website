@@ -280,9 +280,9 @@ section {
     max-height: 100%;
     max-width: 100%;
     background-image: url('../images/42.jpg');
-
-    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+//http://bennettfeely.com/clippy/
+    -webkit-clip-path: polygon(0 0, 100% 0, 71% 24%, 70% 38%, 70% 100%, 48% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 71% 24%, 70% 38%, 70% 100%, 48% 100%, 0 100%);
 
     &:before{
         width: 100%;
