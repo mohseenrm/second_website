@@ -43,16 +43,16 @@
 
     window.onscroll = ()=>{
         const win = window;
-
-        let navHeight = win.innerHeight - 70;
-        let nav = document.getElementById("nav-bar");
-        if( win.scrollY > navHeight ){
-            if( nav.className.includes("fixed") ){}
-            else
-                nav.className += " fixed";
-        }
-        else
-            nav.className = "";
+        
+        // let navHeight = win.innerHeight - 70;
+        // let nav = document.getElementById("nav-bar");
+        // if( win.scrollY > navHeight ){
+        //     if( nav.className.includes("fixed") ){}
+        //     else
+        //         nav.className += " fixed";
+        // }
+        // else
+        //     nav.className = "";
         
         //titles reveal
         if( win.scrollY > 400 )
