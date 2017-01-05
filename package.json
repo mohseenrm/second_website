@@ -1,12 +1,12 @@
 {
   "name": "second_website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "second website",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel js/ -d dist/ -s",
-    "build:watch" : "babel -w js/ -d dist/ -s"
+    "build": "gulp build",
+    "build:watch": "babel -w js/ -d dist/ -s"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,15 @@
     "babel-core": "^6.21.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-0": "^6.16.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-bump": "^2.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8"
   }
 }

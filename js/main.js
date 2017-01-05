@@ -33,3 +33,9 @@
             nav.className = "";
     };
 })();
+
+(()=>{
+    setTimeout(()=>{
+        document.getElementById("dev").className += " magictime puffIn";
+    }, 2000);
+})();
