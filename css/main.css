@@ -143,7 +143,7 @@ h1 {
   font-size: 5rem;
   color: #ffffff; }
 
-#base-wrapper, #main-wrapper {
+#base-wrapper, #main-wrapper, .overlay {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -378,5 +378,8 @@ section {
   display: flex;
   width: 100%;
   flex-direction: row; }
+
+.overlay {
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
