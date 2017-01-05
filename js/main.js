@@ -20,6 +20,9 @@
         }
         else
             nav.className = "";
+        
+        if( window.scrollY > 400 )
+            document.querySelector('.visible').className += " animated slideInUp";
     };
 })();
 

@@ -1,2 +1,2 @@
-"use strict";!function(){var e="Mohseen";console.log("hello "+e+"!");var n=document.getElementById("scene");new Parallax(n)}(),function(){window.onscroll=function(){var e=window.innerHeight-70,n=document.getElementById("nav-bar");window.scrollY>e?n.className.includes("fixed")||(n.className+=" fixed"):n.className=""}}();
+"use strict";!function(){var e="Mohseen";console.log("hello "+e+"!");var n=document.getElementById("scene");new Parallax(n)}(),function(){window.onscroll=function(){var e=window.innerHeight-70,n=document.getElementById("nav-bar");window.scrollY>e?n.className.includes("fixed")||(n.className+=" fixed"):n.className="",window.scrollY>400&&(document.querySelector(".visible").className+=" animated slideInUp")}}();
 //# sourceMappingURL=main.js.map
