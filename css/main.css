@@ -357,7 +357,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 60%;
   background-size: cover;
   max-height: 100%;
   max-width: 100%;
