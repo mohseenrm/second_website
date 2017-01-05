@@ -9,17 +9,6 @@
     const parallax = new Parallax(scene);
 })();
 
-// $(document).ready(function(){
-//     $(window).bind('scroll', function() {
-//     var navHeight = $( window ).height() - 70;
-//             if ($(window).scrollTop() > navHeight) {
-//                 $('nav').addClass('fixed');
-//             }
-//             else {
-//                 $('nav').removeClass('fixed');
-//             }
-//     });
-// });
 (()=>{
     window.onscroll = ()=>{
         let navHeight = window.innerHeight - 70;
@@ -34,8 +23,16 @@
     };
 })();
 
+// (()=>{
+//     setTimeout(()=>{
+//         document.getElementById("dev").className += " magictime spaceInUp";
+//     }, 2000);
+// })();
+
 (()=>{
+    const dev = new TextFx( document.getElementById('dev') );
+
     setTimeout(()=>{
-        document.getElementById("dev").className += " magictime spaceInUp";
-    }, 2000);
+        dev.show( 'fx3' );
+    } , 2000);
 })();
