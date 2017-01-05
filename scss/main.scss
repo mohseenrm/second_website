@@ -259,3 +259,13 @@ section {
 #first-header{
     padding-top: 8vh;
 }
+
+//first section css
+#left-wrapper, #right-wrapper{
+    @include flexbox;
+    width: 50%;
+}
+
+#right-wrapper{
+    
+}

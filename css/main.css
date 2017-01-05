@@ -339,4 +339,12 @@ section {
 #first-header {
   padding-top: 8vh; }
 
+#left-wrapper, #right-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%; }
+
 /*# sourceMappingURL=main.css.map */
