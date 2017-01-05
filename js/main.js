@@ -30,9 +30,5 @@
 // })();
 
 (()=>{
-    const dev = new TextFx( document.getElementById('dev') );
 
-    setTimeout(()=>{
-        dev.show( 'fx3' );
-    } , 2000);
 })();
