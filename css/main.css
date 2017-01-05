@@ -363,14 +363,16 @@ section {
 
 /* Screens Settings */
 #screen-1 {
-  background: #43b29d; }
+  width: 100%;
+  z-index: 2;
+  background: #000000; }
 
 #screen-2 {
   z-index: 1;
   background: #e1793d; }
 
 .nav {
-  background-color: #050f1e;
+  background-color: #f5faff;
   position: fixed;
   text-align: center;
   z-index: 2;
@@ -382,7 +384,7 @@ a {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   display: inline-block;
-  color: #f5faff;
+  color: #050f1e;
   text-decoration: none;
   text-transform: uppercase;
   border-left: 1px solid tint(#050f1e, 33%);
