@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import 'fonts';
-
-$fonts: 'Raleway', 'Helvetica', sans-serif;
-
+$fonts: 'Raleway',
+'Helvetica',
+sans-serif;
 html,
 body {
     font-family: $fonts;
@@ -21,37 +21,35 @@ h1 {
     height: 100%;
     width: 100%;
     @include flexbox;
-    
 }
 
-#main-wrapper{
+#main-wrapper {
     @extend #base-wrapper;
     background-color: #000000;
 }
 
-#second-page-wrapper{
+#second-page-wrapper {
     @extend #base-wrapper;
     flex-direction: column;
     justify-content: center;
 }
 
-.large-header{
+.large-header {
     font-family: 'Ostrich Sans';
     letter-spacing: 5px;
     text-transform: uppercase;
     font-weight: 900;
-	font-style: normal;
+    font-style: normal;
     // font-family: 'Libre Baskerville', serif;
     font-size: 6rem;
     color: #fff;
     // text-transform: uppercase;
-
 }
 
-.body-text{
+.body-text {
     font-family: 'Ostrich Sans Rounded', 'Source Sans Pro', serif;
     font-weight: normal;
-	font-style: normal;
+    font-style: normal;
     letter-spacing: 5px;
     font-size: 2.5rem;
     color: #fff;
@@ -142,5 +140,17 @@ section {
 }
 
 #screen-2 {
-	background: #e1793d;
+    background: #e1793d;
+}
+
+// magic time settings
+.magictime {
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+#dev {
+    display: none;
 }

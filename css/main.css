@@ -245,4 +245,13 @@ section {
 #screen-2 {
   background: #e1793d; }
 
+.magictime {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s; }
+
+#dev {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */

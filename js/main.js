@@ -36,6 +36,6 @@
 
 (()=>{
     setTimeout(()=>{
-        document.getElementById("dev").className += " magictime puffIn";
+        document.getElementById("dev").className += " magictime spaceInUp";
     }, 2000);
 })();
