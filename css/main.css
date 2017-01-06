@@ -380,7 +380,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F1F0EE;
+  background: -webkit-linear-gradient(0deg, white, #f6f6f6);
+  background: linear-gradient(0deg, white, #f6f6f6);
   position: fixed;
   height: 8%;
   z-index: 2;
@@ -406,7 +407,7 @@ a {
 .link-effect-10 a span::before {
   height: 100%;
   width: 2px;
-  background: #FC4A1A;
+  background: #FF5A09;
   content: "";
   position: absolute;
   left: 0;
@@ -423,7 +424,7 @@ a {
 .link-effect-10 a span::after {
   height: 100%;
   width: 2px;
-  background: #FC4A1A;
+  background: #FF5A09;
   content: "";
   position: absolute;
   right: 0;
@@ -440,7 +441,7 @@ a {
 .link-effect-10 a::before {
   height: 2px;
   width: 100%;
-  background: #FC4A1A;
+  background: #FF5A09;
   content: "";
   position: absolute;
   left: 0;
@@ -457,7 +458,7 @@ a {
 .link-effect-10 a::after {
   height: 2px;
   width: 100%;
-  background: #FC4A1A;
+  background: #FF5A09;
   content: "";
   position: absolute;
   left: 0px;
@@ -472,7 +473,7 @@ a {
   transition: 0.3s; }
 
 .link-effect-10 a:hover {
-  color: #FC4A1A; }
+  color: #FF5A09; }
 
 .link-effect-10 a:hover::before,
 .link-effect-10 a:hover::after {
@@ -489,21 +490,23 @@ a {
   transform: scaleY(1); }
 
 .link-effect-3 a {
-  padding: 10px 0;
+  padding: 3px 0;
   margin: 0 20px;
   color: #797878;
   text-shadow: none;
   position: relative; }
+  .link-effect-3 a:active {
+    color: #393E41; }
 
 .link-effect-3 a::before {
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
-  padding: 10px 0;
+  padding: 3px 0;
   max-width: 0;
-  border-bottom: 2px solid #ff0000;
-  color: #ff0000;
+  border-bottom: 2px solid #FF5A09;
+  color: #FF5A09;
   content: attr(data-hover);
   -webkit-transition: max-width 0.5s;
   -moz-transition: max-width 0.5s;
