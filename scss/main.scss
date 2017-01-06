@@ -136,13 +136,12 @@ body {
     margin: 0;
 }
 
-.visible{
+.visible {
     @include flexbox;
     flex-direction: row;
     justify-content: center;
-
     overflow: hidden;
-    height:40px;
+    height: 40px;
 }
 
 @-webkit-keyframes opacity {
@@ -221,35 +220,33 @@ body {
     }
 }
 
-#first-header{
+#first-header {
     padding-top: 8vh;
 }
 
 //first section css
-#left-wrapper, #right-wrapper{
+#left-wrapper,
+#right-wrapper {
     @include flexbox;
     width: 50%;
 }
 
-#left-wrapper{
+#left-wrapper {
     height: 75%;
 }
 
-#image-container{
+#image-container {
     @include flexbox;
     height: 100%;
     width: 60%;
-
     background-size: cover;
-
     max-height: 100%;
     max-width: 100%;
     background-image: url('../images/42.jpg');
-//http://bennettfeely.com/clippy/
+    //http://bennettfeely.com/clippy/
     -webkit-clip-path: polygon(0 0, 100% 0, 71% 24%, 70% 38%, 70% 100%, 48% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 71% 24%, 70% 38%, 70% 100%, 48% 100%, 0 100%);
-
-    &:before{
+    &:before {
         width: 100%;
         height: 100%;
         content: '';
@@ -257,20 +254,21 @@ body {
     }
 }
 
-.inception-wrapper{
+.inception-wrapper {
     @include flexbox;
     width: 100%;
     flex-direction: row;
 }
 
-.overlay{
+.overlay {
     @extend #base-wrapper;
     position: absolute;
     // background-color: #ff0000;
 }
-// menu styling
 
+// menu styling
 //old
+
 /* Navigation Settings */
 
 // nav {
@@ -280,20 +278,18 @@ body {
 //     height: 70px;
 //     background: #fff;
 // }
-
 // nav li {
 //     display: inline-block;
 //     padding: 24px 10px;
 // }
-
 // nav li a {
 //     color: #757575;
 //     text-transform: uppercase;
 // }
-
 section {
     height: 100vh;
 }
+
 
 /* Screens Settings */
 
@@ -307,12 +303,21 @@ section {
     z-index: 1;
     background: #e1793d;
 }
-//new
-$color-active: rgba( 255 , 55 , 71 , 1 );
-$color-white: rgba( 245 , 250 , 255 , 1 );
-$color-black: rgba( 5 , 15 , 30 , 1 );
 
-.nav{
+//new
+$color-active: rgba( 255,
+55,
+71,
+1);
+$color-white: rgba( 245,
+250,
+255,
+1);
+$color-black: rgba( 5,
+15,
+30,
+1);
+.nav {
     // @include contain( padding , 5vw , 10px , 40px );
     background-color: $color-white;
     position: fixed;
@@ -322,22 +327,17 @@ $color-black: rgba( 5 , 15 , 30 , 1 );
     left: 0;
     top: 0;
 }
-a{
 
+.nav-links {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     display: inline-block;
     color: $color-black;
     text-decoration: none;
     text-transform: uppercase;
-    
-    border-left: 1px solid tint( $color-black , 33% );
-    border-left: 1px solid tint( $color-black , 33% );
-    
-    &:first-of-type{
+    border-left: 1px solid tint( $color-black, 33%);
+    border-left: 1px solid tint( $color-black, 33%);
+    &:first-of-type {
         border-left: none;
     }
-      
 }
-    
-  

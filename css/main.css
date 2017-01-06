@@ -314,7 +314,8 @@ body {
 #first-header {
   padding-top: 8vh; }
 
-#left-wrapper, #right-wrapper {
+#left-wrapper,
+#right-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -380,7 +381,7 @@ section {
   left: 0;
   top: 0; }
 
-a {
+.nav-links {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   display: inline-block;
@@ -389,7 +390,7 @@ a {
   text-transform: uppercase;
   border-left: 1px solid tint(#050f1e, 33%);
   border-left: 1px solid tint(#050f1e, 33%); }
-  a:first-of-type {
+  .nav-links:first-of-type {
     border-left: none; }
 
 /*# sourceMappingURL=main.css.map */
