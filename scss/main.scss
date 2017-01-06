@@ -304,8 +304,9 @@ section {
     background: #e1793d;
 }
 
-$off-white: #EAEAEA;
+$off-white: #F1F0EE;
 $hover-color: #FC4A1A;
+$text-color: #2C3E50;
 
 .nav {
     @include flexbox;
@@ -328,10 +329,11 @@ $hover-color: #FC4A1A;
 
 a {
     text-decoration: none;
+    text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
 }
 
 .link-effect-10 a {
-    color: #797878;
+    color: $text-color;
     margin: 0 20px;
     padding: 10px;
     position: relative;
@@ -432,4 +434,30 @@ a {
     -ms-transform: scaleY(1);
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
+}
+
+
+.link-effect-3 a {
+  padding: 10px 0;
+  margin: 0 20px;
+  color: #797878;
+  text-shadow: none;
+  position: relative;
+}
+.link-effect-3 a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 10px 0;
+  max-width: 0;
+  border-bottom: 2px solid #ff0000;
+  color: #ff0000;
+  content: attr(data-hover);
+  -webkit-transition: max-width 0.5s;
+  -moz-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+}
+.link-effect-3 a:hover::before {
+  max-width: 100%;
 }
