@@ -304,89 +304,128 @@ section {
     background: #e1793d;
 }
 
-//new
-$color-active: rgba( 255,
-55,
-71,
-1);
-$color-white: rgba( 245,
-250,
-255,
-1);
-$color-black: rgba( 5,
-15,
-30,
-1);
+$off-white: #EAEAEA;
+$hover-color: #FC4A1A;
 .nav {
     // @include contain( padding , 5vw , 10px , 40px );
-    background-color: $color-white;
+    background-color: $off-white;
     position: fixed;
+    height: 8%;
     // text-align: center;
     z-index: 2;
     right: 0;
     left: 0;
     top: 0;
+
+    // -webkit-box-shadow: 0 8px 6px -6px black;
+	//    -moz-box-shadow: 0 8px 6px -6px black;
+	//         box-shadow: 0 8px 6px -6px black;
 }
 
-.nav-links {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    display: inline-block;
-    color: $color-black;
+a {
     text-decoration: none;
-    text-transform: uppercase;
-    border-left: 1px solid tint( $color-black, 33%);
-    border-left: 1px solid tint( $color-black, 33%);
-    &:first-of-type {
-        border-left: none;
-    }
 }
 
+.link-effect-10 a {
+    color: #797878;
+    margin: 0 20px;
+    padding: 10px;
+    position: relative;
+    -moz-transition: ease-out 0.3s 0.1s;
+    -o-transition: ease-out 0.3s 0.1s;
+    -webkit-transition: ease-out 0.3s;
+    -webkit-transition-delay: 0.1s;
+    transition: ease-out 0.3s 0.1s;
+}
 
-.btn {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  /* letter-spacing: .2rem; */
-  text-decoration: none;
-  overflow: hidden;
-  display: inline-block;
-  padding: 0 4rem 0 3.8rem;
-  color: #FFF;
-  background: none;
-  border: 1px solid #FFF;
-  cursor: pointer;
-  transform: translate3d(0, 0, 0);
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    height: 150%;
-    background: #FFF;
-    pointer-events: none;
-    transform: translate3d(0, 45px, 0);
-    transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  }
-  i {
-    font-style: normal;
-    line-height: 4.5rem;
-    display: inline-block;
+.link-effect-10 a span::before {
     height: 100%;
-    padding-left: 1px;
-    padding-right: 1px;
-    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-    &:hover {
-      transform: translate3d(0, -6px, 0);
-    }
-  }
-  &:hover {
-    color: #333;
-    &:after {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+    width: 2px;
+    background: $hover-color;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.link-effect-10 a span::after {
+    height: 100%;
+    width: 2px;
+    background: $hover-color;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.link-effect-10 a::before {
+    height: 2px;
+    width: 100%;
+    background: $hover-color;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.link-effect-10 a::after {
+    height: 2px;
+    width: 100%;
+    background: $hover-color;
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.link-effect-10 a:hover {
+    color: $hover-color;
+}
+
+.link-effect-10 a:hover::before,
+.link-effect-10 a:hover::after {
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.link-effect-10 a:hover span::before,
+.link-effect-10 a:hover span::after {
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
 }

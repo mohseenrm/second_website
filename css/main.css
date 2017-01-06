@@ -373,65 +373,111 @@ section {
   background: #e1793d; }
 
 .nav {
-  background-color: #f5faff;
+  background-color: #EAEAEA;
   position: fixed;
+  height: 8%;
   z-index: 2;
   right: 0;
   left: 0;
   top: 0; }
 
-.nav-links {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  display: inline-block;
-  color: #050f1e;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-left: 1px solid tint(#050f1e, 33%);
-  border-left: 1px solid tint(#050f1e, 33%); }
-  .nav-links:first-of-type {
-    border-left: none; }
+a {
+  text-decoration: none; }
 
-.btn {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  /* letter-spacing: .2rem; */
-  text-decoration: none;
-  overflow: hidden;
-  display: inline-block;
-  padding: 0 4rem 0 3.8rem;
-  color: #FFF;
-  background: none;
-  border: 1px solid #FFF;
-  cursor: pointer;
-  transform: translate3d(0, 0, 0); }
-  .btn:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    height: 150%;
-    background: #FFF;
-    pointer-events: none;
-    transform: translate3d(0, 45px, 0);
-    transition: all 0.3s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-  .btn i {
-    font-style: normal;
-    line-height: 4.5rem;
-    display: inline-block;
-    height: 100%;
-    padding-left: 1px;
-    padding-right: 1px;
-    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1); }
-    .btn i:hover {
-      transform: translate3d(0, -6px, 0); }
-  .btn:hover {
-    color: #333; }
-    .btn:hover:after {
-      transform: translate3d(0, 0, 0); }
+.link-effect-10 a {
+  color: #797878;
+  margin: 0 20px;
+  padding: 10px;
+  position: relative;
+  -moz-transition: ease-out 0.3s 0.1s;
+  -o-transition: ease-out 0.3s 0.1s;
+  -webkit-transition: ease-out 0.3s;
+  -webkit-transition-delay: 0.1s;
+  transition: ease-out 0.3s 0.1s; }
+
+.link-effect-10 a span::before {
+  height: 100%;
+  width: 2px;
+  background: #FC4A1A;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.link-effect-10 a span::after {
+  height: 100%;
+  width: 2px;
+  background: #FC4A1A;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.link-effect-10 a::before {
+  height: 2px;
+  width: 100%;
+  background: #FC4A1A;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.link-effect-10 a::after {
+  height: 2px;
+  width: 100%;
+  background: #FC4A1A;
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.link-effect-10 a:hover {
+  color: #FC4A1A; }
+
+.link-effect-10 a:hover::before,
+.link-effect-10 a:hover::after {
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+.link-effect-10 a:hover span::before,
+.link-effect-10 a:hover span::after {
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1); }
 
 /*# sourceMappingURL=main.css.map */
