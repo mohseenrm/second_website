@@ -373,6 +373,13 @@ section {
   background: #e1793d; }
 
 .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #EAEAEA;
   position: fixed;
   height: 8%;

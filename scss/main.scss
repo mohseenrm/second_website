@@ -306,8 +306,12 @@ section {
 
 $off-white: #EAEAEA;
 $hover-color: #FC4A1A;
+
 .nav {
-    // @include contain( padding , 5vw , 10px , 40px );
+    @include flexbox;
+    justify-content: center;
+    align-items: center;
+
     background-color: $off-white;
     position: fixed;
     height: 8%;
