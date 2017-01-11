@@ -65,7 +65,7 @@
             document.getElementById( 'first-header' ).style.visibility = 'visible';
             addClass( document.getElementById( 'first-header' ), 'animated zoomInDown' );
         }
-            
+        
         else
             removeClass( document.getElementById( 'first-header' ), 'animated zoomInDown' );
 
