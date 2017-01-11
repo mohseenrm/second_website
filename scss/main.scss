@@ -243,7 +243,6 @@ body {
     max-height: 100%;
     max-width: 100%;
     background-image: url('../images/42.jpg');
-    //http://bennettfeely.com/clippy/
     -webkit-clip-path: polygon(0 0, 0 100%, 25% 100%, 25% 0, 75% 0, 75% 100%, 100% 100%, 100% 0);
     clip-path: polygon(0 0, 0 100%, 25% 100%, 25% 0, 75% 0, 75% 100%, 100% 100%, 100% 0);
     &:before {
