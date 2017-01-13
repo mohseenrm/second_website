@@ -19,6 +19,7 @@ sans-serif;
     display: inline-block;
 }
 
+
 /* start commented backslash hack \*/
 
 * html .clearfix {
@@ -252,8 +253,11 @@ body {
 #first-header {
     padding-top: 8vh;
     width: 50%;
-    background: url('../dist/images/text_website.svg');
-    background-size: contain;
+    height: 100%;
+    background: url('../images/text_website.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 //first section css
