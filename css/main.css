@@ -387,7 +387,9 @@ body {
     transform: translateY(-25%); } }
 #first-header {
   padding-top: 8vh;
-  width: 50%; }
+  width: 50%;
+  background: url("../dist/images/text_website.svg");
+  background-size: contain; }
 
 #left-wrapper,
 #right-wrapper {
