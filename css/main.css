@@ -388,9 +388,9 @@ body {
 #first-header {
   padding-top: 8vh;
   width: 50%;
-  height: 100%;
+  height: 50%;
   background: url("../images/text_website.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center; }
 
