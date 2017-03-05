@@ -9,7 +9,7 @@ $big-orb-wave: 200%;
 $big-orb-font-size: 1.65rem;
 $small-orb-size: 110px;
 $small-orb-font-size: 1.1rem;
-$fonts: 'nowayregular',
+$fonts: 'League Gothic','nowayregular',
 'Helvetica',
 sans-serif;
 .clearfix:after {
@@ -653,12 +653,12 @@ a {
 // }
 #node{
     .wave{
-        margin-top: -185px;
+        margin-top: -205px;
     }
 }
 #git{
     .wave{
-        margin-top: -200px;
+        margin-top: -220px;
     }
 }
 #react, #electron{
