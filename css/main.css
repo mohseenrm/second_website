@@ -737,8 +737,17 @@ a {
     margin-top: -150px;
     margin-left: -110px; }
 
+#final-row .title {
+  letter-spacing: 0.2em; }
+
 .header {
   font-size: 4rem;
   letter-spacing: 0.05em; }
+
+#js .wave {
+  margin-top: -313px; }
+
+#py .wave {
+  margin-top: -300px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,15 +4,13 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import 'fonts';
 $third-page-color: #18172D;
-
 $big-orb-size: 150px;
 $big-orb-wave: 200%;
 $big-orb-font-size: 1.65rem;
-
 $small-orb-size: 100px;
 $small-orb-font-size: 1.1rem;
-
-$fonts: 'nowayregular', 'Raleway',
+$fonts: 'nowayregular',
+'Raleway',
 'Helvetica',
 sans-serif;
 .clearfix:after {
@@ -580,52 +578,72 @@ a {
         transform: rotate(360deg);
     }
 }
-#top-row{
+
+#top-row {
     @include flexbox;
     height: 20%;
     width: 100%;
     justify-content: space-around;
     align-items: center;
 }
-#middle-row{
+
+#middle-row {
     @include flexbox;
     height: 30%;
     width: 100%;
     justify-content: space-around;
     align-items: center;
 }
-#last-row{
+
+#last-row {
     @include flexbox;
     height: 25%;
     width: 100%;
-
     justify-content: center;
     align-items: center;
 }
-#final-row{
+
+#final-row {
     @include flexbox;
     height: 25%;
     width: 100%;
-
     justify-content: center;
     align-items: center;
 }
-.small{
+
+.small {
     width: $small-orb-size;
     height: $small-orb-size;
     margin: 4%;
-
-    .title{
+    .title {
         line-height: $small-orb-size;
         font-size: $small-orb-font-size;
         font-weight: 550;
     }
-    .wave{
+    .wave {
         margin-top: -150px;
         margin-left: -110px;
     }
 }
-.header{
+
+#final-row {
+    .title {
+        letter-spacing: 0.2em;
+    }
+}
+
+.header {
     font-size: 4rem;
     letter-spacing: 0.05em;
+}
+
+#js{
+    .wave{
+        margin-top: -313px;
+    }
+}
+#py{
+    .wave{
+        margin-top: -300px;
+    }
 }
