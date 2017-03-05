@@ -666,9 +666,8 @@ a {
   transform: translate3d(0, 0, 0);
   color: black;
   text-transform: uppercase;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: .4em;
-  font-size: 2rem;
+  letter-spacing: .25em;
+  font-size: 1.65rem;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   text-indent: .3em; }
 
@@ -726,6 +725,11 @@ a {
   height: 100px;
   margin: 4%; }
   .small .title {
-    line-height: 100px; }
+    line-height: 100px;
+    font-size: 1.1rem;
+    font-weight: 550; }
+  .small .wave {
+    margin-top: -150px;
+    margin-left: -110px; }
 
 /*# sourceMappingURL=main.css.map */

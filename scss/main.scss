@@ -7,9 +7,10 @@ $third-page-color: #18172D;
 
 $big-orb-size: 150px;
 $big-orb-wave: 200%;
-$big-orb-font-size: 2rem;
+$big-orb-font-size: 1.65rem;
 
 $small-orb-size: 100px;
+$small-orb-font-size: 1.1rem;
 
 $fonts: 'Raleway',
 'Helvetica',
@@ -597,8 +598,8 @@ a {
     transform: translate3d(0, 0, 0);
     color: black;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: .4em;
+    // font-family: 'Playfair Display', serif;
+    letter-spacing: .25em;
     font-size: $big-orb-font-size;
     text-shadow: 0 1px 0 rgba(black, .1);
     text-indent: .3em;
@@ -649,5 +650,12 @@ a {
 
     .title{
         line-height: $small-orb-size;
+        font-size: $small-orb-font-size;
+        font-weight: 550;
+    }
+
+    .wave{
+        margin-top: -150px;
+        margin-left: -110px;
     }
 }
