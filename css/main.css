@@ -5,8 +5,6 @@
    License: none (public domain)
    This is a Sass partial
    */
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -216,7 +214,7 @@ table {
 /* close commented backslash hack */
 html,
 body {
-  font-family: "nowayregular", "Raleway", "Helvetica", sans-serif;
+  font-family: "nowayregular", "Helvetica", sans-serif;
   font-size: 62.5%; }
 
 h1 {
@@ -726,11 +724,11 @@ a {
   align-items: center; }
 
 .small {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   margin: 4%; }
   .small .title {
-    line-height: 100px;
+    line-height: 110px;
     font-size: 1.1rem;
     font-weight: 550; }
   .small .wave {
@@ -749,5 +747,14 @@ a {
 
 #py .wave {
   margin-top: -300px; }
+
+#node .wave {
+  margin-top: -185px; }
+
+#git .wave {
+  margin-top: -200px; }
+
+#react .wave, #electron .wave {
+  margin-top: -180px; }
 
 /*# sourceMappingURL=main.css.map */

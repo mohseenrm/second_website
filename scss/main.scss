@@ -1,16 +1,15 @@
 @import 'reset';
 @import 'flex';
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+// @import url('https://fonts.googleapis.com/css?family=Raleway');
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import 'fonts';
 $third-page-color: #18172D;
 $big-orb-size: 150px;
 $big-orb-wave: 200%;
 $big-orb-font-size: 1.65rem;
-$small-orb-size: 100px;
+$small-orb-size: 110px;
 $small-orb-font-size: 1.1rem;
 $fonts: 'nowayregular',
-'Raleway',
 'Helvetica',
 sans-serif;
 .clearfix:after {
@@ -645,5 +644,25 @@ a {
 #py{
     .wave{
         margin-top: -300px;
+    }
+}
+// #electron{
+//     .wave{
+//         margin-top: -155px;
+//     }
+// }
+#node{
+    .wave{
+        margin-top: -185px;
+    }
+}
+#git{
+    .wave{
+        margin-top: -200px;
+    }
+}
+#react, #electron{
+    .wave{
+        margin-top: -180px;
     }
 }
