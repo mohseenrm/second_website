@@ -678,3 +678,9 @@ a {
         margin-top: -200px;
     }
 }
+
+#fourth-page-wrapper {
+    @extend #base-wrapper;
+    // flex-direction: column;
+    background: #ff03dd;
+}

@@ -221,7 +221,7 @@ h1 {
   font-size: 5rem;
   color: #ffffff; }
 
-#base-wrapper, #main-wrapper, .overlay, #third-page-wrapper {
+#base-wrapper, #main-wrapper, .overlay, #third-page-wrapper, #fourth-page-wrapper {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -762,5 +762,8 @@ a {
 
 #illustrator .wave {
   margin-top: -200px; }
+
+#fourth-page-wrapper {
+  background: #ff03dd; }
 
 /*# sourceMappingURL=main.css.map */
