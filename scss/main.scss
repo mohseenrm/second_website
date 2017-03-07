@@ -9,7 +9,7 @@ $big-orb-wave: 200%;
 $big-orb-font-size: 1.65rem;
 $small-orb-size: 110px;
 $small-orb-font-size: 1.1rem;
-$fonts: 'League Gothic','nowayregular',
+$fonts: 'nowayregular', 'League Gothic',
 'Helvetica',
 sans-serif;
 .clearfix:after {
@@ -82,7 +82,7 @@ h1 {
 }
 
 .body-text {
-    font-family: 'Raleway-Light', 'Ostrich Sans Rounded', 'Source Sans Pro', serif;
+    font-family: $fonts;
     font-weight: normal;
     font-style: normal;
     letter-spacing: 5px;
@@ -134,7 +134,8 @@ a {
 
 body {
     color: #fff;
-    font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+    // font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+    font-family: $fonts;
     font-size: 18px;
     text-align: center;
 }
@@ -617,7 +618,7 @@ a {
     .title {
         line-height: $small-orb-size;
         font-size: $small-orb-font-size;
-        font-weight: 550;
+        font-weight: 600;
     }
     .wave {
         margin-top: -150px;
@@ -632,7 +633,8 @@ a {
 }
 
 .header {
-    font-size: 4rem;
+    // font-family: 'League Gothic', sans-serif;
+    font-size: 8rem;
     letter-spacing: 0.05em;
 }
 

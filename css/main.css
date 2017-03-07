@@ -214,7 +214,7 @@ table {
 /* close commented backslash hack */
 html,
 body {
-  font-family: "League Gothic", "nowayregular", "Helvetica", sans-serif;
+  font-family: "nowayregular", "League Gothic", "Helvetica", sans-serif;
   font-size: 62.5%; }
 
 h1 {
@@ -254,7 +254,7 @@ h1 {
   color: #000; }
 
 .body-text {
-  font-family: 'Raleway-Light', 'Ostrich Sans Rounded', 'Source Sans Pro', serif;
+  font-family: "nowayregular", "League Gothic", "Helvetica", sans-serif;
   font-weight: normal;
   font-style: normal;
   letter-spacing: 5px;
@@ -301,7 +301,7 @@ a {
 
 body {
   color: #fff;
-  font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+  font-family: "nowayregular", "League Gothic", "Helvetica", sans-serif;
   font-size: 18px;
   text-align: center; }
 
@@ -730,7 +730,7 @@ a {
   .small .title {
     line-height: 110px;
     font-size: 1.1rem;
-    font-weight: 550; }
+    font-weight: 600; }
   .small .wave {
     margin-top: -150px;
     margin-left: -110px; }
@@ -739,7 +739,7 @@ a {
   letter-spacing: 0.2em; }
 
 .header {
-  font-size: 4rem;
+  font-size: 8rem;
   letter-spacing: 0.05em; }
 
 #js .wave {
