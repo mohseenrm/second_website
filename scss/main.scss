@@ -593,6 +593,7 @@ a {
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 #last-row {
@@ -601,6 +602,9 @@ a {
     width: 100%;
     justify-content: center;
     align-items: center;
+    .title{
+        font-size: 1.4rem;
+    }
 }
 
 #final-row {
@@ -619,6 +623,7 @@ a {
         line-height: $small-orb-size;
         font-size: $small-orb-font-size;
         font-weight: 600;
+        
     }
     .wave {
         margin-top: -150px;
@@ -680,8 +685,12 @@ a {
 }
 
 #fourth-page-wrapper {
-    @extend #base-wrapper;
+    // @extend #base-wrapper;
+    @include flexbox;
+    height: 150%;
+    width: 100%;
     // flex-direction: column;
+    flex-wrap: wrap;
     background: #000;
 }
 
