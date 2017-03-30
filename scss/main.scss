@@ -689,6 +689,7 @@ a {
     width: 100%;
     // flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     background: #000;
 }
 
@@ -853,4 +854,8 @@ figure.effect-julia:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+
+section#screen-4{
+    height: 130%;
 }

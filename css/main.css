@@ -774,6 +774,7 @@ a {
   height: 150%;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
   background: #000; }
 
 /* Common style */
@@ -911,5 +912,8 @@ figure.effect-julia:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
+
+section#screen-4 {
+  height: 130%; }
 
 /*# sourceMappingURL=main.css.map */
