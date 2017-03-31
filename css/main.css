@@ -679,7 +679,7 @@ a {
     transform: rotate(0deg); }
   from {
     transform: rotate(360deg); } }
-#top-row {
+.top-row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -756,7 +756,8 @@ a {
 #git .wave {
   margin-top: -220px; }
 
-#react .wave, #electron .wave {
+#react .wave,
+#electron .wave {
   margin-top: -180px; }
 
 #photoshop .wave {
@@ -775,14 +776,17 @@ a {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  background: #000; }
+  background: #000;
+  padding-top: 2%; }
+  #fourth-page-wrapper > .top-row {
+    height: 10%; }
 
 /* Common style */
 #fourth-page-wrapper figure {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
+  margin: 2%;
   min-width: 320px;
   max-width: 480px;
   max-height: 360px;
@@ -906,7 +910,9 @@ figure.effect-julia:hover p:nth-of-type(3) {
 figure.effect-julia:hover img {
   opacity: 0.4;
   -webkit-transform: scale3d(1.1, 1.1, 1);
-  transform: scale3d(1.1, 1.1, 1); }
+  transform: scale3d(1.1, 1.1, 1);
+  -webkit-filter: blur(8px);
+  filter: blur(8px); }
 
 figure.effect-julia:hover p {
   opacity: 1;
