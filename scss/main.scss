@@ -134,7 +134,6 @@ a {
 
 body {
     color: #fff;
-    // font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
     font-family: $fonts;
     font-size: 18px;
     text-align: center;
@@ -165,9 +164,6 @@ body {
 
 .title-container .titles {
     line-height: 50px;
-    // margin: 0;
-    // margin-top: 1.2vh;
-    // margin-bottom: 1.2vh;
 }
 
 .visible {
@@ -563,7 +559,6 @@ a {
     transform: translate3d(0, 0, 0);
     color: black;
     text-transform: uppercase;
-    // font-family: 'Playfair Display', serif;
     letter-spacing: .25em;
     font-size: $big-orb-font-size;
     text-shadow: 0 1px 0 rgba(black, .1);
@@ -630,15 +625,12 @@ a {
         margin-left: -110px;
     }
 }
-
 #final-row {
     .title {
         letter-spacing: 0.2em;
     }
 }
-
 .header {
-    // font-family: 'League Gothic', sans-serif;
     font-size: 8rem;
     letter-spacing: 0.05em;
 }
@@ -653,11 +645,6 @@ a {
         margin-top: -300px;
     }
 }
-// #electron{
-//     .wave{
-//         margin-top: -155px;
-//     }
-// }
 #node{
     .wave{
         margin-top: -205px;
@@ -687,7 +674,6 @@ a {
     @include flexbox;
     height: 150%;
     width: 100%;
-    // flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     background: #000;
