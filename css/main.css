@@ -601,7 +601,7 @@ a {
   max-width: 100%; }
 
 #screen-3 {
-  background: #18172D; }
+  background: url("../images/diagmonds.png"); }
 
 #third-page-wrapper {
   flex-direction: column; }

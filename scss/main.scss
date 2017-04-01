@@ -487,7 +487,8 @@ a {
 }
 
 #screen-3 {
-    background: $third-page-color;
+    // background: $third-page-color;
+    background: url('../images/diagmonds.png');
 }
 
 #third-page-wrapper {
@@ -690,6 +691,13 @@ a {
     &>.top-row {
         height: 10%;
     }
+    // &:before{
+    //     content: '';
+    //     width: 100%;
+    //     height: 100%;
+    //     background: url('../images/escheresque_ste.png');
+    //     opacity: 0.5;
+    // }
 }
 
 //image :hover
