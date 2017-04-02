@@ -682,12 +682,12 @@ a {
 
 #fourth-page-wrapper {
     @include flexbox;
-    height: 175%;
+    height: 100%;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 2%;
-    background-color: #BF263C;
+    
     &>.top-row {
         height: 10%;
     }
@@ -881,7 +881,8 @@ figure.effect-julia:hover p {
 }
 
 section#screen-4 {
-    height: 130%;
+    height: 240%;
+    background-color: #BF263C;
 }
 
 .bottom-row {
@@ -918,4 +919,55 @@ i.fa-github {
     border-right: 3px dashed white;
     border-left: 3px dashed white;
     margin-top: -4%;
+}
+#screen-5{
+    width: 100%;
+    height: 100%;
+    background: url('../images/test2.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    & > .wrapper{
+        @include flexbox;
+        height: 100%;
+
+        flex-direction: column;
+        align-items: center;
+        & > .row-1{
+            @include flexbox;
+
+            align-items: flex-end;
+            height: 25%;
+            width: 45%;
+            font-size: 10rem;
+            color: #ffbf00;
+        }
+        & > .row-2{
+            @include flexbox;
+
+            height: 35%;
+            font-size: 3rem;
+            // color: #ff00ff;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background: url('../images/test4.svg');
+        }
+        & > .row-3{
+            @include flexbox;
+
+            height: 10%;
+            width: 45%;
+            font-size: 10rem;
+            color: #ffbf00;
+            justify-content: flex-end;
+        }
+        & > .row-4{
+            @include flexbox;
+
+            height: 15%;
+            font-size: 5rem;
+            color: #ffbf00;
+        }
+    }
 }
