@@ -1154,11 +1154,19 @@ i.fa-github {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      height: 35%;
-      font-size: 3rem;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background: url("../images/test4.svg"); }
+      height: 50%;
+      align-items: center; }
+      #screen-5 > .wrapper > .row-2 > span {
+        font-size: 4rem;
+        color: #797878;
+        background: -webkit-linear-gradient(transparent, transparent), url("../images/test4.svg") no-repeat;
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-position: center;
+        background-size: 100% 100%;
+        background-attachment: fixed; }
     #screen-5 > .wrapper > .row-3 {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1177,7 +1185,7 @@ i.fa-github {
       display: -ms-flexbox;
       display: flex;
       height: 15%;
-      font-size: 5rem;
+      font-size: 4rem;
       color: #ffbf00; }
 
 /*# sourceMappingURL=main.css.map */
