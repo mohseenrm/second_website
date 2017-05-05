@@ -41,6 +41,10 @@
         return;
     };
 
+    //http://codepen.io/madebyjam/pen/eBpegv
+    //Animation on Scroll: https://github.com/michalsnik/aos
+    //Pie Chart: http://codepen.io/Siddharth11/pen/LVQmjN
+
     window.onscroll = ()=>{
         const win = window;
         //

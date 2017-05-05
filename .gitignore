@@ -2,3 +2,5 @@ node_modules
 .sass-cache
 .vscode
 .sass-cache
+.DS_Store
+*/.DS_Store
