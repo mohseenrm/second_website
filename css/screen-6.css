@@ -17,11 +17,11 @@
       height: 50px;
       background: #e74c3c;
       margin-top: 2vh;
-      -webkit-animation: slide 0.6s ease-out 1 forwards, rotate 2s 1s ease 1 forwards;
-      -moz-animation: slide 0.6s ease-out 1 forwards, rotate 2s 1s ease 1 forwards;
-      -ms-animation: slide 0.6s ease-out 1 forwards, rotate 2s 1s ease 1 forwards;
-      -o-animation: slide 0.6s ease-out 1 forwards, rotate 2s 1s ease 1 forwards;
-      animation: slide 0.6s ease-out 1 forwards, rotate 2s 1s ease 1 forwards; }
+      -webkit-animation: slide 0.6s ease-out 1 forwards, rotate 2s 0.6s cubic-bezier(.11,1.02,.83,.67) forwards;
+      -moz-animation: slide 0.6s ease-out 1 forwards, rotate 2s 0.6s cubic-bezier(.11,1.02,.83,.67) forwards;
+      -ms-animation: slide 0.6s ease-out 1 forwards, rotate 2s 0.6s cubic-bezier(.11,1.02,.83,.67) forwards;
+      -o-animation: slide 0.6s ease-out 1 forwards, rotate 2s 0.6s cubic-bezier(.11,1.02,.83,.67) forwards;
+      animation: slide 0.6s ease-out 1 forwards, rotate 2s 0.6s cubic-bezier(.11,1.02,.83,.67) forwards; }
 
 @-webkit-keyframes slide {
   30%,60% {
@@ -80,8 +80,7 @@
     border-radius: 50%;
     height: 5px;
     width: 5px; }
-  100% {
-    transform: translateY(30vh) rotate(-45deg);
+  30% {
     border: 5px #e74c3c solid;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -89,8 +88,35 @@
     border-right-color: transparent;
     border-bottom-color: transparent;
     background: transparent;
-    height: 150px;
-    width: 150px; } }
+    height: 50px;
+    width: 50px; }
+  50% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: transparent;
+    background: transparent;
+    height: 50px;
+    width: 50px; }
+  75% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; }
+  100% {
+    transform: translateY(30vh) rotate(-180deg);
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: #e74c3c;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; } }
 @-moz-keyframes rotate {
   0% {
     transform: translateY(30vh);
@@ -98,8 +124,7 @@
     border-radius: 50%;
     height: 5px;
     width: 5px; }
-  100% {
-    transform: translateY(30vh) rotate(-45deg);
+  30% {
     border: 5px #e74c3c solid;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -107,8 +132,35 @@
     border-right-color: transparent;
     border-bottom-color: transparent;
     background: transparent;
-    height: 150px;
-    width: 150px; } }
+    height: 50px;
+    width: 50px; }
+  50% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: transparent;
+    background: transparent;
+    height: 50px;
+    width: 50px; }
+  75% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; }
+  100% {
+    transform: translateY(30vh) rotate(-180deg);
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: #e74c3c;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; } }
 @-ms-keyframes rotate {
   0% {
     transform: translateY(30vh);
@@ -116,8 +168,7 @@
     border-radius: 50%;
     height: 5px;
     width: 5px; }
-  100% {
-    transform: translateY(30vh) rotate(-45deg);
+  30% {
     border: 5px #e74c3c solid;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -125,8 +176,35 @@
     border-right-color: transparent;
     border-bottom-color: transparent;
     background: transparent;
-    height: 150px;
-    width: 150px; } }
+    height: 50px;
+    width: 50px; }
+  50% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: transparent;
+    background: transparent;
+    height: 50px;
+    width: 50px; }
+  75% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; }
+  100% {
+    transform: translateY(30vh) rotate(-180deg);
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: #e74c3c;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; } }
 @-o-keyframes rotate {
   0% {
     transform: translateY(30vh);
@@ -134,8 +212,7 @@
     border-radius: 50%;
     height: 5px;
     width: 5px; }
-  100% {
-    transform: translateY(30vh) rotate(-45deg);
+  30% {
     border: 5px #e74c3c solid;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -143,8 +220,35 @@
     border-right-color: transparent;
     border-bottom-color: transparent;
     background: transparent;
-    height: 150px;
-    width: 150px; } }
+    height: 50px;
+    width: 50px; }
+  50% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: transparent;
+    background: transparent;
+    height: 50px;
+    width: 50px; }
+  75% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; }
+  100% {
+    transform: translateY(30vh) rotate(-180deg);
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: #e74c3c;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; } }
 @keyframes rotate {
   0% {
     transform: translateY(30vh);
@@ -152,8 +256,7 @@
     border-radius: 50%;
     height: 5px;
     width: 5px; }
-  100% {
-    transform: translateY(30vh) rotate(-45deg);
+  30% {
     border: 5px #e74c3c solid;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -161,7 +264,58 @@
     border-right-color: transparent;
     border-bottom-color: transparent;
     background: transparent;
-    height: 150px;
-    width: 150px; } }
+    height: 50px;
+    width: 50px; }
+  50% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: transparent;
+    background: transparent;
+    height: 50px;
+    width: 50px; }
+  75% {
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; }
+  100% {
+    transform: translateY(30vh) rotate(-180deg);
+    border: 5px #e74c3c solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-left-color: #e74c3c;
+    border-right-color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: transparent; } }
+.chart-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #0d0d0d; }
+
+path {
+  stroke: #0d0d0d;
+  /* stroke-width: 5px; */
+  cursor: pointer;
+  transition: fill 250ms; }
+  path:hover {
+    /* stroke-width: 10px; */
+    fill: #fff; }
+
+text {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .5px; }
+
+polyline {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 5px; }
 
 /*# sourceMappingURL=screen-6.css.map */
