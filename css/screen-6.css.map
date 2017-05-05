@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,SAAU;EACN,OAAO,EAAE,CAAC;EACV,gBAAgB,EAAE,IAAI",
+"mappings": "AACA,SAAU;EACN,OAAO,EAAE,CAAC;EACV,gBAAgB,EAHX,OAAO",
 "sources": ["../scss/screen-6.scss"],
 "names": [],
 "file": "screen-6.css"
