@@ -1188,4 +1188,8 @@ i.fa-github {
       font-size: 4rem;
       color: #ffbf00; }
 
+#screen-6 {
+  z-index: 1;
+  background-color: #000; }
+
 /*# sourceMappingURL=main.css.map */

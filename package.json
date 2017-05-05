@@ -1,12 +1,14 @@
 {
   "name": "second_website",
-  "version": "1.2.226",
+  "version": "1.2.227",
   "description": "second website",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
-    "build:watch": "babel -w js/ -d dist/ -s"
+    "build:watch": "babel -w js/ -d dist/ -s",
+    "build:webpack": "./node_modules/.bin/webpack",
+    "build:webpack:windows": "node_modules\\.bin\\webpack"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
+    "babel-loader": "^6.4.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-0": "^6.16.0",
     "gulp": "^3.9.1",
@@ -35,6 +38,7 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "webpack": "^2.5.0"
   }
 }
