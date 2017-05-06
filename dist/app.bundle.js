@@ -75,8 +75,8 @@
 
 var dataset = [1, 1, 3, 1, 2, 1, 1, 1];
 
-var colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598', '#abdda4', '#66c2a5'];
-//, '#3288bd', '#5e4fa2'
+var colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598'];
+//, '#3288bd', '#5e4fa2', '#abdda4', '#66c2a5'
 var ajax = {};
 ajax.x = function () {
   if (typeof XMLHttpRequest !== 'undefined') {
@@ -130,7 +130,7 @@ ajax.get('https://rawgit.com/mohseenrm/mohseenrm.github.io/master/stats.json', {
   console.log(response);
   response = JSON.parse(response);
   console.log(response["JavaScript"]);
-  dataset = [response['JavaScript'], response['Python'], response['Sass'], response['TypeScript'], response['CSS'], response['C'], response['Java'], response['JSX']];
+  dataset = [response['JavaScript'] / 10, response['Python'], response['Sass'], response['TypeScript'], response['C'], response['Java']];
   draw();
 });
 
