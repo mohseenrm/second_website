@@ -272,34 +272,6 @@ var draw = function draw() {
 
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
-
-    (function () {
-        // let ajax = new XMLHttpRequest();
-
-        // ajax.onreadystatechange = () => {
-        //     if( ajax.readyState === XMLHttpRequest.DONE ){
-        //         if( ajax.status === 200 ){
-        //             //loaded correctly
-        //             console
-        //             const dataset = [1, 1, 3, 1, 2, 1, 1, 1, 1, 1];
-
-        //             const colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2'];
-        //         } 
-        //         else{
-        //             console.log( 'AJAX Response Error: '. ajax.status );
-        //             const dataset = [1, 1, 1, 1, 2, 1, 1, 1, 1, 1];
-
-        //             // let colors = ['#8dd3c7', '#ffffb3', '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd'];
-        //             // let colors = ['#67001f', '#b2182b', '#d6604d', '#f4a582', '#fddbc7', '#e0e0e0', '#bababa', '#878787', '#4d4d4d', '#1a1a1a'];
-        //             const colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598', '#abdda4', '#66c2a5', '#3288bd', '#5e4fa2'];
-        //         }
-        //     }
-        // }
-        // ajax.open( 'GET', '', true );
-        // ajax.send();
-        // console.log(ajax);
-
-    })();
 })();
 
 (function () {

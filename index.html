@@ -1,15 +1,23 @@
 <html>
-    <head>
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>-->
-        <!--<link rel="stylesheet" type="text/css" href="css/magic.min.css">-->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    </head>
-    <body>
-        <!--
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>-->
+    <!--splash screen files-->
+    <link rel="stylesheet" type="text/css" href="css/splash.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+    <script src="dist/splash.bundle.js"></script>
+    <!--rest of web page styles-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+    <!--
             Progress bar
             http://codepen.io/shankarcabus/pen/GzAfb
             http://codepen.io/abergin/pen/xGXpQY?editors=1100
@@ -30,22 +38,58 @@
             levels:
             http://codepen.io/sidthesloth92/pen/xEadOa
             -->
-        <!--nav code start-->
-        <nav class="nav link-effect-3" id="link-effect-3">
-            <!--<a class="btn" href="#cover"><span>Cover</span></a>
+    <!--nav code start-->
+    <section id="screen-0">
+        <svg id="loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30%" height="40%" viewBox="0 0 340.069 642.09">
+            <style>
+                <![CDATA[ .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #E2BC1B;
+                }
+
+                .st1 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: none;
+                    stroke: #E2BC1B;
+                    stroke-miterlimit: 10;
+                }
+
+                ]]>
+            </style>
+            <defs>
+                <path id="SVGID_1_" d="M4.85 330.882h335.22v318.24H4.85z" />
+            </defs>
+            <clipPath id="SVGID_2_">
+                <use xlink:href="#SVGID_1_" overflow="visible" />
+            </clipPath>
+            <g id="triangles">
+                <path class="st0" d="M166.035 327L0 642.09h332.07L166.035 327zm133.463 308.076l-1.057-1.997 10.79-19.29 11.22 21.286h-20.952zm-4.674-8.847l-7.21-13.652h14.803l-7.593 13.65zm-13.845-26.22l-11.94-22.61h21.016l1.715 3.254-10.79 19.356zm-16.218-30.707l-10.384-19.665.48-.86h20.114l.604 1.147-10.814 19.378zM250.46 542.22l-12.358-23.4h21.084l2.387 4.528-10.54 18.872h-.574zm-17.15-32.473l-11.575-21.922h21.12l1.312 2.49-10.856 19.432zm-17.75-33.614l-8.51-16.117h17.517l-9.008 16.117zm-14.3-27.083l-6.51-12.323h13.43l-6.92 12.323zm-9.97-18.883l-4.69-8.876 1.747-3.308h17.706l6.42 12.185H191.29zm-9.9-18.74l-10.863-20.57h21.23l1.75 3.314-9.114 17.256h-3.002zm-14.655-27.752l-9.117-17.263h18.234l-9.117 17.263zM151.7 369.248l7.947 15.05H143.77l7.93-15.05zm15.035 28.47l7.237 13.708h-14.475l7.238-13.707zm10.7 20.264l1.748 3.31-4.688 8.875h-15.52l-4.69-8.876 1.75-3.308h21.4zm5.457 10.332l.98 1.853h-1.96l.98-1.853zm4.443 8.413l8.834 16.73h-24.897l-.83-1.57 8.005-15.16h8.887zm13.738 26.015l9.78 18.523h-20.19l10.41-18.523zm14.314 27.108l11.834 22.41h-24.367l12.534-22.41zm17.75 33.61l9.907 18.76h-20.4l10.492-18.76zm13.37 25.317l.42.795-11.877 21.27h-1.788l-11.65-22.064h24.895zm4.055 7.68l7.597 14.385h-15.643l8.045-14.385zm14.02 26.55l12.153 23.01H251.84l-.063-.114 12.806-22.895zm16.212 30.697l10.226 19.364-1.117 2.008h-21.065l11.956-21.372zM264.38 629.77l-9.078-17.192h18.67l-9.59 17.193zm-16.22-30.722l-10.403-19.696 1.092-1.95h21.393l-12.084 21.646zm-31.458-59.57l-10.912-20.66h22.453l-11.54 20.66zm-17.754-33.615l-9.525-18.038h19.604l-10.08 18.038zm-14.34-27.156l-9.87-18.69h20.365l-10.496 18.69zm-17.873-33.845l-4.297-8.136h8.594l-4.297 8.136zm-17.66-33.436l-9.655-18.284-.43.222 1.322-2.507h22.63l-10.862 20.57h-3.004zm-13.515-11.552l6.1 11.552h-12.186l6.086-11.552zm9.563 18.108l1.747 3.31-4.688 8.875h-22.585l6.42-12.185h19.106zm5.455 10.332l.98 1.853h-1.96l.98-1.853zm4.443 8.413l8.007 15.16-.83 1.57H137.3l8.835-16.73h8.886zm12.3 23.29l11.222 21.25h-23.614l11.22-21.25h1.173zm17.094 32.368l10.496 19.875h-21.667l11.17-19.875zm14.353 27.18l11.965 22.654h-24.636l12.67-22.655zm17.75 33.61l9.33 17.667h-19.213l9.882-17.668zm12.792 24.225l1.01 1.91-12.45 22.293-13.59-24.203h25.03zm4.632 8.77l10.406 19.705-.08.143h-21.427l11.102-19.847zm14.02 26.552l11.807 22.354h-23.104l-.604-1.076 11.9-21.278zm-15.618 14.658l-8.312-14.803h16.574l-8.262 14.803zm-32.458-57.804l-11.68-20.8h23.298l-11.618 20.8zm-18.312-32.615l-10.188-18.14h20.324l-10.136 18.14zm-14.84-26.424l-12.75-22.71h25.502l-12.75 22.71zm-17.87-31.83l-10.496-18.69h20.365l-9.87 18.69zm-16.654-29.654l-6.92-12.325h13.43l-6.51 12.325zm-14.436-12.325l9.403 16.73h-19.853l8.815-16.73h1.634zm14.623 26.017l10.41 18.52h-20.192l9.782-18.52zm16.66 29.64l11.17 19.876H138.56l10.496-19.875zm17.678 31.452l10.332 18.384h-20.665l10.333-18.384zm14.856 26.435l11.563 20.572h-22.325l-.373-.666 11.136-19.905zm18.32 32.59l13.016 23.157h-22.44l-1.763-3.155 11.188-20zm17.985 32l10.757 19.136-.604 1.08h-21.323l-.07-.12 11.24-20.097zm-14.947 13.462l-8.8-15.745h17.593l-8.792 15.745zm-17.943-32.11l-10.51-18.812h21.02l-10.51 18.812zm-18.27-32.697l-8.235-14.737h16.47l-8.235 14.737zm-14.838-26.554l-10.138-18.14h20.324l-10.187 18.14zm-17.376-31.097l-10.08-18.038h19.606l-9.525 18.038zm-16.61-29.73l-9.007-16.117h17.517l-8.51 16.117zm-15.242-13.84l10.612 18.973H92.672l9.996-18.972zm15.414 27.557l12.535 22.41H106.25l11.832-22.41zm16.62 29.715l12.67 22.654H122.74l11.962-22.655zm17.176 30.706l11.135 19.906-.372.666h-22.324l11.562-20.57zm15.174 27.13l14.24 25.458-1.766 3.16H153.94l-1.764-3.16 14.242-25.458h.634zm19.675 35.177l12.52 22.376-.07.123h-28.474l12.586-22.5h3.437zm-19.992 16.34l-9.13-16.34h18.26l-9.13 16.34zm-18.27-32.705l-10.51-18.812h21.02l-10.51 18.812zm-14.882-26.636l-11.62-20.8h23.298l-11.677 20.8zM116.77 539.48l-11.543-20.66h22.453l-10.91 20.66zm-16.61-29.735l-11.577-20.72.633-1.2h22.52l-11.577 21.92zM84.94 495.94l9.128 16.32h-17.73l8.6-16.32zm15.393 27.52l10.493 18.76h-20.4l9.907-18.76zm16.62 29.714l9.883 17.668h-19.212l9.33-17.668zm16.607 29.687l11.188 20.002-1.764 3.155h-22.44l13.016-23.156zm16.62 29.717l12.587 22.5h-28.473l-.07-.122 12.517-22.378h3.44zm-19.66 15.745l-8.79-15.745h17.59l-8.8 15.745zm-14.92-26.718l-12.45-22.293 1.01-1.91h25.03l-13.59 24.204zm-17.18-30.762l-11.877-21.27.42-.795h24.895l-11.65 22.064H98.42v.002zM82.436 542.22l-11.26-20.16 1.708-3.24h22.483l-12.357 23.4h-.574zm-14.902-13.247l7.41 13.247h-14.39l6.98-13.247zm11.077 19.804l.482.858-10.385 19.667-11.456-20.525h21.36zm4.298 7.68l8.044 14.385h-15.64l7.596-14.385zM94.62 577.4l1.094 1.95-10.4 19.697L73.226 577.4H94.62zm4.908 8.77l11.1 19.848H89.202l-.08-.143L99.53 586.17zm16.046 28.69l11.24 20.095-.068.12h-21.323l-.604-1.08 10.754-19.136zm-14.45 12.52l-8.26-14.803h16.574l-8.313 14.803zM53.53 555.55l8.553 15.292H45.47l8.058-15.292zm15.358 27.458l12.806 22.895-.062.115H56.735l12.15-23.01zm16.62 29.714L97.41 634l-.607 1.076H73.7l11.806-22.354zm-16.42 17.05L59.5 612.577h18.667l-9.08 17.193zM52.49 600.007l-11.51-20.645 1.035-1.963h22.417l-11.94 22.608zm-15.154-13.73l11.042 19.74H26.935l10.4-19.74zm15.34 27.426l11.956 21.372H43.566l-1.117-2.008 10.226-19.364zm-14.03 12.525l-7.592-13.652h14.802l-7.21 13.65zM23.56 612.576L35.03 633.08l-1.055 1.996H11.62l11.858-22.5h.083zm157.51-242.003l7.23 13.724h-14.477l7.246-13.724zm16.138 30.626l5.388 10.226H191.81l5.398-10.226zm18.488 35.527h.234l8.815 16.73H206.29l9.406-16.73zm14.384 26.855l9.318 17.684H220.19l9.89-17.684zm17.73 33.647l7.92 15.03h-16.327l8.406-15.03zm17.405 33.03l6.302 11.96h-12.99l6.688-11.96zm14.006 26.578l7.378 14.004h-15.21l7.833-14.004zm16.195 30.728l9.72 18.45h-20.04l10.32-18.45zM156.65 359.853l9.385-17.81 9.386 17.81h-18.77z"
+                />
+                <g>
+                    <path class="st1" d="M166.034 315.09L332.07 0H0l166.034 315.09zM32.572 7.014L33.63 9.01 22.837 28.3 11.62 7.014h20.952zm4.674 8.847l7.21 13.652H29.653l7.593-13.65zM51.09 42.08l11.94 22.61H42.014L40.3 61.435 51.09 42.08zm16.217 30.707L77.69 92.452l-.478.86H57.096l-.604-1.147 10.815-19.378zM81.61 99.87l12.357 23.4H72.883l-2.387-4.528 10.54-18.872h.574zm17.148 32.473l11.576 21.922h-21.12l-1.312-2.49 10.856-19.432zm17.752 33.614l8.51 16.117h-17.518l9.008-16.117zm14.3 27.083l6.51 12.323h-13.43l6.92-12.323zm9.97 18.883l4.69 8.876-1.747 3.308h-17.706l-6.42-12.185h21.184zm9.898 18.74l10.864 20.57h-21.23l-1.75-3.314 9.114-17.256h3.002zm14.656 27.752l9.116 17.263h-18.233l9.117-17.263zm15.037 14.427l-7.946-15.05h15.878l-7.93 15.05zm-15.036-28.47l-7.237-13.708h14.475l-7.238 13.707zm-10.7-20.265l-1.748-3.31 4.688-8.875h15.52l4.69 8.876-1.75 3.31h-21.4zm-5.457-10.332l-.98-1.853h1.96l-.98 1.853zm-4.443-8.412l-8.834-16.73h24.896l.83 1.57-8.005 15.16h-8.886zm-13.737-26.015l-9.78-18.523h20.19l-10.41 18.523zm-14.315-27.108l-11.834-22.41h24.368l-12.534 22.41zm-17.75-33.61l-9.907-18.76h20.4l-10.492 18.76zm-13.37-25.318l-.42-.795 11.877-21.27h1.787l11.65 22.064H85.56v.002zm-4.055-7.68L73.91 71.25h15.642l-8.045 14.385zm-14.02-26.55l-12.153-23.01H80.23l.062.115-12.806 22.895zM51.274 28.386L41.05 9.02l1.116-2.007H63.23L51.276 28.386zM67.688 12.32l9.08 17.192h-18.67l9.59-17.193zM83.91 43.04l10.403 19.696-1.092 1.95H71.83L83.91 43.043zm31.458 59.568l10.912 20.66h-22.453l11.54-20.66zm17.754 33.617l9.525 18.038h-19.604l10.08-18.038zm14.34 27.156l9.87 18.69h-20.366l10.496-18.69zm17.872 33.845l4.297 8.136h-8.593l4.297-8.136zm17.66 33.436l9.655 18.284.428-.222-1.32 2.507h-22.63l10.863-20.57h3.004zm13.515 11.552l-6.102-11.552h12.187l-6.086 11.552zm-9.563-18.11L185.2 220.8l4.687-8.876h22.585l-6.42 12.185h-19.105zm-5.455-10.33l-.98-1.854h1.96l-.98 1.853zm-4.444-8.413l-8.006-15.16.83-1.57h24.897l-8.836 16.73h-8.886zm-12.3-23.29l-11.22-21.25h23.614l-11.22 21.25h-1.173zm-17.092-32.368L137.16 129.83h21.667l-11.17 19.875zm-14.354-27.18L121.337 99.87h24.636l-12.67 22.654zm-17.75-33.61l-9.33-17.667h19.213l-9.882 17.668zM102.76 64.69l-1.01-1.91 12.448-22.294 13.59 24.203H102.76zm-4.633-8.77L87.72 36.214l.08-.143h21.428l-11.1 19.847zm-14.02-26.552L72.3 7.014h23.103l.604 1.076-11.9 21.278zM99.724 14.71l8.312 14.803H91.463l8.262-14.803zm32.458 57.804l11.68 20.8h-23.298l11.618-20.8zm18.313 32.615l10.188 18.14H140.36l10.136-18.14zm14.838 26.424l12.753 22.71h-25.504l12.75-22.71zm17.873 31.83l10.495 18.69h-20.365l9.87-18.69zm16.652 29.654l6.92 12.325h-13.43l6.51-12.325zm14.434 12.325l-9.402-16.73h19.852l-8.814 16.73h-1.636zm-14.623-26.017l-10.407-18.52h20.19l-9.782 18.52zm-16.657-29.64L171.84 129.83h21.67l-10.497 19.875zm-17.68-31.452l-10.33-18.384h20.664l-10.333 18.384zM150.48 91.82l-11.562-20.572h22.325l.374.666-11.136 19.905zm-18.32-32.59l-13.014-23.157h22.44l1.763 3.155-11.188 20zm-17.984-32L103.417 8.094l.604-1.08h21.324l.07.12-11.24 20.096zm14.948-13.462l8.8 15.745h-17.593l8.792-15.745zm17.942 32.11l10.512 18.812h-21.022l10.51-18.812zm18.27 32.697l8.235 14.737H157.1l8.234-14.737zm14.838 26.554l10.138 18.14h-20.325l10.187-18.14zm17.376 31.097l10.08 18.038h-19.605l9.525-18.038zm16.613 29.73l9.007 16.117H205.65l8.51-16.117zm15.242 13.84l-10.613-18.973h20.608l-9.996 18.972zm-15.414-27.557l-12.535-22.41h24.37l-11.835 22.41zm-16.62-29.716l-12.67-22.654h24.633l-11.963 22.654zM180.19 91.82l-11.133-19.906.372-.666h22.324l-11.563 20.57zm-15.173-27.13l-14.24-25.46 1.766-3.158h25.585l1.765 3.16-14.24 25.457h-.636zm-19.675-35.177L132.824 7.137l.07-.123h28.473l-12.586 22.5h-3.438zm19.992-16.34l9.13 16.34h-18.26l9.13-16.34zm18.27 32.705l10.51 18.812h-21.02l10.51-18.812zm14.882 26.636l11.62 20.8h-23.298l11.678-20.8zM215.3 102.61l11.543 20.66H204.39l10.91-20.66zm16.61 29.735l11.576 20.72-.633 1.2h-22.52l11.578-21.92zm15.22 13.805L238 129.83h17.73l-8.6 16.32zm-15.393-27.52l-10.493-18.76h20.4l-9.907 18.76zm-16.62-29.714l-9.883-17.668h19.21l-9.327 17.668zM198.51 59.23l-11.19-20.002 1.765-3.155h22.44L198.508 59.23zm-16.622-29.717l-12.586-22.5h28.473l.07.122-12.518 22.378h-3.44zm19.66-15.745l8.793 15.745h-17.59l8.798-15.745zm14.922 26.718l12.45 22.293-1.01 1.91h-25.03l13.59-24.204zm17.18 30.762l11.877 21.27-.42.795H220.21l11.65-22.064h1.79v-.002zm15.983 28.622l11.26 20.16-1.708 3.24h-22.482l12.357-23.4h.573zm14.902 13.247l-7.408-13.247h14.39l-6.982 13.247zm-11.077-19.805l-.48-.858 10.385-19.667 11.455 20.525h-21.36zm-4.296-7.68l-8.045-14.384h15.64l-7.595 14.385zM237.45 64.69l-1.094-1.952 10.4-19.696 12.087 21.647H237.45zm-4.908-8.77l-11.1-19.848h21.427l.08.143L232.54 55.92zm-16.046-28.69l-11.24-20.096.068-.12h21.322l.605 1.08-10.754 19.136zm14.45-12.52l8.26 14.803h-16.574l8.313-14.803zm47.596 71.83l-8.554-15.292h16.61l-8.056 15.292zm-15.36-27.458l-12.806-22.895.062-.115h24.895l-12.15 23.01zm-16.62-29.714L234.66 8.09l.607-1.076h23.102l-11.807 22.354zm16.42-17.05l9.588 17.194h-18.668l9.08-17.193zm16.596 29.764l11.512 20.645-1.035 1.963H267.64l11.938-22.608zm15.156 13.73l-11.042-19.74h21.442l-10.4 19.74zm-15.34-27.426L267.436 7.014h21.066l1.116 2.008-10.227 19.364zm14.03-12.525l7.59 13.652h-14.8l7.21-13.65zm15.085 13.653L297.04 9.01l1.055-1.996h22.353l-11.857 22.5h-.084zM151 271.516l-7.232-13.724h14.478L151 271.516zm-16.14-30.626l-5.387-10.226h10.787l-5.4 10.226zm-18.486-35.527h-.234l-8.815-16.73h18.455l-9.406 16.73zm-14.384-26.855l-9.318-17.684h19.207l-9.89 17.684zM84.26 144.86l-7.922-15.03h16.328l-8.406 15.03zm-17.406-33.03l-6.302-11.96h12.99l-6.688 11.96zM52.848 85.25L45.47 71.248h15.21l-7.832 14.004zm-16.193-30.73l-9.72-18.45h20.04l-10.32 18.45zM175.42 282.238l-9.386 17.81-9.386-17.81h18.77z"
+                    />
+                </g>
+            </g>
+        </svg>
+
+    </section>
+    <nav class="nav link-effect-3" id="link-effect-3">
+        <!--<a class="btn" href="#cover"><span>Cover</span></a>
             <a class="btn" href="#section-one"><span>One</span></a>
             <a class="btn" href="#section-two"><span>Two</span></a>
             <a class="btn" href="#section-three"><span>Three</span></a>-->
-            <a class="btn" data-hover="About" href="#cover">About</a>
-            <a class="btn" data-hover="One" href="#section-one">One</a>
-            <a class="btn" data-hover="Two" href="#section-two">Two</a>
-            <a class="btn" data-hover="Three" href="#section-three">Three</a>
-        </nav>
-        <!--http://codepen.io/hafizfattah/pen/tkgyK-->
-        <!--nav code end-->
-        <div id="main-wrapper">
-            <section id="screen-1">
-                <!--<nav id="nav-bar">
+        <a class="btn" data-hover="About" href="#cover">About</a>
+        <a class="btn" data-hover="One" href="#section-one">One</a>
+        <a class="btn" data-hover="Two" href="#section-two">Two</a>
+        <a class="btn" data-hover="Three" href="#section-three">Three</a>
+    </nav>
+    <!--http://codepen.io/hafizfattah/pen/tkgyK-->
+    <!--nav code end-->
+    <div id="main-wrapper">
+        <section id="screen-1">
+            <!--<nav id="nav-bar">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -54,35 +98,27 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>-->
-                <ul id="scene"
-                    data-calibrate-x="true"
-                    data-calibrate-y="true"
-                    data-invert-x="false"
-                    data-invert-y="false"
-                    data-limit-x="false"
-                    data-limit-y="false"
-                    data-scalar-x="7"
-                    data-scalar-y="8"
-                    data-friction-x="0.2"
-                    data-friction-y="0.8"
-                    data-origin-x="0.0"
-                    data-origin-y="1.0">
-                    <li id="main-image" class="layer" data-depth="1.00"><img id="goku" src="images/goku.png"></li>
-                    <li class="layer" data-depth="0.20"><img src="images/vegeta.png"></li>
-                    <li class="layer" data-depth="0.60"><h1>Mohseen</h1></li>
-                    <!--<li class="layer" data-depth="0.40"><img src="graphics/layer3.png"></li>
+            <ul id="scene" data-calibrate-x="true" data-calibrate-y="true" data-invert-x="false" data-invert-y="false" data-limit-x="false"
+                data-limit-y="false" data-scalar-x="7" data-scalar-y="8" data-friction-x="0.2" data-friction-y="0.8" data-origin-x="0.0"
+                data-origin-y="1.0">
+                <li id="main-image" class="layer" data-depth="1.00"><img id="goku" src="images/goku.png"></li>
+                <li class="layer" data-depth="0.20"><img src="images/vegeta.png"></li>
+                <li class="layer" data-depth="0.60">
+                    <h1>Mohseen</h1>
+                </li>
+                <!--<li class="layer" data-depth="0.40"><img src="graphics/layer3.png"></li>
                     <li class="layer" data-depth="0.60"><img src="graphics/layer4.png"></li>
                     <li class="layer" data-depth="0.80"><img src="graphics/layer5.png"></li>
                     <li class="layer" data-depth="1.00"><img src="graphics/layer6.png"></li>-->
-                </ul>
-            </section>
-        </div>
-        <section id="screen-2">
-            <div id="second-page-wrapper">
-                <!--<span class="large-header" id="first-header">About Me</span>-->
-                <div id="first-header"></div>
-                <div class="inception-wrapper">
-                    <span class="body-text">
+            </ul>
+        </section>
+    </div>
+    <section id="screen-2">
+        <div id="second-page-wrapper">
+            <!--<span class="large-header" id="first-header">About Me</span>-->
+            <div id="first-header"></div>
+            <div class="inception-wrapper">
+                <span class="body-text">
                         <div class="visible">
                             <div class="psuedo-wrapper">I am a </div>
                             <div class="psuedo-wrapper"><ul class="title-container">
@@ -96,217 +132,219 @@
                         based in Tempe, Arizona.
                         My interest lies in developing beautiful applications, be it Web or Desktop(Electron)
                     </span>
+            </div>
+        </div>
+    </section>
+    <section id="screen-3">
+        <div id="third-page-wrapper">
+
+            <div class="top-row">
+                <span class="header">Skills</span>
+            </div>
+            <div id="middle-row">
+                <div class='box' id='js'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>JavaScript</div>
+                </div>
+                <div class='box' id='py'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>Python</div>
+                </div>
+                <div class='box'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>Android</div>
                 </div>
             </div>
-        </section>
-        <section id="screen-3">
-            <div id="third-page-wrapper">
-
-                <div class="top-row">
-                    <span class="header">Skills</span>
+            <div id="last-row">
+                <div class='box small' id='electron'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>Electron</div>
                 </div>
-                <div id="middle-row">
-                    <div class='box' id='js'>
-                        <div class='wave -one'></div>
-                        <div class='wave -two'></div>
-                        <div class='wave -three'></div>
-                        <div class='title'>JavaScript</div>
-                    </div>
-                    <div class='box' id='py'>
-                        <div class='wave -one'></div>
-                        <div class='wave -two'></div>
-                        <div class='wave -three'></div>
-                        <div class='title'>Python</div>
-                    </div>
-                    <div class='box'>
-                        <div class='wave -one'></div>
-                        <div class='wave -two'></div>
-                        <div class='wave -three'></div>
-                        <div class='title'>Android</div>
-                    </div>
+                <div class='box small' id='node'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>Node</div>
                 </div>
-                <div id="last-row">
-                    <div class='box small' id='electron'>
-                        <div class='wave -one'></div>
-                        <div class='wave -two'></div>
-                        <div class='wave -three'></div>
-                        <div class='title'>Electron</div>
-                    </div>
-                    <div class='box small' id='node'>
-                        <div class='wave -one'></div>
-                        <div class='wave -two'></div>
-                        <div class='wave -three'></div>
-                        <div class='title'>Node</div>
-                    </div>
-                    <div class='box small' id='git'>
-                        <div class='wave -one'></div>
-                        <div class='wave -two'></div>
-                        <div class='wave -three'></div>
-                        <div class='title'>Git</div>
-                    </div>
-                    <div class='box small' id='react'>
-                        <div class='wave -one'></div>
-                        <div class='wave -two'></div>
-                        <div class='wave -three'></div>
-                        <div class='title'>React</div>
-                    </div>
+                <div class='box small' id='git'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>Git</div>
                 </div>
-                <div id="final-row">
-
-                    <div class='box small' id='photoshop'>
-                        <div class='wave -one'></div>
-                        <div class='wave -two'></div>
-                        <div class='wave -three'></div>
-                        <div class='title'>Photoshop</div>
-                    </div>
-                    <div class='box small' id='illustrator'>
-                        <div class='wave -one'></div>
-                        <div class='wave -two'></div>
-                        <div class='wave -three'></div>
-                        <div class='title'>Illustrator</div>
-                    </div>
+                <div class='box small' id='react'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>React</div>
                 </div>
             </div>
-        </section>
-        <section id="screen-4">
-            <div id="fourth-page-wrapper">
-                <div class="top-row">
-                    <span class="header">Projects</span>
+            <div id="final-row">
+
+                <div class='box small' id='photoshop'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>Photoshop</div>
                 </div>
-                <div class="frame">
-                    <div class="top-frame"></div>
-                    <figure class="effect-julia">
-                        <img src="images/game_hiring.jpg" alt="img21"/>
-                        <figcaption>
-                            <h2>Game <span>Hiring!</span></h2>
-                            <div>
-                                <p>Game Hiring predicts how well a</p>
-                                <p>candidate can thrive in new roles</p>
-                                <p>using curated algorithms and graphs</p>
-                            </div>
-                            <a href="#">View more</a>
-                        </figcaption>			
-                    </figure>
-                    <div class="bottom-frame"></div>
+                <div class='box small' id='illustrator'>
+                    <div class='wave -one'></div>
+                    <div class='wave -two'></div>
+                    <div class='wave -three'></div>
+                    <div class='title'>Illustrator</div>
                 </div>
-                <div class="frame">
-                    <div class="top-frame"></div>
-                    <figure class="effect-julia">
-                        <img src="images/elixir.jpg" alt="img21"/>
-                        <figcaption>
-                            <h2>Elixir</h2>
-                            <div>
-                                <p>Voice Enabled Healthcare Assitant</p>
-                                <p>Elixir will help diagnose you</p>
-                                <p>And find specialists in your locality!</p>
-                            </div>
-                            <a href="#">View more</a>
-                        </figcaption>			
-                    </figure>
-                    <div class="bottom-frame"></div>
-                </div>
-                <div class="frame">
-                    <div class="top-frame"></div>
-                    <figure class="effect-julia">
-                        <img src="images/levelup.jpg" alt="img21"/>
-                        <figcaption>
-                            <h2>Level <span>Up!</span></h2>
-                            <div>
-                                <p>Level Up turns everyday tasks</p>
-                                <p>into a RPG. Gain new skills, attributes</p>
-                                <p>And Level Up in Life!</p>
-                            </div>
-                            <a href="#">View more</a>
-                        </figcaption>			
-                    </figure>
-                    <div class="bottom-frame"></div>
-                </div>
-                <div class="frame">
-                    <div class="top-frame"></div>
-                    <figure class="effect-julia">
-                        <img src="images/litit.jpg" alt="img21"/>
-                        <figcaption>
-                            <h2>Lit<span> It!</span></h2>
-                            <div>
-                                <p>Add character to your code!</p>
-                                <p>Lit it! is a VSCODE extension to build</p>
-                                <p>JS Docs on the fly</p>
-                            </div>
-                            <a href="#">View more</a>
-                        </figcaption>			
-                    </figure>
-                    <div class="bottom-frame"></div>
-                </div>
-                <div class="frame">
-                    <div class="top-frame"></div>
-                    <figure class="effect-julia">
-                        <img src="images/monaco.jpg" alt="img21"/>
-                        <figcaption>
-                            <h2>Monaco</h2>
-                            <div>
-                                <p>Distraction Free Writer to help get</p>
-                                <p>your ideas out on canvas. Hints</p>
-                                <p>And YouTube player included :)</p>
-                            </div>
-                            <a href="#">View more</a>
-                        </figcaption>			
-                    </figure>
-                    <div class="bottom-frame"></div>
-                </div>
-                <div class="frame">
-                    <div class="top-frame"></div>
-                    <figure class="effect-julia">
-                        <img src="images/website.jpg" alt="img21"/>
-                        <figcaption>
-                            <h2>Terminal <span>Website</span></h2>
-                            <div>
-                                <p>Previous version of my website</p>
-                                <p>Terminal love meets web. Play around</p>
-                                <p>you might some interesting stuff :)</p>
-                            </div>
-                            <a href="#">View more</a>
-                        </figcaption>			
-                    </figure>
-                    <div class="bottom-frame"></div>
-                </div>
-                
-                <div class="bottom-row">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-                <!--http://airbnb.io/infinity/#reference-->
-                <!--quote design
+            </div>
+        </div>
+    </section>
+    <section id="screen-4">
+        <div id="fourth-page-wrapper">
+            <div class="top-row">
+                <span class="header">Projects</span>
+            </div>
+            <div class="frame">
+                <div class="top-frame"></div>
+                <figure class="effect-julia">
+                    <img src="images/game_hiring.jpg" alt="img21" />
+                    <figcaption>
+                        <h2>Game <span>Hiring!</span></h2>
+                        <div>
+                            <p>Game Hiring predicts how well a</p>
+                            <p>candidate can thrive in new roles</p>
+                            <p>using curated algorithms and graphs</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <div class="bottom-frame"></div>
+            </div>
+            <div class="frame">
+                <div class="top-frame"></div>
+                <figure class="effect-julia">
+                    <img src="images/elixir.jpg" alt="img21" />
+                    <figcaption>
+                        <h2>Elixir</h2>
+                        <div>
+                            <p>Voice Enabled Healthcare Assitant</p>
+                            <p>Elixir will help diagnose you</p>
+                            <p>And find specialists in your locality!</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <div class="bottom-frame"></div>
+            </div>
+            <div class="frame">
+                <div class="top-frame"></div>
+                <figure class="effect-julia">
+                    <img src="images/levelup.jpg" alt="img21" />
+                    <figcaption>
+                        <h2>Level <span>Up!</span></h2>
+                        <div>
+                            <p>Level Up turns everyday tasks</p>
+                            <p>into a RPG. Gain new skills, attributes</p>
+                            <p>And Level Up in Life!</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <div class="bottom-frame"></div>
+            </div>
+            <div class="frame">
+                <div class="top-frame"></div>
+                <figure class="effect-julia">
+                    <img src="images/litit.jpg" alt="img21" />
+                    <figcaption>
+                        <h2>Lit<span> It!</span></h2>
+                        <div>
+                            <p>Add character to your code!</p>
+                            <p>Lit it! is a VSCODE extension to build</p>
+                            <p>JS Docs on the fly</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <div class="bottom-frame"></div>
+            </div>
+            <div class="frame">
+                <div class="top-frame"></div>
+                <figure class="effect-julia">
+                    <img src="images/monaco.jpg" alt="img21" />
+                    <figcaption>
+                        <h2>Monaco</h2>
+                        <div>
+                            <p>Distraction Free Writer to help get</p>
+                            <p>your ideas out on canvas. Hints</p>
+                            <p>And YouTube player included :)</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <div class="bottom-frame"></div>
+            </div>
+            <div class="frame">
+                <div class="top-frame"></div>
+                <figure class="effect-julia">
+                    <img src="images/website.jpg" alt="img21" />
+                    <figcaption>
+                        <h2>Terminal <span>Website</span></h2>
+                        <div>
+                            <p>Previous version of my website</p>
+                            <p>Terminal love meets web. Play around</p>
+                            <p>you might some interesting stuff :)</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <div class="bottom-frame"></div>
+            </div>
+
+            <div class="bottom-row">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+            <!--http://airbnb.io/infinity/#reference-->
+            <!--quote design
                 http://codepen.io/tholman/pen/KEzbq-->
+        </div>
+    </section>
+    <section id="screen-5">
+        <div class="wrapper">
+            <div class="row-1">
+                "
             </div>
-        </section>
-        <section id="screen-5">
-            <div class="wrapper">
-                <div class="row-1">
-                    "
-                </div>
-                <div class="row-2">
-                    <span>
+            <div class="row-2">
+                <span>
                         Lorem Ipsum Lorem Ipsum Lorem Ipsum
                     </span>
-                </div>
-                <div class="row-3">
-                    "
-                </div>
-                <div class="row-4">
-                    Sujith Menon
-                </div>
             </div>
-            <!--<div id="special-text">
+            <div class="row-3">
+                "
+            </div>
+            <div class="row-4">
+                Sujith Menon
+            </div>
+        </div>
+        <!--<div id="special-text">
                 
             </div>-->
-        </section>
-        <section id="screen-6">
-            <div class="wrapper">
-                <!--<div class="dot"></div>-->
-                <div class="chart-wrapper"></div>
-            </div>
-        </section>
-        <script src="dist/parallax.min.js"></script>
-        <script src="js/d3.min.js"></script>
-        <script src="dist/app.bundle.js"></script>
-    </body>
+    </section>
+    <section id="screen-6">
+        <div class="wrapper">
+            <!--<div class="dot"></div>-->
+            <div class="chart-wrapper"></div>
+        </div>
+    </section>
+    
+    <script src="dist/parallax.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="dist/app.bundle.js"></script>
+</body>
+
 </html>

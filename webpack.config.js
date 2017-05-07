@@ -2,7 +2,8 @@ const path = require('path');
 
 module.exports = {
 	entry: {
-		app: path.join(__dirname, 'js', 'main.js')	
+		app: path.join( __dirname, 'js', 'main.js' ),
+		splash: path.join( __dirname, 'js', 'splash.js' )	
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
