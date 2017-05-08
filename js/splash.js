@@ -37,5 +37,5 @@
 			},
 			ease:Linear.easeNone
 		}, 'start' )
-	// console.log(tl);
+
 })();
