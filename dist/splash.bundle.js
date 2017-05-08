@@ -74,13 +74,15 @@
 "use strict";
 
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 (function () {
 	console.log('splash hello!');
 	var tl = new TimelineMax();
 	// var loader = document.querySelector('.st0');
 	var loader = document.getElementById('triangles'),
-	    firstTriangle = document.querySelector('.st0'),
-	    secondTriangle = document.querySelector('.st1');
+	    firstTriangle = document.querySelector('.st1'),
+	    secondTriangle = document.querySelector('.st0');
 
 	var firstTriangleLength = firstTriangle.getTotalLength(),
 	    secondTriangleLength = secondTriangle.getTotalLength();
@@ -88,15 +90,25 @@
 	console.log(firstTriangleLength);
 	console.log(secondTriangleLength);
 	// tl.add( TweenLite.from( loader, 4, {rotation: 180} ) );
+	// tl.play();
+	function sample() {
+		console.log(_typeof(firstTriangle.style.strokeDashoffset));
+		if (firstTriangle.style.strokeDashoffset < 7602) firstTriangle.style.strokeDashoffset = parseInt(firstTriangle.style.strokeDashoffset) + 250;else firstTriangle.style.strokeDashoffset -= 50;
+	}
 	tl.add('start', 0.5).to(loader, 5, { rotation: 180, transformOrigin: "50% 50%" }, 'start').to(firstTriangle, 5, {
-		fill: "transparent",
-		stroke: "#E2BC1B"
+		attr: {
+			'stroke-dashoffset': 7602,
+			'stroke-dasharray': 7602
+		},
+		onUpdate: sample,
+		ease: Linear.easeNone
 	}, 'start').to(secondTriangle, 5, {
-		fill: "#E2BC1B",
-		stroke: "transparent"
+		attr: {
+			'stroke-dashoffset': 0
+		},
+		ease: Linear.easeNone
 	}, 'start');
 	// console.log(tl);
-	// tl.play();
 })();
 
 /***/ })
