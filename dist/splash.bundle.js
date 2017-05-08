@@ -92,8 +92,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 	// tl.add( TweenLite.from( loader, 4, {rotation: 180} ) );
 	// tl.play();
 	function sample() {
-		console.log(_typeof(firstTriangle.style.strokeDashoffset));
-		if (firstTriangle.style.strokeDashoffset < 7602) firstTriangle.style.strokeDashoffset = parseInt(firstTriangle.style.strokeDashoffset) + 250;else firstTriangle.style.strokeDashoffset -= 50;
+		console.log('plain offset: ', firstTriangle.style);
+
+		var offset = parseInt(firstTriangle.style.strokeDashoffset);
+
+		console.log('Type: ', _typeof(firstTriangle.style.strokeDashoffset));
+		console.log('Offset: ', offset);
+		if (offset < 7602) {
+			offset += 250;
+			firstTriangle.style.strokeDashoffset = offset.toString();
+		} else {
+			offset -= 50;
+			firstTriangle.style.strokeDashoffset = offset.toString();
+		}
 	}
 	tl.add('start', 0.5).to(loader, 5, { rotation: 180, transformOrigin: "50% 50%" }, 'start').to(firstTriangle, 5, {
 		attr: {
@@ -108,7 +119,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		},
 		ease: Linear.easeNone
 	}, 'start');
-	// console.log(tl);
 })();
 
 /***/ })
