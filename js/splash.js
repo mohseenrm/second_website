@@ -1,50 +1,97 @@
-(function () {
-	console.log('splash hello!');
-	var tl = new TimelineMax();
-	// var loader = document.querySelector('.st0');
-	const loader = document.getElementById( 'triangles' ),
-			firstTriangle = document.querySelector( '.st1' ),
-			secondTriangle = document.querySelector( '.st0' );
-
-	const firstTriangleLength = firstTriangle.getTotalLength(),
-			secondTriangleLength = secondTriangle.getTotalLength();
-
-	console.log( firstTriangleLength );
-	console.log( secondTriangleLength );
-	// tl.add( TweenLite.from( loader, 4, {rotation: 180} ) );
-	// tl.play();
-	function sample(){
-		console.log( 'plain offset: ', firstTriangle.style.storkeDashoffset );
-
-		let offset = parseInt( firstTriangle.style.strokeDashoffset );
-
-		console.log( 'Type: ', typeof( firstTriangle.style.strokeDashoffset ) );
-		console.log( 'Offset: ', offset );
-		if( offset < 7602 ){
-			offset += 250;
-			firstTriangle.style.strokeDashoffset = offset.toString();
-		}
-		else{
-			offset -= 50;
-			firstTriangle.style.strokeDashoffset = offset.toString();
-		}
-	}
+(()=>{
+	const dot1 = document.getElementById('top'),
+			dot2 = document.getElementById('bottom-left'),
+			dot3 = document.getElementById('bottom-right'),
+			svg = document.getElementById('master-artboard'),
+			center = document.getElementById('center');
+	
+	let box = svg.getBBox();
+	console.log('Box:', box);
+	
+	let tl = new TimelineMax({repeat: -1, repeatDelay: 0.1});
+	
 	tl
-		.add( 'start', 0.5 )
-		.to( loader, 5, {rotation: 180, transformOrigin: "50% 50%"}, 'start' )
-		.to( firstTriangle, 5, {
-			// attr: {
-			// 	'stroke-dashoffset': 7602,
-			// 	'stroke-dasharray': 7602
-			// },
-			onUpdate: sample,
-			ease:Linear.easeNone
-		}, 'start' )
-		.to( secondTriangle, 5, {
-			attr: {
-				'stroke-dashoffset': 0
-			},
-			ease:Linear.easeNone
-		}, 'start' )
+		.set([dot1, dot2, dot3], {autoAlpha: 0.3})
+		.add('start')
+		.to(dot1, 1.5, {
+		transformOrigin: "center center",
+		y: -125,
+		autoAlpha: 1,
+		scale: 0.65,
+		ease: Power2.easeOut
+	}, 'start')
+		.to(dot2, 1.5, {
+		transformOrigin: "center center",
+		x: -125,
+		y: 75,
+		autoAlpha: 1,
+		scale: 0.65,
+		ease: Power2.easeOut
+		// repeat: -1
+	}, 'start')
+		.to(dot3, 1.5, {
+		transformOrigin: "center center",
+		x: 125,
+		y: 75,
+		autoAlpha: 1,
+		scale: 0.65,
+		ease: Power2.easeOut
+		// repeat: -1
+	}, 'start')
+		.to(center, 1.5, {
+		scale: 0.75,
+		autoAlpha: 0.25,
+		transformOrigin: "center center"
+	}, 'start')
+	.add('rotate')
+	.to(dot1, 1, {
+		rotation: -720,
+		// svgOrigin: "700 500"
+		svgOrigin: "700 507",
+		ease: Power2.easeOut
+		// repeat: -1
+	}, 'rotate')
+	.to(dot2, 1, {
+		rotation: -720,
+		// svgOrigin: "700 500"
+		svgOrigin: "700 507",
+		ease: Power2.easeOut
+		// repeat: -1
+	}, 'rotate')
+	.to(dot3, 1, {
+		rotation: -720,
+		// svgOrigin: "700 500"
+		svgOrigin: "700 507",
+		ease: Power2.easeOut
 
+	}, 'rotate')
+	.to(center, 1, {
+		rotation: 1440,
+		svgOrigin: "700 507",
+		ease: Power2.easeOut
+	}, 'rotate')
+	.add('end')
+	.to(center, 1, {
+		autoAlpha: 1,
+		scale: 1.2
+	}, 'end')
+	.to(dot1, 1, {
+			transformOrigin: "center center",
+		scale: 1.2,
+		y: -3
+	}, 'end')
+	.to(dot2, 1, {
+		scale: 1.2,
+		transformOrigin: "center center",
+		x: -11,
+		y: 15,
+		delay: 0.2
+	}, 'end')
+	.to(dot3, 1, {
+		scale: 1.2,
+		transformOrigin: "center center",
+		x: 12,
+		y: 14,
+		delay: 0.4
+	}, 'end');
 })();
