@@ -1,0 +1,11 @@
+#section-4b {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #aeaeae; }
+
+/*# sourceMappingURL=projects.css.map */

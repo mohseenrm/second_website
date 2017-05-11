@@ -1,0 +1,7 @@
+@import 'flex';
+#section-4b{
+	@include flexbox;
+	height: 100%;
+	width: 100%;
+	background: #aeaeae;
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,WAAW;EC6DV,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,SAAS;EAClB,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,IAAI;ED/Db,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,OAAO",
+"sources": ["../scss/projects.scss","../scss/_flex.scss"],
+"names": [],
+"file": "projects.css"
+}
