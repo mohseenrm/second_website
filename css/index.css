@@ -1940,6 +1940,9 @@ THE SOFTWARE.
         align-items: center; }
       .wrapper--row--frame:hover .wrapper--row--frame--inner-wrapper--text {
         padding-top: 4%; }
+      .wrapper--row--frame:hover .wrapper--row--frame--inner-wrapper--psuedo {
+        flex-grow: 10;
+        flex-shrink: 10; }
       .wrapper--row--frame--inner-wrapper {
         display: flex;
         width: 100%;
@@ -1966,6 +1969,7 @@ THE SOFTWARE.
           .wrapper--row--frame--inner-wrapper--text-description {
             display: none;
             font-size: 2rem;
+            text-align: justify;
             color: black;
             transition: all 0.8s ease-out; }
         .wrapper--row--frame--inner-wrapper--button {

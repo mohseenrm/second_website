@@ -87,6 +87,11 @@ THE SOFTWARE.
 			&:hover &--inner-wrapper--text{
 				padding-top: 4%;
 			}
+
+			&:hover &--inner-wrapper--psuedo{
+				flex-grow: 10;
+				flex-shrink: 10;
+			}
 			//description wrapper
 			&--inner-wrapper{
 				display: flex;
@@ -118,6 +123,7 @@ THE SOFTWARE.
 					&-description{
 						display: none;
 						font-size: 2rem;
+						text-align: justify;
 						color: black;
 						transition: all 0.8s ease-out;
 					}
