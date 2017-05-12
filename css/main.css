@@ -606,9 +606,6 @@ body {
 .overlay {
   position: absolute; }
 
-section {
-  height: 100vh; }
-
 /* Screens Settings */
 #screen-1 {
   width: 100%;
