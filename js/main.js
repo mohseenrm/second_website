@@ -1,9 +1,4 @@
 'use strict';
-// let ajax = require( './ajax' );
-// ajax = ajax.__proto__;
-
-
-
 (()=>{
     const me = "Mohseen";
     console.log(`hello ${me}!`);
