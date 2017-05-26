@@ -1911,19 +1911,24 @@ THE SOFTWARE.
 .wrapper {
   display: flex;
   width: 100%;
+  height: 150%;
   background: #4B1248;
-  background: linear-gradient(to top, #4B1248, #000); }
+  background: linear-gradient(to top, #4B1248, #000);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; }
   .wrapper--row {
     display: flex;
     width: 100%;
-    height: 80%;
+    height: 30%;
     align-items: center;
     justify-content: space-around; }
     .wrapper--row--frame {
-      height: 60%;
-      width: 37.082%;
+      height: 25%;
+      width: 40%;
       overflow: hidden;
       background: url("https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-135026637-1500x1000.jpg"); }
+      Ω
       .wrapper--row--frame:hover {
         transition: all 0.5s ease-in; }
       .wrapper--row--frame:hover .wrapper--row--frame--inner-wrapper {
@@ -1933,16 +1938,17 @@ THE SOFTWARE.
         background: #f7f7f7; }
       .wrapper--row--frame:hover .wrapper--row--frame--inner-wrapper--text-description {
         display: flex;
-        padding: 5%; }
+        padding: 5%;
+        font-size: 2.2rem;
+        color: #000; }
       .wrapper--row--frame:hover .wrapper--row--frame--inner-wrapper--button {
         display: flex;
         justify-content: center;
         align-items: center; }
       .wrapper--row--frame:hover .wrapper--row--frame--inner-wrapper--text {
-        padding-top: 4%; }
-      .wrapper--row--frame:hover .wrapper--row--frame--inner-wrapper--psuedo {
-        flex-grow: 10;
-        flex-shrink: 10; }
+        padding-top: 4%;
+        font-size: 3.5rem;
+        transition: font-size 0.8s ease-out; }
       .wrapper--row--frame--inner-wrapper {
         display: flex;
         width: 100%;
@@ -1950,27 +1956,26 @@ THE SOFTWARE.
         font-size: 3rem;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         position: relative;
         top: 75%;
-        left: 0%;
         background: #f7f7f7;
         background: rgba(247, 247, 247, 0.9);
         transition: all 1s ease-out; }
         .wrapper--row--frame--inner-wrapper--text {
-          text-align: left;
-          padding-left: 5%;
+          width: 85%;
           background: black;
           background: url("https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-135026637-1500x1000.jpg");
           background-attachment: fixed;
           -webkit-text-fill-color: rgba(216, 182, 0, 0.45);
           -webkit-background-clip: text;
           font-weight: bold;
-          font-size: 4.23rem; }
+          transition: font-size 0.5s ease-out; }
           .wrapper--row--frame--inner-wrapper--text-description {
+            font-size: 8rem;
+            color: #000;
             display: none;
-            font-size: 2rem;
-            text-align: justify;
-            color: black;
+            font-size: 1rem;
             transition: all 0.8s ease-out; }
         .wrapper--row--frame--inner-wrapper--button {
           display: none;
@@ -1978,7 +1983,7 @@ THE SOFTWARE.
           height: 15%;
           background: #FFD700;
           color: #000;
-          font-size: 2.1rem;
+          font-size: 2rem;
           border-top: 4px solid black;
           transition: all 0.5s ease-in-out; }
           .wrapper--row--frame--inner-wrapper--button:hover {
