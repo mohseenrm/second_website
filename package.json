@@ -8,7 +8,10 @@
     "build": "gulp build",
     "build:watch": "babel -w js/ -d dist/ -s",
     "build:webpack": "./node_modules/.bin/webpack",
-    "build:webpack:windows": "node_modules\\.bin\\webpack"
+    "build:webpack:production": "./node_modules/.bin/webpack --production",
+    "build:webpack:windows": "node_modules\\.bin\\webpack",
+    "build:webpack:windows:production": "node_modules\\.bin\\webpack --production",
+    "devServer": "./node_modules/.bin/webpack-dev-server --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -39,6 +42,7 @@
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.8",
-    "webpack": "^2.5.0"
+    "webpack": "^2.5.0",
+    "webpack-dev-server": "^2.4.5"
   }
 }

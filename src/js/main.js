@@ -9,7 +9,6 @@
 })();
 
 (()=>{
-
     /**
     * @function addClass
     * @param  {element} element      Element whose class name needs to be altered
@@ -77,9 +76,3 @@
 
     require( './pie' );
 })();
-
-// (()=>{
-//     setTimeout(()=>{
-//         document.getElementById("dev").className += " magictime spaceInUp";
-//     }, 2000);
-// })();
