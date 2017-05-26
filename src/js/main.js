@@ -1,3 +1,4 @@
+/* global Parallax */
 'use strict';
 (()=>{
     const me = 'Mohseen';

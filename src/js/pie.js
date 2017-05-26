@@ -1,3 +1,4 @@
+/* global d3, ActiveXObject */
 var dataset = [1, 1, 3, 1, 2, 1, 1, 1];
 
 let colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598' ];
