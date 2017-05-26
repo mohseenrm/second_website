@@ -139,6 +139,7 @@ let draw = function() {
             'd': arc,
             'stroke-width': '25px'
         })
+        //eslint-disable-next-line
         .attr('transform', (d, i) => 'rotate(-180, 0, 0)')
         .style('opacity', 0)
         .transition()

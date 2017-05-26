@@ -5,6 +5,7 @@
     console.log(`hello ${me}!`);
 
     const scene = document.getElementById('scene');
+    //eslint-disable-next-line
     const parallax = new Parallax(scene);
 
 })();
