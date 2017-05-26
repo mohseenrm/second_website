@@ -261,13 +261,9 @@ var draw = function draw() {
 
 "use strict";
 
-// let ajax = require( './ajax' );
-// ajax = ajax.__proto__;
-
 
 (function () {
     var me = "Mohseen";
-
     console.log('hello ' + me + '!');
 
     var scene = document.getElementById('scene');

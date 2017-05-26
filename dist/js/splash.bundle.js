@@ -83,7 +83,7 @@
 
 	var box = svg.getBBox();
 	console.log('Box:', box);
-
+	//test
 	var tl = new TimelineMax({ repeat: -1, repeatDelay: 0.1 });
 
 	tl.set([dot1, dot2, dot3], { autoAlpha: 0.3 }).add('start').to(dot1, 1.5, {
