@@ -12,7 +12,7 @@
     "build:webpack:windows": "node_modules\\.bin\\webpack",
     "build:webpack:windows:production": "node_modules\\.bin\\webpack --production",
     "devServer": "./node_modules/.bin/webpack-dev-server --progress --colors",
-    "lint": "node_modules/.bin/eslint src/js/*.js --cache --cache-location ./.eslintcache"
+    "test": "node_modules/.bin/eslint src/js/*.js --cache --cache-location ./.eslintcache"
   },
   "repository": {
     "type": "git",
