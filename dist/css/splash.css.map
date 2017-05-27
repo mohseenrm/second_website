@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAEA,SAAU;EC4DT,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,SAAS;EAClB,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,IAAI;ED9Db,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,EAAE;EACX,UAAU,EAAE,OAAO;EACnB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM",
-"sources": ["../scss/splash.scss","../scss/_flex.scss"],
+"sources": ["../../src/scss/splash.scss","../../src/scss/_flex.scss"],
 "names": [],
 "file": "splash.css"
 }

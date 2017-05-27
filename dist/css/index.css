@@ -739,7 +739,7 @@ h1 {
   font-size: 5rem;
   color: #ffffff; }
 
-#base-wrapper, #main-wrapper, .overlay, #third-page-wrapper {
+#base-wrapper, .overlay, #third-page-wrapper {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -747,20 +747,6 @@ h1 {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex; }
-
-#main-wrapper {
-  background-color: #000000;
-  z-index: 3; }
-
-#second-page-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  flex-direction: row;
-  align-items: center; }
 
 .large-header {
   font-family: 'Ostrich Sans';
@@ -771,30 +757,6 @@ h1 {
   font-size: 6rem;
   color: #000; }
 
-.body-text {
-  font-family: "nowayregular", "League Gothic", "Helvetica", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  letter-spacing: 5px;
-  font-size: 4rem;
-  color: #000;
-  line-height: 7.5vh;
-  text-align: left; }
-
-#scene {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  background-clip: border-box;
-  background-origin: border-box;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
 #main-image {
   height: 100%;
   width: 50%;
@@ -802,10 +764,6 @@ h1 {
   background-origin: border-box;
   background-size: cover;
   background-repeat: no-repeat; }
-
-#goku {
-  max-width: 100%;
-  max-height: 100%; }
 
 a {
   text-decoration: none; }
@@ -822,28 +780,6 @@ body {
   font-family: "nowayregular", "League Gothic", "Helvetica", sans-serif;
   font-size: 18px;
   text-align: center; }
-
-.magictime {
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  animation-duration: 3s; }
-
-.title-container {
-  margin-top: 0;
-  padding-left: 1.2vw;
-  padding-top: 2px;
-  text-align: left;
-  list-style: none;
-  -webkit-animation-name: change;
-  -webkit-animation-duration: 6s;
-  -webkit-animation-iteration-count: infinite;
-  animation-name: change;
-  animation-duration: 6s;
-  animation-iteration-count: infinite; }
-
-.title-container .titles {
-  line-height: 50px; }
 
 .visible {
   display: -webkit-box;
@@ -950,28 +886,10 @@ body {
     content: '';
     background: transparent url("../images/pattern.png") repeat top left; }
 
-.inception-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  flex-direction: row; }
-
 .overlay {
   position: absolute; }
 
 /* Screens Settings */
-#screen-1 {
-  width: 100%;
-  z-index: 2;
-  background: #000000; }
-
-#screen-2 {
-  z-index: 1;
-  background-color: #f9f9f9; }
-
 .nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1281,169 +1199,9 @@ a {
 #illustrator .wave {
   margin-top: -200px; }
 
-#fourth-page-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 2%; }
-  #fourth-page-wrapper > .top-row {
-    height: 10%; }
-
-/* Common style */
-#fourth-page-wrapper figure {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 2%;
-  min-width: 320px;
-  max-width: 480px;
-  max-height: 360px;
-  height: auto;
-  background: #15120B;
-  text-align: center;
-  cursor: pointer; }
-
-#fourth-page-wrapper figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8; }
-
-#fourth-page-wrapper figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-  #fourth-page-wrapper figure figcaption > h2 {
-    font-size: 3rem; }
-
-#fourth-page-wrapper figure figcaption::before,
-#fourth-page-wrapper figure figcaption::after {
-  pointer-events: none; }
-
-#fourth-page-wrapper figure figcaption,
-#fourth-page-wrapper figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-#fourth-page-wrapper figure figcaption > a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0; }
-
-#fourth-page-wrapper figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
-
-#fourth-page-wrapper figure h2 span {
-  font-weight: 800; }
-
-#fourth-page-wrapper figure h2,
-#fourth-page-wrapper figure p {
-  margin: .5rem; }
-
-#fourth-page-wrapper figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%; }
-
-/* Individual effects */
-/*---------------*/
-/***** Julia *****/
-/*---------------*/
-figure.effect-julia {
-  background: #2f3238; }
-
-figure.effect-julia img {
-  max-width: none;
-  height: 400px;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, transform 1s;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-figure.effect-julia figcaption {
-  text-align: left; }
-
-figure.effect-julia h2 {
-  position: relative;
-  padding: 0.5em 0; }
-
-figure.effect-julia p {
-  display: inline-block;
-  margin: 0 0 0.25rem;
-  padding: 0.4em 1em;
-  background: rgba(255, 255, 255, 0.9);
-  color: #2f3238;
-  text-transform: none;
-  font-weight: 500;
-  font-size: 75%;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-360px, 0, 0);
-  transform: translate3d(-360px, 0, 0); }
-
-figure.effect-julia p:first-child {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s; }
-
-figure.effect-julia p:nth-of-type(2) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s; }
-
-figure.effect-julia p:nth-of-type(3) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s; }
-
-figure.effect-julia:hover p:first-child {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s; }
-
-figure.effect-julia:hover p:nth-of-type(2) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s; }
-
-figure.effect-julia:hover p:nth-of-type(3) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s; }
-
-figure.effect-julia:hover img {
-  opacity: 0.4;
-  -webkit-transform: scale3d(1.1, 1.1, 1);
-  transform: scale3d(1.1, 1.1, 1);
-  -webkit-filter: blur(8px);
-  filter: blur(8px); }
-
-figure.effect-julia:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-section#screen-4 {
-  height: 240%;
-  background-color: #BF263C; }
-
-.bottom-row {
-  width: 100%; }
-
 i.fa-github {
-  font-size: 6.5rem; }
+  font-size: 6.5rem;
+  width: 100%; }
 
 .frame {
   display: -webkit-box;
