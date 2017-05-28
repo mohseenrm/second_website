@@ -60,5 +60,6 @@
 
     // };
 
-    require( './pie' );
 })();
+require( './pie' );
+require( './panels' );
