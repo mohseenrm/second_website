@@ -38,33 +38,31 @@ THE SOFTWARE.
 */
 
 @import 'flex';
-
 $main-color: #d7a150;
 $secondary-color: #4B1248;
-
-.title-2{
-	@include flexbox;
-	width: 100%;
-	height: 22vh;
-	background: #fff;
-	background: #f2994a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #f2994a, #f2c94c); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #f2994a, #f2c94c);
-	align-items: center;
-	justify-content: center;
-	// background-image: linear-gradient(
+.title-2 {
+    @include flexbox;
+    width: 100%;
+    height: 22vh;
+    background: #fff;
+    background: #f2994a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f2994a, #f2c94c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f2994a, #f2c94c);
+    align-items: center;
+    justify-content: center; // background-image: linear-gradient(
     // 	to right,
-	//     $secondary-color,
-	//     $secondary-color 50%,
-	//     $main-color 50%);
-  
-	// background-size: 200% 100%;
-	// background-position: 100%;
-	// animation: slide 5s forwards infinite;
-	&--text{
-		font-family: 'Didot', sans-serif;
-		font-size: 8rem;
-		color: #000;
-	}
-
+    //     $secondary-color,
+    //     $secondary-color 50%,
+    //     $main-color 50%);
+    // background-size: 200% 100%;
+    // background-position: 100%;
+    // animation: slide 5s forwards infinite;
+    &--text {
+        font-family: 'Didot', sans-serif;
+        font-size: 8rem;
+        color: #000;
+		letter-spacing: -0.45rem;
+    }
 }

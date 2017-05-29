@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900");
 /* Ostrich Sans */
 @font-face {
   font-family: 'Ostrich Sans';
@@ -383,7 +382,7 @@
       line-height: 6vh;
       width: 65%;
       height: 100%;
-      font-family: 'Merriweather','butlerregular', sans-serif;
+      font-family: 'Merriweather', 'butlerregular', sans-serif;
       font-weight: 300;
       color: #000;
       font-size: 2.5rem;

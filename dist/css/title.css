@@ -55,6 +55,7 @@ THE SOFTWARE.
   .title-2--text {
     font-family: 'Didot', sans-serif;
     font-size: 8rem;
-    color: #000; }
+    color: #000;
+    letter-spacing: -0.45rem; }
 
 /*# sourceMappingURL=title.css.map */

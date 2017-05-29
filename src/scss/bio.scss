@@ -1,6 +1,5 @@
 @import 'flex';
 @import 'fonts';
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
 #screen-bio {
     @include flexbox;
     height: 100%;
@@ -23,14 +22,13 @@
 			line-height: 6vh;
 			width: 65%;
 			height: 100%;
-			font-family: 'Merriweather','butlerregular', sans-serif;
+			font-family: 'Merriweather', 'butlerregular', sans-serif;
 			font-weight: 300;
 			color: #000;
 			font-size: 2.5rem;
 			text-align: left;
 			padding: 4%;
 			padding-top: 6%;
-
 		}
 	}
 }
