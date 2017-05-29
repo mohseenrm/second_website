@@ -12,6 +12,7 @@
     "build:webpack:windows": "node_modules\\.bin\\webpack",
     "build:webpack:windows:production": "node_modules\\.bin\\webpack --production",
     "devServer": "./node_modules/.bin/webpack-dev-server --progress --colors",
+    "compile": "sass --watch src/scss:dist/css",
     "test": "node_modules/.bin/eslint src/js/*.js --cache --cache-location ./.eslintcache"
   },
   "repository": {

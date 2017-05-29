@@ -418,7 +418,7 @@ table {
 /* close commented backslash hack */
 html,
 body {
-  font-family: "Didot", "nowayregular", "League Gothic", "Helvetica", sans-serif;
+  font-family: "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
   font-size: 62.5%; }
 
 body {
@@ -471,7 +471,7 @@ a {
 
 body {
   color: #fff;
-  font-family: "Didot", "nowayregular", "League Gothic", "Helvetica", sans-serif;
+  font-family: "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
   font-size: 18px;
   text-align: center; }
 
