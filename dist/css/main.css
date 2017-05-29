@@ -355,6 +355,11 @@ table {
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'Didot';
+  src: url("fonts/Theano-Didot-Regular.ttf.woff") format("woff"), url("fonts/Theano-Didot-Regular.ttf.svg#Theano-Didot-Regular") format("svg"), url("fonts/Theano-Didot-Regular.ttf.eot"), url("fonts/Theano-Didot-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -376,8 +381,16 @@ table {
 /* close commented backslash hack */
 html,
 body {
-  font-family: "nowayregular", "League Gothic", "Helvetica", sans-serif;
+  font-family: "", "nowayregular", "League Gothic", "Helvetica", sans-serif;
   font-size: 62.5%; }
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column; }
 
 h1 {
   font-size: 5rem;
@@ -421,7 +434,7 @@ a {
 
 body {
   color: #fff;
-  font-family: "nowayregular", "League Gothic", "Helvetica", sans-serif;
+  font-family: "", "nowayregular", "League Gothic", "Helvetica", sans-serif;
   font-size: 18px;
   text-align: center; }
 
