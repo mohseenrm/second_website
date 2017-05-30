@@ -67,7 +67,7 @@ THE SOFTWARE.
         TweenMax.to([$first, $second, $third], 1, {
             css: {
                 'width': '25%',
-                'border-right': '2px solid #FFD700'
+                'border-right': '2px solid #f2994a'
             }
         });
       //this is for the last one

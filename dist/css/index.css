@@ -1989,7 +1989,7 @@ THE SOFTWARE.
       width: 25%;
       display: flex;
       background: #ff00ff;
-      border-right: 2px solid #FFD700; }
+      border-right: 2px solid #f2994a; }
       #screen-1 > .wrapper > .image-wrapper:after {
         content: '';
         position: relative;
