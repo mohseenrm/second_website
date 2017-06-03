@@ -1,0 +1,34 @@
+@import 'flex';
+#footer {
+    @include flexbox;
+    width: 100%;
+    height: 25%;
+    & .wrapper {
+		width: 100%;
+        background: #f2994a;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #f2994a, #f2c94c);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #f2994a, #f2c94c);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        // @media (min-width: 640px) {
+        //     height: 75%;
+        // }
+		& > .fa{
+			font-size: 3.5rem;
+			margin: 1.75%;
+			transition: all 0.5s ease-in;
+            &:hover {
+                transition: all 0.3s ease-out;
+                color: #000000;
+            }
+		}
+		& > .fa.fa-github{
+			width: auto;
+		}
+    }
+}

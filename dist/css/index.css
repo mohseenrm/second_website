@@ -2883,4 +2883,34 @@ THE SOFTWARE.
             color: #f2994a;
             transition: all 0.5s ease-in-out; }
 
+#footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 25%; }
+  #footer .wrapper {
+    width: 100%;
+    background: #f2994a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f2994a, #f2c94c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f2994a, #f2c94c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap; }
+    #footer .wrapper > .fa {
+      font-size: 3.5rem;
+      margin: 1.75%;
+      transition: all 0.5s ease-in; }
+      #footer .wrapper > .fa:hover {
+        transition: all 0.3s ease-out;
+        color: #000000; }
+    #footer .wrapper > .fa.fa-github {
+      width: auto; }
+
 /*# sourceMappingURL=index.css.map */
