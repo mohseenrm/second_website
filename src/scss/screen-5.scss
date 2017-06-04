@@ -1,0 +1,57 @@
+@import 'flex';
+@import 'fonts';
+$fonts: 'Didot', 'nowayregular',
+'League Gothic',
+'Helvetica',
+serif;
+
+#screen-5 {
+    @include flexbox;
+    height: 130%;
+    width: 100%;
+    background: #000;
+    & .wrapper {
+		@include flexbox;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+		// padding-left: 4%;
+		// padding-right: 4%;
+        &--line {
+			@include flexbox;
+            height: 3px;
+            width: 75%; // padding-left: 20%;
+            background: #fff;
+            justify-content: center;
+            align-items: center;
+        }
+        &--author {
+			font-family: 'Merriweather', $fonts;
+            color: #fff;
+            font-size: 2.2rem;
+            margin: 2%;
+            margin-bottom: 4%;
+        }
+        &--text {
+			font-family: 'Merriweather', $fonts;
+            color: #fff;
+            padding-left: 6%;
+            padding-right: 6%;
+            font-size: 2.8rem;
+            font-weight: 300;
+            text-align: center;
+            line-height: 6vh;
+            margin-top: 4%;
+            background: #f2994a;
+            background-image: -webkit-linear-gradient(to bottom, #f2994a, #f2c94c);
+            background: linear-gradient(to top, #c02425, #f0cb35);
+            background-attachment: fixed;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
