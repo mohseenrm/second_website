@@ -10,7 +10,20 @@
 	let box = svg.getBBox();
 	console.log('Box:', box);
 	//test
-	let tl = new TimelineMax({repeat: -1, repeatDelay: 0.1});
+	let tl = new TimelineMax({
+		// paused: true,
+		repeat: -1,
+		repeatDelay: 0.1,
+		smoothChildTiming: true
+	});
+
+	const onCompleteCycle = () => {
+		console.log( 'Cycle complete' );
+		if (/loaded|complete/.test(document.readyState)){
+			// console.log('content loaded');
+			tl.pause();
+		}
+	};
 
 	tl
 		.set([dot1, dot2, dot3], {autoAlpha: 0.3})
@@ -29,7 +42,6 @@
 			autoAlpha: 1,
 			scale: 0.65,
 			ease: Power2.easeOut
-			// repeat: -1
 		}, 'start')
 		.to(dot3, 1.5, {
 			transformOrigin: 'center center',
@@ -38,7 +50,6 @@
 			autoAlpha: 1,
 			scale: 0.65,
 			ease: Power2.easeOut
-			// repeat: -1
 		}, 'start')
 		.to(center, 1.5, {
 			scale: 0.75,
@@ -51,14 +62,12 @@
 			// svgOrigin: "700 500"
 			svgOrigin: '700 507',
 			ease: Power2.easeOut
-			// repeat: -1
 		}, 'rotate')
 		.to(dot2, 1, {
 			rotation: -720,
 			// svgOrigin: '700 500'
 			svgOrigin: '700 507',
 			ease: Power2.easeOut
-			// repeat: -1
 		}, 'rotate')
 		.to(dot3, 1, {
 			rotation: -720,
@@ -95,5 +104,7 @@
 			x: 12,
 			y: 14,
 			delay: 0.4
-		}, 'end');
+		}, 'end')
+		.add(onCompleteCycle);
+	// tl.pause();
 })();
