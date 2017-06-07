@@ -63,4 +63,4 @@
 })();
 require( './pie' );
 require( './panels' );
-require( './bio' );
+require( './references' );
