@@ -30,7 +30,7 @@
 
 		Toffset = topLine.getBoundingClientRect();
 		Boffset = bottomLine.getBoundingClientRect();
-
+		//TODO: add css prefix for flex
 		offset = calculateOffset(Toffset, Boffset);
 		tl.set([text, author], {
 			css: {
