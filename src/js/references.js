@@ -25,7 +25,7 @@
 	let offset = calculateOffset(Toffset, Boffset);
 	console.log(offset);
 
-	//wierd bug with calculating exact offset onload
+	//weird bug with calculating exact offset onload
 	setTimeout( () => {
 
 		Toffset = topLine.getBoundingClientRect();
