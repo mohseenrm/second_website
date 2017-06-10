@@ -42,7 +42,7 @@
 
     // window.onscroll = ()=>{
     //     const win = window;
-        
+
     //     //titles reveal
     //     if( win.scrollY > 400 )
     //         // document.querySelector('.visible').className += " animated slideInUp";
@@ -61,7 +61,7 @@
     // };
 
 })();
-//TODO: generate prefix
+// TODO: generate prefix
 require( './pie' );
 require( './panels' );
 require( './references' );
