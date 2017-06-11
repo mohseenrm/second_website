@@ -2583,13 +2583,14 @@ THE SOFTWARE.
     justify-content: space-around; }
     .project-wrapper--row--frame {
       height: 40%;
-      width: 40%;
+      min-width: 40%;
       overflow: hidden;
       background: url("https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-135026637-1500x1000.jpg");
       -webkit-box-shadow: 0 8px 6px -12px black;
       -moz-box-shadow: 0 8px 6px -12px black;
       box-shadow: 0 8px 6px -12px black;
-      margin: 5%; }
+      margin: 7%;
+      flex-grow: 1; }
       .project-wrapper--row--frame#refine-hiring {
         background: url("../../images/game_hiring.jpg");
         background-size: contain;
@@ -2641,6 +2642,9 @@ THE SOFTWARE.
         padding-top: 4%;
         font-size: 3.5rem;
         transition: font-size 0.8s ease-out; }
+        @media (max-width: 400px) {
+          .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text {
+            font-size: 3rem; } }
       .project-wrapper--row--frame--inner-wrapper {
         display: flex;
         width: 100%;
@@ -2665,6 +2669,9 @@ THE SOFTWARE.
           -webkit-background-clip: text;
           font-weight: bold;
           transition: font-size 0.5s ease-out; }
+          @media (max-width: 400px) {
+            .project-wrapper--row--frame--inner-wrapper--text {
+              font-size: 2.7rem; } }
           .project-wrapper--row--frame--inner-wrapper--text-description {
             width: 85%;
             font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;

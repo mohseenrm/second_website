@@ -1,530 +1,110 @@
-@charset "UTF-8";
 /*
-Made by:
-___  ___      _                                     
-|  \/  |     | |                                    
-| .  . | ___ | |__  ___  ___  ___ _ __              
-| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \             
-| |  | | (_) | | | \__ \  __/  __/ | | |            
-\_|  |_/\___/|_| |_|___/\___|\___|_| |_|                     
-___  ___      _             _     _                 
-|  \/  |     | |           | |   | |                
-| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___  
-| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \ 
-| |  | | |_| |   < (_| | (_| | (_| | (_| | | | | | |
-\_|  |_/\__,_|_|\_\__,_|\__,_|\__,_|\__,_|_| |_| |_|
+Error: Undefined variable: "$phone".
+        on line 160 of src/scss/projects.scss
 
-The MIT License
+155: 			}
+156: 			&:hover &--inner-wrapper--text {
+157: 				padding-top: 4%;
+158: 				font-size: 3.5rem;
+159: 				transition: font-size 0.8s ease-out;
+160: 				@media #{$phone} {
+161: 					font-size: 3rem;
+162: 				}
+163: 			} //description wrapper
+164: 			&--inner-wrapper {
+165: 				display: flex;
 
-Copyright (c) 2010-2017 Mohseen Mukaddam (mohseenmukaddam6@gmail.com)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
+Backtrace:
+src/scss/projects.scss:160
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/interpolation.rb:170:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:542:in `block in run_interp_no_strip'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:540:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:540:in `run_interp_no_strip'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:547:in `run_interp'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:512:in `visit_media'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
-/* Ostrich Sans */
-@font-face {
-  font-family: 'Ostrich Sans';
-  src: url("fonts/ostrich-sans-black.eot");
-  src: local("☺"), url("fonts/ostrich-sans-black.woff") format("woff"), url("fonts/ostrich-sans-black.ttf") format("truetype"), url("fonts/ostrich-sans-black.svg") format("svg");
-  font-weight: 900;
-  font-style: normal; }
-@font-face {
-  font-family: 'Ostrich Sans';
-  src: url("fonts/ostrich-sans-bold.eot");
-  src: local("☺"), url("fonts/ostrich-sans-bold.woff") format("woff"), url("fonts/ostrich-sans-bold.ttf") format("truetype"), url("fonts/ostrich-sans-bold.svg") format("svg");
-  font-weight: 700;
-  font-style: normal; }
-@font-face {
-  font-family: 'Ostrich Sans';
-  src: url("fonts/ostrich-sans-regular.eot");
-  src: local("☺"), url("fonts/ostrich-sans-regular.woff") format("woff"), url("fonts/ostrich-sans-regular.ttf") format("truetype"), url("fonts/ostrich-sans-regular.svg") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Ostrich Sans';
-  src: url("fonts/ostrich-sans-light.eot");
-  src: local("☺"), url("fonts/ostrich-sans-light.woff") format("woff"), url("fonts/ostrich-sans-light.ttf") format("truetype"), url("fonts/ostrich-sans-light.svg") format("svg");
-  font-weight: 300;
-  font-style: normal; }
-/* Ostrich Sans Dashed */
-@font-face {
-  font-family: 'Ostrich Sans Dashed';
-  src: url("fonts/ostrich-sans-dashed.eot");
-  src: local("☺"), url("fonts/ostrich-sans-dashed.woff") format("woff"), url("fonts/ostrich-sans-dashed.ttf") format("truetype"), url("fonts/ostrich-sans-dashed.svg") format("svg");
-  font-weight: 500;
-  font-style: normal; }
-/* Ostrich Sans Rounded */
-@font-face {
-  font-family: 'Ostrich Sans Rounded';
-  src: url("fonts/ostrich-sans-rounded.eot");
-  src: local("☺"), url("fonts/ostrich-sans-rounded.woff") format("woff"), url("fonts/ostrich-sans-rounded.ttf") format("truetype"), url("fonts/ostrich-sans-rounded.svg") format("svg");
-  font-weight: 500;
-  font-style: normal; }
-/* Ostrich Sans Inline */
-@font-face {
-  font-family: 'Ostrich Sans Inline';
-  src: url("fonts/ostrich-sans-inline-regular.eot");
-  src: local("☺"), url("fonts/ostrich-sans-inline-regular.woff") format("woff"), url("fonts/ostrich-sans-inline-regular.ttf") format("truetype"), url("fonts/ostrich-sans-inline-regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Ostrich Sans Inline';
-  src: url("fonts/ostrich-sans-inline-italic.eot");
-  src: local("☺"), url("fonts/ostrich-sans-inline-italic.woff") format("woff"), url("fonts/ostrich-sans-inline-italic.ttf") format("truetype"), url("fonts/ostrich-sans-inline-italic.svg") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Chunkfive';
-  src: url("fonts/Chunkfive-webfont.eot");
-  src: local("☺"), url("fonts/Chunkfive-webfont.woff") format("woff"), url("fonts/Chunkfive-webfont.ttf") format("truetype"), url("fonts/Chunkfive-webfont.svg") format("svg"); }
-/* Regular */
-@font-face {
-  font-family: 'League Gothic';
-  src: url("fonts/leaguegothic-italic-webfont.eot");
-  src: url("fonts/leaguegothic-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-italic-webfont.woff") format("woff"), url("fonts/leaguegothic-italic-webfont.ttf") format("truetype"), url("fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-/* Italic */
-@font-face {
-  font-family: 'League Gothic';
-  src: url("fonts/leaguegothic-regular-webfont.eot");
-  src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* Condensed */
-@font-face {
-  font-family: 'League Gothic Condensed';
-  src: url("fonts/leaguegothic-condensed-regular-webfont.eot");
-  src: url("fonts/leaguegothic-condensed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-condensed-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-condensed-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* Condensed Italic */
-@font-face {
-  font-family: 'League Gothic Condensed';
-  src: url("fonts/leaguegothic-condensed-italic-webfont.eot");
-  src: url("fonts/leaguegothic-condensed-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-condensed-italic-webfont.woff") format("woff"), url("fonts/leaguegothic-condensed-italic-webfont.ttf") format("truetype"), url("fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-/* Raleway */
-@font-face {
-  font-family: 'Raleway-ExtraLight';
-  src: url("fonts/Raleway-ExtraLight.eot");
-  src: url("fonts/Raleway-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-ExtraLight.woff2") format("woff2"), url("fonts/Raleway-ExtraLight.woff") format("woff"), url("fonts/Raleway-ExtraLight.ttf") format("truetype"), url("fonts/Raleway-ExtraLight.svg#Raleway-ExtraLight") format("svg");
-  font-weight: 200;
-  font-style: normal; }
-@font-face {
-  font-family: 'Raleway-Thin';
-  src: url("fonts/Raleway-Thin.eot");
-  src: url("fonts/Raleway-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-Thin.woff2") format("woff2"), url("fonts/Raleway-Thin.woff") format("woff"), url("fonts/Raleway-Thin.ttf") format("truetype"), url("fonts/Raleway-Thin.svg#Raleway-Thin") format("svg");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: 'Raleway-SemiBold';
-  src: url("fonts/Raleway-SemiBold.eot");
-  src: url("fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-SemiBold.woff2") format("woff2"), url("fonts/Raleway-SemiBold.woff") format("woff"), url("fonts/Raleway-SemiBold.ttf") format("truetype"), url("fonts/Raleway-SemiBold.svg#Raleway-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: 'Raleway-Heavy';
-  src: url("fonts/Raleway-Heavy.eot");
-  src: url("fonts/Raleway-Heavy.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-Heavy.woff2") format("woff2"), url("fonts/Raleway-Heavy.woff") format("woff"), url("fonts/Raleway-Heavy.ttf") format("truetype"), url("fonts/Raleway-Heavy.svg#Raleway-Heavy") format("svg");
-  font-weight: 900;
-  font-style: normal; }
-@font-face {
-  font-family: 'Raleway-Bold';
-  src: url("fonts/Raleway-Bold.eot");
-  src: url("fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-Bold.woff2") format("woff2"), url("fonts/Raleway-Bold.woff") format("woff"), url("fonts/Raleway-Bold.ttf") format("truetype"), url("fonts/Raleway-Bold.svg#Raleway-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'Raleway-Medium';
-  src: url("fonts/Raleway-Medium.eot");
-  src: url("fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-Medium.woff2") format("woff2"), url("fonts/Raleway-Medium.woff") format("woff"), url("fonts/Raleway-Medium.ttf") format("truetype"), url("fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'Raleway-ExtraBold';
-  src: url("fonts/Raleway-ExtraBold.eot");
-  src: url("fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-ExtraBold.woff2") format("woff2"), url("fonts/Raleway-ExtraBold.woff") format("woff"), url("fonts/Raleway-ExtraBold.ttf") format("truetype"), url("fonts/Raleway-ExtraBold.svg#Raleway-ExtraBold") format("svg");
-  font-weight: 800;
-  font-style: normal; }
-@font-face {
-  font-family: 'Raleway';
-  src: url("fonts/Raleway.eot");
-  src: url("fonts/Raleway.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway.woff2") format("woff2"), url("fonts/Raleway.woff") format("woff"), url("fonts/Raleway.ttf") format("truetype"), url("fonts/Raleway.svg#Raleway") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Raleway-Light';
-  src: url("fonts/Raleway-Light.eot");
-  src: url("fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Raleway-Light.woff2") format("woff2"), url("fonts/Raleway-Light.woff") format("woff"), url("fonts/Raleway-Light.ttf") format("truetype"), url("fonts/Raleway-Light.svg#Raleway-Light") format("svg");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: 'nowayregular';
-  src: url("fonts/noway-regular-webfont.eot");
-  src: url("fonts/noway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/noway-regular-webfont.woff2") format("woff2"), url("fonts/noway-regular-webfont.woff") format("woff"), url("fonts/noway-regular-webfont.ttf") format("truetype"), url("fonts/noway-regular-webfont.svg#nowayregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* Webfont: Lato-Black */
-@font-face {
-  font-family: 'LatoWebBlack';
-  src: url("fonts/Lato-Black.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Black.woff2") format("woff2"), url("fonts/Lato-Black.woff") format("woff"), url("fonts/Lato-Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-BlackItalic */
-@font-face {
-  font-family: 'LatoWebBlack';
-  src: url("fonts/Lato-BlackItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-BlackItalic.woff2") format("woff2"), url("fonts/Lato-BlackItalic.woff") format("woff"), url("fonts/Lato-BlackItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-Bold */
-@font-face {
-  font-family: 'LatoWebBold';
-  src: url("fonts/Lato-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-BoldItalic */
-@font-face {
-  font-family: 'LatoWebBold';
-  src: url("fonts/Lato-BoldItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-BoldItalic.woff2") format("woff2"), url("fonts/Lato-BoldItalic.woff") format("woff"), url("fonts/Lato-BoldItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-Hairline */
-@font-face {
-  font-family: 'LatoWebHairline';
-  src: url("fonts/Lato-Hairline.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Hairline.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Hairline.woff2") format("woff2"), url("fonts/Lato-Hairline.woff") format("woff"), url("fonts/Lato-Hairline.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-HairlineItalic */
-@font-face {
-  font-family: 'LatoWebHairline';
-  src: url("fonts/Lato-HairlineItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-HairlineItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-HairlineItalic.woff2") format("woff2"), url("fonts/Lato-HairlineItalic.woff") format("woff"), url("fonts/Lato-HairlineItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-Heavy */
-@font-face {
-  font-family: 'LatoWebHeavy';
-  src: url("fonts/Lato-Heavy.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Heavy.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Heavy.woff2") format("woff2"), url("fonts/Lato-Heavy.woff") format("woff"), url("fonts/Lato-Heavy.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-HeavyItalic */
-@font-face {
-  font-family: 'LatoWebHeavy';
-  src: url("fonts/Lato-HeavyItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-HeavyItalic.woff2") format("woff2"), url("fonts/Lato-HeavyItalic.woff") format("woff"), url("fonts/Lato-HeavyItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-Italic */
-@font-face {
-  font-family: 'LatoWeb';
-  src: url("fonts/Lato-Italic.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Italic.woff2") format("woff2"), url("fonts/Lato-Italic.woff") format("woff"), url("fonts/Lato-Italic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-Light */
-@font-face {
-  font-family: 'LatoWebLight';
-  src: url("fonts/Lato-Light.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-LightItalic */
-@font-face {
-  font-family: 'LatoWebLight';
-  src: url("fonts/Lato-LightItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-LightItalic.woff2") format("woff2"), url("fonts/Lato-LightItalic.woff") format("woff"), url("fonts/Lato-LightItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-Medium */
-@font-face {
-  font-family: 'LatoWebMedium';
-  src: url("fonts/Lato-Medium.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Medium.woff2") format("woff2"), url("fonts/Lato-Medium.woff") format("woff"), url("fonts/Lato-Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-MediumItalic */
-@font-face {
-  font-family: 'LatoWebMedium';
-  src: url("fonts/Lato-MediumItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-MediumItalic.woff2") format("woff2"), url("fonts/Lato-MediumItalic.woff") format("woff"), url("fonts/Lato-MediumItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-Regular */
-@font-face {
-  font-family: 'LatoWeb';
-  src: url("fonts/Lato-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-Semibold */
-@font-face {
-  font-family: 'LatoWebSemibold';
-  src: url("fonts/Lato-Semibold.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff"), url("fonts/Lato-Semibold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-SemiboldItalic */
-@font-face {
-  font-family: 'LatoWebSemibold';
-  src: url("fonts/Lato-SemiboldItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-SemiboldItalic.woff2") format("woff2"), url("fonts/Lato-SemiboldItalic.woff") format("woff"), url("fonts/Lato-SemiboldItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-Thin */
-@font-face {
-  font-family: 'LatoWebThin';
-  src: url("fonts/Lato-Thin.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-/* Webfont: Lato-ThinItalic */
-@font-face {
-  font-family: 'LatoWebThin';
-  src: url("fonts/Lato-ThinItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/Lato-ThinItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-ThinItalic.woff2") format("woff2"), url("fonts/Lato-ThinItalic.woff") format("woff"), url("fonts/Lato-ThinItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-@font-face {
-  font-family: 'Didot';
-  src: url("fonts/Theano-Didot-Regular.ttf.woff") format("woff"), url("fonts/Theano-Didot-Regular.ttf.svg#Theano-Didot-Regular") format("svg"), url("fonts/Theano-Didot-Regular.ttf.eot"), url("fonts/Theano-Didot-Regular.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-/* Generated by Font Squirrel (https://www.fontsquirrel.com) on May 13, 2016 */
-@font-face {
-  font-family: 'butlerblack';
-  src: url("fonts/butler_black-webfont.woff2") format("woff2"), url("fonts/butler_black-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'butlerbold';
-  src: url("../fonts/butler_bold-webfont.woff2") format("woff2"), url("fonts/butler_bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'butlerextrabold';
-  src: url("../fonts/butler_extrabold-webfont.woff2") format("woff2"), url("fonts/butler_extrabold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'butlerlight';
-  src: url("../fonts/butler_light-webfont.woff2") format("woff2"), url("../fonts/butler_light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'butlermedium';
-  src: url("../fonts/butler_medium-webfont.woff2") format("woff2"), url("../fonts/butler_medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'butlerregular';
-  src: url("../fonts/butler_regular-webfont.woff2") format("woff2"), url("../fonts/butler_regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'butlerultralight';
-  src: url("../fonts/butler_ultra_light-webfont.woff2") format("woff2"), url("../fonts/butler_ultra_light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-#section-4b {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: auto;
-  background: #aeaeae; }
-
-.project-wrapper {
-  display: flex;
-  width: 100%;
-  min-height: 200%;
-  background: #4B1248;
-  background: linear-gradient(to top, #4B1248, #000);
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 6%;
-  padding-bottom: 6%; }
-  .project-wrapper--row {
-    display: flex;
-    width: 100%;
-    height: 30%;
-    align-items: center;
-    justify-content: space-around; }
-    .project-wrapper--row--frame {
-      height: 40%;
-      width: 40%;
-      overflow: hidden;
-      background: url("https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-135026637-1500x1000.jpg");
-      -webkit-box-shadow: 0 8px 6px -12px black;
-      -moz-box-shadow: 0 8px 6px -12px black;
-      box-shadow: 0 8px 6px -12px black;
-      margin: 5%; }
-      .project-wrapper--row--frame#refine-hiring {
-        background: url("../../images/game_hiring.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 0%; }
-      .project-wrapper--row--frame#elixir {
-        background: url("../../images/elixir.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 0%; }
-      .project-wrapper--row--frame#world-visualization {
-        background: url("");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 0%; }
-      .project-wrapper--row--frame#lit-it {
-        background: url("../../images/litit.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 0%; }
-      .project-wrapper--row--frame#monaco {
-        background: url("../../images/monaco.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 0%; }
-      .project-wrapper--row--frame#terminal-website {
-        background: url("../../images/website.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 0%; }
-      .project-wrapper--row--frame:hover {
-        transition: all 0.5s ease-in; }
-      .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper {
-        height: 100%;
-        top: 0%;
-        justify-content: space-between;
-        background: #f7f7f7; }
-      .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text-description {
-        display: flex;
-        padding: 5%;
-        font-size: 2rem;
-        color: #000;
-        line-height: 4vh; }
-      .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--button {
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-      .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text {
-        padding-top: 4%;
-        font-size: 3.5rem;
-        transition: font-size 0.8s ease-out; }
-      .project-wrapper--row--frame--inner-wrapper {
-        display: flex;
-        width: 100%;
-        height: 25%;
-        font-size: 3rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 75%;
-        background: #f7f7f7;
-        background: rgba(247, 247, 247, 0.9);
-        transition: all 1s ease-out; }
-        .project-wrapper--row--frame--inner-wrapper--text {
-          width: 85%;
-          font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
-          font-weight: 400;
-          text-align: left;
-          color: #210B29;
-          color: rgba(33, 11, 41, 0.85);
-          background-attachment: fixed;
-          -webkit-background-clip: text;
-          font-weight: bold;
-          transition: font-size 0.5s ease-out; }
-          .project-wrapper--row--frame--inner-wrapper--text-description {
-            width: 85%;
-            font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
-            font-weight: 300;
-            text-align: left;
-            font-size: 4rem;
-            color: #000;
-            display: none;
-            font-size: 1rem;
-            transition: all 0.8s ease-out; }
-        .project-wrapper--row--frame--inner-wrapper--button {
-          display: none;
-          font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
-          font-weight: 400;
-          letter-spacing: 0.5rem;
-          text-transform: uppercase;
-          width: 100%;
-          height: 15%;
-          background: #f2994a;
-          /* fallback for old browsers */
-          background: -webkit-linear-gradient(to top, #f2994a, #f2c94c);
-          background: linear-gradient(to top, #f2994a, #f2c94c);
-          color: #000;
-          font-size: 2rem;
-          border-top: 4px solid black;
-          transition: all 0.5s ease-in-out; }
-          .project-wrapper--row--frame--inner-wrapper--button:hover {
-            background: black;
-            color: #f2994a;
-            transition: all 0.5s ease-in-out; }
-
-/*# sourceMappingURL=projects.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$phone\".\A         on line 160 of src/scss/projects.scss\A \A 155: 			}\A 156: 			&:hover &--inner-wrapper--text {\A 157: 				padding-top: 4%;\A 158: 				font-size: 3.5rem;\A 159: 				transition: font-size 0.8s ease-out;\A 160: 				@media #{$phone} {\A 161: 					font-size: 3rem;\A 162: 				}\A 163: 			} //description wrapper\A 164: 			&--inner-wrapper {\A 165: 				display: flex;"; }
