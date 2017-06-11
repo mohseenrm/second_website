@@ -1827,7 +1827,7 @@ THE SOFTWARE.
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
   width: 100%;
   background: #ecf0f1; }
   #screen-bio > .bio-wrapper {
@@ -1838,6 +1838,11 @@ THE SOFTWARE.
     display: flex;
     width: 100%;
     height: 100%; }
+    @media (max-width: 400px) {
+      #screen-bio > .bio-wrapper {
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center; } }
     #screen-bio > .bio-wrapper .bio-wrapper--gif {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1846,6 +1851,11 @@ THE SOFTWARE.
       display: flex;
       width: 35%;
       height: 100%; }
+      @media (max-width: 400px) {
+        #screen-bio > .bio-wrapper .bio-wrapper--gif {
+          height: auto;
+          margin-bottom: 30%;
+          margin-top: 10%; } }
     #screen-bio > .bio-wrapper .bio-wrapper--text {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1863,6 +1873,14 @@ THE SOFTWARE.
       text-align: left;
       padding: 4%;
       padding-top: 6%; }
+      @media (max-width: 400px) {
+        #screen-bio > .bio-wrapper .bio-wrapper--text {
+          height: auto;
+          width: 80%;
+          text-align: justify;
+          font-size: 2rem;
+          line-height: 5vh;
+          padding-top: 10vh; } }
 
 .coffee-cup-container > svg > path {
   stroke: none; }
@@ -1873,6 +1891,9 @@ THE SOFTWARE.
   justify-content: center;
   height: 100%;
   width: 100%; }
+  @media (max-width: 400px) {
+    .aligner {
+      height: auto; } }
 
 .steam-container {
   width: 75%;
