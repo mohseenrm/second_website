@@ -7,12 +7,81 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
-  background: #fff; }
-  #screen-3b > .wrapper {
-    height: 100%;
+  height: 150%;
+  font-size: 3rem;
+  color: #000;
+  background: #ecf0f1; }
+  #screen-3b .wrapper {
     width: 100%;
-    background: #fff; }
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', 'butlerregular', sans-serif; }
+    #screen-3b .wrapper--block {
+      display: flex;
+      width: 35%;
+      height: auto;
+      min-height: 10%;
+      flex-direction: column;
+      padding: 3%;
+      flex-grow: 1;
+      flex-shrink: 10; }
+      #screen-3b .wrapper--block--title {
+        width: 100%;
+        margin-bottom: 5%;
+        font-size: 3.5rem;
+        font-weight: 100;
+        letter-spacing: 0.18rem;
+        text-align: right; }
+      #screen-3b .wrapper--block--text {
+        color: #4E0E2E;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 5.3vh;
+        text-align: right; }
+      #screen-3b .wrapper--block:nth-child(2) > .wrapper--block--text {
+        text-align: left; }
+      #screen-3b .wrapper--block:nth-child(2) > .wrapper--block--title {
+        text-align: left; }
+      #screen-3b .wrapper--block:nth-child(4) > .wrapper--block--text {
+        width: auto;
+        text-align: center; }
+      #screen-3b .wrapper--block:nth-child(4) > .wrapper--block--title {
+        text-align: center; }
+      #screen-3b .wrapper--block-large {
+        width: 100%;
+        height: auto;
+        min-height: 15%;
+        display: flex;
+        flex-direction: row;
+        padding: 3%;
+        flex-grow: 1;
+        flex-shrink: 10;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center; }
+        #screen-3b .wrapper--block-large--title {
+          width: 100%;
+          margin-bottom: 5%;
+          font-size: 3.5rem;
+          font-weight: 100;
+          letter-spacing: 0.18rem;
+          text-align: center; }
+        #screen-3b .wrapper--block-large--text {
+          display: flex;
+          font-size: 2.5rem;
+          font-weight: 700;
+          line-height: 5.3vh;
+          text-align: right;
+          color: #4E0E2E;
+          margin-left: 5%;
+          margin-right: 5%; }
+          #screen-3b .wrapper--block-large--text:nth-child(2) {
+            text-align: left; }
 
 .wrapper--text {
   color: #000;
