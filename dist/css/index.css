@@ -981,6 +981,18 @@ body {
   position: absolute; }
 
 /* Screens Settings */
+.light {
+  transition: all 1.2s ease;
+  background: #fff; }
+  .light > a {
+    color: #000; }
+
+.dark {
+  transition: all 1.2s ease;
+  background: #000; }
+  .dark > a {
+    color: #fff; }
+
 .nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -989,8 +1001,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(0deg, white, #f6f6f6);
-  background: linear-gradient(0deg, white, #f6f6f6);
   position: fixed;
   height: 8%;
   z-index: 2;
@@ -1000,7 +1010,12 @@ body {
 
 a {
   text-decoration: none;
-  text-shadow: -2px 1px rgba(0, 0, 0, 0.1); }
+  font-family: 'Merriweather', 'butlerregular', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2rem; }
+
+text {
+  font-family: 'Merriweather', 'butlerregular', sans-serif; }
 
 .link-effect-10 a {
   color: #2C3E50;
@@ -1101,7 +1116,6 @@ a {
 .link-effect-3 a {
   padding: 3px 0;
   margin: 0 20px;
-  color: #797878;
   text-shadow: none;
   position: relative; }
   .link-effect-3 a:active {
@@ -1114,7 +1128,6 @@ a {
   overflow: hidden;
   padding: 3px 0;
   max-width: 0;
-  border-bottom: 2px solid #FF5A09;
   color: #FF5A09;
   content: attr(data-hover);
   -webkit-transition: max-width 0.5s;
@@ -2058,13 +2071,14 @@ THE SOFTWARE.
         width: 100%;
         margin-bottom: 5%;
         font-size: 3.5rem;
-        font-weight: 100;
+        font-weight: 500;
         letter-spacing: 0.18rem;
-        text-align: right; }
+        text-align: right;
+        color: #4E0E2E; }
       #screen-3b .wrapper--block--text {
-        color: #4E0E2E;
+        color: #000000;
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 100;
         line-height: 5.3vh;
         text-align: right; }
       #screen-3b .wrapper--block:nth-child(2) > .wrapper--block--text {
@@ -2092,20 +2106,21 @@ THE SOFTWARE.
           width: 100%;
           margin-bottom: 5%;
           font-size: 3.5rem;
-          font-weight: 100;
+          font-weight: 500;
           letter-spacing: 0.18rem;
-          text-align: center; }
+          text-align: center;
+          color: #4E0E2E; }
         #screen-3b .wrapper--block-large--text {
           display: flex;
           font-size: 2.5rem;
-          font-weight: 700;
+          font-weight: 100;
           line-height: 5.3vh;
-          text-align: right;
-          color: #4E0E2E;
-          margin-left: 5%;
-          margin-right: 5%; }
+          text-align: center;
+          color: #000000;
+          margin-left: 2.5vw;
+          margin-right: 2.5vw; }
           #screen-3b .wrapper--block-large--text:nth-child(2) {
-            text-align: left; }
+            text-align: center; }
 
 .wrapper--text {
   color: #000;

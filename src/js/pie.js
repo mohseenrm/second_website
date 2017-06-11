@@ -1,8 +1,47 @@
 /* global d3, ActiveXObject */
+/*
+___  ___      _                                     
+|  \/  |     | |                                    
+| .  . | ___ | |__  ___  ___  ___ _ __              
+| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \             
+| |  | | (_) | | | \__ \  __/  __/ | | |            
+\_|  |_/\___/|_| |_|___/\___|\___|_| |_|                     
+___  ___      _             _     _                 
+|  \/  |     | |           | |   | |                
+| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___  
+| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \ 
+| |  | | |_| |   < (_| | (_| | (_| | (_| | | | | | |
+\_|  |_/\__,_|_|\_\__,_|\__,_|\__,_|\__,_|_| |_| |_|
+
+The MIT License
+
+Copyright (c) 2010-2017 Mohseen Mukaddam (mohseenmukaddam6@gmail.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the 'Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
 var dataset = [1, 1, 3, 1, 2, 1, 1, 1];
 
 let colors = ['#9e0142', '#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#e6f598' ];
 //, '#3288bd', '#5e4fa2', '#abdda4', '#66c2a5'
+
+const langs = ['JavaScript', 'Python', 'Sass', 'Java', 'C', 'TypeScript'];
 var ajax = {};
 ajax.x = function () {
     if (typeof XMLHttpRequest !== 'undefined') {
@@ -120,7 +159,7 @@ let outerArc = d3.svg.arc()
 let pie = d3.layout.pie()
     .value(d => d);
 
-let draw = function() {
+const draw = function() {
 
     svg.append('g').attr('class', 'lines');
     svg.append('g').attr('class', 'slices');
@@ -164,7 +203,7 @@ let draw = function() {
         .attr('dy', '0.35em')
         .style('opacity', 0)
         .style('fill', (d, i) => colors[i])
-        .text((d, i) => colors[i])
+        .text((d, i) => langs[i])
         .attr('transform', d => {
             // calculate outerArc centroid for 'this' slice
             let pos = outerArc.centroid(d);

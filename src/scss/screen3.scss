@@ -41,14 +41,15 @@ $background: rgba(41, 128, 185, 1.0);
                 width: 100%;
                 margin-bottom: 5%;
                 font-size: 3.5rem;
-                font-weight: 100;
+                font-weight: 500;
                 letter-spacing: 0.18rem;
                 text-align: right;
+                color: #4E0E2E;
             }
             &--text {
-                color: #4E0E2E;
+                color: #000000;
                 font-size: 2.5rem;
-                font-weight: 700;
+                font-weight: 100;
                 line-height: 5.3vh;
                 text-align: right;
             }
@@ -85,22 +86,23 @@ $background: rgba(41, 128, 185, 1.0);
                     width: 100%;
                     margin-bottom: 5%;
                     font-size: 3.5rem;
-                    font-weight: 100;
+                    font-weight: 500;
                     letter-spacing: 0.18rem;
                     text-align: center;
+                    color: #4E0E2E;
                 }
                 &--text {
                     display: flex;
                     font-size: 2.5rem;
-                    font-weight: 700;
+                    font-weight: 100;
                     line-height: 5.3vh;
-                    text-align: right;
-                    color: #4E0E2E;
+                    text-align: center;
+                    color: #000000;
                     &:nth-child(2) {
-                        text-align: left;
+                        text-align: center;
                     }
-                    margin-left: 5%;
-                    margin-right: 5%;
+                    margin-left: 2.5vw;
+                    margin-right: 2.5vw;
                 }
             }
         }

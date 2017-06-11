@@ -1,5 +1,4 @@
 /* eslint indent: ["error", "tab"] */
-/* global TimelineMax */
 /*
 ___  ___      _                                     
 |  \/  |     | |                                    
@@ -37,84 +36,55 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 */
-(()=>{
-	const text = document.getElementById('reference-text'),
-		author = document.querySelector('.wrapper--author');
-	
-	let tl = new TimelineMax({
-			repeat: -1, 
-			repeatDelay: 0.1,
-			paused: true
-		}),
-		topLine = document.getElementById('top-line'),
-		bottomLine = document.getElementById('bottom-line');
+/**
+* @function addClass
+* @param  {element} element      Element whose class name needs to be altered
+* @param  {String } newClassName Class Name
+* @return None
+*/
+const addClass = ( element, newClassName ) => {
+	if( element !== undefined && newClassName !== undefined ){
+		let classNames = element.className;
+		if( !classNames.includes( newClassName ) ){
+			element.className += ` ${newClassName}`;
+		}
+	}
+	return;
+};
 
-	console.log( 'Text', text );
-	
-	let Toffset = topLine.getBoundingClientRect(),
-		Boffset = bottomLine.getBoundingClientRect();
-	
-	const calculateOffset = (topOffset, bottomOffset) => {
-		if(topOffset || bottomOffset)
-			return( (bottomOffset.top -topOffset.top)/2 - bottomOffset.height/2 );
+/**
+* @function removeClass
+* @param  {element} element      Element whose class name needs to be altered
+* @param  {String } delClassName Class Name
+* @return None
+*/
+const removeClass = ( element, delClassName ) => {
+	if( element !== undefined && delClassName !== undefined ){
+		if( element.className.includes( delClassName ) ){
+			element.className = element.className.replace( new RegExp('(?:^|\\s)'+ delClassName + '(?:\\s|$)'), '' );
+		}
+	}
+	return;
+};
+(() => {
+	const navBar = document.getElementById('link-effect-3'),
+		projectTitle = document.getElementById('project-title');
+
+	const onScrollEventHandler = () => {
+		const projectTitleYPosition = projectTitle.getBoundingClientRect();
+		/*const navBarBoundingBox = navBar.getBoundingClientRect();
+		console.log('scroll position: ', window.scrollY);
+		console.log('project position: ', projectTitleYPosition.top);*/
+
+		if(projectTitleYPosition.top < 0){
+			removeClass(navBar, 'dark');
+			addClass(navBar, 'light');
+		}
+		else{
+			removeClass(navBar, 'light');
+			addClass(navBar, 'dark');
+		}
 	};
 
-	let offset = calculateOffset(Toffset, Boffset);
-	console.log(offset);
-
-	//weird bug with calculating exact offset onload
-	setTimeout( () => {
-
-		Toffset = topLine.getBoundingClientRect();
-		Boffset = bottomLine.getBoundingClientRect();
-		//TODO: add css prefix for flex
-		offset = calculateOffset(Toffset, Boffset);
-		tl.set([text, author], {
-			css: {
-				'display': 'none',
-				'opacity': '0'
-			}
-		})
-		.set(topLine, {
-			css: {
-				'opacity': '0'
-			}
-		})
-		.set([topLine, bottomLine], {
-			css: {
-				'margin': '0',
-				// 'display': 'none',
-				'width': '3px'
-			}
-		});
-		
-		tl.add('start')
-			.to([topLine, bottomLine], 3, {
-				css: {
-					'width': '75%',
-					'opacity': '1'
-				}
-			}, 'start')
-			.add('move')
-			.to(bottomLine, 3, {
-				y: offset
-			}, 'move')
-			.to(topLine, 3, {
-				y: -offset
-			}, 'move')
-		
-			.add('reveal')
-			.set([topLine, bottomLine], {
-				y: 0
-			})
-			.to([text, author], 5, {
-				css:{
-					'opacity': '1',
-					'display': 'flex'
-				}
-			}, 'reveal');
-		tl.play();
-	}, 10);
-
-	
+	window.onscroll = onScrollEventHandler;
 })();

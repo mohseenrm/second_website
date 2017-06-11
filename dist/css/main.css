@@ -584,6 +584,18 @@ body {
   position: absolute; }
 
 /* Screens Settings */
+.light {
+  transition: all 1.2s ease;
+  background: #fff; }
+  .light > a {
+    color: #000; }
+
+.dark {
+  transition: all 1.2s ease;
+  background: #000; }
+  .dark > a {
+    color: #fff; }
+
 .nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -592,8 +604,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(0deg, white, #f6f6f6);
-  background: linear-gradient(0deg, white, #f6f6f6);
   position: fixed;
   height: 8%;
   z-index: 2;
@@ -603,7 +613,12 @@ body {
 
 a {
   text-decoration: none;
-  text-shadow: -2px 1px rgba(0, 0, 0, 0.1); }
+  font-family: 'Merriweather', 'butlerregular', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2rem; }
+
+text {
+  font-family: 'Merriweather', 'butlerregular', sans-serif; }
 
 .link-effect-10 a {
   color: #2C3E50;
@@ -704,7 +719,6 @@ a {
 .link-effect-3 a {
   padding: 3px 0;
   margin: 0 20px;
-  color: #797878;
   text-shadow: none;
   position: relative; }
   .link-effect-3 a:active {
@@ -717,7 +731,6 @@ a {
   overflow: hidden;
   padding: 3px 0;
   max-width: 0;
-  border-bottom: 2px solid #FF5A09;
   color: #FF5A09;
   content: attr(data-hover);
   -webkit-transition: max-width 0.5s;
@@ -927,70 +940,78 @@ i.fa-github {
   border-left: 3px dashed white;
   margin-top: -4%; }
 
-#screen-5 {
-  width: 100%;
-  height: 100%;
-  background: url("../../images/test2.svg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat; }
-  #screen-5 > .wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
+/*#screen-5{
+    width: 100%;
     height: 100%;
-    flex-direction: column;
-    align-items: center; }
-    #screen-5 > .wrapper > .row-1 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      align-items: flex-end;
-      height: 25%;
-      width: 45%;
-      font-size: 10rem;
-      color: #ffbf00; }
-    #screen-5 > .wrapper > .row-2 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      height: 50%;
-      align-items: center; }
-      #screen-5 > .wrapper > .row-2 > span {
-        font-size: 4rem;
-        color: #797878;
-        background: -webkit-linear-gradient(transparent, transparent), url("../../images/test4.svg") no-repeat;
-        background: -o-linear-gradient(transparent, transparent);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-position: center;
-        background-size: 100% 100%;
-        background-attachment: fixed; }
-    #screen-5 > .wrapper > .row-3 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      height: 10%;
-      width: 45%;
-      font-size: 10rem;
-      color: #ffbf00;
-      justify-content: flex-end; }
-    #screen-5 > .wrapper > .row-4 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      height: 15%;
-      font-size: 4rem;
-      color: #ffbf00; }
+    background: url('../../images/test2.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    & > .wrapper{
+        @include flexbox;
+        height: 100%;
+
+        flex-direction: column;
+        align-items: center;
+        & > .row-1{
+            @include flexbox;
+
+            align-items: flex-end;
+            height: 25%;
+            width: 45%;
+            font-size: 10rem;
+            color: #ffbf00;
+        }
+        & > .row-2{
+            @include flexbox;
+
+            height: 50%;
+            align-items: center;
+            & > span{
+                font-size: 4rem;
+                // color: #797878;
+                // background: -webkit-linear-gradient(transparent, transparent), url(http://timpietrusky.com/cdn/army.png) repeat;
+                // background: -o-linear-gradient(transparent, transparent);
+                // -webkit-background-clip: text;
+                // background-clip: text;
+                // -webkit-text-fill-color: transparent;
+                //I am a legend, this shit was hard!!
+                color: #797878;
+                background: -webkit-linear-gradient(transparent, transparent), url('../../images/test4.svg') no-repeat;
+                background: -o-linear-gradient(transparent, transparent);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-position: center;
+                // background-size: 1740% 1740%;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+    
+            }
+        }
+        & > .row-3{
+            @include flexbox;
+
+            height: 10%;
+            width: 45%;
+            font-size: 10rem;
+            color: #ffbf00;
+            justify-content: flex-end;
+        }
+        & > .row-4{
+            @include flexbox;
+
+            height: 15%;
+            font-size: 4rem;
+            color: #ffbf00;
+        }
+    }
+
+    // & > #special-text{
+    //     @include flexbox;
+
+    //     position: fixe
+    // }
+}*/
 
 /*# sourceMappingURL=main.css.map */

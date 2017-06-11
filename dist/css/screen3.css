@@ -34,13 +34,14 @@
         width: 100%;
         margin-bottom: 5%;
         font-size: 3.5rem;
-        font-weight: 100;
+        font-weight: 500;
         letter-spacing: 0.18rem;
-        text-align: right; }
+        text-align: right;
+        color: #4E0E2E; }
       #screen-3b .wrapper--block--text {
-        color: #4E0E2E;
+        color: #000000;
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 100;
         line-height: 5.3vh;
         text-align: right; }
       #screen-3b .wrapper--block:nth-child(2) > .wrapper--block--text {
@@ -68,20 +69,21 @@
           width: 100%;
           margin-bottom: 5%;
           font-size: 3.5rem;
-          font-weight: 100;
+          font-weight: 500;
           letter-spacing: 0.18rem;
-          text-align: center; }
+          text-align: center;
+          color: #4E0E2E; }
         #screen-3b .wrapper--block-large--text {
           display: flex;
           font-size: 2.5rem;
-          font-weight: 700;
+          font-weight: 100;
           line-height: 5.3vh;
-          text-align: right;
-          color: #4E0E2E;
-          margin-left: 5%;
-          margin-right: 5%; }
+          text-align: center;
+          color: #000000;
+          margin-left: 2.5vw;
+          margin-right: 2.5vw; }
           #screen-3b .wrapper--block-large--text:nth-child(2) {
-            text-align: left; }
+            text-align: center; }
 
 .wrapper--text {
   color: #000;

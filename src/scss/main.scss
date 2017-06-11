@@ -243,13 +243,24 @@ $off-white: #F1F0EE;
 $hover-color: #FF5A09;
 $text-color: #2C3E50;
 $active-color: #393E41;
+.light{
+    transition: all 1.2s ease;
+    background: #fff;
+    & > a{
+        color: #000;
+    }
+}
+.dark{
+    transition: all 1.2s ease;
+    background: #000;
+    & > a{
+        color: #fff;
+    }
+}
 .nav {
     @include flexbox;
     justify-content: center;
     align-items: center;
-    // background-color: $off-white;
-    background: -webkit-linear-gradient(0deg, rgb(255, 255, 255), rgb(246, 246, 246));
-    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(246, 246, 246));
     position: fixed;
     height: 8%;
     // text-align: center;
@@ -264,7 +275,14 @@ $active-color: #393E41;
 
 a {
     text-decoration: none;
-    text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
+    // text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
+    font-family: 'Merriweather', 'butlerregular', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+text{
+    font-family: 'Merriweather', 'butlerregular', sans-serif;
 }
 
 .link-effect-10 a {
@@ -374,7 +392,7 @@ a {
 .link-effect-3 a {
     padding: 3px 0;
     margin: 0 20px;
-    color: #797878;
+    // color: #fff;
     text-shadow: none;
     position: relative;
     &:active {
@@ -389,7 +407,7 @@ a {
     overflow: hidden;
     padding: 3px 0;
     max-width: 0;
-    border-bottom: 2px solid $hover-color;
+    // border-bottom: 2px solid $hover-color;
     color: $hover-color;
     content: attr(data-hover);
     -webkit-transition: max-width 0.5s;
