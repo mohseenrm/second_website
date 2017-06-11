@@ -592,7 +592,7 @@ body {
 
 .dark {
   transition: all 1.2s ease;
-  background: #000; }
+  background: #191919; }
   .dark > a {
     color: #fff; }
 
@@ -609,12 +609,15 @@ body {
   z-index: 2;
   right: 0;
   left: 0;
-  top: 0; }
+  top: 0;
+  opacity: 0.9; }
+  .nav:hover {
+    opacity: 1; }
 
 a {
   text-decoration: none;
   font-family: 'Merriweather', 'butlerregular', sans-serif;
-  font-weight: 500;
+  font-weight: 100;
   letter-spacing: 0.2rem; }
 
 text {

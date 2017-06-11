@@ -252,7 +252,7 @@ $active-color: #393E41;
 }
 .dark{
     transition: all 1.2s ease;
-    background: #000;
+    background: #191919;
     & > a{
         color: #fff;
     }
@@ -268,16 +268,20 @@ $active-color: #393E41;
     right: 0;
     left: 0;
     top: 0;
+    opacity: 0.9;
     // -webkit-box-shadow: 0 8px 6px -6px black;
     //    -moz-box-shadow: 0 8px 6px -6px black;
     //         box-shadow: 0 8px 6px -6px black;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 a {
     text-decoration: none;
     // text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
     font-family: 'Merriweather', 'butlerregular', sans-serif;
-    font-weight: 500;
+    font-weight: 100;
     letter-spacing: 0.2rem;
 }
 
