@@ -126,6 +126,7 @@ let radius;
 // calculate minimum of width and height to set chart radius
 if (minOfWH > 200) {
     radius = 200;
+    
 } else {
     radius = minOfWH;
 }

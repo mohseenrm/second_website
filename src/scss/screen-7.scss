@@ -1,0 +1,80 @@
+@import 'flex';
+@import 'fonts';
+$fonts: 'Merriweather',
+'Didot',
+'nowayregular',
+'League Gothic',
+'Helvetica',
+serif;
+
+//device widths
+$phone: "(max-width: 400px)";
+$phablet: "(min-width: 401px) and (max-width: 720px)";
+$tablet: "(min-width: 721px) and (max-width: 1280px)";
+$desktop: "(min-width: 1281px) and (max-width: 1440px)";
+
+#screen-7 {
+    @include flexbox;
+    width: 100%;
+    background: #000;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    overflow-x: hidden;
+    & .wrapper {
+        @include flexbox;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        &--picture {
+            min-height: 30vw;
+            min-width: 30vw;
+            background: #ecf0f1;
+            margin: 1px;
+            @media #{$phone} {
+                height: 45vw;
+                width: 45vw;
+                // FIXME: use px instead of percentage
+                margin: 1%;
+            }
+        }
+        &--button {
+            @include flexbox;
+            height: 6vh;
+            width: 25vw;
+            justify-content: center;
+            align-items: center;
+            background: #f7f7f7;
+            font-family: $fonts;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.2rem;
+            background: #f2994a;
+            background: -webkit-linear-gradient(to top, #f2994a, #f2c94c);
+            background: linear-gradient(to top, #f2994a, #f2c94c);
+            color: #000;
+            font-size: 2.2rem;
+            border-top: 4px solid black;
+            transition: all 0.5s ease-in-out;
+            margin-top: 4vh;
+            @media #{$phone}{
+                height: 3vh;
+                width: 30vw;
+                font-weight: 400;
+                font-size: 1.7rem;
+                // TODO: figure out the actual value on mobile for margin-top
+            }
+        }
+        &--container{
+            @include flexbox;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+.loading {
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+    cursor: not-allowed;
+}

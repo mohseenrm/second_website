@@ -56,7 +56,7 @@ THE SOFTWARE.
 	
 	const calculateOffset = (topOffset, bottomOffset) => {
 		if(topOffset || bottomOffset)
-			return( (bottomOffset.top -topOffset.top)/2 - bottomOffset.height/2 );
+			return( (bottomOffset.top - topOffset.top)/2 - bottomOffset.height/2 );
 	};
 
 	let offset = calculateOffset(Toffset, Boffset);
@@ -64,7 +64,7 @@ THE SOFTWARE.
 
 	//weird bug with calculating exact offset onload
 	setTimeout( () => {
-
+		
 		Toffset = topLine.getBoundingClientRect();
 		Boffset = bottomLine.getBoundingClientRect();
 		//TODO: add css prefix for flex

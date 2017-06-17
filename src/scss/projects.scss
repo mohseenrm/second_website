@@ -84,7 +84,7 @@ serif;
 		justify-content: space-around;
 		&--frame {
 			height: 40%;
-			min-width: 40%;
+			width: 40%;
 			overflow: hidden;
 			background: url('https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-135026637-1500x1000.jpg');
 
@@ -92,8 +92,12 @@ serif;
 			-moz-box-shadow: 0 8px 6px -12px black;
 			box-shadow: 0 8px 6px -12px black;
 
-			margin: 7%;
-			flex-grow: 1;
+			margin: 4%;
+			@media #{$phone} {
+				flex-grow: 1;
+				min-width: 40%;
+				margin: 7%;
+            }
 
 			&#refine-hiring{
 				background: url($refine_hiring);

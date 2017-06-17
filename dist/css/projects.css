@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$phone".
-        on line 160 of src/scss/projects.scss
+        on line 96 of src/scss/projects.scss
 
-155: 			}
-156: 			&:hover &--inner-wrapper--text {
-157: 				padding-top: 4%;
-158: 				font-size: 3.5rem;
-159: 				transition: font-size 0.8s ease-out;
-160: 				@media #{$phone} {
-161: 					font-size: 3rem;
-162: 				}
-163: 			} //description wrapper
-164: 			&--inner-wrapper {
-165: 				display: flex;
+91: 			-webkit-box-shadow: 0 8px 6px -12px black;
+92: 			-moz-box-shadow: 0 8px 6px -12px black;
+93: 			box-shadow: 0 8px 6px -12px black;
+94: 
+95: 			margin: 4%;
+96: 			@media #{$phone} {
+97: 				flex-grow: 1;
+98: 				min-width: 40%;
+99: 				margin: 7%;
+100:             }
+101: 
 
 Backtrace:
-src/scss/projects.scss:160
+src/scss/projects.scss:96
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/interpolation.rb:170:in `_perform'
@@ -25,17 +25,6 @@ src/scss/projects.scss:160
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:540:in `run_interp_no_strip'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:547:in `run_interp'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:512:in `visit_media'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -107,4 +96,4 @@ src/scss/projects.scss:160
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$phone\".\A         on line 160 of src/scss/projects.scss\A \A 155: 			}\A 156: 			&:hover &--inner-wrapper--text {\A 157: 				padding-top: 4%;\A 158: 				font-size: 3.5rem;\A 159: 				transition: font-size 0.8s ease-out;\A 160: 				@media #{$phone} {\A 161: 					font-size: 3rem;\A 162: 				}\A 163: 			} //description wrapper\A 164: 			&--inner-wrapper {\A 165: 				display: flex;"; }
+  content: "Error: Undefined variable: \"$phone\".\A         on line 96 of src/scss/projects.scss\A \A 91: 			-webkit-box-shadow: 0 8px 6px -12px black;\A 92: 			-moz-box-shadow: 0 8px 6px -12px black;\A 93: 			box-shadow: 0 8px 6px -12px black;\A 94: \A 95: 			margin: 4%;\A 96: 			@media #{$phone} {\A 97: 				flex-grow: 1;\A 98: 				min-width: 40%;\A 99: 				margin: 7%;\A 100:             }\A 101: "; }
