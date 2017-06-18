@@ -37,7 +37,7 @@ const removeClass = ( element, delClassName ) => {
 	if ( title != null ) img.title = title;
 	return img;
 };*/
-var imagesLoaded = 0, maxPictures = 22;
+var imagesLoaded = 0, maxPictures = 21;
 
 const initGallery = () => {
 	createPictures(8);
@@ -49,10 +49,10 @@ const createPictures = (number) => {
 	let picture, limit;
 	limit = maxPictures;
 
-	if((number + imagesLoaded + 1) < maxPictures)
-		limit = (number + imagesLoaded + 1);
+	if((number + imagesLoaded) < maxPictures)
+		limit = (number + imagesLoaded);
 
-	for( let i = (imagesLoaded + 1); i < limit; i++ ){
+	for( let i = imagesLoaded; i < limit; i++ ){
 		picture = document.createElement( 'div' );
 		picture.style = `
 			background: url('../../images/${i}.jpg');
