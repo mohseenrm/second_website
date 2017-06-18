@@ -33,6 +33,7 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
             background: #ecf0f1;
             background-size: contain;
             margin: 4px;
+            background-origin: 50% 50%;
             // filter: grayscale(100%) saturate(50%) contrast(100%);
             @media #{$phone} {
                 height: 45vw;

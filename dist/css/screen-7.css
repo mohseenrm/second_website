@@ -372,7 +372,8 @@
       width: 26vw;
       background: #ecf0f1;
       background-size: contain;
-      margin: 4px; }
+      margin: 4px;
+      background-origin: 50% 50%; }
       @media (max-width: 400px) {
         #screen-7 .wrapper--picture {
           height: 45vw;

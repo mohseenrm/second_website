@@ -37,12 +37,22 @@ const removeClass = ( element, delClassName ) => {
 	if ( title != null ) img.title = title;
 	return img;
 };*/
+var imagesLoaded = 0, maxPictures = 22;
+
 const initGallery = () => {
+	createPictures(8);
+};
+// TODO: use optimize images for preview
+const createPictures = (number) => {
 	const galleryButton = document.getElementById( 'gallery-button' );
 	const gallery = galleryButton.parentNode;
-	let picture;
+	let picture, limit;
+	limit = maxPictures;
 
-	for( let i = 1; i < 9; i++ ){
+	if((number + imagesLoaded + 1) < maxPictures)
+		limit = (number + imagesLoaded + 1);
+
+	for( let i = (imagesLoaded + 1); i < limit; i++ ){
 		picture = document.createElement( 'div' );
 		picture.style = `
 			background: url('../../images/${i}.jpg');
@@ -54,19 +64,28 @@ const initGallery = () => {
 
 		gallery.insertBefore( picture, galleryButton );
 	}
-	
+	imagesLoaded = number + imagesLoaded;
 };
+
 // TODO: refactor location of addClass, removeClass and loadButton
 (()=>{
 	const loadButton = document.querySelector('.wrapper--button');
 	initGallery();
+	imagesLoaded = 8;
 	loadButton.onclick = (e) => {
 		e.preventDefault();
 
 		addClass(loadButton, 'loading');
+		createPictures(6);
 		setTimeout(()=>{
 			removeClass(loadButton, 'loading');
-		}, 3000);
+		}, 3500);
 	};
-	
+	// TODO: create modal -> onclick event of pictures change css of modal to reflect new src -> and show modal
+	// on close -> modal hide
+	// on swipe -> based on current swipe add 1 to id
+	// 		-> on edge case -> circle back to first one
+	//		-> for this we need to track globally how many images have been loaded
+
+	// TODO: OR grow selected picture and shrink pictures in matrix;
 })();
