@@ -103,3 +103,4 @@ require( './scroll' );
 require( './pie' );
 require( './panels' );
 require( './references' );
+require( './gallery' );

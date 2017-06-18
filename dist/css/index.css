@@ -2169,7 +2169,6 @@ THE SOFTWARE.
   font-size: 3rem; }
 
 /*
-Made by:
 ___  ___      _                                     
 |  \/  |     | |                                    
 | .  . | ___ | |__  ___  ___  ___ _ __              
@@ -3812,15 +3811,26 @@ polyline {
     flex-wrap: wrap;
     justify-content: center; }
     #screen-7 .wrapper--picture {
-      min-height: 30vw;
-      min-width: 30vw;
+      height: 26vw;
+      width: 26vw;
       background: #ecf0f1;
-      margin: 1px; }
+      background-size: contain;
+      margin: 4px; }
       @media (max-width: 400px) {
         #screen-7 .wrapper--picture {
           height: 45vw;
           width: 45vw;
           margin: 1%; } }
+      #screen-7 .wrapper--picture:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 1; }
+      #screen-7 .wrapper--picture:hover {
+        transition: all 0.5s ease-in-out;
+        background: initial;
+        filter: unset; }
     #screen-7 .wrapper--button {
       display: -webkit-box;
       display: -webkit-flex;
@@ -3864,6 +3874,15 @@ polyline {
   transition: all 0.5s ease-in-out;
   filter: grayscale(50%);
   cursor: not-allowed; }
+
+.colorize {
+  transition: all 0.2s ease-in-out;
+  background: initial;
+  filter: unset; }
+
+.black-and-white {
+  transition: all 0.2s ease-in-out;
+  filter: grayscale(100%) saturate(50%) contrast(100%); }
 
 #footer {
   display: -webkit-box;

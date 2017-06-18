@@ -1,5 +1,4 @@
 /*
-Made by:
 ___  ___      _                                     
 |  \/  |     | |                                    
 | .  . | ___ | |__  ___  ___  ___ _ __              
@@ -50,6 +49,12 @@ $fonts: 'Merriweather', 'Didot', 'nowayregular',
 'Helvetica',
 serif;
 
+//device widths
+$phone: "(max-width: 400px)";
+$phablet: "(min-width: 401px) and (max-width: 720px)";
+$tablet: "(min-width: 721px) and (max-width: 1280px)";
+$desktop: "(min-width: 1281px) and (max-width: 1440px)";
+
 #section-4b {
 	@include flexbox;
 	width: 100%;
@@ -93,6 +98,7 @@ serif;
 			box-shadow: 0 8px 6px -12px black;
 
 			margin: 4%;
+
 			@media #{$phone} {
 				flex-grow: 1;
 				min-width: 40%;
