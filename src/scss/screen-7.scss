@@ -143,6 +143,32 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
     position: fixed;
     top: 0;
     right: 0;
+    font-size: 3.3rem;
+    margin: 2%;
+    opacity: 0.75;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+    }
+}
+.fa.fa-chevron-left{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    font-size: 4rem;
+    margin: 2%;
+    opacity: 0.75;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+    }
+}
+.fa.fa-chevron-right{
+    position: fixed;
+    top: 50%;
+    right: 0;
     font-size: 4rem;
     margin: 2%;
     opacity: 0.75;

@@ -51,7 +51,9 @@ var imagesLoaded = 0,
 let cache = {};
 
 cache[ 'slideshow' ] = document.getElementById( 'gallery-preview' ),
-cache[ 'minimize' ] = document.getElementById( 'gallery-minimize' );
+cache[ 'minimize' ] = document.getElementById( 'gallery-minimize' ),
+cache[ 'left' ] = document.getElementById( 'gallery-left' ),
+cache[ 'right' ] = document.getElementById( 'gallery-right' );
 
 const initGallery = () => {
 	createPictures(8);
@@ -125,11 +127,20 @@ const initSlideshow = () => {
 		e.preventDefault();
 		cache[ 'slideshow' ].style.display = 'none';
 	};
+
+	cache[ 'left' ].onclick = galleryLeftEventHandler;
+	cache[ 'right' ].onclick = galleryRightEventHandler;
 };
 
 const extractIndexFromId = ( id ) => {
 	if( id !== undefined )
 		return id.split('picture_')[1];
+	return;
+};
+
+const extractIndexFromIdSlides = ( id ) => {
+	if( id !== undefined )
+		return id.split('slide_')[1];
 	return;
 };
 
@@ -174,9 +185,8 @@ const getIndexFromPictures = ( e ) => {
 	removeClass( element, 'slideshow--slide' );
 	addClass( element, 'slideshow--slide show' );
 
-	console.log('e', element);
-
 	cache[ 'slideshow' ].style.display = 'block';
+	cache[ 'current' ] = element;
 
 };
 const onClickEventHandler = ( e ) => {
@@ -193,6 +203,37 @@ const onClickEventHandler = ( e ) => {
 		removeClass(loadButton, 'loading');
 	}, 3500);
 };
+
+const galleryLeftEventHandler = ( e ) => {
+	e.preventDefault();
+	console.log('left clicked');
+};
+
+const galleryRightEventHandler = ( e ) => {
+	e.preventDefault();
+	console.log('right clicked');
+
+	console.log(cache['current']);
+	removeClass( cache[ 'current' ], 'show' );
+
+	const current = extractIndexFromIdSlides( cache[ 'current' ].id );
+	const next = parseInt( current ) + 1;
+
+	if( cache[ generateIdFromIndex( `${next}` ) ] === undefined )
+		cache[ generateIdFromIndex( `${next}` ) ] = document.getElementById( generateIdFromIndex( `${next}` ) );
+
+	// TODO: fix edge case of going past loaded slides
+	
+	const nextSlide = cache[ generateIdFromIndex( `${next}` ) ];
+	console.log('next id: ', generateIdFromIndex( `${next}` ));
+
+	removeClass( nextSlide, 'slideshow--slide' );
+	addClass( nextSlide, 'slideshow--slide show' );
+	console.log( 'next slide: ', cache[ generateIdFromIndex( `${next}` ) ] );
+
+	cache[ 'current' ] = nextSlide;
+};
+
 // TODO: refactor location of addClass, removeClass and loadButton
 (()=>{
 	const loadButton = document.querySelector('.wrapper--button');
