@@ -3880,6 +3880,7 @@ polyline {
   filter: grayscale(100%) saturate(50%) contrast(100%); }
 
 #gallery-preview {
+  transition: all 0.3s ease-in-out;
   width: 100vw;
   height: 100vh;
   background: #000;
@@ -3899,6 +3900,7 @@ polyline {
   overflow: hidden;
   display: flex; }
   .slideshow--slide {
+    transition: all 0.3s ease-in-out;
     height: 100%;
     width: 100%;
     background: #aeaeae;
@@ -3916,6 +3918,18 @@ polyline {
 .show {
   display: block;
   opacity: 1; }
+
+.fa.fa-compress {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 4rem;
+  margin: 2%;
+  opacity: 0.75;
+  transition: all 0.3s ease-in-out; }
+  .fa.fa-compress:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 1; }
 
 #footer {
   display: -webkit-box;

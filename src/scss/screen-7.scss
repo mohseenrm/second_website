@@ -94,6 +94,7 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 }
 
 #gallery-preview {
+    transition: all 0.3s ease-in-out;
     width: 100vw;
     height: 100vh;
     background: #000;
@@ -116,6 +117,7 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
     overflow: hidden;
     display: flex;
     &--slide {
+        transition: all 0.1s ease-in-out;
         height: 100%;
         width: 100%;
         background: #aeaeae;
@@ -135,4 +137,18 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 .show {
     display: block;
     opacity: 1;
+}
+
+.fa.fa-compress{
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 4rem;
+    margin: 2%;
+    opacity: 0.75;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+    }
 }

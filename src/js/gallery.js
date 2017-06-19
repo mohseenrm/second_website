@@ -9,6 +9,10 @@
 const addClass = ( element, newClassName ) => {
 	if( element !== undefined && newClassName !== undefined ){
 		let classNames = element.className;
+		if( classNames === undefined || classNames === null ){
+			element.className = '';
+			classNames = '';
+		}
 		if( !classNames.includes( newClassName ) ){
 			element.className += ` ${newClassName}`;
 		}
@@ -24,6 +28,8 @@ const addClass = ( element, newClassName ) => {
 */
 const removeClass = ( element, delClassName ) => {
 	if( element !== undefined && delClassName !== undefined ){
+		if( element.className === undefined || element.className === null )
+			element.className = '';
 		if( element.className.includes( delClassName ) ){
 			element.className = element.className.replace( new RegExp('(?:^|\\s)'+ delClassName + '(?:\\s|$)'), '' );
 		}
@@ -44,7 +50,8 @@ var imagesLoaded = 0,
 
 let cache = {};
 
-cache[ 'slideshow' ] = document.getElementById( 'gallery-preview' );
+cache[ 'slideshow' ] = document.getElementById( 'gallery-preview' ),
+cache[ 'minimize' ] = document.getElementById( 'gallery-minimize' );
 
 const initGallery = () => {
 	createPictures(8);
@@ -73,7 +80,10 @@ const createPictures = (number) => {
 
 		gallery.insertBefore( picture, galleryButton );
 	}
-	imagesLoaded = number + imagesLoaded;
+	if((number + slidesLoaded) < maxPictures)
+		imagesLoaded = (number + imagesLoaded);
+	else
+		imagesLoaded = maxPictures;
 };
 
 const createSlides = (number) => {
@@ -103,11 +113,18 @@ const createSlides = (number) => {
 		addClass( slide, 'slideshow--slide' );
 		slideshow.appendChild( slide );
 	}
-	slidesLoaded = number + slidesLoaded;
+	if((number + slidesLoaded) < maxPictures)
+		slidesLoaded = (number + slidesLoaded);
+	else
+		slidesLoaded = maxPictures;
 };
 
 const initSlideshow = () => {
 	createSlides(8);
+	cache[ 'minimize' ].onclick = ( e ) => {
+		e.preventDefault();
+		cache[ 'slideshow' ].style.display = 'none';
+	};
 };
 
 const extractIndexFromId = ( id ) => {
@@ -122,8 +139,21 @@ const generateIdFromIndex = ( index ) => {
 	return;
 };
 
+const clearSlideshow = () => {
+	console.log( 'slidesLoaded: ', slidesLoaded );
+	console.log( 'picturesLoaded: ', imagesLoaded );
+
+	for( let i = 0; i < ( slidesLoaded ); i++ ){
+		if( cache[ `slide_${i}` ] === undefined )
+			cache[ `slide_${i}` ] = document.getElementById( `slide_${i}` );
+		removeClass( cache[ `slide_${i}` ], 'show' );
+	}
+};
+
 const getIndexFromPictures = ( e ) => {
 	e.preventDefault();
+
+	clearSlideshow();
 
 	// console.log(e);
 	const source = e.target || e.srcElement;
@@ -145,8 +175,8 @@ const getIndexFromPictures = ( e ) => {
 	addClass( element, 'slideshow--slide show' );
 
 	console.log('e', element);
-	// addClass( cache[ 'slideshow' ], 'show');
-	cache[ 'slideshow' ].style.display = 'flex';
+
+	cache[ 'slideshow' ].style.display = 'block';
 
 };
 const onClickEventHandler = ( e ) => {
@@ -158,6 +188,7 @@ const onClickEventHandler = ( e ) => {
 	console.log('checking out this: ', this);*/
 	addClass(loadButton, 'loading');
 	createPictures(6);
+	createSlides(6);
 	setTimeout(()=>{
 		removeClass(loadButton, 'loading');
 	}, 3500);
