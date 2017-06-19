@@ -37,7 +37,14 @@ const removeClass = ( element, delClassName ) => {
 	if ( title != null ) img.title = title;
 	return img;
 };*/
-var imagesLoaded = 0, maxPictures = 21;
+// globals
+var imagesLoaded = 0, 
+	maxPictures = 21,
+	slidesLoaded = 0;
+
+let cache = {};
+
+cache[ 'slideshow' ] = document.getElementById( 'gallery-preview' );
 
 const initGallery = () => {
 	createPictures(8);
@@ -58,29 +65,114 @@ const createPictures = (number) => {
 			background: url('../../images/${i}.jpg');
 			background-size: cover;
 		`;
-
+		picture.id = `picture_${i}`;
 		addClass( picture, 'wrapper--picture' );
 		addClass( picture, 'black-and-white' );
+
+		gallery.onclick = getIndexFromPictures;
 
 		gallery.insertBefore( picture, galleryButton );
 	}
 	imagesLoaded = number + imagesLoaded;
 };
 
+const createSlides = (number) => {
+	const slideshow = document.getElementById( 'slideshow' );
+
+	let slide, limit;
+	limit = maxPictures;
+
+	if((number + slidesLoaded) < maxPictures)
+		limit = (number + slidesLoaded);
+
+	for( let i = slidesLoaded; i < limit; i++ ){
+		slide = document.createElement( 'div' );
+		slide.style = `
+			background: url('../../images/${i}.jpg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		`;
+
+		/*if(i === 1){
+			addClass( slide, 'slideshow--slide show' );
+		}
+		else
+			addClass( slide, 'slideshow--slide' );*/
+		slide.id = `slide_${i}`;
+		addClass( slide, 'slideshow--slide' );
+		slideshow.appendChild( slide );
+	}
+	slidesLoaded = number + slidesLoaded;
+};
+
+const initSlideshow = () => {
+	createSlides(8);
+};
+
+const extractIndexFromId = ( id ) => {
+	if( id !== undefined )
+		return id.split('picture_')[1];
+	return;
+};
+
+const generateIdFromIndex = ( index ) => {
+	if( index !== undefined )
+		return `slide_${ index }`;
+	return;
+};
+
+const getIndexFromPictures = ( e ) => {
+	e.preventDefault();
+
+	// console.log(e);
+	const source = e.target || e.srcElement;
+	const sourceId = source.id;
+	// console.log('sourceId: ', sourceId );
+	const targetId = generateIdFromIndex( extractIndexFromId( sourceId ) );
+	// console.log(extractIndexFromId(source.id));
+	// console.log(targetId);
+	// add show class to target and make slideshow visible
+	var element;
+
+	if( cache[ targetId ] === undefined ){
+		element = document.getElementById( targetId );
+		cache[ targetId ] = element;
+	}
+	else
+		element = cache[ targetId ];
+	removeClass( element, 'slideshow--slide' );
+	addClass( element, 'slideshow--slide show' );
+
+	console.log('e', element);
+	// addClass( cache[ 'slideshow' ], 'show');
+	cache[ 'slideshow' ].style.display = 'flex';
+
+};
+const onClickEventHandler = ( e ) => {
+	// FIXME: fix this using 'this'
+	const loadButton = document.querySelector('.wrapper--button');
+
+	e.preventDefault();
+/*	console.log('checking out e: ', e);
+	console.log('checking out this: ', this);*/
+	addClass(loadButton, 'loading');
+	createPictures(6);
+	setTimeout(()=>{
+		removeClass(loadButton, 'loading');
+	}, 3500);
+};
 // TODO: refactor location of addClass, removeClass and loadButton
 (()=>{
 	const loadButton = document.querySelector('.wrapper--button');
 	initGallery();
-	imagesLoaded = 8;
-	loadButton.onclick = (e) => {
-		e.preventDefault();
+	initSlideshow();
 
-		addClass(loadButton, 'loading');
-		createPictures(6);
-		setTimeout(()=>{
-			removeClass(loadButton, 'loading');
-		}, 3500);
-	};
+	imagesLoaded = 8;
+	slidesLoaded = 8;
+
+	loadButton.onclick = onClickEventHandler;
+
 	// TODO: create modal -> onclick event of pictures change css of modal to reflect new src -> and show modal
 	// on close -> modal hide
 	// on swipe -> based on current swipe add 1 to id
