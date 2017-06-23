@@ -160,7 +160,7 @@ const clearSlideshow = () => {
 		removeClass( cache[ `slide_${i}` ], 'show' );
 	}
 };
-
+// Need to take care of navigation control with edge cases
 const getIndexFromPictures = ( e ) => {
 	e.preventDefault();
 
