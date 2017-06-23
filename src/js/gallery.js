@@ -162,6 +162,7 @@ const clearSlideshow = () => {
 };
 // Need to take care of navigation control with edge cases
 // TODO: add eslint rules from airbnb JS guideline docs
+
 const getIndexFromPictures = ( e ) => {
 	e.preventDefault();
 
