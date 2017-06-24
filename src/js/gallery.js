@@ -50,10 +50,10 @@ var imagesLoaded = 0,
 
 let cache = {};
 
-cache[ 'slideshow' ] = document.getElementById( 'gallery-preview' ),
-cache[ 'minimize' ] = document.getElementById( 'gallery-minimize' ),
 cache[ 'left' ] = document.getElementById( 'gallery-left' ),
-cache[ 'right' ] = document.getElementById( 'gallery-right' );
+cache[ 'minimize' ] = document.getElementById( 'gallery-minimize' ),
+cache[ 'right' ] = document.getElementById( 'gallery-right' ),
+cache[ 'slideshow' ] = document.getElementById( 'gallery-preview' );
 
 const initGallery = () => {
 	createPictures(8);
@@ -204,29 +204,51 @@ const onClickEventHandler = ( e ) => {
 const galleryLeftEventHandler = ( e ) => {
 	e.preventDefault();
 	console.log('left clicked');
-};
 
-const galleryRightEventHandler = ( e ) => {
-	e.preventDefault();
-	console.log('right clicked');
-
-	console.log(cache['current']);
 	removeClass( cache[ 'current' ], 'show' );
 
 	const current = extractIndexFromIdSlides( cache[ 'current' ].id );
-	const next = parseInt( current ) + 1;
+	let next = slidesLoaded - 1;
+
+	// This determines next slide to fetch, if hits boundary of slidesloaded
+	// fallback to start
+	if ( parseInt( current ) > 0 )
+		next = parseInt( current ) - 1;
 
 	if( cache[ generateIdFromIndex( `${next}` ) ] === undefined )
 		cache[ generateIdFromIndex( `${next}` ) ] = document.getElementById( generateIdFromIndex( `${next}` ) );
-
-	// TODO: fix edge case of going past loaded slides
 	
 	const nextSlide = cache[ generateIdFromIndex( `${next}` ) ];
 	console.log('next id: ', generateIdFromIndex( `${next}` ));
 
 	removeClass( nextSlide, 'slideshow--slide' );
 	addClass( nextSlide, 'slideshow--slide show' );
-	console.log( 'next slide: ', cache[ generateIdFromIndex( `${next}` ) ] );
+
+	cache[ 'current' ] = nextSlide;
+};
+
+const galleryRightEventHandler = ( e ) => {
+	e.preventDefault();
+	console.log('right clicked');
+
+	removeClass( cache[ 'current' ], 'show' );
+
+	const current = extractIndexFromIdSlides( cache[ 'current' ].id );
+	let next = 0;
+
+	// This determines next slide to fetch, if hits boundary of slidesloaded
+	// fallback to start
+	if ( parseInt( current ) < ( slidesLoaded - 1 ) )
+		next = parseInt( current ) + 1;
+
+	if( cache[ generateIdFromIndex( `${next}` ) ] === undefined )
+		cache[ generateIdFromIndex( `${next}` ) ] = document.getElementById( generateIdFromIndex( `${next}` ) );
+	
+	const nextSlide = cache[ generateIdFromIndex( `${next}` ) ];
+	console.log('next id: ', generateIdFromIndex( `${next}` ));
+
+	removeClass( nextSlide, 'slideshow--slide' );
+	addClass( nextSlide, 'slideshow--slide show' );
 
 	cache[ 'current' ] = nextSlide;
 };
