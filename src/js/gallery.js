@@ -106,11 +106,6 @@ const createSlides = (number) => {
 			background-position: center;
 		`;
 
-		/*if(i === 1){
-			addClass( slide, 'slideshow--slide show' );
-		}
-		else
-			addClass( slide, 'slideshow--slide' );*/
 		slide.id = `slide_${i}`;
 		addClass( slide, 'slideshow--slide' );
 		slideshow.appendChild( slide );
