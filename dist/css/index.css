@@ -1977,7 +1977,6 @@ THE SOFTWARE.
   100% {
     stroke-dashoffset: 0; } }
 /*
-Made by:
 ___  ___      _                                     
 |  \/  |     | |                                    
 | .  . | ___ | |__  ___  ___  ___ _ __              
@@ -2028,12 +2027,20 @@ THE SOFTWARE.
     display: flex;
     overflow: hidden;
     flex-wrap: nowrap; }
+    @media (max-width: 400px) {
+      #screen-1 > .wrapper {
+        flex-direction: column; } }
     #screen-1 > .wrapper > .image-wrapper {
       height: 100%;
       width: 25%;
       display: flex;
-      background: #ff00ff;
+      background: #aeaeae;
       border-right: 2px solid #f2994a; }
+      @media (max-width: 400px) {
+        #screen-1 > .wrapper > .image-wrapper {
+          width: 100%;
+          height: 25%;
+          border-bottom: 2px solid #f2994a; } }
       #screen-1 > .wrapper > .image-wrapper:after {
         content: '';
         position: relative;

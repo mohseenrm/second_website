@@ -60,8 +60,10 @@ const addClass = ( element, newClassName ) => {
 */
 const removeClass = ( element, delClassName ) => {
 	if( element !== undefined && delClassName !== undefined ){
+		if( element.className === undefined || element.className === null )
+			element.className = '';
 		if( element.className.includes( delClassName ) ){
-			element.className = element.className.replace( new RegExp('(?:^|\\s)'+ delClassName + '(?:\\s|$)'), '' );
+			element.className = element.className.replace( new RegExp( `(?:^|\\s)${delClassName}(?:\\s|$)` ), '' );
 		}
 	}
 	return;

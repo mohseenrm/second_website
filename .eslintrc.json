@@ -25,6 +25,9 @@
             "error",
             "always"
         ],
-        "no-console": 1
+        "no-console": 1,
+        "prefer-template": [
+            "error"
+        ]
     }
 }

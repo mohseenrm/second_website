@@ -1,5 +1,4 @@
 /*
-Made by:
 ___  ___      _                                     
 |  \/  |     | |                                    
 | .  . | ___ | |__  ___  ___  ___ _ __              
@@ -37,6 +36,12 @@ THE SOFTWARE.
 
 */
 @import 'flex';
+
+$phone: "(max-width: 400px)";
+$phablet: "(min-width: 401px) and (max-width: 720px)";
+$tablet: "(min-width: 721px) and (max-width: 1280px)";
+$desktop: "(min-width: 1281px) and (max-width: 1440px)";
+
 #screen-1{
 	height: 100%;
 	widht: 100%;
@@ -48,13 +53,23 @@ THE SOFTWARE.
 		display: flex;
 		overflow: hidden;
 		flex-wrap: nowrap;
-		
+		@media #{$phone} {
+			flex-direction: column;
+        }
+
 		& > .image-wrapper{
 			height: 100%;
 			width: 25%;
 			display: flex;
-			background: #ff00ff;
+			background: #aeaeae;
 			border-right: 2px solid #f2994a;
+
+			@media #{$phone} {
+				width: 100%;
+				height: 25%;
+				border-bottom: 2px solid #f2994a;
+			}
+
 			&:after{
 			content: '';
 			position: relative;
