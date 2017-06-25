@@ -148,16 +148,16 @@ const references = {
 
 		text.style.opacity = 0;
 
-		setTimeout(() => {
+		setTimeout( () => {
 			text.innerHTML = document.createTextNode( references[authors[playHead]].text ).textContent;
 			text.style.opacity = 1;
-		}, 500);
-		
+		}, 500 );
+
 		author.style.opacity = 0;
-		setTimeout(() => {
+		setTimeout( () => {
 			author.innerHTML = `${ normalizeNames( document.createTextNode( authors[playHead] ).textContent ) }<span class="wrapper--author--position">${ references[authors[playHead]].position }</span>`;
 			author.style.opacity = 1;
-		}, 500);
+		}, 500 );
 		// playHead = playHead <
 	};
 	setInterval( rotateReferences, 11000 );
