@@ -5,6 +5,12 @@ $fonts: 'Didot', 'nowayregular',
 'Helvetica',
 serif;
 
+// device widths
+$phone: "(max-width: 400px)";
+$phablet: "(min-width: 401px) and (max-width: 720px)";
+$tablet: "(min-width: 721px) and (max-width: 1280px)";
+$desktop: "(min-width: 1281px) and (max-width: 1440px)";
+
 #screen-5 {
     @include flexbox;
     min-height: 130%;
@@ -33,16 +39,30 @@ serif;
             align-items: center;
         }
         &--author {
+            @include flexbox;
+            flex-wrap: wrap;
+            justify-content: center;
 			font-family: 'Merriweather', $fonts;
-            color: #fff;
+            color: #f7f7f7;
             font-size: 2.2rem;
             margin: 2%;
             margin-bottom: 4%;
+            margin-top: 3vh;
+            transition: all 0.1s ease-in-out;
             @media #{$phone} {
                 font-size: 2rem;
             }
+            &--position{
+                width: 100%;
+                color: #cecece;
+                font-size: 1.6rem;
+                font-style: italic;
+                margin-top: 2vh;
+                letter-spacing: 0.25rem;
+            }
         }
         &--text {
+            transition: all 0.1s ease-in-out;
 			font-family: 'Merriweather', $fonts;
             color: #fff;
             padding-left: 6%;

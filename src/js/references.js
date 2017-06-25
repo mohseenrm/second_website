@@ -137,7 +137,7 @@ const references = {
 
 	// Did this jumping around to prevent XSS attacks [https://stackoverflow.com/questions/1358810/how-do-i-change-the-text-of-a-span-element-in-javascript]
 	text.innerHTML = document.createTextNode( references[authors[playHead]].text ).textContent;
-	author.innerHTML = normalizeNames( document.createTextNode( authors[playHead] ).textContent );
+	author.innerHTML = `${ normalizeNames( document.createTextNode( authors[playHead] ).textContent ) }<span class="wrapper--author--position">${ references[authors[playHead]].position }</span>`;
 
 	// author.innerHTML = references[ authors[ playHead ] ];
 

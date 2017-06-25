@@ -3098,15 +3098,32 @@ THE SOFTWARE.
       justify-content: center;
       align-items: center; }
     #screen-5 .wrapper--author {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
-      color: #fff;
+      color: #f7f7f7;
       font-size: 2.2rem;
       margin: 2%;
-      margin-bottom: 4%; }
+      margin-bottom: 4%;
+      margin-top: 3vh;
+      transition: all 0.1s ease-in-out; }
       @media (max-width: 400px) {
         #screen-5 .wrapper--author {
           font-size: 2rem; } }
+      #screen-5 .wrapper--author--position {
+        width: 100%;
+        color: #cecece;
+        font-size: 1.6rem;
+        font-style: italic;
+        margin-top: 2vh;
+        letter-spacing: 0.25rem; }
     #screen-5 .wrapper--text {
+      transition: all 0.1s ease-in-out;
       font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
       color: #fff;
       padding-left: 6%;
