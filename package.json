@@ -12,7 +12,8 @@
     "build:webpack:windows:production": "node_modules\\.bin\\webpack --production",
     "devServer": "./node_modules/.bin/webpack-dev-server --progress --colors",
     "compile": "sass --watch src/scss:dist/css",
-    "test": "node_modules/.bin/eslint src/js/*.js --cache --cache-location ./.eslintcache"
+    "test": "node_modules/.bin/eslint src/js/*.js --cache --cache-location ./.eslintcache",
+    "test:quick-fix": "node_modules/.bin/eslint src/js/*.js --cache --cache-location ./.eslintcache --fix"
   },
   "repository": {
     "type": "git",

@@ -1,15 +1,15 @@
 /* eslint indent: ["error", "tab"] */
 /*
-___  ___      _                                     
-|  \/  |     | |                                    
-| .  . | ___ | |__  ___  ___  ___ _ __              
-| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \             
-| |  | | (_) | | | \__ \  __/  __/ | | |            
-\_|  |_/\___/|_| |_|___/\___|\___|_| |_|                     
-___  ___      _             _     _                 
-|  \/  |     | |           | |   | |                
-| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___  
-| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \ 
+___  ___      _
+|  \/  |     | |
+| .  . | ___ | |__  ___  ___  ___ _ __
+| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \
+| |  | | (_) | | | \__ \  __/  __/ | | |
+\_|  |_/\___/|_| |_|___/\___|\___|_| |_|
+___  ___      _             _     _
+|  \/  |     | |           | |   | |
+| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___
+| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \
 | |  | | |_| |   < (_| | (_| | (_| | (_| | | | | | |
 \_|  |_/\__,_|_|\_\__,_|\__,_|\__,_|\__,_|_| |_| |_|
 
@@ -46,7 +46,7 @@ const addClass = ( element, newClassName ) => {
 	if( element !== undefined && newClassName !== undefined ){
 		let classNames = element.className;
 		if( !classNames.includes( newClassName ) ){
-			element.className += ` ${newClassName}`;
+			element.className += ` ${ newClassName }`;
 		}
 	}
 	return;
@@ -63,14 +63,14 @@ const removeClass = ( element, delClassName ) => {
 		if( element.className === undefined || element.className === null )
 			element.className = '';
 		if( element.className.includes( delClassName ) ){
-			element.className = element.className.replace( new RegExp( `(?:^|\\s)${delClassName}(?:\\s|$)` ), '' );
+			element.className = element.className.replace( new RegExp( `(?:^|\\s)${ delClassName }(?:\\s|$)` ), '' );
 		}
 	}
 	return;
 };
-(() => {
-	const navBar = document.getElementById('link-effect-3'),
-		projectTitle = document.getElementById('project-title');
+( () => {
+	const navBar = document.getElementById( 'link-effect-3' ),
+		projectTitle = document.getElementById( 'project-title' );
 
 	const onScrollEventHandler = () => {
 		const projectTitleYPosition = projectTitle.getBoundingClientRect();
@@ -78,15 +78,14 @@ const removeClass = ( element, delClassName ) => {
 		console.log('scroll position: ', window.scrollY);
 		console.log('project position: ', projectTitleYPosition.top);*/
 
-		if(projectTitleYPosition.top < 0){
-			removeClass(navBar, 'dark');
-			addClass(navBar, 'light');
-		}
-		else{
-			removeClass(navBar, 'light');
-			addClass(navBar, 'dark');
+		if( projectTitleYPosition.top < 0 ){
+			removeClass( navBar, 'dark' );
+			addClass( navBar, 'light' );
+		}		else{
+			removeClass( navBar, 'light' );
+			addClass( navBar, 'dark' );
 		}
 	};
 
 	window.onscroll = onScrollEventHandler;
-})();
+} )();

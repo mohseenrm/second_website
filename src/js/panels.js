@@ -1,14 +1,14 @@
 /*
-___  ___      _                                     
-|  \/  |     | |                                    
-| .  . | ___ | |__  ___  ___  ___ _ __              
-| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \             
-| |  | | (_) | | | \__ \  __/  __/ | | |            
-\_|  |_/\___/|_| |_|___/\___|\___|_| |_|                     
-___  ___      _             _     _                 
-|  \/  |     | |           | |   | |                
-| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___  
-| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \ 
+___  ___      _
+|  \/  |     | |
+| .  . | ___ | |__  ___  ___  ___ _ __
+| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \
+| |  | | (_) | | | \__ \  __/  __/ | | |
+\_|  |_/\___/|_| |_|___/\___|\___|_| |_|
+___  ___      _             _     _
+|  \/  |     | |           | |   | |
+| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___
+| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \
 | |  | | |_| |   < (_| | (_| | (_| | (_| | | | | | |
 \_|  |_/\__,_|_|\_\__,_|\__,_|\__,_|\__,_|_| |_| |_|
 
@@ -38,124 +38,122 @@ THE SOFTWARE.
 /* global $, TweenMax */
 
 const isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
+    Android: function () {
+        return navigator.userAgent.match( /Android/i );
     },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
+    BlackBerry: function () {
+        return navigator.userAgent.match( /BlackBerry/i );
     },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    iOS: function () {
+        return navigator.userAgent.match( /iPhone|iPad|iPod/i );
     },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
+    Opera: function () {
+        return navigator.userAgent.match( /Opera Mini/i );
     },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+    Windows: function () {
+        return navigator.userAgent.match( /IEMobile/i ) || navigator.userAgent.match( /WPDesktop/i );
     },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    any: function () {
+        return ( isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows() );
     }
 };
 
-(() => {
-    let $first = $('#first'),
-        $second = $('#second'),
-        $third = $('#third'),
-        $fourth = $('#fourth'),
+( () => {
+    let $first = $( '#first' ),
+        $second = $( '#second' ),
+        $third = $( '#third' ),
+        $fourth = $( '#fourth' ),
         isMobileDevice = isMobile.any();
 
     // console.log( 'Mobile Check: ', isMobileDevice );
     /**
      *  Normal Hover Event Handlers
      */
-    function onHover() {
+    function onHover () {
         //maximize current fella
-        TweenMax.to(this, 1.5, {
-            css:{
+        TweenMax.to( this, 1.5, {
+            css: {
                 'width': '100%',
                 'border': '0px'
             }
-        });
+        } );
         //shrink siblings
-        TweenMax.to($(this).siblings(), 1.5, {
+        TweenMax.to( $( this ).siblings(), 1.5, {
             css: {
                 'width': '0%',
                 'border-right': '0'
             }
-        });
+        } );
     }
-    function offHover() {
+    function offHover () {
         //resize and reapply border
-        TweenMax.to([$first, $second, $third], 1, {
+        TweenMax.to( [ $first, $second, $third ], 1, {
             css: {
                 'width': '25%',
                 'border-right': '2px solid #f2994a'
             }
-        });
+        } );
         //this is for the last one
         //don't want the border on the last image
-        TweenMax.to($fourth, 1, {
+        TweenMax.to( $fourth, 1, {
             css: {
                 'width': '25%',
                 'border-right': '0px'
             }
-        });
+        } );
     }
     /**
      *  Mobile Hover Event Handlers
      */
-    function mOnHover() {
+    function mOnHover () {
         //maximize current fella
-        TweenMax.to(this, 1.5, {
-            css:{
+        TweenMax.to( this, 1.5, {
+            css: {
                 'height': '100%',
                 'border': '0px'
             }
-        });
+        } );
         //shrink siblings
-        TweenMax.to($(this).siblings(), 1.5, {
+        TweenMax.to( $( this ).siblings(), 1.5, {
             css: {
                 'height': '0%',
                 'border-bottom': '0'
             }
-        });
+        } );
     }
-    function mOffHover() {
+    function mOffHover () {
         //resize and reapply border
-        TweenMax.to([$first, $second, $third], 1, {
+        TweenMax.to( [ $first, $second, $third ], 1, {
             css: {
                 'height': '25%',
                 'border-bottom': '2px solid #f2994a'
             }
-        });
+        } );
         //this is for the last one
         //don't want the border on the last image
-        TweenMax.to($fourth, 1, {
+        TweenMax.to( $fourth, 1, {
             css: {
                 'height': '25%',
                 'border-bottom': '0px'
             }
-        });
+        } );
     }
     // Mobile Code
     if ( isMobileDevice !== null ){
         // apply to all
         // TODO: add same event handlers to tap events
-        $first.hover(mOnHover, mOffHover);
-        $second.hover(mOnHover, mOffHover);
-        $third.hover(mOnHover, mOffHover);
-        $fourth.hover(mOnHover, mOffHover);
-    }
-    else {
+        $first.hover( mOnHover, mOffHover );
+        $second.hover( mOnHover, mOffHover );
+        $third.hover( mOnHover, mOffHover );
+        $fourth.hover( mOnHover, mOffHover );
+    } else {
         // $first.hover(onHover, offHover);
-        $fourth.css({'border':'0px'});
-        
-        // apply to all
-        $first.hover(onHover, offHover);
-        $second.hover(onHover, offHover);
-        $third.hover(onHover, offHover);
-        $fourth.hover(onHover, offHover);
-    }
+        $fourth.css( { 'border': '0px' } );
 
-})();
+        // apply to all
+        $first.hover( onHover, offHover );
+        $second.hover( onHover, offHover );
+        $third.hover( onHover, offHover );
+        $fourth.hover( onHover, offHover );
+    }
+} )();

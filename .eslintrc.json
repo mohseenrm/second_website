@@ -28,6 +28,61 @@
         "no-console": 1,
         "prefer-template": [
             "error"
+        ],
+        "template-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "space-before-function-paren": [
+            "error", 
+            {
+                "anonymous": "always",
+                "named": "always",
+                "asyncArrow": "always"
+            }
+        ],
+        "arrow-spacing": "error",
+        "no-multi-spaces": "error",
+        "array-bracket-spacing": [
+            "error",
+            "always"
+        ],
+        "key-spacing": [
+            "error", 
+            { 
+                "beforeColon": false
+            }
+        ],
+        "no-trailing-spaces": "error",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "space-in-parens": [
+            "error",
+            "always"
+        ],
+        "dot-notation": "error",
+        "brace-style": [
+            "error",
+            "1tbs",
+            { 
+                "allowSingleLine": true 
+            }
+        ],
+        "newline-per-chained-call": [
+            "error", 
+            { 
+                "ignoreChainWithDepth": 2 
+            }
+        ],
+        "padded-blocks": [
+            "error", 
+            "never"
+        ],
+        "comma-style": [
+            "error", 
+            "last"
         ]
     }
 }

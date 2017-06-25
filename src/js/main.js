@@ -1,15 +1,15 @@
 'use strict';
 /*
-___  ___      _                                     
-|  \/  |     | |                                    
-| .  . | ___ | |__  ___  ___  ___ _ __              
-| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \             
-| |  | | (_) | | | \__ \  __/  __/ | | |            
-\_|  |_/\___/|_| |_|___/\___|\___|_| |_|                     
-___  ___      _             _     _                 
-|  \/  |     | |           | |   | |                
-| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___  
-| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \ 
+___  ___      _
+|  \/  |     | |
+| .  . | ___ | |__  ___  ___  ___ _ __
+| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \
+| |  | | (_) | | | \__ \  __/  __/ | | |
+\_|  |_/\___/|_| |_|___/\___|\___|_| |_|
+___  ___      _             _     _
+|  \/  |     | |           | |   | |
+| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___
+| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \
 | |  | | |_| |   < (_| | (_| | (_| | (_| | | | | | |
 \_|  |_/\__,_|_|\_\__,_|\__,_|\__,_|\__,_|_| |_| |_|
 
@@ -36,12 +36,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 */
-(()=>{
+( () => {
     const me = 'Mohseen';
-    console.log(`hello ${me}!`);
-})();
+    console.log( `hello ${ me }!` );
+} )();
 
-(()=>{
+( () => {
     // /**
     // * @function addClass
     // * @param  {element} element      Element whose class name needs to be altered
@@ -91,13 +91,13 @@ THE SOFTWARE.
     //         document.getElementById( 'first-header' ).style.visibility = 'visible';
     //         addClass( document.getElementById( 'first-header' ), 'animated zoomInDown' );
     //     }
-        
+
     //     else
     //         removeClass( document.getElementById( 'first-header' ), 'animated zoomInDown' );
 
     // };
 
-})();
+} )();
 // TODO: generate prefix
 require( './scroll' );
 require( './pie' );

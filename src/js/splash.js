@@ -1,16 +1,16 @@
 /* eslint indent: ["error", "tab"] */
 /* global TimelineMax, Power2 */
 /*
-___  ___      _                                     
-|  \/  |     | |                                    
-| .  . | ___ | |__  ___  ___  ___ _ __              
-| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \             
-| |  | | (_) | | | \__ \  __/  __/ | | |            
-\_|  |_/\___/|_| |_|___/\___|\___|_| |_|                     
-___  ___      _             _     _                 
-|  \/  |     | |           | |   | |                
-| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___  
-| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \ 
+___  ___      _
+|  \/  |     | |
+| .  . | ___ | |__  ___  ___  ___ _ __
+| |\/| |/ _ \| '_ \/ __|/ _ \/ _ \ '_ \
+| |  | | (_) | | | \__ \  __/  __/ | | |
+\_|  |_/\___/|_| |_|___/\___|\___|_| |_|
+___  ___      _             _     _
+|  \/  |     | |           | |   | |
+| .  . |_   _| | ____ _  __| | __| | __ _ _ __ ___
+| |\/| | | | | |/ / _` |/ _` |/ _` |/ _` | '_ ` _ \
 | |  | | |_| |   < (_| | (_| | (_| | (_| | | | | | |
 \_|  |_/\__,_|_|\_\__,_|\__,_|\__,_|\__,_|_| |_| |_|
 
@@ -37,111 +37,111 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 */
-(()=>{
-	const dot1 = document.getElementById('top'),
-		dot2 = document.getElementById('bottom-left'),
-		dot3 = document.getElementById('bottom-right'),
-		svg = document.getElementById('master-artboard'),
-		center = document.getElementById('center');
-	
+( () => {
+	const dot1 = document.getElementById( 'top' ),
+		dot2 = document.getElementById( 'bottom-left' ),
+		dot3 = document.getElementById( 'bottom-right' ),
+		svg = document.getElementById( 'master-artboard' ),
+		center = document.getElementById( 'center' );
+
 	let box = svg.getBBox();
-	console.log('Box:', box);
+	console.log( 'Box:', box );
 	//test
-	let tl = new TimelineMax({
+	let tl = new TimelineMax( {
 		// paused: true,
 		repeat: -1,
 		repeatDelay: 0.1,
 		smoothChildTiming: true
-	});
+	} );
 
 	const onCompleteCycle = () => {
 		console.log( 'Cycle complete' );
-		if (/loaded|complete/.test(document.readyState)){
+		if ( /loaded|complete/.test( document.readyState ) ){
 			// console.log('content loaded');
 			tl.pause();
 		}
 	};
 
 	tl
-		.set([dot1, dot2, dot3], {autoAlpha: 0.3})
-		.add('start')
-		.to(dot1, 1.5, {
+		.set( [ dot1, dot2, dot3 ], { autoAlpha: 0.3 } )
+		.add( 'start' )
+		.to( dot1, 1.5, {
 			transformOrigin: 'center center',
 			y: -125,
 			autoAlpha: 1,
 			scale: 0.65,
 			ease: Power2.easeOut
-		}, 'start')
-		.to(dot2, 1.5, {
+		}, 'start' )
+		.to( dot2, 1.5, {
 			transformOrigin: 'center center',
 			x: -125,
 			y: 75,
 			autoAlpha: 1,
 			scale: 0.65,
 			ease: Power2.easeOut
-		}, 'start')
-		.to(dot3, 1.5, {
+		}, 'start' )
+		.to( dot3, 1.5, {
 			transformOrigin: 'center center',
 			x: 125,
 			y: 75,
 			autoAlpha: 1,
 			scale: 0.65,
 			ease: Power2.easeOut
-		}, 'start')
-		.to(center, 1.5, {
+		}, 'start' )
+		.to( center, 1.5, {
 			scale: 0.75,
 			autoAlpha: 0.25,
 			transformOrigin: 'center center'
-		}, 'start')
-		.add('rotate')
-		.to(dot1, 1, {
+		}, 'start' )
+		.add( 'rotate' )
+		.to( dot1, 1, {
 			rotation: -720,
 			// svgOrigin: "700 500"
 			svgOrigin: '700 507',
 			ease: Power2.easeOut
-		}, 'rotate')
-		.to(dot2, 1, {
+		}, 'rotate' )
+		.to( dot2, 1, {
 			rotation: -720,
 			// svgOrigin: '700 500'
 			svgOrigin: '700 507',
 			ease: Power2.easeOut
-		}, 'rotate')
-		.to(dot3, 1, {
+		}, 'rotate' )
+		.to( dot3, 1, {
 			rotation: -720,
 			// svgOrigin: '700 500'
 			svgOrigin: '700 507',
 			ease: Power2.easeOut
 
-		}, 'rotate')
-		.to(center, 1, {
+		}, 'rotate' )
+		.to( center, 1, {
 			rotation: 1440,
 			svgOrigin: '700 507',
 			ease: Power2.easeOut
-		}, 'rotate')
-		.add('end')
-		.to(center, 1, {
+		}, 'rotate' )
+		.add( 'end' )
+		.to( center, 1, {
 			autoAlpha: 1,
 			scale: 1.2
-		}, 'end')
-		.to(dot1, 1, {
+		}, 'end' )
+		.to( dot1, 1, {
 			transformOrigin: 'center center',
 			scale: 1.2,
 			y: -3
-		}, 'end')
-		.to(dot2, 1, {
+		}, 'end' )
+		.to( dot2, 1, {
 			scale: 1.2,
 			transformOrigin: 'center center',
 			x: -11,
 			y: 15,
 			delay: 0.2
-		}, 'end')
-		.to(dot3, 1, {
+		}, 'end' )
+		.to( dot3, 1, {
 			scale: 1.2,
 			transformOrigin: 'center center',
 			x: 12,
 			y: 14,
 			delay: 0.4
-		}, 'end')
-		.add(onCompleteCycle);
+		}, 'end' )
+		.add( onCompleteCycle );
 	// tl.pause();
-})();
+} )();
