@@ -3144,7 +3144,11 @@ THE SOFTWARE.
         #screen-5 .wrapper--text {
           font-size: 2.5rem;
           line-height: 5vh;
-          text-align: justify; } }
+          text-align: center; } }
+
+.fade-out {
+  opacity: 0;
+  transition: all 0.1s ease-out; }
 
 #screen-6 {
   z-index: 1;

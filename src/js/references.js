@@ -54,7 +54,8 @@ const references = {
 		author = document.querySelector( '.wrapper--author' ),
 		authors = Object.keys( references );
 
-	let playHead = 0;
+	let playHead = 0,
+		numberOfAuthors = authors.length;
 
 	const playAnimation = () => {
 		let tl = new TimelineMax( {
@@ -125,7 +126,8 @@ const references = {
 				.to( [ text, author ], 5, {
 					css: {
 						'opacity': '1',
-						'display': 'flex'
+						'display': 'flex',
+						'transition': 'all 0.5s ease-out'
 					}
 				}, 'reveal' );
 			tl.play();
@@ -139,10 +141,24 @@ const references = {
 	text.innerHTML = document.createTextNode( references[authors[playHead]].text ).textContent;
 	author.innerHTML = `${ normalizeNames( document.createTextNode( authors[playHead] ).textContent ) }<span class="wrapper--author--position">${ references[authors[playHead]].position }</span>`;
 
-	// author.innerHTML = references[ authors[ playHead ] ];
-
 	const rotateReferences = () => {
-		// console.log( 'inside rotate' );
+		console.log( 'length: ', numberOfAuthors );
+		playHead = playHead === numberOfAuthors - 1 ? 0 : playHead + 1;
+		console.log( 'new playHead: ', playHead );
+
+		text.style.opacity = 0;
+
+		setTimeout(() => {
+			text.innerHTML = document.createTextNode( references[authors[playHead]].text ).textContent;
+			text.style.opacity = 1;
+		}, 500);
+		
+		author.style.opacity = 0;
+		setTimeout(() => {
+			author.innerHTML = `${ normalizeNames( document.createTextNode( authors[playHead] ).textContent ) }<span class="wrapper--author--position">${ references[authors[playHead]].position }</span>`;
+			author.style.opacity = 1;
+		}, 500);
+		// playHead = playHead <
 	};
-	setInterval( rotateReferences, 10000 );
+	setInterval( rotateReferences, 11000 );
 } )();
