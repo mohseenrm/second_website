@@ -37,8 +37,8 @@ THE SOFTWARE.
 
 */
 ( () => {
-    const me = 'Mohseen';
-    console.log( `hello ${ me }!` );
+	const me = 'Mohseen';
+	console.log( `hello ${ me }!` );
 } )();
 
 ( () => {

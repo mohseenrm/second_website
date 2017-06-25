@@ -83,6 +83,10 @@
         "comma-style": [
             "error", 
             "last"
+        ],
+        "indent": [
+            "error",
+            "tab"
         ]
     }
 }

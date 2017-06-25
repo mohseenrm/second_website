@@ -1,48 +1,6 @@
 /* eslint indent: ["error", "tab"] */
-
-/**
-* @function addClass
-* @param  {element} element      Element whose class name needs to be altered
-* @param  {String } newClassName Class Name
-* @return None
-*/
-const addClass = ( element, newClassName ) => {
-	if( element !== undefined && newClassName !== undefined ){
-		let classNames = element.className;
-		if( classNames === undefined || classNames === null ){
-			element.className = '';
-			classNames = '';
-		}
-		if( !classNames.includes( newClassName ) ){
-			element.className += ` ${ newClassName }`;
-		}
-	}
-	return;
-};
-
-/**
-* @function removeClass
-* @param  {element} element      Element whose class name needs to be altered
-* @param  {String } delClassName Class Name
-* @return None
-*/
-const removeClass = ( element, delClassName ) => {
-	if( element !== undefined && delClassName !== undefined ){
-		if( element.className === undefined || element.className === null )
-			element.className = '';
-		if( element.className.includes( delClassName ) ){
-			element.className = element.className.replace( new RegExp( `(?:^|\\s)${ delClassName }(?:\\s|$)` ), '' );
-		}
-	}
-	return;
-};
-/*const imgCreate = ( src, alt, title ) => {
-	let img = document.createElement( 'div' );
-	img.src = src;
-	if ( alt != null ) img.alt = alt;
-	if ( title != null ) img.title = title;
-	return img;
-};*/
+import { addClass, removeClass } from './utils';
+// hsdjh
 // globals
 var imagesLoaded = 0,
 	maxPictures = 21,
