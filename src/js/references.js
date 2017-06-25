@@ -1,5 +1,3 @@
-/* eslint indent: ["error", "tab"] */
-/* global TimelineMax */
 /*
 ___  ___      _
 |  \/  |     | |
@@ -37,81 +35,114 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 */
+/* eslint indent: ["error", "tab"] */
+/* global TimelineMax */
+import { normalizeNames } from './utils';
+
+const references = {
+	Sujith_Menon: {
+		text: 'Mohseen is a top talented graduate. He was right on the top delivering Simplified Solutions to make life easier for his peers and provide a quick and better service to our clients / customers. He has demonstrated well on the behavior, as most of his engagement was with Senior Technical people. The feedbacks were really overwhelming about the way he was interacting with them.What really stood out, was the way he has engaged with Messaging to develop the Automation part which helps us to serve our customers efficiently.He is very quick and goes beyond his expert levels to deliver any challenging targets.',
+		position: 'APAC Messaging Lead, Barclays'
+	},
+	Sunil_Bade: {
+		text: 'I worked with Mohseen on number of Automation Tasks, which helped us to generate many auto generated reports, thereby reducing the number of hours for us by checking details manually. This helped us to check overall health of our Messaging Applications quickly and was a big service improvement as it reduced number of Incidents coming to our team. He is swift with his work and easily absorbs new technical skills. Apart from good technical person, he is also a good team player who is always available to help …I highly recommend him!',
+		position: 'Messaging Engineer, Barclays'
+	}
+};
 ( () => {
 	const text = document.getElementById( 'reference-text' ),
-		author = document.querySelector( '.wrapper--author' );
+		author = document.querySelector( '.wrapper--author' ),
+		authors = Object.keys( references );
 
-	let tl = new TimelineMax( {
-			repeat: -1,
-			repeatDelay: 0.1,
-			paused: true
-		} ),
-		topLine = document.getElementById( 'top-line' ),
-		bottomLine = document.getElementById( 'bottom-line' );
+	let playHead = 0;
 
-	console.log( 'Text', text );
+	const playAnimation = () => {
+		let tl = new TimelineMax( {
+				repeat: 0,
+				repeatDelay: 0.1,
+				paused: true
+			} ),
+			topLine = document.getElementById( 'top-line' ),
+			bottomLine = document.getElementById( 'bottom-line' );
 
-	let Toffset = topLine.getBoundingClientRect(),
-		Boffset = bottomLine.getBoundingClientRect();
+		console.log( 'Text', text );
 
-	const calculateOffset = ( topOffset, bottomOffset ) => {
-		if( topOffset || bottomOffset )
-			return( ( bottomOffset.top - topOffset.top )/2 - bottomOffset.height/2 );
-	};
+		let Toffset = topLine.getBoundingClientRect(),
+			Boffset = bottomLine.getBoundingClientRect();
 
-	let offset = calculateOffset( Toffset, Boffset );
-	console.log( offset );
+		const calculateOffset = ( topOffset, bottomOffset ) => {
+			if( topOffset || bottomOffset )
+				return( ( bottomOffset.top - topOffset.top )/2 - bottomOffset.height/2 );
+		};
 
-	//weird bug with calculating exact offset onload
-	setTimeout( () => {
-		Toffset = topLine.getBoundingClientRect();
-		Boffset = bottomLine.getBoundingClientRect();
-		//TODO: add css prefix for flex
-		offset = calculateOffset( Toffset, Boffset );
-		tl.set( [ text, author ], {
-			css: {
-				'display': 'none',
-				'opacity': '0'
-			}
-		} )
-		.set( topLine, {
-			css: {
-				'opacity': '0'
-			}
-		} )
-		.set( [ topLine, bottomLine ], {
-			css: {
-				'margin': '0',
-				// 'display': 'none',
-				'width': '3px'
-			}
-		} );
+		let offset = calculateOffset( Toffset, Boffset );
+		console.log( offset );
 
-		tl.add( 'start' )
-			.to( [ topLine, bottomLine ], 3, {
+		//weird bug with calculating exact offset onload
+		setTimeout( () => {
+			Toffset = topLine.getBoundingClientRect();
+			Boffset = bottomLine.getBoundingClientRect();
+			//TODO: add css prefix for flex
+			offset = calculateOffset( Toffset, Boffset );
+			tl.set( [ text, author ], {
 				css: {
-					'width': '75%',
-					'opacity': '1'
+					'display': 'none',
+					'opacity': '0'
 				}
-			}, 'start' )
-			.add( 'move' )
-			.to( bottomLine, 3, {
-				y: offset
-			}, 'move' )
-			.to( topLine, 3, {
-				y: -offset
-			}, 'move' )
-
-			.add( 'reveal' )
-			.set( [ topLine, bottomLine ], {
-				y: 0
 			} )
-			.to( [ text, author ], 5, {
+			.set( topLine, {
 				css: {
-					'opacity': '1',
-					'display': 'flex'
+					'opacity': '0'
 				}
-			}, 'reveal' );
-		tl.play();
-	}, 10 );
+			} )
+			.set( [ topLine, bottomLine ], {
+				css: {
+					'margin': '0',
+					// 'display': 'none',
+					'width': '3px'
+				}
+			} );
+
+			tl.add( 'start' )
+				.to( [ topLine, bottomLine ], 3, {
+					css: {
+						'width': '75%',
+						'opacity': '1'
+					}
+				}, 'start' )
+				.add( 'move' )
+				.to( bottomLine, 3, {
+					y: offset
+				}, 'move' )
+				.to( topLine, 3, {
+					y: -offset
+				}, 'move' )
+
+				.add( 'reveal' )
+				.set( [ topLine, bottomLine ], {
+					y: 0
+				} )
+				.to( [ text, author ], 5, {
+					css: {
+						'opacity': '1',
+						'display': 'flex'
+					}
+				}, 'reveal' );
+			tl.play();
+		}, 10 );
+	};
+	playAnimation();
+	console.log( 'Authors: ', authors );
+	console.log( 'Author: ', document.createTextNode( authors[playHead] ) );
+
+	// Did this jumping around to prevent XSS attacks [https://stackoverflow.com/questions/1358810/how-do-i-change-the-text-of-a-span-element-in-javascript]
+	text.innerHTML = document.createTextNode( references[authors[playHead]].text ).textContent;
+	author.innerHTML = normalizeNames( document.createTextNode( authors[playHead] ).textContent );
+
+	// author.innerHTML = references[ authors[ playHead ] ];
+
+	const rotateReferences = () => {
+		// console.log( 'inside rotate' );
+	};
+	setInterval( rotateReferences, 10000 );
 } )();

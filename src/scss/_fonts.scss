@@ -496,7 +496,10 @@
 
 @font-face {
     font-family: 'Didot';
-    src: url('fonts/Theano-Didot-Regular.ttf.woff') format('woff'), url('fonts/Theano-Didot-Regular.ttf.svg#Theano-Didot-Regular') format('svg'), url('fonts/Theano-Didot-Regular.ttf.eot'), url('fonts/Theano-Didot-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('fonts/Theano-Didot-Regular.ttf.woff') format('woff'), 
+    url('fonts/Theano-Didot-Regular.ttf.svg#Theano-Didot-Regular') format('svg'), 
+    url('fonts/Theano-Didot-Regular.ttf.eot'), 
+    url('fonts/Theano-Didot-Regular.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }

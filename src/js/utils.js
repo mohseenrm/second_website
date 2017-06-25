@@ -56,5 +56,9 @@ module.exports = {
 			}
 		}
 		return;
+	},
+	normalizeNames: ( name ) => {
+		if( name !== undefined || name !== null )
+			return name.replace( '_', ' ' );
 	}
 };
