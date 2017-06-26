@@ -436,7 +436,7 @@ THE SOFTWARE.
         background-repeat: no-repeat;
         background-position: 50% 0%; }
       .project-wrapper--row--frame#world-visualization {
-        background: url("");
+        background: url("../../images/world_viz.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 0%; }
