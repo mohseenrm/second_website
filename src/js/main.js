@@ -100,7 +100,7 @@ THE SOFTWARE.
 } )();
 // TODO: generate prefix
 require( './scroll' );
-require( './pie' );
+require( './navigation' );
 require( './panels' );
 require( './references' );
 require( './gallery' );

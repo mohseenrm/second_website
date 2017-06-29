@@ -66,7 +66,7 @@ const references = {
 			topLine = document.getElementById( 'top-line' ),
 			bottomLine = document.getElementById( 'bottom-line' );
 
-		console.log( 'Text', text );
+		// console.log( 'Text', text );
 
 		let Toffset = topLine.getBoundingClientRect(),
 			Boffset = bottomLine.getBoundingClientRect();
@@ -77,7 +77,7 @@ const references = {
 		};
 
 		let offset = calculateOffset( Toffset, Boffset );
-		console.log( offset );
+		// console.log( offset );
 
 		//weird bug with calculating exact offset onload
 		setTimeout( () => {
@@ -134,17 +134,17 @@ const references = {
 		}, 10 );
 	};
 	playAnimation();
-	console.log( 'Authors: ', authors );
-	console.log( 'Author: ', document.createTextNode( authors[playHead] ) );
+	// console.log( 'Authors: ', authors );
+	// console.log( 'Author: ', document.createTextNode( authors[playHead] ) );
 
 	// Did this jumping around to prevent XSS attacks [https://stackoverflow.com/questions/1358810/how-do-i-change-the-text-of-a-span-element-in-javascript]
 	text.innerHTML = document.createTextNode( references[authors[playHead]].text ).textContent;
 	author.innerHTML = `${ normalizeNames( document.createTextNode( authors[playHead] ).textContent ) }<span class="wrapper--author--position">${ references[authors[playHead]].position }</span>`;
 
 	const rotateReferences = () => {
-		console.log( 'length: ', numberOfAuthors );
+		// console.log( 'length: ', numberOfAuthors );
 		playHead = playHead === numberOfAuthors - 1 ? 0 : playHead + 1;
-		console.log( 'new playHead: ', playHead );
+		// console.log( 'new playHead: ', playHead );
 
 		text.style.opacity = 0;
 

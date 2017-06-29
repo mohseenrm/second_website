@@ -37,7 +37,8 @@
             http://codepen.io/sidthesloth92/pen/xEadOa
             -->
     <!--nav code start-->
-    <section id="screen-0">
+    <!--TODO: add landing page section and move id top to it-->
+    <section id="screen-0" id="top">
         <svg id="master-artboard" xmlns="http://www.w3.org/2000/svg" width="830" height="842" viewBox="282.5 74.5 830 842">
             <style>
                 .st0 {
@@ -72,7 +73,7 @@
             <!--<div class="slideshow--slide"></div>-->
         </div>
     </div>
-    <div class="title-2">
+    <div class="title-2" id="title-bio">
         <span class="title-2--text">Bio</span>
     </div>
     <section id="screen-bio">
@@ -134,7 +135,7 @@
         </div>
         </div>
     </section>
-    <div class="title-2">
+    <div class="title-2" id="title-passion">
         <span class="title-2--text">Passion</span>
     </div>
     <section id="screen-1">
@@ -146,83 +147,16 @@
         </div>
     </section>
     <nav class="nav link-effect-3 dark" id="link-effect-3">
-        <a class="btn" data-hover="About" href="#cover">About</a>
-        <a class="btn" data-hover="One" href="#section-one">One</a>
-        <a class="btn" data-hover="Two" href="#section-two">Two</a>
-        <a class="btn" data-hover="Three" href="#section-three">Three</a>
+        <a class="btn" id="nav-top"  data-hover="Top" data-nav="top" href="#cover">Top</a>
+        <a class="btn" id="nav-bio" data-hover="Bio" data-nav="bio" href="#section-one">Bio</a>
+        <a class="btn" id="nav-passion" data-hover="Passion" data-nav="passion" href="#section-two">Passion</a>
+        <a class="btn" id="nav-tools" data-hover="Tools" data-nav="tools" href="#section-three">Tools</a>
+        <a class="btn" id="nav-projects" data-hover="Projects" data-nav="projects" href="#section-three">Projects</a>
+        <a class="btn" id="nav-references" data-hover="References" data-nav="references" href="#section-three">References</a>
+        <a class="btn" id="nav-gallery" data-hover="Gallery" data-nav="gallery" href="#section-three">Gallery</a>
     </nav>
-
     <!--nav code end-->
-    <!--<section id="screen-3">
-        <div id="third-page-wrapper">
-
-            <div class="top-row">
-                <span class="header">Skills</span>
-            </div>
-            <div id="middle-row">
-                <div class='box' id='js'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
-                    <div class='title'>JavaScript</div>
-                </div>
-                <div class='box' id='py'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
-                    <div class='title'>Python</div>
-                </div>
-                <div class='box'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
-                    <div class='title'>Android</div>
-                </div>
-            </div>
-            <div id="last-row">
-                <div class='box small' id='electron'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
-                    <div class='title'>Electron</div>
-                </div>
-                <div class='box small' id='node'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
-                    <div class='title'>Node</div>
-                </div>
-                <div class='box small' id='git'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
-                    <div class='title'>Git</div>
-                </div>
-                <div class='box small' id='react'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
-                    <div class='title'>React</div>
-                </div>
-            </div>
-            <div id="final-row">
-
-                <div class='box small' id='photoshop'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
-                    <div class='title'>Photoshop</div>
-                </div>
-                <div class='box small' id='illustrator'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
-                    <div class='title'>Illustrator</div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <div class="title-2">
+    <div class="title-2" id="title-tools">
         <span class="title-2--text">Tools</span>
     </div>
     <section id="screen-3b">
@@ -280,7 +214,7 @@
             </div>
         </div>
     </section>
-    <div class="title-2" id="project-title">
+    <div class="title-2" id="title-projects">
         <span class="title-2--text">Projects</span>
     </div>
     <section id="screen-4b">
@@ -342,7 +276,7 @@
             <i class="fa fa-github" aria-hidden="true"></i>
         </div>
     </section>
-    <div class="title-2">
+    <div class="title-2" id="title-references">
         <span class="title-2--text">References</span>
     </div>
     <section id="screen-5">
@@ -355,16 +289,8 @@
             <div class="wrapper--line" id="bottom-line"></div>
         </div>
     </section>
-    <div class="title-2">
-        <span class="title-2--text">Statistics</span>
-    </div>
-    <section id="screen-6">
-        <div class="wrapper">
-            <!--<div class="dot"></div>-->
-            <div class="chart-wrapper"></div>
-        </div>
-    </section>
-    <div class="title-2">
+
+    <div class="title-2" id="title-gallery">
         <span class="title-2--text">Gallery</span>
     </div>
     <section id="screen-7">
@@ -400,7 +326,6 @@
 
     <script src="http://localhost:8080/splash.bundle.js"></script>
     <!--main webpage files-->
-    <script src="dist/js/d3.min.js"></script>
     <script src="http://localhost:8080/app.bundle.js"></script>
     <!--Hello-->
 </body>

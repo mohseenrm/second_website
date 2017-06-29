@@ -1,4 +1,3 @@
-/* eslint indent: ["error", "tab"] */
 /*
 ___  ___      _
 |  \/  |     | |
@@ -36,27 +35,49 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 */
-require( './smooth-scroll' );
-import { addClass, removeClass } from './utils';
-
+require( './smooth-scroll' ).polyfill();
 ( () => {
-	const navBar = document.getElementById( 'link-effect-3' ),
-		projectTitle = document.getElementById( 'title-projects' );
+	const bio = document.getElementById( 'title-bio' ),
+		passion = document.getElementById( 'title-passion' ),
+		tools = document.getElementById( 'title-tools' ),
+		projects = document.getElementById( 'title-projects' ),
+		references = document.getElementById( 'title-references' ),
+		gallery = document.getElementById( 'title-gallery' ),
+		top = document.getElementById( 'top' );
 
-	const onScrollEventHandler = () => {
-		const projectTitleYPosition = projectTitle.getBoundingClientRect();
-		/*const navBarBoundingBox = navBar.getBoundingClientRect();
-		console.log('scroll position: ', window.scrollY);
-		console.log('project position: ', projectTitleYPosition.top);*/
-
-		if( projectTitleYPosition.top < 0 ){
-			removeClass( navBar, 'dark' );
-			addClass( navBar, 'light' );
-		}		else{
-			removeClass( navBar, 'light' );
-			addClass( navBar, 'dark' );
-		}
+	let titles = {
+		bio,
+		passion,
+		tools,
+		projects,
+		references,
+		gallery,
+		top
 	};
 
-	window.onscroll = onScrollEventHandler;
+	// https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+
+	let navLinks = [].slice.call( document.querySelectorAll( 'a[data-hover]' ) );
+	console.log( navLinks );
+
+	navLinks.map( ( link ) => {
+		link.onclick = ( e ) => {
+			e.preventDefault();
+			// console.log('link clicked');
+			titles[link.dataset.nav].scrollIntoView( { behavior: 'smooth' } );
+		};
+	} );
+
+	/*const titles = [ bio, passion, tools, projects, references, gallery ];
+
+	titles.map( ( title ) => {
+		console.log('title: ', title);
+
+		title.addEventListener('click', (e) => {
+			e.preventDefault();
+			console.log('element clicked: ', this);
+			title.scrollIntoView( { behaviour: 'smooth' } );
+
+		});
+	} );*/
 } )();
