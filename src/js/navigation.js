@@ -36,6 +36,8 @@ THE SOFTWARE.
 
 */
 require( './smooth-scroll' ).polyfill();
+import { addClass, removeClass } from './utils';
+
 ( () => {
 	const bio = document.getElementById( 'title-bio' ),
 		passion = document.getElementById( 'title-passion' ),
@@ -44,6 +46,14 @@ require( './smooth-scroll' ).polyfill();
 		references = document.getElementById( 'title-references' ),
 		gallery = document.getElementById( 'title-gallery' ),
 		top = document.getElementById( 'top' );
+
+	/*const bio = $( '#title-bio' ),
+		passion = $( '#title-passion' ),
+		tools = $( '#title-tools' ),
+		projects = $( '#title-projects' ),
+		references = $( '#title-references' ),
+		gallery = $( '#title-gallery' ),
+		top = $( '#top' );*/
 
 	let titles = {
 		bio,
@@ -57,7 +67,7 @@ require( './smooth-scroll' ).polyfill();
 
 	// https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
 
-	let navLinks = [].slice.call( document.querySelectorAll( 'a[data-hover]' ) );
+	let navLinks = [].slice.call( document.querySelectorAll( 'a[data-nav]' ) );
 	console.log( navLinks );
 
 	navLinks.map( ( link ) => {
@@ -65,6 +75,14 @@ require( './smooth-scroll' ).polyfill();
 			e.preventDefault();
 			// console.log('link clicked');
 			titles[link.dataset.nav].scrollIntoView( { behavior: 'smooth' } );
+		};
+		link.onmouseenter = () => {
+			removeClass( link, 'fa fa-circle' );
+			link.text = link.dataset.hover;
+		};
+		link.onmouseleave = () => {
+			link.text = '';
+			addClass( link, 'fa fa-circle' );
 		};
 	} );
 

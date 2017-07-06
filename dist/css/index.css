@@ -1413,6 +1413,14 @@ i.fa-github {
     //     position: fixe
     // }
 }*/
+.nav--button {
+  transition: all 0.5s ease-in-out;
+  margin-left: 1.5%;
+  margin-right: 1.5%; }
+
+.fa {
+  transition: all 0.5s ease-in-out; }
+
 /*
 Made by:
 ___  ___      _                                     

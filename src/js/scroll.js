@@ -40,7 +40,7 @@ require( './smooth-scroll' );
 import { addClass, removeClass } from './utils';
 
 ( () => {
-	const navBar = document.getElementById( 'link-effect-3' ),
+	const navBar = document.getElementById( 'nav-bar' ),
 		projectTitle = document.getElementById( 'title-projects' );
 
 	const onScrollEventHandler = () => {
