@@ -46,6 +46,9 @@ import { isMobile } from './utils';
 		isMobileDevice = isMobile.any();
 
     // console.log( 'Mobile Check: ', isMobileDevice );
+	function onExpanded (){
+		console.log( 'called now: ', this );
+	}
     /**
      *  Normal Hover Event Handlers
      */
@@ -62,7 +65,8 @@ import { isMobile } from './utils';
 			css: {
 				'width': '0%',
 				'border-right': '0'
-			}
+			},
+			onComplete: onExpanded.bind( this )
 		} );
 	}
 	function offHover () {

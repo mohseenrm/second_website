@@ -68,7 +68,7 @@ import { addClass, removeClass } from './utils';
 	// https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
 
 	let navLinks = [].slice.call( document.querySelectorAll( 'a[data-nav]' ) );
-	console.log( navLinks );
+	// console.log( navLinks );
 
 	navLinks.map( ( link ) => {
 		link.onclick = ( e ) => {

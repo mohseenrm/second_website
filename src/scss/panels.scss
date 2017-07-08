@@ -58,11 +58,14 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
         }
 
 		& > .image-wrapper{
+			// position: relative;
 			height: 100%;
 			width: 25%;
-			display: flex;
+			@include flexbox;
 			background: #aeaeae;
 			border-right: 2px solid #f2994a;
+			align-items: center;
+			justify-content: center;
 
 			@media #{$phone} {
 				width: 100%;
@@ -115,4 +118,8 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 			border: 0px;
 		}
 	}
+}
+.image-wrapper--title{
+	position: absolute;
+	display: none;
 }

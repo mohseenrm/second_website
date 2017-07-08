@@ -41,12 +41,8 @@ THE SOFTWARE.
 	const dot1 = document.getElementById( 'top' ),
 		dot2 = document.getElementById( 'bottom-left' ),
 		dot3 = document.getElementById( 'bottom-right' ),
-		svg = document.getElementById( 'master-artboard' ),
 		center = document.getElementById( 'center' );
 
-	let box = svg.getBBox();
-	console.log( 'Box:', box );
-	//test
 	let tl = new TimelineMax( {
 		// paused: true,
 		repeat: -1,
