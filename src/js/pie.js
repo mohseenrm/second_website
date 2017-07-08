@@ -85,6 +85,7 @@ ajax.send = function ( url, callback, method, data, async ) {
 	x.send( data );
 };
 
+// this is so shit
 ajax.get = function ( url, data, callback, async ) {
 	var query = [];
 	for ( var key in data ) {
