@@ -71,37 +71,47 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 			}
 
 			&:after{
-			content: '';
-			position: relative;
-			top: 0;
-			left: 0;
-			height: 100%;
-			width:100%;
-			background: #000;
-			opacity: 0.7;
-			transition: opacity 1s ease-out;
+				content: '';
+				position: relative;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width:100%;
+				background: #000;
+				opacity: 0.7;
+				transition: opacity 1s ease-out;
 			}
 			&:hover:after{
-			opacity: 0;
-			tansition: all 1s ease-out;
+				opacity: 0;
+				tansition: all 1s ease-out;
 			}
 		}
 		& > .image-wrapper:nth-child(1){
-			// background: url('https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg');
 			background: #fff;
+			background: url('../../images/code.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 		}
 		& > .image-wrapper:nth-child(2){
-			// background: url('https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg');
 			background: #aeaeae;
+			background: url('../../images/design.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 		}
 		& > .image-wrapper:nth-child(3){
-			// background: url('https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg');
 			background: #f7f7f7;
+			background: url('../../images/8.jpg');
+			background-position-x: 80%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 		}
 		& > .image-wrapper:nth-child(4){
 			background: url('https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg');
-			background-position: 30%, center;
+			background-position-x: 30%;
 			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 			border: 0px;
 		}
 	}

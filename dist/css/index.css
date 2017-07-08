@@ -2063,15 +2063,28 @@ THE SOFTWARE.
         opacity: 0;
         tansition: all 1s ease-out; }
     #screen-1 > .wrapper > .image-wrapper:nth-child(1) {
-      background: #fff; }
+      background: #fff;
+      background: url("../../images/code.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
     #screen-1 > .wrapper > .image-wrapper:nth-child(2) {
-      background: #aeaeae; }
+      background: #aeaeae;
+      background: url("../../images/design.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
     #screen-1 > .wrapper > .image-wrapper:nth-child(3) {
-      background: #f7f7f7; }
+      background: #f7f7f7;
+      background: url("../../images/8.jpg");
+      background-position-x: 80%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
     #screen-1 > .wrapper > .image-wrapper:nth-child(4) {
       background: url("https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg");
-      background-position: 30%, center;
+      background-position-x: 30%;
       background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       border: 0px; }
 
 /* textcolor */
