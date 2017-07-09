@@ -45,9 +45,39 @@ import { isMobile } from './utils';
 		$fourth = $( '#fourth' ),
 		isMobileDevice = isMobile.any();
 
+	const panelCache = {
+		first: $first,
+		second: $second,
+		third: $third,
+		fourth: $fourth
+	};
+
+	const description = {
+		first: {
+			title: 'Develop',
+			para: 'Lorem Ipsum'
+		},
+		second: {
+			title: 'Develop',
+			para: 'Lorem Ipsum'
+		},
+		third: {
+			title: 'Develop',
+			para: 'Lorem Ipsum'
+		},
+		fourth: {
+			title: 'Develop',
+			para: 'Lorem Ipsum'
+		}
+	};
     // console.log( 'Mobile Check: ', isMobileDevice );
 	function onExpanded (){
 		console.log( 'called now: ', this );
+		let titleElement = document.createElement( 'span' );
+		const titleString = description[ this.id ].title || 'first';
+		titleElement.innerText = titleString;
+		panelCache[ this.id ].append( titleString );
+		// change panel position to relative -> add elements with class
 	}
     /**
      *  Normal Hover Event Handlers
