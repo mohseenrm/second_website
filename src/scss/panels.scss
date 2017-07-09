@@ -35,91 +35,269 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 */
-@import 'flex';
 
+@import 'flex';
 $phone: "(max-width: 400px)";
 $phablet: "(min-width: 401px) and (max-width: 720px)";
 $tablet: "(min-width: 721px) and (max-width: 1280px)";
 $desktop: "(min-width: 1281px) and (max-width: 1440px)";
-
-#screen-1{
-	height: 100%;
-	widht: 100%;
-	@include flexbox;
-
-	& > .wrapper{
-		width: 100%;
-		height: 100%;
-		display: flex;
+#screen-1 {
+    height: 100%;
+    widht: 100%;
+    @include flexbox;
+	overflow: hidden;
+	
+    &>.wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+        flex-wrap: nowrap;
 		overflow: hidden;
-		flex-wrap: nowrap;
-		@media #{$phone} {
-			flex-direction: column;
+        @media #{$phone} {
+            flex-direction: column;
         }
+        &>.image-wrapper {
+            // position: relative;
+            height: 100%;
+            width: 25%;
+            @include flexbox;
+            background: #aeaeae;
+            border-right: 2px solid #f2994a;
+            align-items: center;
+            justify-content: center;
 
-		& > .image-wrapper{
-			// position: relative;
-			height: 100%;
-			width: 25%;
-			@include flexbox;
-			background: #aeaeae;
-			border-right: 2px solid #f2994a;
-			align-items: center;
-			justify-content: center;
+            @media #{$phone} {
+                width: 100%;
+                height: 25%;
+                border-bottom: 2px solid #f2994a;
+            }
+            &:after {
+                content: '';
+                position: relative;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: #000;
+                opacity: 0.7;
+                transition: opacity 1s ease-out;
+            }
+            &:hover:after {
+                opacity: 0;
+                tansition: all 1s ease-out;
+            }
+        }
+        &>.image-wrapper:nth-child(1) {
+            background: #fff;
+            background: url('../../images/code.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
 
-			@media #{$phone} {
-				width: 100%;
-				height: 25%;
-				border-bottom: 2px solid #f2994a;
-			}
+			& > .image-wrapper--absolute-saver{
+				justify-content: flex-start;
+				align-items: flex-end;
+				flex-direction: column;
+				& > .image-wrapper--absolute-saver--para{
+					text-align: right;
 
-			&:after{
-				content: '';
-				position: relative;
-				top: 0;
-				left: 0;
-				height: 100%;
-				width:100%;
-				background: #000;
-				opacity: 0.7;
-				transition: opacity 1s ease-out;
+					padding-left: 60%;
+					padding-right: 4%;
+					font-size: 2.5rem;
+
+					line-height: 5vh;
+				}
+				& > .image-wrapper--absolute-saver--title{
+					margin-right: 4%;
+				}
 			}
-			&:hover:after{
-				opacity: 0;
-				tansition: all 1s ease-out;
+        }
+        &>.image-wrapper:nth-child(2) {
+            background: #aeaeae;
+            background: url('../../images/design.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+			& > .image-wrapper--absolute-saver{
+				justify-content: flex-start;
+				align-items: flex-end;
+				flex-direction: column;
+				& > .image-wrapper--absolute-saver--para{
+					text-align: right;
+
+					padding-left: 60%;
+					padding-right: 4%;
+					font-size: 2.5rem;
+
+					line-height: 5vh;
+				}
+				& > .image-wrapper--absolute-saver--title{
+					margin-right: 4%;
+				}
 			}
-		}
-		& > .image-wrapper:nth-child(1){
-			background: #fff;
-			background: url('../../images/code.jpg');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-		& > .image-wrapper:nth-child(2){
-			background: #aeaeae;
-			background: url('../../images/design.jpg');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-		& > .image-wrapper:nth-child(3){
-			background: #f7f7f7;
-			background: url('../../images/8.jpg');
-			background-position-x: 80%;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-		& > .image-wrapper:nth-child(4){
-			background: url('https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg');
-			background-position-x: 30%;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			border: 0px;
-		}
+        }
+        &>.image-wrapper:nth-child(3) {
+            background: #f7f7f7;
+            background: url('../../images/8.jpg');
+            background-position-x: 80%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+			& > .image-wrapper--absolute-saver{
+				justify-content: flex-start;
+				align-items: flex-start;
+				flex-direction: column;
+
+				background: -moz-linear-gradient(left, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%);
+				background: -webkit-linear-gradient(left, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+				background: linear-gradient(to right, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+
+				& > .image-wrapper--absolute-saver--para{
+					text-align: left;
+
+					padding-right: 60%;
+					padding-left: 4%;
+					font-size: 2.5rem;
+
+					line-height: 5vh;
+				}
+				& > .image-wrapper--absolute-saver--title{
+					margin-left: 4%;
+				}
+			}
+        }
+        &>.image-wrapper:nth-child(4) {
+            background: url('https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg');
+            background-position-x: 30%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border: 0px;
+
+			& > .image-wrapper--absolute-saver{
+				justify-content: flex-start;
+				align-items: flex-start;
+				flex-direction: column;
+
+				background: -moz-linear-gradient(left, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%);
+				background: -webkit-linear-gradient(left, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+				background: linear-gradient(to right, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+
+				& > .image-wrapper--absolute-saver--para{
+					text-align: left;
+
+					padding-right: 60%;
+					padding-left: 4%;
+					font-size: 2.5rem;
+
+					line-height: 5vh;
+				}
+				& > .image-wrapper--absolute-saver--title{
+					margin-left: 4%;
+				}
+			}
+        }
+    }
+}
+.image-wrapper--absolute-saver{
+	@include flexbox;
+	height: 100%;
+	// width: 100%;
+	position: absolute;
+	transition: all 0.3s ease-in;
+
+	background: -moz-linear-gradient(right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(right, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to left, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	&--title{
+		transition: all 0.5s ease-in-out;
+		color: white;
+		font-family: 'Didot', sans-serif;
+		font-size: 10rem;
+
+		letter-spacing: 0.3rem;
+		line-height: 20vh;
+		z-index: 999;
+
+		margin-bottom: 3vh;
+		margin-top: 2vh;
+
+		background: #f2994a;
+		background-image: -webkit-linear-gradient(to bottom, #f2994a, #f2c94c);
+		background: linear-gradient(to bottom, #f2994a, #f2c94c);
+		
+		background-attachment: fixed;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+	}
+	&--para{
+		color: white;
+		font-size: 2rem;
+		font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
+		font-weight: 100;
+		text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 	}
 }
-.image-wrapper--title{
-	position: absolute;
-	display: none;
+.image-wrapper--title {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+	line-height: 5.5vh;
+	z-index: 999;
+	// padding: 10%;
+}
+
+.image-wrapper--para {
+    position: absolute;
+    color: #f5f5f5;
+    font-size: 4.2rem;
+    // padding: 10%;
+	
+}
+
+.none {
+	transition: all 0.2s ease-in-out;
+    display: none;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity: 0;
+    /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }

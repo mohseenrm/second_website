@@ -42,13 +42,15 @@ THE SOFTWARE.
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
   #screen-1 > .wrapper {
     width: 100%;
     height: 100%;
     display: flex;
     overflow: hidden;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    overflow: hidden; }
     @media (max-width: 400px) {
       #screen-1 > .wrapper {
         flex-direction: column; } }
@@ -87,11 +89,35 @@ THE SOFTWARE.
       background: url("../../images/code.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed; }
+      #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver {
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: column; }
+        #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
+          text-align: right;
+          padding-left: 60%;
+          padding-right: 4%;
+          font-size: 2.5rem;
+          line-height: 5vh; }
+        #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
+          margin-right: 4%; }
     #screen-1 > .wrapper > .image-wrapper:nth-child(2) {
       background: #aeaeae;
       background: url("../../images/design.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed; }
+      #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver {
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: column; }
+        #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
+          text-align: right;
+          padding-left: 60%;
+          padding-right: 4%;
+          font-size: 2.5rem;
+          line-height: 5vh; }
+        #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
+          margin-right: 4%; }
     #screen-1 > .wrapper > .image-wrapper:nth-child(3) {
       background: #f7f7f7;
       background: url("../../images/8.jpg");
@@ -99,6 +125,21 @@ THE SOFTWARE.
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed; }
+      #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, transparent 100%); }
+        #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
+          text-align: left;
+          padding-right: 60%;
+          padding-left: 4%;
+          font-size: 2.5rem;
+          line-height: 5vh; }
+        #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
+          margin-left: 4%; }
     #screen-1 > .wrapper > .image-wrapper:nth-child(4) {
       background: url("https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg");
       background-position-x: 30%;
@@ -106,9 +147,120 @@ THE SOFTWARE.
       background-repeat: no-repeat;
       background-attachment: fixed;
       border: 0px; }
+      #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, transparent 100%); }
+        #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
+          text-align: left;
+          padding-right: 60%;
+          padding-left: 4%;
+          font-size: 2.5rem;
+          line-height: 5vh; }
+        #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
+          margin-left: 4%; }
+
+.image-wrapper--absolute-saver {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease-in;
+  background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .image-wrapper--absolute-saver--title {
+    transition: all 0.5s ease-in-out;
+    color: white;
+    font-family: 'Didot', sans-serif;
+    font-size: 10rem;
+    letter-spacing: 0.3rem;
+    line-height: 20vh;
+    z-index: 999;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+    background: #f2994a;
+    background-image: -webkit-linear-gradient(to bottom, #f2994a, #f2c94c);
+    background: linear-gradient(to bottom, #f2994a, #f2c94c);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .image-wrapper--absolute-saver--para {
+    color: white;
+    font-size: 2rem;
+    font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
+    font-weight: 100;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); }
 
 .image-wrapper--title {
   position: absolute;
+  color: white;
+  font-size: 4rem;
+  line-height: 5.5vh;
+  z-index: 999; }
+
+.image-wrapper--para {
+  position: absolute;
+  color: #f5f5f5;
+  font-size: 4.2rem; }
+
+.none {
+  transition: all 0.2s ease-in-out;
   display: none; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s; }
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s; }
 
 /*# sourceMappingURL=panels.css.map */

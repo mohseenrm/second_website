@@ -45,40 +45,26 @@ import { isMobile } from './utils';
 		$fourth = $( '#fourth' ),
 		isMobileDevice = isMobile.any();
 
-	const panelCache = {
-		first: $first,
-		second: $second,
-		third: $third,
-		fourth: $fourth
-	};
-
-	const description = {
-		first: {
-			title: 'Develop',
-			para: 'Lorem Ipsum'
-		},
-		second: {
-			title: 'Develop',
-			para: 'Lorem Ipsum'
-		},
-		third: {
-			title: 'Develop',
-			para: 'Lorem Ipsum'
-		},
-		fourth: {
-			title: 'Develop',
-			para: 'Lorem Ipsum'
-		}
-	};
     // console.log( 'Mobile Check: ', isMobileDevice );
 	function onExpanded (){
 		console.log( 'called now: ', this );
-		let titleElement = document.createElement( 'span' );
-		const titleString = description[ this.id ].title || 'first';
-		titleElement.innerText = titleString;
-		panelCache[ this.id ].append( titleString );
-		// change panel position to relative -> add elements with class
+
+		// let titleElement = document.createElement( 'div' );
+		/*titleElement.innerHTML = titleString;
+		titleElement.className = 'image-wrapper--title';*/
+
+
+		$( this ).children()
+			.fadeIn( 'slow' )
+			.children()
+			.addClass( 'fade-in' )
+			.removeClass( 'none' );
+
+		console.log( 'Children: ', $( this ).children() );
+
+		// panelCache[ this.id ].append( titleElement );
 	}
+
     /**
      *  Normal Hover Event Handlers
      */
@@ -100,6 +86,10 @@ import { isMobile } from './utils';
 		} );
 	}
 	function offHover () {
+		$( this ).children()
+			.children()
+			.removeClass( 'fade-in' )
+			.addClass( 'none' );
         //resize and reapply border
 		TweenMax.to( [ $first, $second, $third ], 1, {
 			css: {
