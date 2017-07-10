@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
 	entry: {
@@ -32,8 +34,22 @@ module.exports = {
 				query: {
 					presets: ['es2015', 'stage-2']
 				}
+			},
+			{
+				test: /\.css$/,
+				loader: 'postcss-loader',
+				exclude: /node_modules/
 			}
 		]
-	}
+	},
+	plugins: [
+		new webpack.LoaderOptionsPlugin({
+			options: {
+				postcss: [
+					autoprefixer()
+				]
+			}
+		})
+	]
 
 }

@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/mohseenrm/second_website#readme",
   "devDependencies": {
+    "autoprefixer": "^7.1.2",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
     "babel-loader": "^6.4.0",
@@ -46,6 +47,7 @@
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.8",
+    "postcss-loader": "^2.0.6",
     "webpack": "^2.5.0",
     "webpack-dev-server": "^2.4.5"
   },
