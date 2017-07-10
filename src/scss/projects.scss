@@ -92,6 +92,10 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 
 			margin: 4%;
 
+			&--button{
+				color: #ffffff;
+			}
+
 			@media #{$phone} {
 				flex-grow: 1;
 				min-width: 40%;

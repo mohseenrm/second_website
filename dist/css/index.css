@@ -1824,6 +1824,8 @@ THE SOFTWARE.
       -moz-box-shadow: 0 8px 6px -12px black;
       box-shadow: 0 8px 6px -12px black;
       margin: 4%; }
+      .project-wrapper--row--frame--button {
+        color: #ffffff; }
       @media (max-width: 400px) {
         .project-wrapper--row--frame {
           flex-grow: 1;
@@ -2215,14 +2217,18 @@ THE SOFTWARE.
     align-items: center;
     align-content: center;
     flex-wrap: wrap; }
-    #footer .wrapper > .fa {
+    #footer .wrapper .fa {
       font-size: 3.5rem;
       margin: 1.75%;
       transition: all 0.5s ease-in; }
-      #footer .wrapper > .fa:hover {
+      #footer .wrapper .fa:hover {
         transition: all 0.3s ease-out;
         color: #000000; }
-    #footer .wrapper > .fa.fa-github {
+    #footer .wrapper .fa.fa-github {
       width: auto; }
+
+.footer--wrapper--link {
+  color: white;
+  margin: 3%; }
 
 /*# sourceMappingURL=index.css.map */

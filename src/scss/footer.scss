@@ -18,7 +18,7 @@
         // @media (min-width: 640px) {
         //     height: 75%;
         // }
-		& > .fa{
+		& .fa{
 			font-size: 3.5rem;
 			margin: 1.75%;
 			transition: all 0.5s ease-in;
@@ -27,8 +27,12 @@
                 color: #000000;
             }
 		}
-		& > .fa.fa-github{
+		& .fa.fa-github{
 			width: auto;
 		}
     }
+}
+.footer--wrapper--link{
+    color: white;
+    margin: 3%;
 }

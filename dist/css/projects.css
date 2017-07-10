@@ -71,6 +71,8 @@ THE SOFTWARE.
       -moz-box-shadow: 0 8px 6px -12px black;
       box-shadow: 0 8px 6px -12px black;
       margin: 4%; }
+      .project-wrapper--row--frame--button {
+        color: #ffffff; }
       @media (max-width: 400px) {
         .project-wrapper--row--frame {
           flex-grow: 1;

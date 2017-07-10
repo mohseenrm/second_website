@@ -40,13 +40,34 @@
     <!--TODO: add landing page section and move id top to it-->
     <section id="screen-0" id="top">
         <svg id="master-artboard" xmlns="http://www.w3.org/2000/svg" width="830" height="842" viewBox="282.5 74.5 830 842">
+            <defs>
+                <linearGradient id="gradient">
+                <stop offset="0%" stop-color="#f2c94c" />
+                <stop offset="100%" stop-color="#f2994a" />
+                </linearGradient>
+                <linearGradient id="gradient-reverse">
+                <stop offset="0%" stop-color="#f2994a" />
+                <stop offset="100%" stop-color="#f2c94c" />
+                </linearGradient>
+                <linearGradient id="gradient-vertical" gradientUnits="userSpaceOnUse" 
+                    x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(90)">
+                <stop offset="0%" stop-color="#f2c94c" />
+                <stop offset="100%" stop-color="#f2994a" />
+                </linearGradient>
+            </defs>
             <style>
                 .st0 {
                     fill: #AD2D63;
                 }
 
                 .st1 {
-                    fill: #f6af03;
+                    fill: url(#gradient);
+                }
+                .st2{
+                    fill: url(#gradient-reverse);
+                }
+                .st3{
+                    fill: url(#gradient-vertical);
                 }
             </style>
             <path class="st0" id="bottom-left" d="M654.5 536c0 12.537-10.163 22.7-22.7 22.7-12.536 0-22.7-10.163-22.7-22.7 0-12.537 10.164-22.7 22.7-22.7 12.537 0 22.7 10.163 22.7 22.7z"
@@ -54,9 +75,9 @@
             <path class="st0" id="bottom-right" d="M789.3 537.6c0 12.537-10.163 22.7-22.7 22.7-12.536 0-22.7-10.163-22.7-22.7 0-12.536 10.164-22.7 22.7-22.7 12.537 0 22.7 10.163 22.7 22.7z"
             />
             <g id="center">
-                <path class="st1" d="M751.7 563.4c-4.5-2.6-8.2-6.3-10.9-10.9-4-6.9-5-14.9-2.9-22.6 4.3-15.8 20.7-25.3 36.5-21 2.5.7 5 1.7 7.2 3l48-82.6L705 500.9 703.7 646l48-82.6z"
+                <path class="st2" d="M751.7 563.4c-4.5-2.6-8.2-6.3-10.9-10.9-4-6.9-5-14.9-2.9-22.6 4.3-15.8 20.7-25.3 36.5-21 2.5.7 5 1.7 7.2 3l48-82.6L705 500.9 703.7 646l48-82.6z"
                 />
-                <path class="st1" d="M699.6 491.6L824.2 420l-95.4-.2c0 2.7-.3 5.3-1 8-2.1 7.7-7 14.1-13.9 18-6.9 4-14.9 5-22.6 2.9-7.7-2.1-14.1-7-18-13.9-2.7-4.7-4-9.9-4-15.2l-94.5-.2 124.8 72.2z"
+                <path class="st3" d="M699.6 491.6L824.2 420l-95.4-.2c0 2.7-.3 5.3-1 8-2.1 7.7-7 14.1-13.9 18-6.9 4-14.9 5-22.6 2.9-7.7-2.1-14.1-7-18-13.9-2.7-4.7-4-9.9-4-15.2l-94.5-.2 124.8 72.2z"
                 />
                 <path class="st1" d="M694.3 500.7l-123.9-71.5 46.5 81c6.6-3.8 14.7-5.1 22.6-2.9 7.7 2.1 14.1 7 18 13.9 4 6.9 5 14.9 2.9 22.6-2.1 7.7-7 14.1-13.9 18l46.5 81 1.3-142.1z"
                 />
@@ -319,7 +340,9 @@
                     <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
                 </div>
             </div>
-            <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/mohseenrm" class="project-wrapper--row--frame--button" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
         </div>
     </section>
     <div class="title-2" id="title-references">
@@ -358,12 +381,25 @@
     </section>
     <section id="footer">
         <div class="wrapper">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-codepen" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <a class="footer--wrapper--link" href="https://github.com/mohseenrm" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a class="footer--wrapper--link" href="https://www.facebook.com/momo3300" target="_blank">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a class="footer--wrapper--link" href="https://www.instagram.com/code.strong/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a class="footer--wrapper--link" href="https://codepen.io/mohseen/" target="_blank">
+                <i class="fa fa-codepen" aria-hidden="true"></i>
+            </a>
+            <a class="footer--wrapper--link" href="https://www.linkedin.com/in/mohseenrm/" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a class="footer--wrapper--link" href="mailto:mohseenmukaddam6@gmail.com?subject=Aloha&body=How can I help you?">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            
         </div>
     </section>
     <!--splash screen files-->
