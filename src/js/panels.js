@@ -49,11 +49,6 @@ import { isMobile } from './utils';
 	function onExpanded (){
 		console.log( 'called now: ', this );
 
-		// let titleElement = document.createElement( 'div' );
-		/*titleElement.innerHTML = titleString;
-		titleElement.className = 'image-wrapper--title';*/
-
-
 		$( this ).children()
 			.fadeIn( 'slow' )
 			.children()
@@ -61,8 +56,6 @@ import { isMobile } from './utils';
 			.removeClass( 'none' );
 
 		console.log( 'Children: ', $( this ).children() );
-
-		// panelCache[ this.id ].append( titleElement );
 	}
 
     /**
@@ -122,10 +115,15 @@ import { isMobile } from './utils';
 			css: {
 				'height': '0%',
 				'border-bottom': '0'
-			}
+			},
+			onComplete: onExpanded.bind( this )
 		} );
 	}
 	function mOffHover () {
+		$( this ).children()
+			.children()
+			.removeClass( 'fade-in' )
+			.addClass( 'none' );
         //resize and reapply border
 		TweenMax.to( [ $first, $second, $third ], 1, {
 			css: {

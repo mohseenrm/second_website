@@ -408,7 +408,7 @@
       margin-top: 4vh; }
       @media (max-width: 400px) {
         #screen-7 .wrapper--button {
-          height: 3vh;
+          height: 6vh;
           width: 30vw;
           font-weight: 400;
           font-size: 1.7rem; } }

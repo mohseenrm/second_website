@@ -61,7 +61,7 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
             transition: all 0.5s ease-in-out;
             margin-top: 4vh;
             @media #{$phone} {
-                height: 3vh;
+                height: 6vh;
                 width: 30vw;
                 font-weight: 400;
                 font-size: 1.7rem; // TODO: figure out the actual value on mobile for margin-top

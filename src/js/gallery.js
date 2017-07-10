@@ -1,6 +1,4 @@
-/* eslint indent: ["error", "tab"] */
 import { addClass, removeClass } from './utils';
-// hsdjh
 // globals
 var imagesLoaded = 0,
 	maxPictures = 21,
@@ -16,7 +14,6 @@ cache.slideshow = document.getElementById( 'gallery-preview' );
 const initGallery = () => {
 	createPictures( 8 );
 };
-// TODO: use optimize images for preview
 const createPictures = ( number ) => {
 	const galleryButton = document.getElementById( 'gallery-button' );
 	const gallery = galleryButton.parentNode;
@@ -27,6 +24,7 @@ const createPictures = ( number ) => {
 		limit = ( number + imagesLoaded );
 
 	for( let i = imagesLoaded; i < limit; i++ ){
+		// TODO: add optimized image here
 		picture = document.createElement( 'div' );
 		picture.style = `
 			background: url('../../images/${ i }.jpg');
@@ -113,8 +111,6 @@ const clearSlideshow = () => {
 		removeClass( cache[ `slide_${ i }` ], 'show' );
 	}
 };
-// Need to take care of navigation control with edge cases
-// TODO: add eslint rules from airbnb JS guideline docs
 
 const getIndexFromPictures = ( e ) => {
 	e.preventDefault();
@@ -126,8 +122,6 @@ const getIndexFromPictures = ( e ) => {
 	const sourceId = source.id;
 	// console.log('sourceId: ', sourceId );
 	const targetId = generateIdFromIndex( extractIndexFromId( sourceId ) );
-	// console.log(extractIndexFromId(source.id));
-	// console.log(targetId);
 	// add show class to target and make slideshow visible
 	var element;
 
@@ -209,7 +203,6 @@ const galleryRightEventHandler = ( e ) => {
 	cache.current = nextSlide;
 };
 
-// TODO: refactor location of addClass, removeClass and loadButton
 ( () => {
 	const loadButton = document.querySelector( '.wrapper--button' );
 	initGallery();
