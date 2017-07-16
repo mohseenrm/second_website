@@ -94,9 +94,24 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 
 			&--button{
 				color: #ffffff;
+				@media #{$tablet} {
+					width: 100%;
+				}
+				& > i.fa-github{
+					@media #{$tablet} {
+						width: auto;
+						font-size: 9rem;
+					}	
+				}
 			}
 
 			@media #{$phone} {
+				flex-grow: 1;
+				min-width: 40%;
+				margin: 7%;
+			}
+			
+			@media #{$tablet} {
 				flex-grow: 1;
 				min-width: 40%;
 				margin: 7%;
