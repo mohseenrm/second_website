@@ -35,7 +35,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 */
-
+// TODO: fix background for tablets
 @import 'flex';
 $phone: "(max-width: 400px)";
 $phablet: "(min-width: 401px) and (max-width: 720px)";
@@ -56,6 +56,9 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 		overflow: hidden;
         @media #{$phone} {
             flex-direction: column;
+		}
+		@media #{$tablet} {
+            flex-direction: column;
         }
         &>.image-wrapper {
             // position: relative;
@@ -70,6 +73,11 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 			overflow: hidden;
 
             @media #{$phone} {
+                width: 100%;
+                height: 25%;
+                border-bottom: 2px solid #f2994a;
+			}
+			@media #{$tablet} {
                 width: 100%;
                 height: 25%;
                 border-bottom: 2px solid #f2994a;
@@ -108,50 +116,7 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 					background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
 					background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
 				}
-				& > .image-wrapper--absolute-saver--para{
-					text-align: right;
-
-					padding-left: 60%;
-					padding-right: 4%;
-					font-size: 2.5rem;
-
-					line-height: 5vh;
-
-					@media #{$phone} {
-						text-align: justify;
-						
-						padding-left: 7%;
-						padding-right: 7%;
-						padding-bottom: 2%;
-
-						font-size: 2rem;
-
-						line-height: 5vh;
-					}
-				}
-				& > .image-wrapper--absolute-saver--title{
-					margin-right: 4%;
-					@media #{$phone} {
-						font-size: 6rem;
-						margin-bottom: 1vh;
-						margin-right: 0;
-						margin-top: 0;
-						line-height: 15vh;
-					}
-				}
-			}
-        }
-        &>.image-wrapper:nth-child(2) {
-            background: #aeaeae;
-            background: url('../../images/design.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-
-			& > .image-wrapper--absolute-saver{
-				justify-content: flex-start;
-				align-items: flex-end;
-				flex-direction: column;
-				@media #{$phone} {
+				@media #{$tablet} {
 					justify-content: flex-start;
 					align-items: center;
 
@@ -179,10 +144,105 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 
 						line-height: 5vh;
 					}
+					@media #{$tablet} {
+						text-align: justify;
+						
+						padding-left: 7%;
+						padding-right: 7%;
+						padding-bottom: 2%;
+
+						font-size: 2rem;
+
+						line-height: 5vh;
+					}
 				}
 				& > .image-wrapper--absolute-saver--title{
 					margin-right: 4%;
 					@media #{$phone} {
+						font-size: 6rem;
+						margin-bottom: 1vh;
+						margin-right: 0;
+						margin-top: 0;
+						line-height: 15vh;
+					}
+					@media #{$tablet} {
+						font-size: 6rem;
+						margin-bottom: 1vh;
+						margin-right: 0;
+						margin-top: 0;
+						line-height: 15vh;
+					}
+				}
+			}
+        }
+        &>.image-wrapper:nth-child(2) {
+            background: #aeaeae;
+            background: url('../../images/design.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+			& > .image-wrapper--absolute-saver{
+				justify-content: flex-start;
+				align-items: flex-end;
+				flex-direction: column;
+				@media #{$phone} {
+					justify-content: flex-start;
+					align-items: center;
+
+					background: -moz-linear-gradient(bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%);
+					background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+					background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+				}
+				@media #{$tablet} {
+					justify-content: flex-start;
+					align-items: center;
+
+					background: -moz-linear-gradient(bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%);
+					background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+					background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+				}
+				& > .image-wrapper--absolute-saver--para{
+					text-align: right;
+
+					padding-left: 60%;
+					padding-right: 4%;
+					font-size: 2.5rem;
+
+					line-height: 5vh;
+
+					@media #{$phone} {
+						text-align: justify;
+						
+						padding-left: 7%;
+						padding-right: 7%;
+						padding-bottom: 2%;
+
+						font-size: 2rem;
+
+						line-height: 5vh;
+					}
+					@media #{$tablet} {
+						text-align: justify;
+						
+						padding-left: 7%;
+						padding-right: 7%;
+						padding-bottom: 2%;
+
+						font-size: 2rem;
+
+						line-height: 5vh;
+					}
+				}
+				& > .image-wrapper--absolute-saver--title{
+					margin-right: 4%;
+					@media #{$phone} {
+						font-size: 6rem;
+						margin-bottom: 1vh;
+						margin-right: 0;
+						margin-top: 0;
+						line-height: 15vh;
+					}
+					@media #{$tablet} {
 						font-size: 6rem;
 						margin-bottom: 1vh;
 						margin-right: 0;
@@ -218,6 +278,15 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 					background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
 				}
 
+				@media #{$tablet} {
+					justify-content: flex-start;
+					align-items: center;
+
+					background: -moz-linear-gradient(bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%);
+					background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+					background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+				}
+
 
 				& > .image-wrapper--absolute-saver--para{
 					text-align: left;
@@ -239,10 +308,28 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 
 						line-height: 5vh;
 					}
+					@media #{$tablet} {
+						text-align: justify;
+						
+						padding-left: 7%;
+						padding-right: 7%;
+						padding-bottom: 2%;
+
+						font-size: 2rem;
+
+						line-height: 5vh;
+					}
 				}
 				& > .image-wrapper--absolute-saver--title{
 					margin-left: 4%;
 					@media #{$phone} {
+						font-size: 6rem;
+						margin-bottom: 1vh;
+						margin-right: 0;
+						margin-top: 0;
+						line-height: 15vh;
+					}
+					@media #{$tablet} {
 						font-size: 6rem;
 						margin-bottom: 1vh;
 						margin-right: 0;
@@ -277,6 +364,14 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 					background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
 					background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
 				}
+				@media #{$tablet} {
+					justify-content: flex-start;
+					align-items: center;
+
+					background: -moz-linear-gradient(bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%);
+					background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+					background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+				}
 
 
 				& > .image-wrapper--absolute-saver--para{
@@ -299,10 +394,28 @@ $desktop: "(min-width: 1281px) and (max-width: 1440px)";
 
 						line-height: 5vh;
 					}
+					@media #{$tablet} {
+						text-align: justify;
+						
+						padding-left: 7%;
+						padding-right: 7%;
+						padding-bottom: 2%;
+
+						font-size: 2rem;
+
+						line-height: 5vh;
+					}
 				}
 				& > .image-wrapper--absolute-saver--title{
 					margin-left: 4%;
 					@media #{$phone} {
+						font-size: 6rem;
+						margin-bottom: 1vh;
+						margin-right: 0;
+						margin-top: 0;
+						line-height: 15vh;
+					}
+					@media #{$tablet} {
 						font-size: 6rem;
 						margin-bottom: 1vh;
 						margin-right: 0;

@@ -21,6 +21,11 @@ module.exports = {
 		}
 	},
 
+	isTablet: () => {
+		if( screen.width > 721 && screen.width < 1280 )
+			return true;
+		return false;
+	},
 	/**
 	* @function addClass
 	* @param  {element} element      Element whose class name needs to be altered

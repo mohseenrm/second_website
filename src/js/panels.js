@@ -36,7 +36,7 @@ THE SOFTWARE.
 
 */
 /* global $, TweenMax */
-import { isMobile } from './utils';
+import { isMobile, isTablet } from './utils';
 
 ( () => {
 	let $first = $( '#first' ),
@@ -141,7 +141,7 @@ import { isMobile } from './utils';
 		} );
 	}
     // Mobile Code
-	if ( isMobileDevice !== null ){
+	if ( isMobileDevice !== null || isTablet() ){
         // apply to all
         // TODO: add same event handlers to tap events
 		$first.hover( mOnHover, mOffHover );
