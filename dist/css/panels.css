@@ -54,7 +54,7 @@ THE SOFTWARE.
     @media (max-width: 400px) {
       #screen-1 > .wrapper {
         flex-direction: column; } }
-    @media (min-width: 721px) and (max-width: 1280px) {
+    @media (min-width: 721px) and (max-width: 1024px) {
       #screen-1 > .wrapper {
         flex-direction: column; } }
     #screen-1 > .wrapper > .image-wrapper {
@@ -75,7 +75,7 @@ THE SOFTWARE.
           width: 100%;
           height: 25%;
           border-bottom: 2px solid #f2994a; } }
-      @media (min-width: 721px) and (max-width: 1280px) {
+      @media (min-width: 721px) and (max-width: 1024px) {
         #screen-1 > .wrapper > .image-wrapper {
           width: 100%;
           height: 25%;
@@ -109,7 +109,7 @@ THE SOFTWARE.
             background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
             background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%); } }
-        @media (min-width: 721px) and (max-width: 1280px) {
+        @media (min-width: 721px) and (max-width: 1024px) {
           #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver {
             justify-content: flex-start;
             align-items: center;
@@ -130,7 +130,7 @@ THE SOFTWARE.
               padding-bottom: 2%;
               font-size: 2rem;
               line-height: 5vh; } }
-          @media (min-width: 721px) and (max-width: 1280px) {
+          @media (min-width: 721px) and (max-width: 1024px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
               text-align: justify;
               padding-left: 7%;
@@ -147,7 +147,7 @@ THE SOFTWARE.
               margin-right: 0;
               margin-top: 0;
               line-height: 15vh; } }
-          @media (min-width: 721px) and (max-width: 1280px) {
+          @media (min-width: 721px) and (max-width: 1024px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
               font-size: 6rem;
               margin-bottom: 1vh;
@@ -170,7 +170,7 @@ THE SOFTWARE.
             background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
             background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%); } }
-        @media (min-width: 721px) and (max-width: 1280px) {
+        @media (min-width: 721px) and (max-width: 1024px) {
           #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver {
             justify-content: flex-start;
             align-items: center;
@@ -191,7 +191,7 @@ THE SOFTWARE.
               padding-bottom: 2%;
               font-size: 2rem;
               line-height: 5vh; } }
-          @media (min-width: 721px) and (max-width: 1280px) {
+          @media (min-width: 721px) and (max-width: 1024px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
               text-align: justify;
               padding-left: 7%;
@@ -208,7 +208,7 @@ THE SOFTWARE.
               margin-right: 0;
               margin-top: 0;
               line-height: 15vh; } }
-          @media (min-width: 721px) and (max-width: 1280px) {
+          @media (min-width: 721px) and (max-width: 1024px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
               font-size: 6rem;
               margin-bottom: 1vh;
@@ -236,7 +236,7 @@ THE SOFTWARE.
             background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
             background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%); } }
-        @media (min-width: 721px) and (max-width: 1280px) {
+        @media (min-width: 721px) and (max-width: 1024px) {
           #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver {
             justify-content: flex-start;
             align-items: center;
@@ -257,7 +257,7 @@ THE SOFTWARE.
               padding-bottom: 2%;
               font-size: 2rem;
               line-height: 5vh; } }
-          @media (min-width: 721px) and (max-width: 1280px) {
+          @media (min-width: 721px) and (max-width: 1024px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
               text-align: justify;
               padding-left: 7%;
@@ -274,7 +274,7 @@ THE SOFTWARE.
               margin-right: 0;
               margin-top: 0;
               line-height: 15vh; } }
-          @media (min-width: 721px) and (max-width: 1280px) {
+          @media (min-width: 721px) and (max-width: 1024px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
               font-size: 6rem;
               margin-bottom: 1vh;
@@ -302,7 +302,7 @@ THE SOFTWARE.
             background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
             background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, transparent 100%); } }
-        @media (min-width: 721px) and (max-width: 1280px) {
+        @media (min-width: 721px) and (max-width: 1024px) {
           #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver {
             justify-content: flex-start;
             align-items: center;
@@ -323,7 +323,7 @@ THE SOFTWARE.
               padding-bottom: 2%;
               font-size: 2rem;
               line-height: 5vh; } }
-          @media (min-width: 721px) and (max-width: 1280px) {
+          @media (min-width: 721px) and (max-width: 1024px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
               text-align: justify;
               padding-left: 7%;
@@ -340,7 +340,7 @@ THE SOFTWARE.
               margin-right: 0;
               margin-top: 0;
               line-height: 15vh; } }
-          @media (min-width: 721px) and (max-width: 1280px) {
+          @media (min-width: 721px) and (max-width: 1024px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
               font-size: 6rem;
               margin-bottom: 1vh;

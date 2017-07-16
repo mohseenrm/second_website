@@ -22,7 +22,7 @@ module.exports = {
 	},
 
 	isTablet: () => {
-		if( screen.width > 721 && screen.width < 1280 )
+		if( screen.width > 720 && screen.width < 1025 )
 			return true;
 		return false;
 	},
