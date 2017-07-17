@@ -20,7 +20,6 @@ module.exports = {
 			return ( this.Android() || this.BlackBerry() || this.iOS() || this.Opera() || this.Windows() );
 		}
 	},
-
 	isTablet: () => {
 		if( screen.width > 720 && screen.width < 1025 )
 			return true;
