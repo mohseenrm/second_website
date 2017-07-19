@@ -45,46 +45,59 @@ import { isMobile, isTablet } from './utils';
 		$fourth = $( '#fourth' ),
 		isMobileDevice = isMobile.any();
 
-    // console.log( 'Mobile Check: ', isMobileDevice );
-	function onExpanded (){
-		console.log( 'called now: ', this );
+	let onHoverTweenElement, onHoverTweenSiblings, offHoverTweenElement, offHoverTweenSiblings;
+	// console.log( 'Mobile Check: ', isMobileDevice );
+	function killOnHoverTweens () {
+		if( onHoverTweenElement && onHoverTweenSiblings ) {
+			onHoverTweenElement.kill();
+			onHoverTweenSiblings.kill();
+		}
+	}
 
+	function killOffHoverTweens () {
+		if( offHoverTweenElement && offHoverTweenSiblings ) {
+			offHoverTweenElement.kill();
+			offHoverTweenSiblings.kill();
+		}
+	}
+
+	function onExpanded (){
 		$( this ).children()
 			.fadeIn( 'slow' )
 			.children()
 			.addClass( 'fade-in' )
 			.removeClass( 'none' );
-
-		console.log( 'Children: ', $( this ).children() );
 	}
 
     /**
      *  Normal Hover Event Handlers
      */
 	function onHover () {
+		killOffHoverTweens();
         //maximize current fella
-		TweenMax.to( this, 1.5, {
+		onHoverTweenElement = TweenMax.to( this, 1.5, {
 			css: {
 				'width': '100%',
 				'border': '0px'
-			}
+			},
+			onComplete: onExpanded.bind( $( this ) )
 		} );
         //shrink siblings
-		TweenMax.to( $( this ).siblings(), 1.5, {
+		onHoverTweenSiblings = TweenMax.to( $( this ).siblings(), 1.5, {
 			css: {
 				'width': '0%',
 				'border-right': '0'
-			},
-			onComplete: onExpanded.bind( this )
+			}
 		} );
 	}
 	function offHover () {
+		killOnHoverTweens();
 		$( this ).children()
 			.children()
 			.removeClass( 'fade-in' )
 			.addClass( 'none' );
         //resize and reapply border
-		TweenMax.to( [ $first, $second, $third ], 1, {
+		offHoverTweenElement = TweenMax.to( [ $first, $second, $third ], 1, {
 			css: {
 				'width': '25%',
 				'border-right': '2px solid #f2994a'
@@ -92,7 +105,7 @@ import { isMobile, isTablet } from './utils';
 		} );
         //this is for the last one
         //don't want the border on the last image
-		TweenMax.to( $fourth, 1, {
+		offHoverTweenSiblings = TweenMax.to( $fourth, 1, {
 			css: {
 				'width': '25%',
 				'border-right': '0px'
@@ -103,15 +116,16 @@ import { isMobile, isTablet } from './utils';
      *  Mobile Hover Event Handlers
      */
 	function mOnHover () {
+		killOffHoverTweens();
         //maximize current fella
-		TweenMax.to( this, 1.5, {
+		onHoverTweenElement = TweenMax.to( this, 1.5, {
 			css: {
 				'height': '100%',
 				'border': '0px'
 			}
 		} );
         //shrink siblings
-		TweenMax.to( $( this ).siblings(), 1.5, {
+		onHoverTweenSiblings = TweenMax.to( $( this ).siblings(), 1.5, {
 			css: {
 				'height': '0%',
 				'border-bottom': '0'
@@ -120,12 +134,13 @@ import { isMobile, isTablet } from './utils';
 		} );
 	}
 	function mOffHover () {
+		killOnHoverTweens();
 		$( this ).children()
 			.children()
 			.removeClass( 'fade-in' )
 			.addClass( 'none' );
         //resize and reapply border
-		TweenMax.to( [ $first, $second, $third ], 1, {
+		offHoverTweenElement = TweenMax.to( [ $first, $second, $third ], 1, {
 			css: {
 				'height': '25%',
 				'border-bottom': '2px solid #f2994a'
@@ -133,7 +148,7 @@ import { isMobile, isTablet } from './utils';
 		} );
         //this is for the last one
         //don't want the border on the last image
-		TweenMax.to( $fourth, 1, {
+		offHoverTweenSiblings = TweenMax.to( $fourth, 1, {
 			css: {
 				'height': '25%',
 				'border-bottom': '0px'
