@@ -1922,10 +1922,10 @@ THE SOFTWARE.
       margin: 4%; }
       .project-wrapper--row--frame--button {
         color: #ffffff; }
-        @media (min-width: 721px) and (max-width: 1280px) {
+        @media (min-width: 721px) and (max-width: 1024px) {
           .project-wrapper--row--frame--button {
             width: 100%; } }
-        @media (min-width: 721px) and (max-width: 1280px) {
+        @media (min-width: 721px) and (max-width: 1024px) {
           .project-wrapper--row--frame--button > i.fa-github {
             width: auto;
             font-size: 9rem; } }
@@ -1934,7 +1934,7 @@ THE SOFTWARE.
           flex-grow: 1;
           min-width: 40%;
           margin: 7%; } }
-      @media (min-width: 721px) and (max-width: 1280px) {
+      @media (min-width: 721px) and (max-width: 1024px) {
         .project-wrapper--row--frame {
           flex-grow: 1;
           min-width: 40%;
