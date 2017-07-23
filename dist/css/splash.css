@@ -1,4 +1,7 @@
 #screen-0 {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;

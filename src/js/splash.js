@@ -1,5 +1,5 @@
 /* eslint indent: ["error", "tab"] */
-/* global TimelineMax, Power2 */
+/* global TimelineMax, Power2, $ */
 /*
 ___  ___      _
 |  \/  |     | |
@@ -41,7 +41,8 @@ THE SOFTWARE.
 	const dot1 = document.getElementById( 'top' ),
 		dot2 = document.getElementById( 'bottom-left' ),
 		dot3 = document.getElementById( 'bottom-right' ),
-		center = document.getElementById( 'center' );
+		center = document.getElementById( 'center' ),
+		screen = $( '#screen-0' );
 
 	let tl = new TimelineMax( {
 		// paused: true,
@@ -55,6 +56,7 @@ THE SOFTWARE.
 		if ( /loaded|complete/.test( document.readyState ) ){
 			// console.log('content loaded');
 			tl.pause();
+			screen.fadeOut();
 		}
 	};
 
