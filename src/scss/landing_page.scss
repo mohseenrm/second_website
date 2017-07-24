@@ -10,6 +10,23 @@
 
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+
+	background: url('../../images/abstract.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 1;
+	/* background: url('../../images/triangle.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: 50%; */
+	/* &:after {
+		content: '';
+		@include flexbox;
+		width: 100%;
+		height: 100%;
+		background: #000;
+	} */
 }
 
 .landing{
@@ -18,8 +35,20 @@
 		flex-direction: column;
 		align-items: flex-start;
 		font-family: 'Didot', serif;
-		font-size: 6rem;
+		font-size: 8rem;
 		color: #fff;
+		font-weight: 900;
+
+		/* background: url('../../images/triangle.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position-x: 50%;
+		background-attachment: fixed;
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		filter: invert(1); */
 	}
 }
 

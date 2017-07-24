@@ -1,0 +1,8 @@
+<svg id="triangle-shpae" xmlns="http://www.w3.org/2000/svg" width="300" height="500" viewBox="0 0 300 500">
+  <style>
+<![CDATA[
+	.tri{fill:#00000;}
+]]>
+  </style>
+  <path class="tri" d="M0 500L150 0l150 500z"/>
+</svg>
