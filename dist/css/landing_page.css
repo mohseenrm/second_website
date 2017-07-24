@@ -11,21 +11,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("../../images/abstract.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* background: url('../../images/abstract.gif');
+	background-repeat: no-repeat;
+	background-size: cover; */
+  -webkit-box-shadow: inset 0px 0px 0px 10px #fff;
+  -moz-box-shadow: inset 0px 0px 0px 10px #fff;
+  box-shadow: inset 0px 0px 0px 10px #fff;
   opacity: 1;
-  /* background: url('../../images/triangle.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 50%; */
-  /* &:after {
-  	content: '';
-  	@include flexbox;
-  	width: 100%;
-  	height: 100%;
-  	background: #000;
-  } */ }
+    /* background: url('../../images/triangle.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: 50%; */
+    /* &:after {
+		content: '';
+		@include flexbox;
+		width: 100%;
+		height: 100%;
+		background: #000;
+	} */ }
 
 .landing--main-title {
   display: -webkit-box;
@@ -39,21 +42,36 @@
   font-size: 8rem;
   color: #fff;
   font-weight: 900;
-  /* background: url('../../images/triangle.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 50%;
-  background-attachment: fixed;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: invert(1); */ }
+        /* background: url('../../images/triangle.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position-x: 50%;
+		background-attachment: fixed;
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		filter: invert(1); */ }
 
 .light-weight {
   font-weight: 100; }
 
 .heavy-weight {
   font-weight: 500; }
+
+/*
+ *  STYLE 14
+ */
+#style-14::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+  background-color: #F5F5F5; }
+
+#style-14::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+
+#style-14::-webkit-scrollbar-thumb {
+  background-color: #F90;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
 
 /*# sourceMappingURL=landing_page.css.map */
