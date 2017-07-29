@@ -1140,7 +1140,7 @@ i.fa-github {
   height: 100%;
   filter: url("#shadowed-goo"); }
 
-svg {
+#filter-svg {
   display: none; }
 
 /*
