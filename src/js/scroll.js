@@ -1,4 +1,3 @@
-/* eslint indent: ["error", "tab"] */
 /*
 ___  ___      _
 |  \/  |     | |

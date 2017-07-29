@@ -99,6 +99,7 @@ THE SOFTWARE.
 
 } )();
 // TODO: generate prefix
+require( './landing-page' );
 require( './scroll' );
 require( './navigation' );
 require( './panels' );

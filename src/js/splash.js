@@ -1,4 +1,3 @@
-/* eslint indent: ["error", "tab"] */
 /* global TimelineMax, Power2, $ */
 /*
 ___  ___      _
