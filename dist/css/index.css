@@ -1100,24 +1100,46 @@ i.fa-github {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  /* position: absolute;
+  top: 50%; */
   flex-direction: column;
   align-items: flex-start;
   font-family: 'Didot', serif;
   font-size: 8rem;
-  color: #fff;
-  font-weight: 900; }
+  color: #000000;
+  background: #ffffff;
+  padding: 5vh;
+  font-weight: 900;
+  outline: solid 4px #ffffff;
+  outline-offset: 7px; }
 
 .screen-landing--border-box {
   width: auto;
   height: auto;
   flex-grow: 2;
-  background: #000000; }
+  background: #000000;
+  overflow-x: hidden; }
 
 .light-weight {
   font-weight: 100; }
 
 .heavy-weight {
   font-weight: 500; }
+
+.psuedo-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-grow: 2;
+  justify-content: center;
+  align-items: center; }
 
 /*
  *  STYLE 14
@@ -1132,7 +1154,7 @@ i.fa-github {
 
 #style-14::-webkit-scrollbar-thumb {
   background-color: #F90;
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+  /* background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); */ }
 
 #canvas {
   display: block;

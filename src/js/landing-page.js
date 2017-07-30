@@ -165,11 +165,11 @@ class CircleContainer {
 			y
 		};
 
-		this.numberOfCircles = 19;
+		this.numberOfCircles = 13;
 		this.circles = [];
 
-		this.baseRadius = 20;
-		this.bounceRadius = 150;
+		this.baseRadius = 15;
+		this.bounceRadius = 130;
 		this.singleSlice = TWO_PI / this.numberOfCircles;
 	}
 
