@@ -1,4 +1,10 @@
 @import 'flex';
+
+$phone: "(max-width: 420px)";
+$phablet: "(min-width: 421px) and (max-width: 720px)";
+$tablet: "(min-width: 721px) and (max-width: 1024px)";
+$desktop: "(min-width: 1025px) and (max-width: 1440px)";
+
 #screen-landing {
   max-width: 100%;
   max-height: 100%;
@@ -30,12 +36,12 @@
     font-family: 'Didot', serif;
     font-size: 12rem;
     color: #000000;
-    background: #ffffff;
-    padding: 5vh;
+    background: #000000;
+    padding: 8vh;
     font-weight: 900;
 
-    outline: solid 5px #f2c94c;
-    outline-offset: 7px;
+    /* outline: solid 5px #f2c94c;
+    outline-offset: 7px; */
 
     background: #f2994a;
     background-image: -webkit-linear-gradient(to bottom, #f2994a, #f2c94c);
@@ -45,13 +51,19 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    @media #{$phone} {
+      font-size: 6rem;
+      padding: 2vh;
+      margin-top: 12vh;
+    }
+
   }
 }
 
 .screen-landing{
   &--border-box{
     width: auto;
-    height: auto;
+    height: 100%;
     flex-grow: 2;
     background: #000000;
     // TODO: have fallback to starting frame of the video
@@ -76,8 +88,12 @@
   top: 0;
   left: 0;
   flex-grow: 2;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  @media #{$phone} {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 // TODO: scroll bar vendor prefix
@@ -104,4 +120,12 @@
 
 #bgvid{
   background-size: contain;
+  max-width: 200%;
+  height: auto;
+  max-height: 100%;
+  @media #{$phone} {
+    // background-position-x: 20%;
+    max-width: 400%;
+    transform: translateX(-50%);
+  }
 }

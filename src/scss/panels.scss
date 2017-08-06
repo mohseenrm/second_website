@@ -37,8 +37,8 @@ THE SOFTWARE.
 */
 // TODO: fix background for tablets
 @import 'flex';
-$phone: "(max-width: 400px)";
-$phablet: "(min-width: 401px) and (max-width: 720px)";
+$phone: "(max-width: 420px)";
+$phablet: "(min-width: 421px) and (max-width: 720px)";
 $tablet: "(min-width: 721px) and (max-width: 1024px)";
 $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 #screen-1 {

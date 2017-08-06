@@ -23,7 +23,7 @@
     font-family: 'Merriweather', 'butlerregular', sans-serif;
     padding-top: 8vh;
     padding-bottom: 8vh; }
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
       #screen-3b .wrapper {
         align-content: space-around;
         padding-top: 8vh; } }
@@ -45,7 +45,7 @@
         letter-spacing: 0.18rem;
         text-align: right;
         color: #4E0E2E; }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           #screen-3b .wrapper--block--title {
             height: auto;
             font-size: 2.5rem; } }
@@ -55,7 +55,7 @@
         font-weight: 100;
         line-height: 5.3vh;
         text-align: right; }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           #screen-3b .wrapper--block--text {
             height: auto;
             font-size: 2rem; } }

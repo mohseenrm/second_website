@@ -1106,11 +1106,11 @@ i.fa-github {
   font-family: 'Didot', serif;
   font-size: 12rem;
   color: #000000;
-  background: #ffffff;
-  padding: 5vh;
+  background: #000000;
+  padding: 8vh;
   font-weight: 900;
-  outline: solid 5px #f2c94c;
-  outline-offset: 7px;
+  /* outline: solid 5px #f2c94c;
+  outline-offset: 7px; */
   background: #f2994a;
   background-image: -webkit-linear-gradient(to bottom, #f2994a, #f2c94c);
   background: linear-gradient(to top, #f2994a, #f0cb35);
@@ -1118,10 +1118,15 @@ i.fa-github {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
+  @media (max-width: 420px) {
+    .landing--main-title {
+      font-size: 6rem;
+      padding: 2vh;
+      margin-top: 12vh; } }
 
 .screen-landing--border-box {
   width: auto;
-  height: auto;
+  height: 100%;
   flex-grow: 2;
   background: #000000;
   overflow-x: hidden; }
@@ -1144,8 +1149,12 @@ i.fa-github {
   top: 0;
   left: 0;
   flex-grow: 2;
-  justify-content: center;
-  align-items: center; }
+  justify-content: flex-start;
+  align-items: flex-end; }
+  @media (max-width: 420px) {
+    .psuedo-wrapper {
+      justify-content: center;
+      align-items: center; } }
 
 /*
  *  STYLE 14
@@ -1163,7 +1172,14 @@ i.fa-github {
   /* background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); */ }
 
 #bgvid {
-  background-size: contain; }
+  background-size: contain;
+  max-width: 200%;
+  height: auto;
+  max-height: 100%; }
+  @media (max-width: 420px) {
+    #bgvid {
+      max-width: 400%;
+      transform: translateX(-50%); } }
 
 /*
 Made by:
@@ -1242,7 +1258,7 @@ THE SOFTWARE.
     display: flex;
     width: 100%;
     height: 100%; }
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
       #screen-bio > .bio-wrapper {
         height: auto;
         flex-direction: column-reverse;
@@ -1255,7 +1271,7 @@ THE SOFTWARE.
       display: flex;
       width: 35%;
       height: 100%; }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         #screen-bio > .bio-wrapper .bio-wrapper--gif {
           height: auto;
           margin-bottom: 30%;
@@ -1277,7 +1293,7 @@ THE SOFTWARE.
       text-align: left;
       padding: 4%;
       padding-top: 6%; }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         #screen-bio > .bio-wrapper .bio-wrapper--text {
           height: auto;
           width: 80%;
@@ -1295,7 +1311,7 @@ THE SOFTWARE.
   justify-content: center;
   height: 100%;
   width: 100%; }
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
     .aligner {
       height: auto; } }
 
@@ -1433,7 +1449,7 @@ THE SOFTWARE.
     overflow: hidden;
     flex-wrap: nowrap;
     overflow: hidden; }
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
       #screen-1 > .wrapper {
         flex-direction: column; } }
     @media (min-width: 721px) and (max-width: 1024px) {
@@ -1452,7 +1468,7 @@ THE SOFTWARE.
       align-items: center;
       justify-content: center;
       overflow: hidden; }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         #screen-1 > .wrapper > .image-wrapper {
           width: 100%;
           height: 25%;
@@ -1484,7 +1500,7 @@ THE SOFTWARE.
         justify-content: flex-start;
         align-items: flex-end;
         flex-direction: column; }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver {
             justify-content: flex-start;
             align-items: center;
@@ -1504,7 +1520,7 @@ THE SOFTWARE.
           padding-right: 4%;
           font-size: 2.5rem;
           line-height: 5vh; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
               text-align: justify;
               padding-left: 7%;
@@ -1522,7 +1538,7 @@ THE SOFTWARE.
               line-height: 5vh; } }
         #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
           margin-right: 4%; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
               font-size: 6rem;
               margin-bottom: 1vh;
@@ -1545,7 +1561,7 @@ THE SOFTWARE.
         justify-content: flex-start;
         align-items: flex-end;
         flex-direction: column; }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver {
             justify-content: flex-start;
             align-items: center;
@@ -1565,7 +1581,7 @@ THE SOFTWARE.
           padding-right: 4%;
           font-size: 2.5rem;
           line-height: 5vh; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
               text-align: justify;
               padding-left: 7%;
@@ -1583,7 +1599,7 @@ THE SOFTWARE.
               line-height: 5vh; } }
         #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
           margin-right: 4%; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
               font-size: 6rem;
               margin-bottom: 1vh;
@@ -1611,7 +1627,7 @@ THE SOFTWARE.
         background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
         background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
         background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, transparent 100%); }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver {
             justify-content: flex-start;
             align-items: center;
@@ -1631,7 +1647,7 @@ THE SOFTWARE.
           padding-left: 4%;
           font-size: 2.5rem;
           line-height: 5vh; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
               text-align: justify;
               padding-left: 7%;
@@ -1649,7 +1665,7 @@ THE SOFTWARE.
               line-height: 5vh; } }
         #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
           margin-left: 4%; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
               font-size: 6rem;
               margin-bottom: 1vh;
@@ -1677,7 +1693,7 @@ THE SOFTWARE.
         background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
         background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
         background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, transparent 100%); }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver {
             justify-content: flex-start;
             align-items: center;
@@ -1697,7 +1713,7 @@ THE SOFTWARE.
           padding-left: 4%;
           font-size: 2.5rem;
           line-height: 5vh; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--para {
               text-align: justify;
               padding-left: 7%;
@@ -1715,7 +1731,7 @@ THE SOFTWARE.
               line-height: 5vh; } }
         #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
           margin-left: 4%; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
               font-size: 6rem;
               margin-bottom: 1vh;
@@ -1855,7 +1871,7 @@ THE SOFTWARE.
     font-family: 'Merriweather', 'butlerregular', sans-serif;
     padding-top: 8vh;
     padding-bottom: 8vh; }
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
       #screen-3b .wrapper {
         align-content: space-around;
         padding-top: 8vh; } }
@@ -1877,7 +1893,7 @@ THE SOFTWARE.
         letter-spacing: 0.18rem;
         text-align: right;
         color: #4E0E2E; }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           #screen-3b .wrapper--block--title {
             height: auto;
             font-size: 2.5rem; } }
@@ -1887,7 +1903,7 @@ THE SOFTWARE.
         font-weight: 100;
         line-height: 5.3vh;
         text-align: right; }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           #screen-3b .wrapper--block--text {
             height: auto;
             font-size: 2rem; } }
@@ -2021,7 +2037,7 @@ THE SOFTWARE.
           .project-wrapper--row--frame--button > i.fa-github {
             width: auto;
             font-size: 9rem; } }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         .project-wrapper--row--frame {
           flex-grow: 1;
           min-width: 40%;
@@ -2082,7 +2098,7 @@ THE SOFTWARE.
         padding-top: 4%;
         font-size: 3.5rem;
         transition: font-size 0.8s ease-out; }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text {
             font-size: 3rem; } }
       .project-wrapper--row--frame--inner-wrapper {
@@ -2109,7 +2125,7 @@ THE SOFTWARE.
           -webkit-background-clip: text;
           font-weight: bold;
           transition: font-size 0.5s ease-out; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             .project-wrapper--row--frame--inner-wrapper--text {
               font-size: 2.7rem; } }
           .project-wrapper--row--frame--inner-wrapper--text-description {
@@ -2164,7 +2180,7 @@ THE SOFTWARE.
     width: 100%;
     height: auto;
     flex-wrap: nowrap; }
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
       #screen-5 .wrapper {
         padding-top: 6vh;
         padding-bottom: 6vh; } }
@@ -2194,7 +2210,7 @@ THE SOFTWARE.
       margin-bottom: 4%;
       margin-top: 3vh;
       transition: all 0.1s ease-in-out; }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         #screen-5 .wrapper--author {
           font-size: 2rem; } }
       #screen-5 .wrapper--author--position {
@@ -2222,7 +2238,7 @@ THE SOFTWARE.
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent; }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         #screen-5 .wrapper--text {
           font-size: 2.5rem;
           line-height: 5vh;
@@ -2259,7 +2275,7 @@ THE SOFTWARE.
       background-size: contain;
       margin: 4px;
       background-origin: 50% 50%; }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         #screen-7 .wrapper--picture {
           height: 45vw;
           width: 45vw;
@@ -2291,7 +2307,7 @@ THE SOFTWARE.
       border-top: 4px solid black;
       transition: all 0.5s ease-in-out;
       margin-top: 4vh; }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         #screen-7 .wrapper--button {
           height: 6vh;
           width: 30vw;

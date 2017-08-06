@@ -80,7 +80,7 @@ THE SOFTWARE.
           .project-wrapper--row--frame--button > i.fa-github {
             width: auto;
             font-size: 9rem; } }
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         .project-wrapper--row--frame {
           flex-grow: 1;
           min-width: 40%;
@@ -141,7 +141,7 @@ THE SOFTWARE.
         padding-top: 4%;
         font-size: 3.5rem;
         transition: font-size 0.8s ease-out; }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text {
             font-size: 3rem; } }
       .project-wrapper--row--frame--inner-wrapper {
@@ -168,7 +168,7 @@ THE SOFTWARE.
           -webkit-background-clip: text;
           font-weight: bold;
           transition: font-size 0.5s ease-out; }
-          @media (max-width: 400px) {
+          @media (max-width: 420px) {
             .project-wrapper--row--frame--inner-wrapper--text {
               font-size: 2.7rem; } }
           .project-wrapper--row--frame--inner-wrapper--text-description {
