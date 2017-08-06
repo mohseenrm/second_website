@@ -259,7 +259,7 @@ atob@~1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-1.1.3.tgz#95f13629b12c3a51a5d215abdce2aa9f32f80773"
 
-autoprefixer@^7.1.2:
+autoprefixer@^7.0.0, autoprefixer@^7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.2.tgz#fbeaf07d48fd878e0682bf7cbeeade728adb2b18"
   dependencies:
@@ -2403,6 +2403,16 @@ graceful-fs@~1.2.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
+gulp-autoprefixer@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-autoprefixer/-/gulp-autoprefixer-4.0.0.tgz#e00a8c571b85d06516ac26341be90dfd9fc1eab0"
+  dependencies:
+    autoprefixer "^7.0.0"
+    gulp-util "^3.0.0"
+    postcss "^6.0.1"
+    through2 "^2.0.0"
+    vinyl-sourcemaps-apply "^0.2.0"
+
 gulp-babel@^6.1.2:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/gulp-babel/-/gulp-babel-6.1.2.tgz#7c0176e4ba3f244c60588a0c4b320a45d1adefce"
@@ -2489,6 +2499,14 @@ gulp-uglify@^2.0.0:
     uglify-js "~2.8.10"
     uglify-save-license "^0.4.1"
     vinyl-sourcemaps-apply "^0.2.0"
+
+gulp-uglifycss@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/gulp-uglifycss/-/gulp-uglifycss-1.0.8.tgz#a1895c5614b4850ea42de9199fc5c4fb75d23e7c"
+  dependencies:
+    gulp-util "^3.0.8"
+    through2 "^2.0.3"
+    uglifycss "^0.0.25"
 
 gulp-util@^2.2.14:
   version "2.2.20"
@@ -4020,6 +4038,14 @@ postcss-value-parser@^3.2.3:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
 
+postcss@^6.0.1:
+  version "6.0.8"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.8.tgz#89067a9ce8b11f8a84cbc5117efc30419a0857b3"
+  dependencies:
+    chalk "^2.0.1"
+    source-map "^0.5.6"
+    supports-color "^4.2.0"
+
 postcss@^6.0.2, postcss@^6.0.6:
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.6.tgz#bba4d58e884fc78c840d1539e10eddaabb8f73bd"
@@ -4776,6 +4802,12 @@ supports-color@^4.0.0, supports-color@^4.1.0:
   dependencies:
     has-flag "^2.0.0"
 
+supports-color@^4.2.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-4.2.1.tgz#65a4bb2631e90e02420dba5554c375a4754bb836"
+  dependencies:
+    has-flag "^2.0.0"
+
 table@^3.7.8:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/table/-/table-3.8.3.tgz#2bbc542f0fda9861a755d3947fefd8b3f513855f"
@@ -4951,6 +4983,10 @@ uglify-save-license@^0.4.1:
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
+
+uglifycss@^0.0.25:
+  version "0.0.25"
+  resolved "https://registry.yarnpkg.com/uglifycss/-/uglifycss-0.0.25.tgz#bea72bf4979eacef13a302cf47b2d1af3f344197"
 
 uid-number@^0.0.6:
   version "0.0.6"

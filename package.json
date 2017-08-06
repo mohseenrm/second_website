@@ -12,6 +12,7 @@
     "build:webpack:windows:production": "node_modules\\.bin\\webpack -p",
     "devServer": "./node_modules/.bin/webpack-dev-server --progress --colors",
     "compile": "sass --watch src/scss:dist/css",
+    "build:production": "gulp",
     "test": "node_modules/.bin/eslint src/js/*.js --cache --cache-location ./.eslintcache",
     "test:quick-fix": "node_modules/.bin/eslint src/js/*.js --cache --cache-location ./.eslintcache --fix"
   },
@@ -23,7 +24,7 @@
     "website"
   ],
   "author": "Mohseen Mukaddam",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mohseenrm/second_website/issues"
   },
@@ -38,6 +39,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "eslint": "^3.19.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^6.1.2",
     "gulp-bump": "^2.5.1",
     "gulp-clean": "^0.3.2",
@@ -46,6 +48,7 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
+    "gulp-uglifycss": "^1.0.8",
     "gulp-util": "^3.0.8",
     "postcss-loader": "^2.0.6",
     "webpack": "^2.5.0",
