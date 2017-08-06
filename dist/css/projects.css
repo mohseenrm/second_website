@@ -73,6 +73,9 @@ THE SOFTWARE.
       margin: 4%; }
       .project-wrapper--row--frame--button {
         color: #ffffff; }
+        @media (max-width: 420px) {
+          .project-wrapper--row--frame--button {
+            width: 50%; } }
         @media (min-width: 721px) and (max-width: 1024px) {
           .project-wrapper--row--frame--button {
             width: 100%; } }
@@ -83,7 +86,7 @@ THE SOFTWARE.
       @media (max-width: 420px) {
         .project-wrapper--row--frame {
           flex-grow: 1;
-          min-width: 40%;
+          min-width: 45%;
           margin: 7%; } }
       @media (min-width: 721px) and (max-width: 1024px) {
         .project-wrapper--row--frame {

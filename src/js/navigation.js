@@ -45,15 +45,7 @@ import { addClass, removeClass } from './utils';
 		projects = document.getElementById( 'title-projects' ),
 		references = document.getElementById( 'title-references' ),
 		gallery = document.getElementById( 'title-gallery' ),
-		top = document.getElementById( 'top' );
-
-	/*const bio = $( '#title-bio' ),
-		passion = $( '#title-passion' ),
-		tools = $( '#title-tools' ),
-		projects = $( '#title-projects' ),
-		references = $( '#title-references' ),
-		gallery = $( '#title-gallery' ),
-		top = $( '#top' );*/
+		top = document.getElementById( 'title-top' );
 
 	let titles = {
 		bio,
@@ -68,7 +60,6 @@ import { addClass, removeClass } from './utils';
 	// https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
 
 	let navLinks = [].slice.call( document.querySelectorAll( 'a[data-nav]' ) );
-	// console.log( navLinks );
 
 	navLinks.map( ( link ) => {
 		link.onclick = ( e ) => {
@@ -85,17 +76,4 @@ import { addClass, removeClass } from './utils';
 			addClass( link, 'fa fa-circle' );
 		};
 	} );
-
-	/*const titles = [ bio, passion, tools, projects, references, gallery ];
-
-	titles.map( ( title ) => {
-		console.log('title: ', title);
-
-		title.addEventListener('click', (e) => {
-			e.preventDefault();
-			console.log('element clicked: ', this);
-			title.scrollIntoView( { behaviour: 'smooth' } );
-
-		});
-	} );*/
 } )();

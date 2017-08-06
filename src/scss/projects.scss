@@ -94,6 +94,9 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 
 			&--button{
 				color: #ffffff;
+				@media #{$phone} {
+						width: 50%;
+				}
 				@media #{$tablet} {
 					width: 100%;
 				}
@@ -101,13 +104,13 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 					@media #{$tablet} {
 						width: auto;
 						font-size: 9rem;
-					}	
+					}
 				}
 			}
 
 			@media #{$phone} {
 				flex-grow: 1;
-				min-width: 40%;
+				min-width: 45%;
 				margin: 7%;
 			}
 			
@@ -115,7 +118,7 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 				flex-grow: 1;
 				min-width: 40%;
 				margin: 7%;
-            }
+			}
 
 			&#refine-hiring{
 				background: url($refine_hiring);
@@ -241,6 +244,7 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 					font-size: 2rem;
 					border-top: 4px solid black;
 					transition: all 0.5s ease-in-out;
+
 					&:hover {
 						background: black;
 						color: #f2994a;

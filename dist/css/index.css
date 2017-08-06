@@ -1117,10 +1117,11 @@ i.fa-github {
   background-attachment: fixed;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  z-index: 10; }
   @media (max-width: 420px) {
     .landing--main-title {
-      font-size: 6rem;
+      font-size: 5.5rem;
       padding: 2vh;
       margin-top: 12vh; } }
 
@@ -1130,6 +1131,16 @@ i.fa-github {
   flex-grow: 2;
   background: #000000;
   overflow-x: hidden; }
+  .screen-landing--border-box:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    opacity: 0.3; }
 
 .light-weight {
   font-weight: 100; }
@@ -1240,6 +1251,9 @@ THE SOFTWARE.
     font-size: 8rem;
     color: #000;
     letter-spacing: -0.45rem; }
+    @media (max-width: 420px) {
+      .title-2--text {
+        font-size: 7.1rem; } }
 
 #screen-bio {
   display: -webkit-box;
@@ -2030,6 +2044,9 @@ THE SOFTWARE.
       margin: 4%; }
       .project-wrapper--row--frame--button {
         color: #ffffff; }
+        @media (max-width: 420px) {
+          .project-wrapper--row--frame--button {
+            width: 50%; } }
         @media (min-width: 721px) and (max-width: 1024px) {
           .project-wrapper--row--frame--button {
             width: 100%; } }
@@ -2040,7 +2057,7 @@ THE SOFTWARE.
       @media (max-width: 420px) {
         .project-wrapper--row--frame {
           flex-grow: 1;
-          min-width: 40%;
+          min-width: 45%;
           margin: 7%; } }
       @media (min-width: 721px) and (max-width: 1024px) {
         .project-wrapper--row--frame {
@@ -2219,7 +2236,8 @@ THE SOFTWARE.
         font-size: 1.6rem;
         font-style: italic;
         margin-top: 2vh;
-        letter-spacing: 0.25rem; }
+        letter-spacing: 0.25rem;
+        line-height: 4vh; }
     #screen-5 .wrapper--text {
       transition: all 0.1s ease-in-out;
       font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
