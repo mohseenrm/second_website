@@ -30,19 +30,18 @@
   align-items: flex-start;
   font-family: 'Didot', serif;
   font-size: 12rem;
-  color: #000000;
-  background: #000000;
+  color: #f7f7f7;
   padding: 8vh;
   font-weight: 900;
   /* outline: solid 5px #f2c94c;
   outline-offset: 7px; */
-  background: #f2994a;
+  /* background: #f2994a;
   background-image: -webkit-linear-gradient(to bottom, #f2994a, #f2c94c);
   background: linear-gradient(to top, #f2994a, #f0cb35);
   background-attachment: fixed;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   z-index: 10; }
   @media (max-width: 420px) {
     .landing--main-title {
@@ -65,7 +64,7 @@
     z-index: 8;
     top: 0;
     left: 0;
-    opacity: 0.3; }
+    opacity: 0.35; }
 
 .light-weight {
   font-weight: 100; }
