@@ -38,7 +38,7 @@
             -->
     <!--nav code start-->
     <!--TODO: add landing page section and move id top to it-->
-    <section id="screen-0" id="top">
+    <section id="screen-0">
         <svg id="master-artboard" xmlns="http://www.w3.org/2000/svg" width="830" height="842" viewBox="282.5 74.5 830 842">
             <defs>
                 <linearGradient id="gradient">
@@ -86,29 +86,12 @@
             />
         </svg>
     </section>
-    <section id="screen-landing">
+    <section id="screen-landing" id="top">
         <div class="screen-landing--border-box">
-            <!-- SVG Goo filter from: https://css-tricks.com/gooey-effect/ -->
-            <canvas id="canvas">Your browser doesn't support canvas</canvas>
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="filter-svg">
-                <defs>
-                <filter id="shadowed-goo">
-                    
-                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                    <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-                    <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-                    <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-                    <feBlend in2="shadow" in="goo" result="goo" />
-                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
-                </filter>
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                    <feBlend in2="goo" in="SourceGraphic" result="mix" />
-                </filter>
-                </defs>
-            </svg>
+            <video playsinline autoplay muted loop poster="" id="bgvid">
+                <!-- <source src="polina.webm" type="video/webm"> -->
+                <source src="videos/bw.mp4" type="video/mp4">
+            </video>
             <div class="psuedo-wrapper">
                 <div class="landing--main-title">
                     <span class="">Mohseen</span>
@@ -437,11 +420,11 @@
 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>-->
 
-    <!-- <script src="http://localhost:8080/splash.bundle.js"></script>  -->
-     <script src="dist/js/splash.bundle.js"></script> 
+    <script src="http://localhost:8080/splash.bundle.js"></script>  
+     <!-- <script src="dist/js/splash.bundle.js"></script>  -->
     <!--main webpage files-->
-    <!-- <script src="http://localhost:8080/app.bundle.js"></script>  -->
-     <script src="dist/js/app.bundle.js"></script> 
+    <script src="http://localhost:8080/app.bundle.js"></script>  
+     <!-- <script src="dist/js/app.bundle.js"></script>  -->
     <!--Hello-->
 </body>
 
