@@ -1,20 +1,20 @@
 <html>
 
 <head>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!--splash screen files-->
-    <link rel="stylesheet" type="text/css" href="dist/css/splash.css">
-    <!--rest of web page styles-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="dist/css/index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" async></script>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--splash screen files-->
+  <link rel="stylesheet" type="text/css" href="dist/css/splash.css">
+  <!--rest of web page styles-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="dist/css/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" async></script>
 </head>
 
 <body id="style-14">
-    <!--
+  <!--
             Progress bar
             http://codepen.io/shankarcabus/pen/GzAfb
             http://codepen.io/abergin/pen/xGXpQY?editors=1100
@@ -36,186 +36,209 @@
             levels:
             http://codepen.io/sidthesloth92/pen/xEadOa
             -->
-    <!--nav code start-->
-    <section id="screen-0">
-        <svg id="master-artboard" xmlns="http://www.w3.org/2000/svg" width="830" height="842" viewBox="282.5 74.5 830 842">
-            <defs>
-                <linearGradient id="gradient">
-                <stop offset="0%" stop-color="#f2c94c" />
-                <stop offset="100%" stop-color="#f2994a" />
-                </linearGradient>
-                <linearGradient id="gradient-reverse">
-                <stop offset="0%" stop-color="#f2994a" />
-                <stop offset="100%" stop-color="#f2c94c" />
-                </linearGradient>
-                <linearGradient id="gradient-vertical" gradientUnits="userSpaceOnUse" 
-                    x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(90)">
-                <stop offset="0%" stop-color="#f2c94c" />
-                <stop offset="100%" stop-color="#f2994a" />
-                </linearGradient>
-            </defs>
-            <style>
-                .st0 {
-                    fill: #AD2D63;
-                }
+  <!--nav code start-->
+  <section id="screen-0">
+    <svg id="master-artboard" xmlns="http://www.w3.org/2000/svg" width="830" height="842" viewBox="282.5 74.5 830 842">
+      <defs>
+        <linearGradient id="gradient">
+          <stop offset="0%" stop-color="#f2c94c" />
+          <stop offset="100%" stop-color="#f2994a" />
+        </linearGradient>
+        <linearGradient id="gradient-reverse">
+          <stop offset="0%" stop-color="#f2994a" />
+          <stop offset="100%" stop-color="#f2c94c" />
+        </linearGradient>
+        <linearGradient id="gradient-vertical" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(90)">
+          <stop offset="0%" stop-color="#f2c94c" />
+          <stop offset="100%" stop-color="#f2994a" />
+        </linearGradient>
+      </defs>
+      <style>
+        .st0 {
+          fill: #AD2D63;
+        }
 
-                .st1 {
-                    fill: url(#gradient);
-                }
-                .st2{
-                    fill: url(#gradient-reverse);
-                }
-                .st3{
-                    fill: url(#gradient-vertical);
-                }
-            </style>
-            <path class="st0" id="bottom-left" d="M654.5 536c0 12.537-10.163 22.7-22.7 22.7-12.536 0-22.7-10.163-22.7-22.7 0-12.537 10.164-22.7 22.7-22.7 12.537 0 22.7 10.163 22.7 22.7z"
-            />
-            <path class="st0" id="bottom-right" d="M789.3 537.6c0 12.537-10.163 22.7-22.7 22.7-12.536 0-22.7-10.163-22.7-22.7 0-12.536 10.164-22.7 22.7-22.7 12.537 0 22.7 10.163 22.7 22.7z"
-            />
-            <g id="center">
-                <path class="st2" d="M751.7 563.4c-4.5-2.6-8.2-6.3-10.9-10.9-4-6.9-5-14.9-2.9-22.6 4.3-15.8 20.7-25.3 36.5-21 2.5.7 5 1.7 7.2 3l48-82.6L705 500.9 703.7 646l48-82.6z"
-                />
-                <path class="st3" d="M699.6 491.6L824.2 420l-95.4-.2c0 2.7-.3 5.3-1 8-2.1 7.7-7 14.1-13.9 18-6.9 4-14.9 5-22.6 2.9-7.7-2.1-14.1-7-18-13.9-2.7-4.7-4-9.9-4-15.2l-94.5-.2 124.8 72.2z"
-                />
-                <path class="st1" d="M694.3 500.7l-123.9-71.5 46.5 81c6.6-3.8 14.7-5.1 22.6-2.9 7.7 2.1 14.1 7 18 13.9 4 6.9 5 14.9 2.9 22.6-2.1 7.7-7 14.1-13.9 18l46.5 81 1.3-142.1z"
-                />
-            </g>
-            <path class="st0" id="top" d="M721.7 420c0 12.537-10.163 22.7-22.7 22.7-12.537 0-22.7-10.163-22.7-22.7 0-12.537 10.163-22.7 22.7-22.7 12.537 0 22.7 10.163 22.7 22.7z"
-            />
-        </svg>
-    </section>
-    <section id="screen-landing">
-        <div class="screen-landing--border-box" id="title-top">
-            <video playsinline autoplay muted loop poster="images/bw.png" id="bgvid">
-                <!-- <source src="polina.webm" type="video/webm"> -->
-                <source src="videos/bw.mp4" type="video/mp4">
-            </video>
-            <div class="psuedo-wrapper">
-                <div class="landing--main-title">
-                    <span class="">Mohseen</span>
-                    <span class="">Mukaddam</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div id="gallery-preview">
-        <i class="fa fa-compress" aria-hidden="true" id="gallery-minimize"></i>
-        <i class="fa fa-chevron-left" aria-hidden="true" id="gallery-left"></i>
-        <i class="fa fa-chevron-right" aria-hidden="true" id="gallery-right"></i>
-        <div class="slideshow" id="slideshow">
-            <!--<div class="slideshow--slide"></div>-->
-        </div>
-    </div>
-    <div class="title-2" id="title-bio">
-        <span class="title-2--text">Bio</span>
-    </div>
-    <section id="screen-bio">
-        <div class="bio-wrapper">
-            <div class="bio-wrapper--gif">
-                <div class="aligner">
-                    <div class="aligner-item coffee-container">
-                        <div class="steam-container">
-                        <div class="squiggle-container squiggle-container-1">
-                            <div class="squiggle">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 28.1 80.6" style="enable-background:new 0 0 28.1 80.6;" xml:space="preserve">
-                                <path class="" fill="none" stroke-width="11" stroke-linecap="round" stroke-miterlimit="10" d="M22.6,75.1c-8-5.6-15.2-10.5-15.2-19.9c0-12.1,14.1-17.2,14.1-29.6c0-9.1-6.7-15.7-16-20.1"/>
-                                </svg>
-                            </div> <!-- end .squiggle-->
-                        </div>
-                        <div class="squiggle-container squiggle-container-2">
-                            <div class="squiggle">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 28.1 80.6" style="enable-background:new 0 0 28.1 80.6;" xml:space="preserve">
-                                <path class="" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-miterlimit="10" d="M22.6,75.1c-8-5.6-15.2-10.5-15.2-19.9c0-12.1,14.1-17.2,14.1-29.6c0-9.1-6.7-15.7-16-20.1"/>
-                                </svg>
-                            </div> <!-- end .squiggle-->
-                        </div>
-                        <div class="squiggle-container squiggle-container-3">
-                            <div class="squiggle">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 28.1 80.6" style="enable-background:new 0 0 28.1 80.6;" xml:space="preserve">
-                                <path class="" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-miterlimit="10" d="M22.6,75.1c-8-5.6-15.2-10.5-15.2-19.9c0-12.1,14.1-17.2,14.1-29.6c0-9.1-6.7-15.7-16-20.1"/>
-                                </svg>
-                            </div> <!-- end .squiggle-->
-                        </div>
-                    </div>
-                    <div class="coffee-cup-container">
-                        <svg class="coffee-cup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.15 31">
-                            <defs>
-                            <style>
-                                .a {
-                                fill: #E0474C;
-                                }
+        .st1 {
+          fill: url(#gradient);
+        }
 
-                                .b {
-                                fill: #5d5d5d;
-                                }
-                            </style>
-                            </defs>
-                            <path class="a" d="M30.06,2V23.75c0,2.63-.87,5.13-5.12,5.13H7.06A4.86,4.86,0,0,1,2,23.81V2H30.06Z" transform="translate(0 -0.06)"/>
-                            <path class="b" d="M40.64,9.52a10.2,10.2,0,0,0-8.64-5V0.06H0V23.81a7,7,0,0,0,7.06,7.24H24.94c2.34,0,6.06-.81,6.93-5.18a10.6,10.6,0,0,0,8.89-5.29A11.29,11.29,0,0,0,40.64,9.52ZM28,23.75c0,2.07-.42,3.31-3.06,3.31H7.06A3,3,0,0,1,4,23.81V4.06H28V23.75Zm9.26-5.17A7.13,7.13,0,0,1,32,21.78V8.45a7,7,0,0,1,5.18,3.1A7.24,7.24,0,0,1,37.26,18.58Z" transform="translate(0 -0.06)"/>
-                        </svg>
-                    </div>
-                </div><!-- end coffee-container -->
-            </div>
-            <!-- end aligner -->
+        .st2 {
+          fill: url(#gradient-reverse);
+        }
+
+        .st3 {
+          fill: url(#gradient-vertical);
+        }
+      </style>
+      <path class="st0" id="bottom-left" d="M654.5 536c0 12.537-10.163 22.7-22.7 22.7-12.536 0-22.7-10.163-22.7-22.7 0-12.537 10.164-22.7 22.7-22.7 12.537 0 22.7 10.163 22.7 22.7z"
+      />
+      <path class="st0" id="bottom-right" d="M789.3 537.6c0 12.537-10.163 22.7-22.7 22.7-12.536 0-22.7-10.163-22.7-22.7 0-12.536 10.164-22.7 22.7-22.7 12.537 0 22.7 10.163 22.7 22.7z"
+      />
+      <g id="center">
+        <path class="st2" d="M751.7 563.4c-4.5-2.6-8.2-6.3-10.9-10.9-4-6.9-5-14.9-2.9-22.6 4.3-15.8 20.7-25.3 36.5-21 2.5.7 5 1.7 7.2 3l48-82.6L705 500.9 703.7 646l48-82.6z"
+        />
+        <path class="st3" d="M699.6 491.6L824.2 420l-95.4-.2c0 2.7-.3 5.3-1 8-2.1 7.7-7 14.1-13.9 18-6.9 4-14.9 5-22.6 2.9-7.7-2.1-14.1-7-18-13.9-2.7-4.7-4-9.9-4-15.2l-94.5-.2 124.8 72.2z"
+        />
+        <path class="st1" d="M694.3 500.7l-123.9-71.5 46.5 81c6.6-3.8 14.7-5.1 22.6-2.9 7.7 2.1 14.1 7 18 13.9 4 6.9 5 14.9 2.9 22.6-2.1 7.7-7 14.1-13.9 18l46.5 81 1.3-142.1z"
+        />
+      </g>
+      <path class="st0" id="top" d="M721.7 420c0 12.537-10.163 22.7-22.7 22.7-12.537 0-22.7-10.163-22.7-22.7 0-12.537 10.163-22.7 22.7-22.7 12.537 0 22.7 10.163 22.7 22.7z"
+      />
+    </svg>
+  </section>
+  <section id="screen-landing">
+    <div class="screen-landing--border-box" id="title-top">
+      <video playsinline autoplay muted loop poster="images/bw.png" id="bgvid">
+        <!-- <source src="polina.webm" type="video/webm"> -->
+        <source src="videos/bw.mp4" type="video/mp4">
+      </video>
+      <div class="psuedo-wrapper">
+        <div class="landing--main-title">
+          <span class="">Mohseen</span>
+          <span class="">Mukaddam</span>
         </div>
-        <div class="bio-wrapper--text">
-            Hi there!<br />Glad you could make it. Grab a cup of coffee ...it’s free<br /><br />
-            I am a developer based out of Tempe, AZ. I love designing, developing, clicking pretty pictures, and a cup of coffee (often all at once). I look for interesting ways of combining my passions in a project, and I have learnt a lot in the process. Currently, my focus is to apply design and composition into, development of functional cross platform applications.<br /><br />
-            If you want to build something that your users will love, no matter what platform, Let’s talk.
-        </div>
-        </div>
-    </section>
-    <div class="title-2" id="title-passion">
-        <span class="title-2--text">Passions</span>
+      </div>
     </div>
-    <section id="screen-1">
-        <div class="wrapper">
-            <div class="image-wrapper" id="first">
-                <div class="image-wrapper--absolute-saver">
-                    <div class="image-wrapper--absolute-saver--title none">
-                        Develop
-                    </div>
-                    <div class="image-wrapper--absolute-saver--para none">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, justo sed ornare euismod, orci nisi hendrerit ex, non faucibus ligula arcu vitae risus. Aliquam eu sapien blandit, porta massa eget, rutrum sapien. Nulla iaculis suscipit felis, vitae efficitur nibh consectetur eget. Fusce pretium elementum egestas. Vivamus pretium vel felis non sodales. Curabitur commodo ac quam sagittis rhoncus. In egestas justo eget magna dignissim lacinia.
-                    </div>
+  </section>
+  <div id="gallery-preview">
+    <i class="fa fa-compress" aria-hidden="true" id="gallery-minimize"></i>
+    <i class="fa fa-chevron-left" aria-hidden="true" id="gallery-left"></i>
+    <i class="fa fa-chevron-right" aria-hidden="true" id="gallery-right"></i>
+    <div class="slideshow" id="slideshow">
+      <!--<div class="slideshow--slide"></div>-->
+    </div>
+  </div>
+  <div class="title-2" id="title-bio">
+    <span class="title-2--text">Bio</span>
+  </div>
+  <section id="screen-bio">
+    <div class="bio-wrapper">
+      <div class="bio-wrapper--gif">
+        <div class="aligner">
+          <div class="aligner-item coffee-container">
+            <div class="steam-container">
+              <div class="squiggle-container squiggle-container-1">
+                <div class="squiggle">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 28.1 80.6" style="enable-background:new 0 0 28.1 80.6;" xml:space="preserve">
+                    <path class="" fill="none" stroke-width="11" stroke-linecap="round" stroke-miterlimit="10" d="M22.6,75.1c-8-5.6-15.2-10.5-15.2-19.9c0-12.1,14.1-17.2,14.1-29.6c0-9.1-6.7-15.7-16-20.1"
+                    />
+                  </svg>
                 </div>
+                <!-- end .squiggle-->
+              </div>
+              <div class="squiggle-container squiggle-container-2">
+                <div class="squiggle">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 28.1 80.6" style="enable-background:new 0 0 28.1 80.6;" xml:space="preserve">
+                    <path class="" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-miterlimit="10" d="M22.6,75.1c-8-5.6-15.2-10.5-15.2-19.9c0-12.1,14.1-17.2,14.1-29.6c0-9.1-6.7-15.7-16-20.1"
+                    />
+                  </svg>
+                </div>
+                <!-- end .squiggle-->
+              </div>
+              <div class="squiggle-container squiggle-container-3">
+                <div class="squiggle">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 28.1 80.6" style="enable-background:new 0 0 28.1 80.6;" xml:space="preserve">
+                    <path class="" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-miterlimit="10" d="M22.6,75.1c-8-5.6-15.2-10.5-15.2-19.9c0-12.1,14.1-17.2,14.1-29.6c0-9.1-6.7-15.7-16-20.1"
+                    />
+                  </svg>
+                </div>
+                <!-- end .squiggle-->
+              </div>
             </div>
-            <div class="image-wrapper" id="second">
-                <div class="image-wrapper--absolute-saver">
-                    <div class="image-wrapper--absolute-saver--title none">
-                        Design
-                    </div>
-                    <div class="image-wrapper--absolute-saver--para none">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, justo sed ornare euismod, orci nisi hendrerit ex, non faucibus ligula arcu vitae risus. Aliquam eu sapien blandit, porta massa eget, rutrum sapien. Nulla iaculis suscipit felis, vitae efficitur nibh consectetur eget. Fusce pretium elementum egestas. Vivamus pretium vel felis non sodales. Curabitur commodo ac quam sagittis rhoncus. In egestas justo eget magna dignissim lacinia.
-                    </div>
-                </div>
+            <div class="coffee-cup-container">
+              <svg class="coffee-cup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.15 31">
+                <defs>
+                  <style>
+                    .a {
+                      fill: #E0474C;
+                    }
+
+                    .b {
+                      fill: #5d5d5d;
+                    }
+                  </style>
+                </defs>
+                <path class="a" d="M30.06,2V23.75c0,2.63-.87,5.13-5.12,5.13H7.06A4.86,4.86,0,0,1,2,23.81V2H30.06Z" transform="translate(0 -0.06)"
+                />
+                <path class="b" d="M40.64,9.52a10.2,10.2,0,0,0-8.64-5V0.06H0V23.81a7,7,0,0,0,7.06,7.24H24.94c2.34,0,6.06-.81,6.93-5.18a10.6,10.6,0,0,0,8.89-5.29A11.29,11.29,0,0,0,40.64,9.52ZM28,23.75c0,2.07-.42,3.31-3.06,3.31H7.06A3,3,0,0,1,4,23.81V4.06H28V23.75Zm9.26-5.17A7.13,7.13,0,0,1,32,21.78V8.45a7,7,0,0,1,5.18,3.1A7.24,7.24,0,0,1,37.26,18.58Z"
+                  transform="translate(0 -0.06)" />
+              </svg>
             </div>
-            <div class="image-wrapper" id="third">
-                <div class="image-wrapper--absolute-saver">
-                    <div class="image-wrapper--absolute-saver--title none">
-                        Photograph
-                    </div>
-                    <div class="image-wrapper--absolute-saver--para none">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, justo sed ornare euismod, orci nisi hendrerit ex, non faucibus ligula arcu vitae risus. Aliquam eu sapien blandit, porta massa eget, rutrum sapien. Nulla iaculis suscipit felis, vitae efficitur nibh consectetur eget. Fusce pretium elementum egestas. Vivamus pretium vel felis non sodales. Curabitur commodo ac quam sagittis rhoncus. In egestas justo eget magna dignissim lacinia.
-                    </div>
-                </div>
-            </div>
-            <div class="image-wrapper" id="fourth">
-                <div class="image-wrapper--absolute-saver">
-                    <div class="image-wrapper--absolute-saver--title none">
-                        Lift
-                    </div>
-                    <div class="image-wrapper--absolute-saver--para none">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, justo sed ornare euismod, orci nisi hendrerit ex, non faucibus ligula arcu vitae risus. Aliquam eu sapien blandit, porta massa eget, rutrum sapien. Nulla iaculis suscipit felis, vitae efficitur nibh consectetur eget. Fusce pretium elementum egestas. Vivamus pretium vel felis non sodales. Curabitur commodo ac quam sagittis rhoncus. In egestas justo eget magna dignissim lacinia.
-                    </div>
-                </div>
+          </div>
+          <!-- end coffee-container -->
         </div>
-    </section>
-    <!--<nav class="nav link-effect-3 dark" id="link-effect-3">
+        <!-- end aligner -->
+      </div>
+      <div class="bio-wrapper--text">
+        Hi there!<br />Glad you could make it. Grab a cup of coffee ...it’s free<br /><br /> I am a developer based out of
+        Tempe, AZ. I love designing, developing, clicking pretty pictures, and a cup of coffee (often all at once). I look
+        for interesting ways of combining my passions in a project, and I have learnt a lot in the process. Currently, my
+        focus is to apply design and composition into, development of functional cross platform applications.<br /><br />        If you want to build something that your users will love, no matter what platform, Let’s talk.
+      </div>
+    </div>
+  </section>
+  <div class="title-2" id="title-passion">
+    <span class="title-2--text">Passions</span>
+  </div>
+  <section id="screen-1">
+    <div class="wrapper">
+      <div class="image-wrapper" id="first">
+        <div class="image-wrapper--absolute-saver">
+          <div class="image-wrapper--absolute-saver--title none">
+            Develop
+          </div>
+          <div class="image-wrapper--absolute-saver--para none">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, justo sed ornare euismod, orci nisi hendrerit
+            ex, non faucibus ligula arcu vitae risus. Aliquam eu sapien blandit, porta massa eget, rutrum sapien. Nulla iaculis
+            suscipit felis, vitae efficitur nibh consectetur eget. Fusce pretium elementum egestas. Vivamus pretium vel felis
+            non sodales. Curabitur commodo ac quam sagittis rhoncus. In egestas justo eget magna dignissim lacinia.
+          </div>
+        </div>
+      </div>
+      <div class="image-wrapper" id="second">
+        <div class="image-wrapper--absolute-saver">
+          <div class="image-wrapper--absolute-saver--title none">
+            Design
+          </div>
+          <div class="image-wrapper--absolute-saver--para none">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, justo sed ornare euismod, orci nisi hendrerit
+            ex, non faucibus ligula arcu vitae risus. Aliquam eu sapien blandit, porta massa eget, rutrum sapien. Nulla iaculis
+            suscipit felis, vitae efficitur nibh consectetur eget. Fusce pretium elementum egestas. Vivamus pretium vel felis
+            non sodales. Curabitur commodo ac quam sagittis rhoncus. In egestas justo eget magna dignissim lacinia.
+          </div>
+        </div>
+      </div>
+      <div class="image-wrapper" id="third">
+        <div class="image-wrapper--absolute-saver">
+          <div class="image-wrapper--absolute-saver--title none">
+            Photograph
+          </div>
+          <div class="image-wrapper--absolute-saver--para none">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, justo sed ornare euismod, orci nisi hendrerit
+            ex, non faucibus ligula arcu vitae risus. Aliquam eu sapien blandit, porta massa eget, rutrum sapien. Nulla iaculis
+            suscipit felis, vitae efficitur nibh consectetur eget. Fusce pretium elementum egestas. Vivamus pretium vel felis
+            non sodales. Curabitur commodo ac quam sagittis rhoncus. In egestas justo eget magna dignissim lacinia.
+          </div>
+        </div>
+      </div>
+      <div class="image-wrapper" id="fourth">
+        <div class="image-wrapper--absolute-saver">
+          <div class="image-wrapper--absolute-saver--title none">
+            Lift
+          </div>
+          <div class="image-wrapper--absolute-saver--para none">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, justo sed ornare euismod, orci nisi hendrerit
+            ex, non faucibus ligula arcu vitae risus. Aliquam eu sapien blandit, porta massa eget, rutrum sapien. Nulla iaculis
+            suscipit felis, vitae efficitur nibh consectetur eget. Fusce pretium elementum egestas. Vivamus pretium vel felis
+            non sodales. Curabitur commodo ac quam sagittis rhoncus. In egestas justo eget magna dignissim lacinia.
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--<nav class="nav link-effect-3 dark" id="link-effect-3">
         <a class="btn" id="nav-top" data-hover="Top" data-nav="top" href="#cover">Top</a>
         <a class="btn" id="nav-bio" data-hover="Bio" data-nav="bio" href="#section-one">Bio</a>
         <a class="btn" id="nav-passion" data-hover="Passion" data-nav="passion" href="#section-two">Passion</a>
@@ -224,160 +247,165 @@
         <a class="btn" id="nav-references" data-hover="References" data-nav="references" href="#section-three">References</a>
         <a class="btn" id="nav-gallery" data-hover="Gallery" data-nav="gallery" href="#section-three">Gallery</a>
     </nav>-->
-    <nav class="nav" id="nav-bar">
-        <a class="nav--button fa fa-circle" id="nav-top" data-nav="top" data-hover="Top"></a>
-        <a class="nav--button fa fa-circle" id="nav-bio" data-nav="bio" data-hover="Bio"></a>
-        <a class="nav--button fa fa-circle" id="nav-passion" data-hover="Passion" data-nav="passion"></a>
-        <a class="nav--button fa fa-circle" id="nav-tools" data-nav="tools" data-hover="Tools"></a>
-        <a class="nav--button fa fa-circle" id="nav-projects" data-hover="Projects" data-nav="projects"></a>
-        <a class="nav--button fa fa-circle" id="nav-references" data-hover="References" data-nav="references"></a>
-        <a class="nav--button fa fa-circle" id="nav-gallery" data-hover="Gallery" data-nav="gallery"></a>
-    </nav>
+  <nav class="nav" id="nav-bar">
+    <a class="nav--button fa fa-circle" id="nav-top" data-nav="top" data-hover="Top"></a>
+    <a class="nav--button fa fa-circle" id="nav-bio" data-nav="bio" data-hover="Bio"></a>
+    <a class="nav--button fa fa-circle" id="nav-passion" data-hover="Passion" data-nav="passion"></a>
+    <a class="nav--button fa fa-circle" id="nav-tools" data-nav="tools" data-hover="Tools"></a>
+    <a class="nav--button fa fa-circle" id="nav-projects" data-hover="Projects" data-nav="projects"></a>
+    <a class="nav--button fa fa-circle" id="nav-references" data-hover="References" data-nav="references"></a>
+    <a class="nav--button fa fa-circle" id="nav-gallery" data-hover="Gallery" data-nav="gallery"></a>
+  </nav>
 
-    <!--nav code end-->
-    
-    <div class="title-2" id="title-tools">
-        <span class="title-2--text">Tools</span>
+  <!--nav code end-->
+
+  <div class="title-2" id="title-tools">
+    <span class="title-2--text">Tools</span>
+  </div>
+  <section id="screen-3b">
+    <div class="wrapper">
+      <div class="wrapper--block">
+        <span class="wrapper--block--title">
+          Languages
+        </span>
+        <span class="wrapper--block--text">
+          JavaScript<br />
+          TypeScript<br />
+          Python<br />
+          Java (Android)
+        </span>
+      </div>
+      <div class="wrapper--block">
+        <span class="wrapper--block--title">
+          CI Testing
+        </span>
+        <span class="wrapper--block--text">
+          Travis<br />
+          Cirlce<br />
+          Appveyor<br />
+          Semaphore
+        </span>
+      </div>
+      <div class="wrapper--block-large">
+        <span class="wrapper--block-large--title">
+          Libraries & Frameworks
+        </span>
+        <span class="wrapper--block-large--text">
+          NodeJS<br />
+          React<br />
+          Mocha<br />
+          Angular<br />
+          React Native<br />
+          SQL Alchemy
+        </span>
+        <span class="wrapper--block-large--text">
+          NodeGit<br />
+          Flask<br />
+          Scapy<br />
+          Django<br />
+          Electron<br />
+          Beautiful Soup
+        </span>
+      </div>
+      <div class="wrapper--block">
+        <span class="wrapper--block--title">
+          VCS
+        </span>
+        <span class="wrapper--block--text">
+          Git
+        </span>
+      </div>
     </div>
-    <section id="screen-3b">
-        <div class="wrapper">
-            <div class="wrapper--block">
-                <span class="wrapper--block--title">
-                    Languages
-                </span>
-                <span class="wrapper--block--text">
-                    JavaScript<br />
-                    TypeScript<br />
-                    Python<br />
-                    Java (Android)
-                </span>
-            </div>
-            <div class="wrapper--block">
-                <span class="wrapper--block--title">
-                    CI Testing
-                </span>
-                <span class="wrapper--block--text">
-                    Travis<br />
-                    Cirlce<br />
-                    Appveyor<br />
-                    Semaphore
-                </span>
-            </div>
-            <div class="wrapper--block-large">
-                <span class="wrapper--block-large--title">
-                    Libraries & Frameworks
-                </span>
-                <span class="wrapper--block-large--text">
-                    NodeJS<br />
-                    React<br />
-                    Mocha<br />
-                    Angular<br />
-                    React Native<br />
-                    SQL Alchemy
-                </span>
-                <span class="wrapper--block-large--text">
-                    NodeGit<br />
-                    Flask<br />
-                    Scapy<br />
-                    Django<br />
-                    Electron<br />
-                    Beautiful Soup
-                </span>
-            </div>
-            <div class="wrapper--block">
-                <span class="wrapper--block--title">
-                    VCS
-                </span>
-                <span class="wrapper--block--text">
-                    Git
-                </span>
-            </div>
+  </section>
+  <div class="title-2" id="title-projects">
+    <span class="title-2--text">Projects</span>
+  </div>
+  <section id="screen-4b">
+    <div class="project-wrapper">
+      <div class="project-wrapper--row--frame" id="refine-hiring">
+        <div class="project-wrapper--row--frame--inner-wrapper">
+          <span class="project-wrapper--row--frame--inner-wrapper--text">Refine Hiring</span>
+          <span class="project-wrapper--row--frame--inner-wrapper--text-description">
+            Refine Hiring predicts how well a candidate can thrive in new roles using curated algorithms and skill graphs
+          </span>
+          <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
         </div>
-    </section>
-    <div class="title-2" id="title-projects">
-        <span class="title-2--text">Projects</span>
-    </div>
-    <section id="screen-4b">
-        <div class="project-wrapper">
-            <div class="project-wrapper--row--frame" id="refine-hiring">
-                <div class="project-wrapper--row--frame--inner-wrapper">
-                    <span class="project-wrapper--row--frame--inner-wrapper--text">Refine Hiring</span>
-                    <span class="project-wrapper--row--frame--inner-wrapper--text-description">
-                        Refine Hiring predicts how well a candidate can thrive in new roles using curated algorithms and skill graphs
-                    </span>
-                    <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
-                </div>
-            </div>
-            <div class="project-wrapper--row--frame" id="elixir">
-                <div class="project-wrapper--row--frame--inner-wrapper">
-                    <span class="project-wrapper--row--frame--inner-wrapper--text">Elixir</span>
-                    <span class="project-wrapper--row--frame--inner-wrapper--text-description">
-                        Voice Enabled Healthcare Assitant Elixir will help diagnose you And find specialists in your locality!
-                    </span>
-                    <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
-                </div>
-            </div>
-            <div class="project-wrapper--row--frame" id="world-visualization">
-                <div class="project-wrapper--row--frame--inner-wrapper">
-                    <span class="project-wrapper--row--frame--inner-wrapper--text">World Visualization</span>
-                    <span class="project-wrapper--row--frame--inner-wrapper--text-description">
-                        We calculated the Financial Stability Index (FSI), which would give an overall perspective of the Financial State of every nation. We were able to track events and their impact on FSI.
-                    </span>
-                    <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
-                </div>
-            </div>
-            <div class="project-wrapper--row--frame" id="lit-it">
-                <div class="project-wrapper--row--frame--inner-wrapper">
-                    <span class="project-wrapper--row--frame--inner-wrapper--text">Lit It!</span>
-                    <span class="project-wrapper--row--frame--inner-wrapper--text-description">
-                        Add character to your code! Lit it! is a VSCODE extension to build JS Docs on the fly
-                    </span>
-                    <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
-                </div>
-            </div>
-            <div class="project-wrapper--row--frame" id="monaco">
-                <div class="project-wrapper--row--frame--inner-wrapper">
-                    <span class="project-wrapper--row--frame--inner-wrapper--text">Monaco</span>
-                    <span class="project-wrapper--row--frame--inner-wrapper--text-description">
+      </div>
+      <div class="project-wrapper--row--frame" id="elixir">
+        <div class="project-wrapper--row--frame--inner-wrapper">
+          <span class="project-wrapper--row--frame--inner-wrapper--text">Elixir</span>
+          <span class="project-wrapper--row--frame--inner-wrapper--text-description">
+            Voice Enabled Healthcare Assitant Elixir will help diagnose you And find specialists in your locality!
+          </span>
+          <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
+        </div>
+      </div>
+      <div class="project-wrapper--row--frame" id="world-visualization">
+        <div class="project-wrapper--row--frame--inner-wrapper">
+          <span class="project-wrapper--row--frame--inner-wrapper--text">World Visualization</span>
+          <span class="project-wrapper--row--frame--inner-wrapper--text-description">
+            We calculated the Financial Stability Index (FSI), which would give an overall perspective of the Financial State of every nation. We were able to track events and their impact on FSI.
+          </span>
+          <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
+        </div>
+      </div>
+      <div class="project-wrapper--row--frame" id="lit-it">
+        <div class="project-wrapper--row--frame--inner-wrapper">
+          <span class="project-wrapper--row--frame--inner-wrapper--text">Lit It!</span>
+          <span class="project-wrapper--row--frame--inner-wrapper--text-description">
+            Add character to your code! Lit it! is a VSCODE extension to build JS Docs on the fly
+          </span>
+          <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
+        </div>
+      </div>
+      <div class="project-wrapper--row--frame" id="monaco">
+        <div class="project-wrapper--row--frame--inner-wrapper">
+          <span class="project-wrapper--row--frame--inner-wrapper--text">Monaco</span>
+          <span class="project-wrapper--row--frame--inner-wrapper--text-description">
                         Distraction Free Writer to help get your ideas out on canvas. Hints And YouTube player included :)
                     </span>
-                    <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
-                </div>
-            </div>
-            <div class="project-wrapper--row--frame" id="terminal-website">
-                <div class="project-wrapper--row--frame--inner-wrapper">
-                    <span class="project-wrapper--row--frame--inner-wrapper--text">Terminal Website</span>
-                    <span class="project-wrapper--row--frame--inner-wrapper--text-description">
-                        Previous version of my website Terminal love meets web. Play around you might some interesting stuff :)
-                    </span>
-                    <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
-                </div>
-            </div>
-            <a href="https://github.com/mohseenrm" class="project-wrapper--row--frame--button" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
+          <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
         </div>
-    </section>
-    <div class="title-2" id="title-references">
-        <span class="title-2--text">References</span>
+      </div>
+      <div class="project-wrapper--row--frame" id="terminal-website">
+        <div class="project-wrapper--row--frame--inner-wrapper">
+          <span class="project-wrapper--row--frame--inner-wrapper--text">Terminal Website</span>
+          <span class="project-wrapper--row--frame--inner-wrapper--text-description">
+            Previous version of my website Terminal love meets web. Play around you might some interesting stuff :)
+          </span>
+          <a href="#" class="project-wrapper--row--frame--inner-wrapper--button">Link</a>
+        </div>
+      </div>
+      <a href="https://github.com/mohseenrm" class="project-wrapper--row--frame--button" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
     </div>
-    <section id="screen-5">
-        <div class="wrapper" id="container">
-            <div class="wrapper--line" id="top-line"></div>
-            <div class="wrapper--text" id="reference-text">Fusce diam nisl, varius quis ligula sed, facilisis porttitor erat. Mauris vel finibus sapien. Nulla et metus magna. Nullam venenatis nisl leo, quis tincidunt nibh aliquam eget. Donec vulputate imperdiet nunc, ut dictum ipsum iaculis sit amet. Aliquam viverra tempor eros id congue. In ut elit mauris. Phasellus urna ante, varius eget felis non, tempor pulvinar eros. Proin sollicitudin ligula vel urna condimentum vestibulum. Proin felis purus, mollis eu nisl ut, sodales ornare purus. Vestibulum ut dapibus nunc, a ultrices nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut pulvinar est.</div>
-            <div class="wrapper--author">
-                Lorem ipsum, <span class="wrapper--author--position">La La La</span>
-            </div>
-            <div class="wrapper--line" id="bottom-line"></div>
-        </div>
-    </section>
+  </section>
+  <div class="title-2" id="title-references">
+    <span class="title-2--text">References</span>
+  </div>
+  <section id="screen-5">
+    <div class="wrapper" id="container">
+      <div class="wrapper--line" id="top-line"></div>
+      <div class="wrapper--text" id="reference-text">Fusce diam nisl, varius quis ligula sed, facilisis porttitor erat. Mauris vel finibus sapien. Nulla et metus magna.
+        Nullam venenatis nisl leo, quis tincidunt nibh aliquam eget. Donec vulputate imperdiet nunc, ut dictum ipsum iaculis
+        sit amet. Aliquam viverra tempor eros id congue. In ut elit mauris. Phasellus urna ante, varius eget felis non, tempor
+        pulvinar eros. Proin sollicitudin ligula vel urna condimentum vestibulum. Proin felis purus, mollis eu nisl ut, sodales
+        ornare purus. Vestibulum ut dapibus nunc, a ultrices nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nam ut pulvinar est.</div>
+      <div class="wrapper--author">
+        Lorem ipsum, <span class="wrapper--author--position">La La La</span>
+      </div>
+      <div class="wrapper--line" id="bottom-line"></div>
+    </div>
+  </section>
 
-    <div class="title-2" id="title-gallery">
-        <span class="title-2--text">Gallery</span>
-    </div>
-    <section id="screen-7">
-        <div class="wrapper">
-            <!--<div class="wrapper--picture"></div>
+  <div class="title-2" id="title-gallery">
+    <span class="title-2--text">Gallery</span>
+  </div>
+  <section id="screen-7">
+    <div class="wrapper">
+      <!--<div class="wrapper--picture"></div>
             <div class="wrapper--picture"></div>
             <div class="wrapper--picture"></div>
             <div class="wrapper--picture"></div>
@@ -385,46 +413,46 @@
             <div class="wrapper--picture"></div>
             <div class="wrapper--picture"></div>
             <div class="wrapper--picture"></div>-->
-            <div class="wrapper--container" id="gallery-button">
-                <div class="wrapper--button">
-                    More
-                </div>
-            </div>
+      <div class="wrapper--container" id="gallery-button">
+        <div class="wrapper--button">
+          More
         </div>
-    </section>
-    <section id="footer">
-        <div class="wrapper">
-            <a class="footer--wrapper--link" href="https://github.com/mohseenrm" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            <a class="footer--wrapper--link" href="https://www.facebook.com/momo3300" target="_blank">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            </a>
-            <a class="footer--wrapper--link" href="https://www.instagram.com/code.strong/" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a class="footer--wrapper--link" href="https://codepen.io/mohseen/" target="_blank">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-            </a>
-            <a class="footer--wrapper--link" href="https://www.linkedin.com/in/mohseenrm/" target="_blank">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a class="footer--wrapper--link" href="mailto:mohseenmukaddam6@gmail.com?subject=Aloha&body=How can I help you?">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            </a>
-            
-        </div>
-    </section>
-    <!--splash screen files-->
+      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <div class="wrapper">
+      <a class="footer--wrapper--link" href="https://github.com/mohseenrm" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a class="footer--wrapper--link" href="https://www.facebook.com/momo3300" target="_blank">
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      </a>
+      <a class="footer--wrapper--link" href="https://www.instagram.com/code.strong/" target="_blank">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a class="footer--wrapper--link" href="https://codepen.io/mohseen/" target="_blank">
+        <i class="fa fa-codepen" aria-hidden="true"></i>
+      </a>
+      <a class="footer--wrapper--link" href="https://www.linkedin.com/in/mohseenrm/" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a class="footer--wrapper--link" href="mailto:mohseenmukaddam6@gmail.com?subject=Aloha&body=How can I help you?">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </a>
 
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>-->
+    </div>
+  </section>
+  <!--splash screen files-->
 
-    <script src="http://localhost:8080/splash.bundle.js"></script>  
-     <!-- <script src="dist/js/splash.bundle.js"></script>  -->
-    <!--main webpage files-->
-    <script src="http://localhost:8080/app.bundle.js"></script>  
-     <!-- <script src="dist/js/app.bundle.js"></script>  -->
-    <!--Hello-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>-->
+
+  <script src="http://localhost:8080/splash.bundle.js"></script>
+  <!-- <script src="dist/js/splash.bundle.js"></script>  -->
+  <!--main webpage files-->
+  <script src="http://localhost:8080/app.bundle.js"></script>
+  <!-- <script src="dist/js/app.bundle.js"></script>  -->
+  <!--Hello-->
 </body>
 
 </html>
