@@ -18,5 +18,5 @@ gulp.task('default', () =>
       "uglyComments": true
 		}))
 		.pipe(cleanCSS())
-		.pipe(gulp.dest('dist/css/final'))
+		.pipe(gulp.dest('prod/css/'))
 )

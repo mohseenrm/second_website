@@ -44,9 +44,6 @@ import { addClass, removeClass } from './utils';
 
 	const onScrollEventHandler = () => {
 		const projectTitleYPosition = projectTitle.getBoundingClientRect();
-		/*const navBarBoundingBox = navBar.getBoundingClientRect();
-		console.log('scroll position: ', window.scrollY);
-		console.log('project position: ', projectTitleYPosition.top);*/
 
 		if( projectTitleYPosition.top < 0 ){
 			removeClass( navBar, 'dark' );
