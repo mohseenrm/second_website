@@ -11,6 +11,8 @@ $phablet: "(min-width: 421px) and (max-width: 720px)";
 $tablet: "(min-width: 721px) and (max-width: 1024px)";
 $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 
+//http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
+
 #screen-5 {
     @include flexbox;
     min-height: 130%;
