@@ -64,10 +64,11 @@ const createPictures = ( number ) => {
 	for( let i = imagesLoaded; i < limit; i++ ){
 		// TODO: add optimized image here
 		picture = document.createElement( 'div' );
-		picture.style = `
+
+		picture.setAttribute( 'style', `
 			background: url('../../images/${ i }.jpg');
 			background-size: cover;
-		`;
+		` );
 		picture.id = `picture_${ i }`;
 		addClass( picture, 'wrapper--picture' );
 		addClass( picture, 'black-and-white' );
@@ -93,12 +94,13 @@ const createSlides = ( number ) => {
 
 	for( let i = slidesLoaded; i < limit; i++ ){
 		slide = document.createElement( 'div' );
-		slide.style = `
+
+		slide.setAttribute( 'style', `
 			background: url('../../images/${ i }.jpg');
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
-		`;
+		` );
 
 		slide.id = `slide_${ i }`;
 		addClass( slide, 'slideshow--slide' );

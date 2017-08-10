@@ -70,7 +70,8 @@ table {
 html,
 body {
   font-family: "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
 
 body {
   display: -webkit-box;
