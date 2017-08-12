@@ -106,7 +106,7 @@ const references = {
 			tl.add( 'start' )
 				.to( [ topLine, bottomLine ], 3, {
 					css: {
-						'width': '75%',
+						'width': '75vw',
 						'opacity': '1'
 					}
 				}, 'start' )

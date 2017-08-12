@@ -1,10 +1,10 @@
 @import 'flex';
 #footer {
     @include flexbox;
-    width: 100%;
-    height: 25%;
+    width: 100vw;
+    height: 25vh;
     & .wrapper {
-		width: 100%;
+		width: 100vw;
         background: #f2994a;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to top, #f2994a, #f2c94c);
