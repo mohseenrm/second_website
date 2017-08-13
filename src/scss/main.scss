@@ -650,6 +650,16 @@ i.fa-github {
     border-left: 3px dashed white;
     margin-top: -4%;
 }
+
+.br {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    // fallback to vh
+    margin: 10px 0 10px 0;
+    margin: 2vh 0 2vh 0;
+}
+
 /*#screen-5{
     width: 100%;
     height: 100%;

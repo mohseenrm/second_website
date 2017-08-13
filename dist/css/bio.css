@@ -39,10 +39,12 @@
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       line-height: 6vh;
       width: 65%;
       height: 100%;
+      flex-wrap: wrap;
+      flex-direction: column;
       font-family: 'Merriweather', 'butlerregular', sans-serif;
       font-weight: 300;
       color: #000;
