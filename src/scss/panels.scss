@@ -382,7 +382,7 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     &--title {
         transition: all 0.5s ease-in-out;
-        color: white;
+        color: #f2994a;
         font-family: 'Didot', sans-serif;
         font-size: 10rem;
         letter-spacing: 0.3rem;
@@ -390,13 +390,13 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
         z-index: 999;
         margin-bottom: 3vh;
         margin-top: 2vh;
-        background: #f2994a;
+        /* background: #f2994a;
         background-image: -webkit-linear-gradient(to bottom, #f2994a, #f2c94c);
         background: linear-gradient(to bottom, #f2994a, #f2c94c);
         background-attachment: fixed;
         -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; */
     }
     &--para {
         color: white;
