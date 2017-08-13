@@ -44,12 +44,12 @@ $tablet: "(min-width: 721px) and (max-width: 1024px)";
 $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 #screen-1 {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     @include flexbox;
     overflow: hidden;
     &>.wrapper {
-        height: 100vh;
-        width: 100vw;
+        width: 100%;
+        height: 100%;
         display: flex;
         overflow: hidden;
         flex-wrap: nowrap;
@@ -62,8 +62,8 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
         }
         &>.image-wrapper {
             // position: relative;
-            height: 100vh;
-            width: 25vw;
+            height: 100%;
+            width: 25%;
             @include flexbox;
             background: #aeaeae;
             border-right: 2px solid #f2994a;
@@ -71,13 +71,13 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
             justify-content: center;
             overflow: hidden;
             @media #{$phone} {
-                height: 25vh;
-                width: 100vw;
+                width: 100%;
+                height: 25%;
                 border-bottom: 2px solid #f2994a;
             }
             @media #{$tablet} {
-                height: 25vh;
-                width: 100vw;
+                width: 100%;
+                height: 25%;
                 border-bottom: 2px solid #f2994a;
             }
             &:after {
@@ -93,7 +93,7 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
             }
             &:hover:after {
                 opacity: 0;
-                transition: all 1s ease-out;
+                tansition: all 1s ease-out;
             }
         }
         &>.image-wrapper:nth-child(1) {
@@ -371,7 +371,7 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 
 .image-wrapper--absolute-saver {
     @include flexbox;
-    height: 100vh; // width: 100%;
+    height: 100%; // width: 100%;
     position: absolute;
     transition: all 0.3s ease-in;
     background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);

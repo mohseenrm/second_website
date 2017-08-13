@@ -37,7 +37,7 @@ THE SOFTWARE.
 */
 #screen-1 {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -45,8 +45,8 @@ THE SOFTWARE.
   display: flex;
   overflow: hidden; }
   #screen-1 > .wrapper {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     display: flex;
     overflow: hidden;
     flex-wrap: nowrap;
@@ -58,8 +58,8 @@ THE SOFTWARE.
       #screen-1 > .wrapper {
         flex-direction: column; } }
     #screen-1 > .wrapper > .image-wrapper {
-      height: 100vh;
-      width: 25vw;
+      height: 100%;
+      width: 25%;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
@@ -72,13 +72,13 @@ THE SOFTWARE.
       overflow: hidden; }
       @media (max-width: 420px) {
         #screen-1 > .wrapper > .image-wrapper {
-          height: 25vh;
-          width: 100vw;
+          width: 100%;
+          height: 25%;
           border-bottom: 2px solid #f2994a; } }
       @media (min-width: 721px) and (max-width: 1024px) {
         #screen-1 > .wrapper > .image-wrapper {
-          height: 25vh;
-          width: 100vw;
+          width: 100%;
+          height: 25%;
           border-bottom: 2px solid #f2994a; } }
       #screen-1 > .wrapper > .image-wrapper:after {
         content: '';
@@ -92,7 +92,7 @@ THE SOFTWARE.
         transition: opacity 1s ease-out; }
       #screen-1 > .wrapper > .image-wrapper:hover:after {
         opacity: 0;
-        transition: all 1s ease-out; }
+        tansition: all 1s ease-out; }
     #screen-1 > .wrapper > .image-wrapper:nth-child(1) {
       background: #fff;
       background: url("../../images/code.jpg");
@@ -354,7 +354,7 @@ THE SOFTWARE.
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   transition: all 0.3s ease-in;
   background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.95) 0%, transparent 100%);

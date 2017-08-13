@@ -8,12 +8,12 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 #screen-bio {
     @include flexbox;
     height: auto;
-    width: 100%;
+    width: 100vw;
     background: #ecf0f1;
     &>.bio-wrapper {
         @include flexbox;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         @media #{$phone} {
             height: auto;
             flex-direction: column-reverse;
