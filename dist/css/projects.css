@@ -149,8 +149,8 @@ THE SOFTWARE.
             font-size: 3rem; } }
       .project-wrapper--row--frame--inner-wrapper {
         display: flex;
-        height: 25vh;
-        width: 100vw;
+        height: 25%;
+        width: 100%;
         font-size: 3rem;
         flex-direction: column;
         justify-content: center;
