@@ -74,10 +74,10 @@ import { isMobile, isTablet } from './utils';
      */
 	function onHover () {
 		killOffHoverTweens();
-        //maximize current fella
+    //maximize current fella
 		onHoverTweenElement = TweenMax.to( this, 1.5, {
 			css: {
-				'width': '100%',
+				'width': '100vw',
 				'border': '0px'
 			},
 			onComplete: onExpanded.bind( $( this ) )
@@ -85,7 +85,7 @@ import { isMobile, isTablet } from './utils';
         //shrink siblings
 		onHoverTweenSiblings = TweenMax.to( $( this ).siblings(), 1.5, {
 			css: {
-				'width': '0%',
+				'width': '0vw',
 				'border-right': '0'
 			}
 		} );
@@ -99,7 +99,7 @@ import { isMobile, isTablet } from './utils';
         //resize and reapply border
 		offHoverTweenElement = TweenMax.to( [ $first, $second, $third ], 1, {
 			css: {
-				'width': '25%',
+				'width': '25vw',
 				'border-right': '2px solid #f2994a'
 			}
 		} );
@@ -107,7 +107,7 @@ import { isMobile, isTablet } from './utils';
         //don't want the border on the last image
 		offHoverTweenSiblings = TweenMax.to( $fourth, 1, {
 			css: {
-				'width': '25%',
+				'width': '25vw',
 				'border-right': '0px'
 			}
 		} );
@@ -120,14 +120,14 @@ import { isMobile, isTablet } from './utils';
         //maximize current fella
 		onHoverTweenElement = TweenMax.to( this, 1.5, {
 			css: {
-				'height': '100%',
+				'height': '100vh',
 				'border': '0px'
 			}
 		} );
         //shrink siblings
 		onHoverTweenSiblings = TweenMax.to( $( this ).siblings(), 1.5, {
 			css: {
-				'height': '0%',
+				'height': '0vh',
 				'border-bottom': '0'
 			},
 			onComplete: onExpanded.bind( this )
@@ -142,7 +142,7 @@ import { isMobile, isTablet } from './utils';
         //resize and reapply border
 		offHoverTweenElement = TweenMax.to( [ $first, $second, $third ], 1, {
 			css: {
-				'height': '25%',
+				'height': '25vh',
 				'border-bottom': '2px solid #f2994a'
 			}
 		} );
@@ -150,7 +150,7 @@ import { isMobile, isTablet } from './utils';
         //don't want the border on the last image
 		offHoverTweenSiblings = TweenMax.to( $fourth, 1, {
 			css: {
-				'height': '25%',
+				'height': '25vh',
 				'border-bottom': '0px'
 			}
 		} );

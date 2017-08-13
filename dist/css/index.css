@@ -1498,14 +1498,14 @@ THE SOFTWARE.
         position: relative;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         background: #000;
         opacity: 0.7;
         transition: opacity 1s ease-out; }
       #screen-1 > .wrapper > .image-wrapper:hover:after {
         opacity: 0;
-        tansition: all 1s ease-out; }
+        transition: all 1s ease-out; }
     #screen-1 > .wrapper > .image-wrapper:nth-child(1) {
       background: #fff;
       background: url("../../images/code.jpg");
