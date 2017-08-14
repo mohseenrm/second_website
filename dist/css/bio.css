@@ -55,7 +55,7 @@
       @media (max-width: 420px) {
         #screen-bio > .bio-wrapper .bio-wrapper--text {
           height: auto;
-          width: 80%;
+          width: 80vw;
           text-align: justify;
           font-size: 2rem;
           line-height: 5vh;
