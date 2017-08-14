@@ -81,7 +81,7 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 		align-items: center;
 		justify-content: space-around;
 		&--frame {
-			height: 40vh;
+			height: 41vh;
 			width: 40%;
 			overflow: hidden;
 			background: url('https://iso.500px.com/wp-content/uploads/2016/04/stock-photo-135026637-1500x1000.jpg');
@@ -111,13 +111,13 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 			@media #{$phone} {
 				flex-grow: 1;
 				min-width: 45%;
-				margin: 7%;
+				margin: 4vh;
 			}
 			
 			@media #{$tablet} {
 				flex-grow: 1;
 				min-width: 40%;
-				margin: 7%;
+				margin: 4vh;
 			}
 
 			&#refine-hiring{
