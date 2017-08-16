@@ -124,13 +124,13 @@ const initSlideshow = () => {
 };
 
 const extractIndexFromId = ( id ) => {
-	if( id !== undefined )
+	if( id )
 		return id.split( 'picture_' )[1];
 	return;
 };
 
 const extractIndexFromIdSlides = ( id ) => {
-	if( id !== undefined )
+	if( id )
 		return id.split( 'slide_' )[1];
 	return;
 };
@@ -157,10 +157,8 @@ const getIndexFromPictures = ( e ) => {
 
 	clearSlideshow();
 
-	// console.log(e);
 	const source = e.target || e.srcElement;
 	const sourceId = source.id;
-	// console.log('sourceId: ', sourceId );
 	const targetId = generateIdFromIndex( extractIndexFromId( sourceId ) );
 	// add show class to target and make slideshow visible
 	var element;
