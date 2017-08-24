@@ -142,7 +142,7 @@ THE SOFTWARE.
           margin-right: 4%; }
           @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(1) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
-              font-size: 6rem;
+              font-size: 5rem;
               margin-bottom: 1vh;
               margin-right: 0;
               margin-top: 0;
@@ -203,7 +203,7 @@ THE SOFTWARE.
           margin-right: 4%; }
           @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(2) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
-              font-size: 6rem;
+              font-size: 5rem;
               margin-bottom: 1vh;
               margin-right: 0;
               margin-top: 0;
@@ -269,7 +269,7 @@ THE SOFTWARE.
           margin-left: 4%; }
           @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(3) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
-              font-size: 6rem;
+              font-size: 5rem;
               margin-bottom: 1vh;
               margin-right: 0;
               margin-top: 0;

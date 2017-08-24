@@ -13,7 +13,6 @@
   background: #ecf0f1; }
   #screen-3b .wrapper {
     width: 100%;
-    min-height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,6 +35,7 @@
       padding: 3%;
       flex-grow: 1;
       flex-shrink: 10;
+      margin-bottom: 5%;
       margin-bottom: 3vh; }
       #screen-3b .wrapper--block--title {
         width: 100%;

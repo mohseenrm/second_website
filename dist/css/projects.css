@@ -136,6 +136,9 @@ THE SOFTWARE.
         font-size: 2rem;
         color: #000;
         line-height: 4vh; }
+        @media (max-width: 420px) {
+          .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text-description {
+            font-size: 1.5rem; } }
       .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--button {
         display: flex;
         justify-content: center;
@@ -146,7 +149,7 @@ THE SOFTWARE.
         transition: font-size 0.8s ease-out; }
         @media (max-width: 420px) {
           .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text {
-            font-size: 3rem; } }
+            font-size: 2.6rem; } }
       .project-wrapper--row--frame--inner-wrapper {
         display: flex;
         width: 100%;
@@ -173,7 +176,7 @@ THE SOFTWARE.
           transition: font-size 0.5s ease-out; }
           @media (max-width: 420px) {
             .project-wrapper--row--frame--inner-wrapper--text {
-              font-size: 2.7rem; } }
+              font-size: 2.2rem; } }
           .project-wrapper--row--frame--inner-wrapper--text-description {
             width: 85%;
             font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
