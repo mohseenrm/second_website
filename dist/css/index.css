@@ -1177,6 +1177,7 @@ i.fa-github {
 
 #bgvid {
   background-size: contain;
+  background-position: fixed;
   max-width: 200%;
   height: auto;
   max-height: 100vh; }
@@ -1264,11 +1265,11 @@ THE SOFTWARE.
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    height: 100vh; }
+    height: auto; }
     @media (max-width: 420px) {
       #screen-bio > .bio-wrapper {
         height: auto;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center; } }
     #screen-bio > .bio-wrapper .bio-wrapper--gif {
       display: -webkit-box;
@@ -1281,8 +1282,8 @@ THE SOFTWARE.
       @media (max-width: 420px) {
         #screen-bio > .bio-wrapper .bio-wrapper--gif {
           height: auto;
-          margin-bottom: 30%;
-          margin-top: 10%; } }
+          margin-bottom: 23vh;
+          margin-top: 10vh; } }
     #screen-bio > .bio-wrapper .bio-wrapper--text {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1293,7 +1294,7 @@ THE SOFTWARE.
       line-height: 6vh;
       width: 65%;
       height: 100%;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       flex-direction: column;
       font-family: 'Merriweather', 'butlerregular', sans-serif;
       font-weight: 300;

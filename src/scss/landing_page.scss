@@ -132,6 +132,7 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
 
 #bgvid{
   background-size: contain;
+  background-position: fixed;
   max-width: 200%;
   height: auto;
   max-height: 100vh;

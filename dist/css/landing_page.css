@@ -93,6 +93,7 @@
 
 #bgvid {
   background-size: contain;
+  background-position: fixed;
   max-width: 200%;
   height: auto;
   max-height: 100vh; }

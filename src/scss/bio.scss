@@ -13,10 +13,10 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
     &>.bio-wrapper {
         @include flexbox;
         width: 100vw;
-        height: 100vh;
+        height: auto;
         @media #{$phone} {
             height: auto;
-            flex-direction: column-reverse;
+            flex-direction: column;
             align-items: center;
         }
         .bio-wrapper--gif {
@@ -25,8 +25,8 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
             height: 100%;
             @media #{$phone} {
                 height: auto;
-                margin-bottom: 30%;
-                margin-top: 10%;
+                margin-bottom: 23vh;
+                margin-top: 10vh;
             }
         }
         .bio-wrapper--text {
@@ -35,7 +35,7 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
             line-height: 6vh;
             width: 65%;
             height: 100%;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             flex-direction: column;
             font-family: 'Merriweather', 'butlerregular', sans-serif;
             font-weight: 300;
