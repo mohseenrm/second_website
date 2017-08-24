@@ -1177,7 +1177,7 @@ i.fa-github {
 
 #bgvid {
   background-size: contain;
-  background-position: fixed;
+  background-attachment: fixed;
   max-width: 200%;
   height: auto;
   max-height: 100vh; }
