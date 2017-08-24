@@ -67,7 +67,6 @@ $desktop: "(min-width: 1025px) and (max-width: 1440px)";
     height: 100%;
     flex-grow: 2;
     background: #000000;
-    // TODO: have fallback to starting frame of the video
     overflow-x: hidden;
     // border: #ffffff 25px solid;
     &:after{

@@ -66,7 +66,7 @@ const createPictures = ( number ) => {
 		picture = document.createElement( 'div' );
 
 		picture.setAttribute( 'style', `
-			background: url('./images/${ i }.jpg');
+			background: url('../../images/${ i }.jpg');
 			background-size: cover;
 		` );
 		picture.id = `picture_${ i }`;
