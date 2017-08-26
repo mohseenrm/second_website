@@ -138,7 +138,8 @@ THE SOFTWARE.
         line-height: 4vh; }
         @media (max-width: 420px) {
           .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text-description {
-            font-size: 1.5rem; } }
+            font-size: 1.5rem;
+            padding-top: 2%; } }
       .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--button {
         display: flex;
         justify-content: center;
@@ -149,7 +150,7 @@ THE SOFTWARE.
         transition: font-size 0.8s ease-out; }
         @media (max-width: 420px) {
           .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text {
-            font-size: 2.6rem; } }
+            font-size: 2.4rem; } }
       .project-wrapper--row--frame--inner-wrapper {
         display: flex;
         width: 100%;

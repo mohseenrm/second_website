@@ -282,7 +282,7 @@ THE SOFTWARE.
               margin-top: 0;
               line-height: 15vh; } }
     #screen-1 > .wrapper > .image-wrapper:nth-child(4) {
-      background: url("https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg");
+      background: url("../../images/squat.jpg");
       background-position-x: 30%;
       background-size: cover;
       background-repeat: no-repeat;
@@ -335,7 +335,7 @@ THE SOFTWARE.
           margin-left: 4%; }
           @media (max-width: 420px) {
             #screen-1 > .wrapper > .image-wrapper:nth-child(4) > .image-wrapper--absolute-saver > .image-wrapper--absolute-saver--title {
-              font-size: 6rem;
+              font-size: 5rem;
               margin-bottom: 1vh;
               margin-right: 0;
               margin-top: 0;

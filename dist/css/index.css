@@ -1690,7 +1690,7 @@ THE SOFTWARE.
               margin-top: 0;
               line-height: 15vh; } }
     #screen-1 > .wrapper > .image-wrapper:nth-child(4) {
-      background: url("https://rawgit.com/mohseenrm/mohseenrm.github.io/master/images/squat.jpg");
+      background: url("../../images/squat.jpg");
       background-position-x: 30%;
       background-size: cover;
       background-repeat: no-repeat;
@@ -2105,7 +2105,8 @@ THE SOFTWARE.
         line-height: 4vh; }
         @media (max-width: 420px) {
           .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--text-description {
-            font-size: 1.5rem; } }
+            font-size: 1.5rem;
+            padding-top: 2%; } }
       .project-wrapper--row--frame:hover .project-wrapper--row--frame--inner-wrapper--button {
         display: flex;
         justify-content: center;

@@ -14,7 +14,7 @@ ___  ___      _             _     _
 
 The MIT License
 
-Copyright (c) 2010-2017 Mohseen Mukaddam (mohseenmukaddam6@gmail.com)
+Copyright (c) 2017 Mohseen Mukaddam (mohseenmukaddam6@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the 'Software"), to deal
@@ -39,12 +39,16 @@ THE SOFTWARE.
 import { normalizeNames } from './utils';
 
 const references = {
+	Justin_Thorpe: {
+		text: 'Can take a Nerf bullet like a champ',
+		position: 'Systems Administrator, Axosoft'
+	},
 	Sujith_Menon: {
-		text: 'Mohseen is a top talented graduate. He was right on the top delivering Simplified Solutions to make life easier for his peers and provide a quick and better service to our clients / customers. He has demonstrated well on the behavior, as most of his engagement was with Senior Technical people. The feedbacks were really overwhelming about the way he was interacting with them.What really stood out, was the way he has engaged with Messaging to develop the Automation part which helps us to serve our customers efficiently.He is very quick and goes beyond his expert levels to deliver any challenging targets.',
+		text: 'Mohseen is a top talented graduate. He was right on the top delivering simplified solutions to make life easier for his peers, and provide a quick and better service to our clients / customers. He has demonstrated well on the behavior, as most of his engagement was with senior technical people. The feedbacks were really overwhelming about the way he was interacting with them. What really stood out, was the way he has engaged with Messaging to develop the automation system which helps us to serve our customers efficiently',
 		position: 'APAC Messaging Lead, Barclays'
 	},
 	Sunil_Bade: {
-		text: 'I worked with Mohseen on number of Automation Tasks, which helped us to generate many auto generated reports, thereby reducing the number of hours for us by checking details manually. This helped us to check overall health of our Messaging Applications quickly and was a big service improvement as it reduced number of Incidents coming to our team. He is swift with his work and easily absorbs new technical skills. Apart from good technical person, he is also a good team player who is always available to help …I highly recommend him!',
+		text: 'I worked with Mohseen on number of automation tasks, which helped us to generate many auto generated reports, thereby reducing the number of hours for us by checking details manually. This helped us to check overall health of our messaging applications quickly and was a big service improvement as it reduced number of incidents coming to our team. He is swift with his work and easily absorbs new technical skills. Apart from good technical person, he is also a good team player who is always available to help!',
 		position: 'Messaging Engineer, Barclays'
 	}
 };
@@ -76,14 +80,13 @@ const references = {
 		};
 
 		let offset = calculateOffset( Toffset, Boffset );
-		// console.log( offset );
 
 		//weird bug with calculating exact offset onload
 		setTimeout( () => {
 			Toffset = topLine.getBoundingClientRect();
 			Boffset = bottomLine.getBoundingClientRect();
-			//TODO: add css prefix for flex
 			offset = calculateOffset( Toffset, Boffset );
+
 			tl.set( [ text, author ], {
 				css: {
 					'display': 'none',
@@ -98,7 +101,6 @@ const references = {
 			.set( [ topLine, bottomLine ], {
 				css: {
 					'margin': '0',
-					// 'display': 'none',
 					'width': '3px'
 				}
 			} );
@@ -132,19 +134,15 @@ const references = {
 			tl.play();
 		}, 10 );
 	};
+
 	playAnimation();
-	// console.log( 'Authors: ', authors );
-	// console.log( 'Author: ', document.createTextNode( authors[playHead] ) );
 
 	// Did this jumping around to prevent XSS attacks [https://stackoverflow.com/questions/1358810/how-do-i-change-the-text-of-a-span-element-in-javascript]
 	text.innerHTML = document.createTextNode( references[authors[playHead]].text ).textContent;
 	author.innerHTML = `${ normalizeNames( document.createTextNode( authors[playHead] ).textContent ) }<span class="wrapper--author--position">${ references[authors[playHead]].position }</span>`;
 
 	const rotateReferences = () => {
-		// console.log( 'length: ', numberOfAuthors );
 		playHead = playHead === numberOfAuthors - 1 ? 0 : playHead + 1;
-		// console.log( 'new playHead: ', playHead );
-
 		text.style.opacity = 0;
 
 		setTimeout( () => {
@@ -157,7 +155,7 @@ const references = {
 			author.innerHTML = `${ normalizeNames( document.createTextNode( authors[playHead] ).textContent ) }<span class="wrapper--author--position">${ references[authors[playHead]].position }</span>`;
 			author.style.opacity = 1;
 		}, 500 );
-		// playHead = playHead <
 	};
+
 	setInterval( rotateReferences, 11000 );
 } )();
