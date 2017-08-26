@@ -3,7 +3,7 @@ Error: Undefined variable: "$phone".
         on line 67 of src/scss/title.scss
 
 62:     &--text {
-63:         font-family: 'Didot', sans-serif;
+63:         font-family: 'Didot', 'Helvetica', serif;
 64:         font-size: 8rem;
 65:         color: #000;
 66:         letter-spacing: -0.45rem;
@@ -84,4 +84,4 @@ src/scss/title.scss:67
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$phone\".\A         on line 67 of src/scss/title.scss\A \A 62:     &--text {\A 63:         font-family: 'Didot', sans-serif;\A 64:         font-size: 8rem;\A 65:         color: #000;\A 66:         letter-spacing: -0.45rem;\A 67:         @media #{$phone} {\A 68:           font-size: 7.1rem;\A 69:         }\A 70:     }\A 71: }"; }
+  content: "Error: Undefined variable: \"$phone\".\A         on line 67 of src/scss/title.scss\A \A 62:     &--text {\A 63:         font-family: 'Didot', 'Helvetica', serif;\A 64:         font-size: 8rem;\A 65:         color: #000;\A 66:         letter-spacing: -0.45rem;\A 67:         @media #{$phone} {\A 68:           font-size: 7.1rem;\A 69:         }\A 70:     }\A 71: }"; }

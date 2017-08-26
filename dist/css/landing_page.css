@@ -28,7 +28,7 @@
   top: 50%; */
   flex-direction: column;
   align-items: flex-start;
-  font-family: 'Didot', serif;
+  font-family: 'Didot', 'Helvetica', serif;
   font-size: 12rem;
   color: #f7f7f7;
   padding: 8vh;

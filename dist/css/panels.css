@@ -366,7 +366,7 @@ THE SOFTWARE.
   .image-wrapper--absolute-saver--title {
     transition: all 0.5s ease-in-out;
     color: #f2994a;
-    font-family: 'Didot', sans-serif;
+    font-family: 'Didot', 'Helvetica', serif;
     font-size: 10rem;
     letter-spacing: 0.3rem;
     line-height: 20vh;
@@ -383,7 +383,7 @@ THE SOFTWARE.
   .image-wrapper--absolute-saver--para {
     color: white;
     font-size: 2rem;
-    font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
+    font-family: "Merriweather", "Didot", "Helvetica", serif;
     font-weight: 100;
     text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); }
 

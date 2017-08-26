@@ -4,7 +4,6 @@
    License: none (public domain)
    This is a Sass partial
    */
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -69,7 +68,7 @@ table {
 /* close commented backslash hack */
 html,
 body {
-  font-family: "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
+  font-family: "Didot", "Helvetica", serif;
   font-size: 62.5%;
   overflow-x: hidden; }
 
@@ -95,7 +94,6 @@ h1 {
   display: flex; }
 
 .large-header {
-  font-family: 'Ostrich Sans';
   letter-spacing: 5px;
   text-transform: uppercase;
   font-weight: 900;
@@ -123,7 +121,7 @@ a {
 
 body {
   color: #fff;
-  font-family: "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
+  font-family: "Didot", "Helvetica", serif;
   font-size: 18px;
   text-align: center; }
 
@@ -268,12 +266,12 @@ body {
 
 a {
   text-decoration: none;
-  font-family: 'Merriweather', 'butlerregular', sans-serif;
+  font-family: 'Merriweather', 'Helvetica', serif;
   font-weight: 100;
   letter-spacing: 0.2rem; }
 
 text {
-  font-family: 'Merriweather', 'butlerregular', sans-serif; }
+  font-family: 'Merriweather', 'Helvetica', serif; }
 
 .link-effect-10 a {
   color: #2C3E50;
@@ -601,79 +599,5 @@ i.fa-github {
   height: 1px;
   margin: 10px 0 10px 0;
   margin: 2vh 0 2vh 0; }
-
-/*#screen-5{
-    width: 100%;
-    height: 100%;
-    background: url('../../images/test2.svg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    & > .wrapper{
-        @include flexbox;
-        height: 100%;
-
-        flex-direction: column;
-        align-items: center;
-        & > .row-1{
-            @include flexbox;
-
-            align-items: flex-end;
-            height: 25%;
-            width: 45%;
-            font-size: 10rem;
-            color: #ffbf00;
-        }
-        & > .row-2{
-            @include flexbox;
-
-            height: 50%;
-            align-items: center;
-            & > span{
-                font-size: 4rem;
-                // color: #797878;
-                // background: -webkit-linear-gradient(transparent, transparent), url(http://timpietrusky.com/cdn/army.png) repeat;
-                // background: -o-linear-gradient(transparent, transparent);
-                // -webkit-background-clip: text;
-                // background-clip: text;
-                // -webkit-text-fill-color: transparent;
-                //I am a legend, this shit was hard!!
-                color: #797878;
-                background: -webkit-linear-gradient(transparent, transparent), url('../../images/test4.svg') no-repeat;
-                background: -o-linear-gradient(transparent, transparent);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-position: center;
-                // background-size: 1740% 1740%;
-                background-size: 100% 100%;
-                background-attachment: fixed;
-    
-            }
-        }
-        & > .row-3{
-            @include flexbox;
-
-            height: 10%;
-            width: 45%;
-            font-size: 10rem;
-            color: #ffbf00;
-            justify-content: flex-end;
-        }
-        & > .row-4{
-            @include flexbox;
-
-            height: 15%;
-            font-size: 4rem;
-            color: #ffbf00;
-        }
-    }
-
-    // & > #special-text{
-    //     @include flexbox;
-
-    //     position: fixe
-    // }
-}*/
 
 /*# sourceMappingURL=main.css.map */

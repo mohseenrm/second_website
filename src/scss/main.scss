@@ -1,9 +1,5 @@
 @import 'reset';
 @import 'flex';
-// @import url('https://fonts.googleapis.com/css?family=Raleway');
-// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
-// @import 'fonts';
 @import 'animation';
 
 $third-page-color: #18172D;
@@ -12,10 +8,10 @@ $big-orb-wave: 200%;
 $big-orb-font-size: 1.65rem;
 $small-orb-size: 110px;
 $small-orb-font-size: 1.1rem;
-$fonts: 'Didot', 'nowayregular',
-'League Gothic',
+$fonts: 'Didot',
 'Helvetica',
 serif;
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -28,7 +24,6 @@ serif;
 .clearfix {
     display: inline-block;
 }
-
 
 /* start commented backslash hack \*/
 
@@ -66,7 +61,6 @@ h1 {
 }
 
 .large-header {
-    font-family: 'Ostrich Sans';
     letter-spacing: 5px;
     text-transform: uppercase;
     font-weight: 900;
@@ -282,13 +276,13 @@ $active-color: #393E41;
 a {
     text-decoration: none;
     // text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
-    font-family: 'Merriweather', 'butlerregular', sans-serif;
+    font-family: 'Merriweather', 'Helvetica', serif;
     font-weight: 100;
     letter-spacing: 0.2rem;
 }
 
 text{
-    font-family: 'Merriweather', 'butlerregular', sans-serif;
+    font-family: 'Merriweather', 'Helvetica', serif;
 }
 
 .link-effect-10 a {
@@ -659,77 +653,3 @@ i.fa-github {
     margin: 10px 0 10px 0;
     margin: 2vh 0 2vh 0;
 }
-
-/*#screen-5{
-    width: 100%;
-    height: 100%;
-    background: url('../../images/test2.svg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    & > .wrapper{
-        @include flexbox;
-        height: 100%;
-
-        flex-direction: column;
-        align-items: center;
-        & > .row-1{
-            @include flexbox;
-
-            align-items: flex-end;
-            height: 25%;
-            width: 45%;
-            font-size: 10rem;
-            color: #ffbf00;
-        }
-        & > .row-2{
-            @include flexbox;
-
-            height: 50%;
-            align-items: center;
-            & > span{
-                font-size: 4rem;
-                // color: #797878;
-                // background: -webkit-linear-gradient(transparent, transparent), url(http://timpietrusky.com/cdn/army.png) repeat;
-                // background: -o-linear-gradient(transparent, transparent);
-                // -webkit-background-clip: text;
-                // background-clip: text;
-                // -webkit-text-fill-color: transparent;
-                //I am a legend, this shit was hard!!
-                color: #797878;
-                background: -webkit-linear-gradient(transparent, transparent), url('../../images/test4.svg') no-repeat;
-                background: -o-linear-gradient(transparent, transparent);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-position: center;
-                // background-size: 1740% 1740%;
-                background-size: 100% 100%;
-                background-attachment: fixed;
-    
-            }
-        }
-        & > .row-3{
-            @include flexbox;
-
-            height: 10%;
-            width: 45%;
-            font-size: 10rem;
-            color: #ffbf00;
-            justify-content: flex-end;
-        }
-        & > .row-4{
-            @include flexbox;
-
-            height: 15%;
-            font-size: 4rem;
-            color: #ffbf00;
-        }
-    }
-
-    // & > #special-text{
-    //     @include flexbox;
-
-    //     position: fixe
-    // }
-}*/

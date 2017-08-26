@@ -166,7 +166,7 @@ THE SOFTWARE.
         transition: all 1s ease-out; }
         .project-wrapper--row--frame--inner-wrapper--text {
           width: 85%;
-          font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
+          font-family: "Merriweather", "Didot", "Helvetica", serif;
           font-weight: 400;
           text-align: left;
           color: #210B29;
@@ -180,7 +180,7 @@ THE SOFTWARE.
               font-size: 2.2rem; } }
           .project-wrapper--row--frame--inner-wrapper--text-description {
             width: 85%;
-            font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
+            font-family: "Merriweather", "Didot", "Helvetica", serif;
             font-weight: 300;
             text-align: left;
             font-size: 4rem;
@@ -190,7 +190,7 @@ THE SOFTWARE.
             transition: all 0.8s ease-out; }
         .project-wrapper--row--frame--inner-wrapper--button {
           display: none;
-          font-family: "Merriweather", "Didot", "nowayregular", "League Gothic", "Helvetica", serif;
+          font-family: "Merriweather", "Didot", "Helvetica", serif;
           font-weight: 400;
           letter-spacing: 0.5rem;
           text-transform: uppercase;
