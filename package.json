@@ -39,7 +39,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "eslint": "^3.19.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^6.1.2",
     "gulp-bump": "^2.5.1",
     "gulp-clean": "^0.3.2",
