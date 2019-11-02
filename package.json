@@ -50,7 +50,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-uglifycss": "^1.0.8",
     "gulp-util": "^3.0.8",
-    "postcss-loader": "^2.0.6",
+    "postcss-loader": "^3.0.0",
     "webpack": "^2.5.0",
     "webpack-dev-server": "^3.1.11"
   },
