@@ -1286,9 +1286,9 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
 
-bump-regex@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/bump-regex/-/bump-regex-2.7.0.tgz#4a21e2537113476c026be588b8a7dddef1934641"
+bump-regex@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/bump-regex/-/bump-regex-3.1.1.tgz#fc2ee36071cbc06959fa68707f2e6b40abe89edf"
   dependencies:
     semver "^5.1.0"
     xtend "^4.0.1"
@@ -3080,12 +3080,12 @@ gulp-babel@^6.1.2:
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
-gulp-bump@^2.5.1:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/gulp-bump/-/gulp-bump-2.7.0.tgz#4c3750bce93c5d816fe9a154e6619dd509a852d8"
+gulp-bump@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/gulp-bump/-/gulp-bump-3.1.3.tgz#a9e4b4691e46faeb6759140c21ece40b0a3f9e76"
   dependencies:
-    bump-regex "^2.7.0"
-    plugin-error "^0.1.2"
+    bump-regex "^3.1.1"
+    plugin-error "^1.0.1"
     plugin-log "^0.1.0"
     semver "^5.3.0"
     through2 "^2.0.1"
