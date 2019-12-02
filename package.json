@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/mohseenrm/second_website#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.2",
+    "autoprefixer": "^9.7.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
