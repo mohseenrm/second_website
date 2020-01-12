@@ -3948,9 +3948,9 @@ jpeg-js@0.1.2, jpeg-js@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.1.2.tgz#135b992c0575c985cfa0f494a3227ed238583ece"
 
-js-library-detector@^5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/js-library-detector/-/js-library-detector-5.4.0.tgz#d1b08dfbdc3886258f888bd441801ef9e5b69567"
+js-library-detector@^5.5.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/js-library-detector/-/js-library-detector-5.6.0.tgz#a44c95237870b5e4f66f0aff948270df7ec9f277"
 
 js-tokens@^3.0.0:
   version "3.0.1"
@@ -4132,9 +4132,9 @@ lighthouse-logger@^1.0.0, lighthouse-logger@^1.2.0:
     debug "^2.6.8"
     marky "^1.2.0"
 
-lighthouse@^5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/lighthouse/-/lighthouse-5.4.0.tgz#e5896e86d7fa954658c31c3b4ccc34f094815ef2"
+lighthouse@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/lighthouse/-/lighthouse-5.6.0.tgz#2182e0d9bc79783bc9d801dd5099a33526dabdd0"
   dependencies:
     axe-core "3.3.0"
     chrome-launcher "^0.11.2"
@@ -4147,7 +4147,7 @@ lighthouse@^5.4.0:
     intl-messageformat "^4.4.0"
     intl-pluralrules "^1.0.3"
     jpeg-js "0.1.2"
-    js-library-detector "^5.4.0"
+    js-library-detector "^5.5.0"
     jsonld "^1.5.0"
     jsonlint-mod "^1.7.5"
     lighthouse-logger "^1.2.0"
@@ -4163,7 +4163,7 @@ lighthouse@^5.4.0:
     robots-parser "^2.0.1"
     semver "^5.3.0"
     speedline-core "1.4.2"
-    third-party-web "^0.8.2"
+    third-party-web "^0.11.0"
     update-notifier "^2.5.0"
     ws "3.3.2"
     yargs "3.32.0"
@@ -6448,9 +6448,9 @@ text-table@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
 
-third-party-web@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/third-party-web/-/third-party-web-0.8.2.tgz#9a13841174a2b2333a15233cb6dbf6553c03a7be"
+third-party-web@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/third-party-web/-/third-party-web-0.11.0.tgz#4e80dac50c26557add464742306bc392ab845352"
 
 through2@2.X, through2@^2.0.0, through2@^2.0.1, through2@^2.0.3:
   version "2.0.3"
